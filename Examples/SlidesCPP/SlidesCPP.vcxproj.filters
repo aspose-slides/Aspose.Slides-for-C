@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Slides">
+      <UniqueIdentifier>{feaec748-8230-4ea1-9ff9-32f1d6aae5dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Rendering">
+      <UniqueIdentifier>{a378316a-6bdd-4a5d-8603-3fea4a2abe36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Background">
+      <UniqueIdentifier>{0ee5fc81-5d91-4319-9c93-3d02290f67d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Comments">
+      <UniqueIdentifier>{fab92c90-3482-43d3-92b6-c9ad4848f99c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\CRUD">
+      <UniqueIdentifier>{af75f87d-4026-4713-959a-dbaf28f6bc09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Hyperlinks">
+      <UniqueIdentifier>{14798a4c-ca17-489f-99fa-84ce95d98f7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Layout">
+      <UniqueIdentifier>{44e4187c-54a8-4847-8558-f24ff625b07a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\ManagingMedia">
+      <UniqueIdentifier>{7d3eb732-6437-46ef-b480-3fdfd9e00716}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Notes">
+      <UniqueIdentifier>{d99cab4d-3472-4f04-a22f-611affd08c74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Transitions">
+      <UniqueIdentifier>{8ee626ac-d031-4f77-9d91-7f25ae8dbfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\VBA">
+      <UniqueIdentifier>{e0ec5a91-61cf-462f-a8bb-295529284594}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes">
+      <UniqueIdentifier>{e1d816e7-bb84-4bbe-be3b-3afd191eee44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\Charts">
+      <UniqueIdentifier>{c858c0bd-d3c0-439f-9fee-8e1aaec11ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\ManageAutoShapes">
+      <UniqueIdentifier>{d7aba518-3a49-460c-8122-a0899a0f145c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\ManageFrameObjects">
+      <UniqueIdentifier>{2f483424-4c9c-4f32-8f6f-6642affa70fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\ShapeEffects">
+      <UniqueIdentifier>{7832ac81-e25f-4c3a-982c-2a5b7e3a4bd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\SmartArt">
+      <UniqueIdentifier>{b24dcb97-9ff7-4055-85b0-3ddfc366fa12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\Tables">
+      <UniqueIdentifier>{89c3b17c-b924-40ca-9ff5-aabb220ee0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Slides\Shapes\Text">
+      <UniqueIdentifier>{8ed9e119-696b-4ec4-ac56-426020bcf635}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetBackgroundToGradient.cpp">
+      <Filter>Source Files\Slides\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="SetSlideBackgroundMaster.cpp">
+      <Filter>Source Files\Slides\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="SetSlideBackgroundNormal.cpp">
+      <Filter>Source Files\Slides\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="SetImageAsBackground.cpp">
+      <Filter>Source Files\Slides\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSlideComments.cpp">
+      <Filter>Source Files\Slides\Comments</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSlideComments.cpp">
+      <Filter>Source Files\Slides\Comments</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSlides.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="AddLayoutSlides.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSlides.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSlidebyID.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSlidebyIndex.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveSlideUsingIndex.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveSlideUsingReference.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangePosition.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneWithInSamePresentation.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneWithinSamePresentationToEnd.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneAtEndOfAnotherPresentation.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneInAnotherPresentationAtSpecifiedPosition.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneAtEndOfAnotherSpecificPosition.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneToAnotherPresentationWithMaster.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneToAnotherPresentationWithSetSizeAndType.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveHyperlinks.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
+    <ClCompile Include="SetPDFPageSize.cpp">
+      <Filter>Source Files\Slides\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtractVideo.cpp">
+      <Filter>Source Files\Slides\ManagingMedia</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveNotesAtSpecificSlide.cpp">
+      <Filter>Source Files\Slides\Notes</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveNotesFromAllSlides.cpp">
+      <Filter>Source Files\Slides\Notes</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateSlidesSVGImage.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="ThumbnailFromSlide.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="ThumbnailFromSlideInNotes.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="ThumbnailWithUserDefinedDimensions.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageSimpleSlideTransitions.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagingBetterSlideTransitions.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTransitionEffects.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleSlideTransitions.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="AddVBAMacros.cpp">
+      <Filter>Source Files\Slides\VBA</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveVBAMacros.cpp">
+      <Filter>Source Files\Slides\VBA</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatingCategoriesElements.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCustomError.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddErrorBars.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatingSeries.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimatingSeriesElements.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AutomaticChartSeriescolor.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeChartCategoryAxis.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartEntities.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartTrendLines.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayChartLabels.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayPercentageAsLabels.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="DoughnutChartHole.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ExistingChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagePropertiesCharts.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalCharts.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberFormat.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="PieChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ScatteredChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SecondPlotOptionsforCharts.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetAutomaticSeriesFillColor.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetCategoryAxisLabelDistance.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetChartSeriesOverlap.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDataLabelsPercentageSign.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDataRange.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetGapWidth.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessingAltTextinGroupshapes.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AddArrowShapedLine.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AddArrowShapedLineToSlide.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AddPlainLineToSlide.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeShapeOrder.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectorLineAngle.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectShapesUsingConnectors.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ConnectShapeUsingConnectionSite.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="FormatJoinStyles.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="FormatLines.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="FormattedEllipse.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="FormattedRectangle.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleEllipse.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleRectangle.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessOLEObjectFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddAudioFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddOLEObjectFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRelativeScaleHeightPictureFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSimplePictureFrames.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddVideoFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddVideoFrameFromWebSource.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeOLEObjectData.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="EmbeddedVideoFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureFrameFormatting.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationsOnShapes.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Apply3DRotationEffectOnShape.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplyBevelEffects.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CloneShapes.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateBoundsShapeThumbnail.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateGroupShape.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateScalingFactorThumbnail.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateShapeThumbnail.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateSmartArtChildNoteThumbnail.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="FillShapesGradient.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="FillShapesPattern.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="FillShapesPicture.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="FillShapeswithSolidColor.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="FindShapeInSlide.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="Hidingshapes.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="InterlopShapeID.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveShape.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="RotatingShapes.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SetAlternativeText.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessChildNodes.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessChildNodeSpecificPosition.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSmartArt.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSmartArtParticularLayout.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessSmartArtShape.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNodes.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNodesSpecificPosition.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AssistantNode.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeSmartArtLayout.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeSmartArtShapeColorStyle.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeSmartArtState.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeTextOnSmartArtNode.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangSmartArtShapeStyle.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckSmartArtHiddenProperty.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateSmartArtShape.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="FillFormatSmartArtShapeNode.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="OrganizeChartLayoutType.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveNode.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveNodeSpecificPosition.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="SmartArtNodeLevel.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AddImageinsideTableCell.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="CellSplit.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="CloningInTable.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeCell.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeCells.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="RemovingRowColumn.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="StandardTables.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="TableFromScratch.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="TableWithCellBorders.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdateExistingTable.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticallyAlignText.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplyInnerShadow.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplyOuterShadow.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomRotationAngleTextframe.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultFonts.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportingHTMLText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="FontFamilySetting.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="FontProperties.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportingHTMLText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="LineSpacing.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageEmbeddedFonts.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageParagraphFontProperties.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageParagraphPictureBulletsInPPT.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="MultipleParagraphs.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ParagraphBullets.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ParagraphIndent.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ParagraphsAlignment.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ReplaceFontsExplicitly.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ReplacingText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RotatingText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RuleBasedFontsReplacement.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="SetAnchorOfTextFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="SetAutofitOftextframe.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTextFontProperties.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ShadowEffects.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBoxHyperlink.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBoxOnSlideProgram.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="UseCustomFonts.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SlidesExamples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
