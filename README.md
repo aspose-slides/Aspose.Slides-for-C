@@ -1,8 +1,8 @@
 ## Aspose.Slides for C++
 
-[Aspose.Slides for C++](http://www.aspose.com/products/slides/cpp) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
+[Aspose.Slides for C++](https://products.aspose.com/slides/cpp) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
 
-This repository contains [Examples](Examples) for [Aspose.Slides for C++](http://www.aspose.com/products/slides/cpp) to help you learn and write your own applications.
+This repository contains [Examples](Examples) for [Aspose.Slides for C++](https://products.aspose.com/slides/cpp) to help you learn and write your own applications.
 
 <p align="center">
 
