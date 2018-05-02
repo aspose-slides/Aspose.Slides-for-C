@@ -24,8 +24,8 @@ void SetPDFPageSize()
 	//ExStart:SetPDFPageSize
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/Hyperlinks.pptx";
-	const String outPath = L"../out/SetPDFPageSize_out.pdf";
+	const String templatePath = u"../templates/Hyperlinks.pptx";
+	const String outPath = u"../out/SetPDFPageSize_out.pdf";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation>pres = MakeObject<Presentation>(templatePath);

@@ -65,7 +65,7 @@ void FontFamilySetting()
 
 	// ExStart:FontFamilySetting
 	// The path to the documents directory.
-	const String outPath = L"../out/FontFamilySetting_out.pptx";
+	const String outPath = u"../out/FontFamilySetting_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -77,7 +77,7 @@ void FontFamilySetting()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L" ");
+	ashp->AddTextFrame(u" ");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -87,13 +87,13 @@ void FontFamilySetting()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Aspose TextBox");
+	portion->set_Text(u"Aspose TextBox");
 	
 	//Get portion format
 	SharedPtr<IPortionFormat> pf = portion->get_PortionFormat();
 	
 	// Set the Font for the Portion
-	pf->set_LatinFont(MakeObject<FontData>(L"Times New Roman"));
+	pf->set_LatinFont(MakeObject<FontData>(u"Times New Roman"));
 
 	// Set Bold property of the Font
 	pf->set_FontBold (NullableBool::True);

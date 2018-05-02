@@ -28,8 +28,8 @@ void CloneAtEndOfAnotherSpecificPosition()
 	//ExStart:CloneAtEndOfAnotherSpecificPosition
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AddSlides.pptx";
-	const String outPath = L"../out/CloneAtEndOfAnotherSpecificPosition.pptx";
+	const String templatePath = u"../templates/AddSlides.pptx";
+	const String outPath = u"../out/CloneAtEndOfAnotherSpecificPosition.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

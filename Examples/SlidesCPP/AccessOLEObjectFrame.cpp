@@ -77,8 +77,8 @@ void AccessOLEObjectFrame()
 
 	// ExStart:AccessOLEObjectFrame
 	// The path to the documents directory.
-	const String outPath = L"../out/excelFromOLE_out.xlsx";
-	const String templatePath = L"../templates/AccessingOLEObjectFrame.pptx";
+	const String outPath = u"../out/excelFromOLE_out.xlsx";
+	const String templatePath = u"../templates/AccessingOLEObjectFrame.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

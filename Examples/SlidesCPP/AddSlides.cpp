@@ -28,7 +28,7 @@ void AddSlides()
 	//ExStart:AddSlides
 
 	// The path to the documents directory.
-	const String outPath = L"../templates/AddSlides.pptx";
+	const String outPath = u"../templates/AddSlides.pptx";
 
 	// Instantiate Presentation class that represents the presentation file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

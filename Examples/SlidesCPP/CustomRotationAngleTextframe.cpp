@@ -76,7 +76,7 @@ void CustomRotationAngleTextframe()
 
 	// ExStart:CustomRotationAngleTextframe
 	// The path to the documents directory.
-	const String outPath = L"../out/CustomRotationAngleTextframe_out.pptx";
+	const String outPath = u"../out/CustomRotationAngleTextframe_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -93,7 +93,7 @@ void CustomRotationAngleTextframe()
 	series->get_Labels()->get_DefaultDataLabelFormat()->get_TextFormat()->get_TextBlockFormat()->set_RotationAngle(65);
 
 	chart->set_HasTitle (true);
-	chart->get_ChartTitle()->AddTextFrameForOverriding(L"Custom title")->get_TextFrameFormat()->set_RotationAngle ( -30);
+	chart->get_ChartTitle()->AddTextFrameForOverriding(u"Custom title")->get_TextFrameFormat()->set_RotationAngle ( -30);
 
 	// Save PPTX to Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

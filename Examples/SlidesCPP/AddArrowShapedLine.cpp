@@ -85,8 +85,8 @@ void AddArrowShapedLine()
 
 	// ExStart:AddArrowShapedLine
 	// The path to the documents directory.
-	const String outPath = L"../out/AddArrowShapedLine_out.pptx";
-	const String templatePath = L"../templates/AltText.pptx";
+	const String outPath = u"../out/AddArrowShapedLine_out.pptx";
+	const String templatePath = u"../templates/AltText.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

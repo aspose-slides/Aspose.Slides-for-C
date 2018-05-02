@@ -67,8 +67,8 @@ void ReplacingText()
 
 	// ExStart:ReplacingText
 	// The path to the documents directory.
-	const String outPath = L"../out/ReplacingText_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/ReplacingText_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 
 	// Load the desired the presentation
@@ -84,7 +84,7 @@ void ReplacingText()
 
 	SharedPtr<ITextFrame> textframe = ashp->get_TextFrame();
 
-	textframe->set_Text(L"This is Placeholder");
+	textframe->set_Text(u"This is Placeholder");
 	
 	// Save PPTX to Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

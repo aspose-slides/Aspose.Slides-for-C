@@ -64,8 +64,8 @@ void SetDataRange()
 	//ExStart:SetDataRange
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/ExistingChart.pptx";
-	const String outPath = L"../out/DataRange_out.pptx";
+	const String templatePath = u"../templates/ExistingChart.pptx";
+	const String outPath = u"../out/DataRange_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

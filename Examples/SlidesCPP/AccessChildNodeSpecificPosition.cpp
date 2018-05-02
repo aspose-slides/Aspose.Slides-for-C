@@ -38,7 +38,7 @@ void AccessChildNodeSpecificPosition()
 
 	// ExStart:AccessChildNodeSpecificPosition
 	// The path to the documents directory.
-	const String outPath = L"../out/AccessChildNodeSpecificPosition_out.pptx";
+	const String outPath = u"../out/AccessChildNodeSpecificPosition_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -59,7 +59,7 @@ void AccessChildNodeSpecificPosition()
 		System::SharedPtr<Aspose::Slides::SmartArt::ISmartArtNode> node = node0->get_ChildNodes()->idx_get(position);
 
 		// Printing the SmartArt child node parameters
-		System::Console::WriteLine(L"j = " + node->get_TextFrame()->get_Text() + L", Text = " + node->get_Level() + L", Position = " + node->get_Position());
+		System::Console::WriteLine(u"j = " + node->get_TextFrame()->get_Text() + u", Text = " + node->get_Level() + u", Position = " + node->get_Position());
 
 	}
 

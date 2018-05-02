@@ -81,8 +81,8 @@ void ChangeShapeOrder()
 
 	// ExStart:ChangeShapeOrder
 	// The path to the documents directory.
-	const String outPath = L"../out/ChangeShapeOrder_out.pptx";
-	const String templatePath = L"../templates/HelloWorld.pptx";
+	const String outPath = u"../out/ChangeShapeOrder_out.pptx";
+	const String templatePath = u"../templates/HelloWorld.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -96,7 +96,7 @@ void ChangeShapeOrder()
 	ashp->get_FillFormat()->set_FillType(FillType::NoFill);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L" ");
+	ashp->AddTextFrame(u" ");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -106,7 +106,7 @@ void ChangeShapeOrder()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Watermark Text Watermark Text Watermark Text");
+	portion->set_Text(u"Watermark Text Watermark Text Watermark Text");
 
 	//Adding another shape
 	SharedPtr<IAutoShape>  ashape2 = slide->get_Shapes()->AddAutoShape(ShapeType::Triangle, 200, 365, 400, 150);

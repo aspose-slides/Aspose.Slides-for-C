@@ -81,8 +81,8 @@ void AccessingAltTextinGroupshapes()
 
 	// ExStart:AccessingAltTextinGroupshapes
 	// The path to the documents directory.
-	//const String outPath = L"../out/EmbeddedVideoFrame_out.pptx";
-	const String templatePath = L"../templates/AltText.pptx";
+	//const String outPath = u"../out/EmbeddedVideoFrame_out.pptx";
+	const String templatePath = u"../templates/AltText.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -105,7 +105,7 @@ void AccessingAltTextinGroupshapes()
 				SharedPtr<IShape> shape2 = grphShape->get_Shapes()->idx_get(j);
 				String st = shape2->get_AlternativeText();
 				// Accessing the AltText property
-				System::Console::WriteLine(L"Shape Name : " + st);
+				System::Console::WriteLine(u"Shape Name : " + st);
 				
 
 			}

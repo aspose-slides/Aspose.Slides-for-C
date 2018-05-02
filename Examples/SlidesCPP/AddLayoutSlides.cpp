@@ -28,8 +28,8 @@ void AddLayoutSlides()
 	//ExStart:AddLayoutSlides
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AddSlides.pptx";
-	const String outPath = L"../out/AddLayoutSlides.pptx";
+	const String templatePath = u"../templates/AddSlides.pptx";
+	const String outPath = u"../out/AddLayoutSlides.pptx";
 
 	// Instantiate Presentation class that represents the presentation file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -63,7 +63,7 @@ void AddLayoutSlides()
 		{
 			SharedPtr<ILayoutSlide> titleAndObjectLayoutSlide = layoutSlides->idx_get(i);
 
-			if (titleAndObjectLayoutSlide->get_Name().Equals(L"Title and Object"))
+			if (titleAndObjectLayoutSlide->get_Name().Equals(u"Title and Object"))
 			{
 				layoutSlide = titleAndObjectLayoutSlide;
 				break;
@@ -76,7 +76,7 @@ void AddLayoutSlides()
 			{
 				SharedPtr<ILayoutSlide> titleLayoutSlide = layoutSlides->idx_get(i);
 
-				if (titleLayoutSlide->get_Name().Equals(L"Title"))
+				if (titleLayoutSlide->get_Name().Equals(u"Title"))
 				{
 					layoutSlide = titleLayoutSlide;
 					break;
@@ -88,7 +88,7 @@ void AddLayoutSlides()
 				layoutSlide = layoutSlides->GetByType(SlideLayoutType::Blank);
 				if (layoutSlide == NULL)
 				{
-					layoutSlide = layoutSlides->Add(SlideLayoutType::TitleAndObject, L"Title and Object");
+					layoutSlide = layoutSlides->Add(SlideLayoutType::TitleAndObject, u"Title and Object");
 				}
 			}
 		}

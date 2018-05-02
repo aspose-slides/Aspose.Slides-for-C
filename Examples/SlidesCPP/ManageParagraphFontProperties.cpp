@@ -69,8 +69,8 @@ void ManageParagraphFontProperties()
 
 	// ExStart:ManageParagraphFontProperties
 	// The path to the documents directory.
-	const String outPath = L"../out/ManageParagraphFontProperties_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/ManageParagraphFontProperties_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 
 	// Load the desired the presentation
@@ -104,8 +104,8 @@ void ManageParagraphFontProperties()
 	SharedPtr<IPortion> port2 = para2->get_Portions()->idx_get(0);
 
 	// Define new fonts
-	SharedPtr<IFontData> fd1 = MakeObject<FontData>(L"Elephant");
-	SharedPtr<IFontData> fd2 = MakeObject<FontData>(L"Castellar");
+	SharedPtr<IFontData> fd1 = MakeObject<FontData>(u"Elephant");
+	SharedPtr<IFontData> fd2 = MakeObject<FontData>(u"Castellar");
 
 	// Assign new fonts to portion
 	port1->get_PortionFormat()->set_LatinFont(fd1);

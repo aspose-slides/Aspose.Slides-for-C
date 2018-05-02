@@ -70,7 +70,7 @@ void DoughnutChartHole()
 	//ExStart:DoughnutChartHole
 
 	// The path to the documents directory.
-	const String outPath = L"../out/DoughnutChartHole_out.pptx";
+	const String outPath = u"../out/DoughnutChartHole_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

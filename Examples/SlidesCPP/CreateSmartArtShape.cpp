@@ -38,7 +38,7 @@ void CreateSmartArtShape()
 
 	// ExStart:CreateSmartArtShape
 	// The path to the documents directory.
-	const String outPath = L"../out/SimpleSmartArt_out.pptx";
+	const String outPath = u"../out/SimpleSmartArt_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

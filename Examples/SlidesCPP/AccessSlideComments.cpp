@@ -29,7 +29,7 @@ void AccessSlideComments()
 	//ExStart:AccessSlideComments
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/Comments1.pptx";
+	const String templatePath = u"../templates/Comments1.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -41,11 +41,11 @@ void AccessSlideComments()
 	{
 		auto author = pres->get_CommentAuthors()->idx_get(i);
 		//std::cout << "Comments from: " << author->get_Name() << std::endl;
-		System::Console::WriteLine(L"Comments from: " + author->get_Name());
+		System::Console::WriteLine(u"Comments from: " + author->get_Name());
 		for (int j = 0; j < author->get_Comments()->get_Count(); j++)
 		{
 			auto comment = author->get_Comments()->idx_get(j);
-			System::Console::WriteLine(L"Comment: " + comment->get_Text());
+			System::Console::WriteLine(u"Comment: " + comment->get_Text());
 
 		}
 	}

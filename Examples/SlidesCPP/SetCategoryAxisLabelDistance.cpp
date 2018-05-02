@@ -72,7 +72,7 @@ void SetCategoryAxisLabelDistance()
 	//ExStart:SetCategoryAxisLabelDistance
 
 	// The path to the documents directory.
-	const String outPath = L"../out/CategoryAxisLabelDistance_out.pptx";
+	const String outPath = u"../out/CategoryAxisLabelDistance_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

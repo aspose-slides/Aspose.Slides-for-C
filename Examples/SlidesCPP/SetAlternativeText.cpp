@@ -115,8 +115,8 @@ void SetAlternativeText()
 	// ExStart:SetAlternativeText
 
 	// The path to the documents directory.
-	const String outPath = L"../out/SetAlternativeText_out.pptx";
-	const String templatePath = L"../templates/ConnectorLineAngle.pptx";
+	const String outPath = u"../out/SetAlternativeText_out.pptx";
+	const String templatePath = u"../templates/ConnectorLineAngle.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -131,7 +131,7 @@ void SetAlternativeText()
 	SharedPtr<IAutoShape> autoShape1 = slide->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 50, 40, 150, 50);
 	SharedPtr<IAutoShape> autoShape2 = slide->get_Shapes()->AddAutoShape(ShapeType::Moon, 160, 40, 150, 50);
 
-	String alttext = L"User Defined";
+	String alttext = u"User Defined";
 
 	int iCount = slide->get_Shapes()->get_Count();
 
@@ -143,7 +143,7 @@ void SetAlternativeText()
 
 		if (ashape != nullptr)
 		{
-			ashape->set_AlternativeText (L"User Defined " +(i+1));
+			ashape->set_AlternativeText (u"User Defined " +(i+1));
 		}
 	}
 

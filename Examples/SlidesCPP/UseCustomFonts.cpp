@@ -67,15 +67,15 @@ using namespace System::Drawing;
 void UseCustomFonts()
 {
 
-	// ExStart:ManageEmbeddedFonts
+	// ExStart:UseCustomFonts
 	// The path to the documents directory.
 
-	const String fontPath = L"../templates/";
-	const String outPath = L"../out/UseCustomFonts_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String fontPath = u"../templates/";
+	const String outPath = u"../out/UseCustomFonts_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 	
 	//Setting fonts path
-	System::ArrayPtr<String> loadFonts = System::MakeObject<System::Array<String>>(1,fontPath + L"CustomFonts.ttf");
+	System::ArrayPtr<String> loadFonts = System::MakeObject<System::Array<String>>(1,fontPath + u"CustomFonts.ttf");
 
 	// Load the custom font directory fonts
 	FontsLoader::LoadExternalFonts(loadFonts);

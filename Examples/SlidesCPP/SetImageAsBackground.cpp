@@ -37,9 +37,9 @@ void SetImageAsBackground()
 
 	// The path to the documents directory.
 
-	const String templatePath = L"../templates/SetImageAsBackground.pptx";
-	const String ImagePath = L"../templates/Tulips.jpg";
-	const String OutPath = L"../out/ContentBG_Img_out.pptx";
+	const String templatePath = u"../templates/SetImageAsBackground.pptx";
+	const String ImagePath = u"../templates/Tulips.jpg";
+	const String OutPath = u"../out/ContentBG_Img_out.pptx";
 
 	// Instantiate the Presentation class that represents the presentation file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

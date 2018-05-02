@@ -114,9 +114,9 @@ void FillShapesPicture()
 	// ExStart:FillShapesPicture
 
 	// The path tos the documents directory.
-	const String outPath = L"../out/FillShapesPicture_out.pptx";
-	const String templatePath = L"../templates/ConnectorLineAngle.pptx";
-	const String ImagePath = L"../templates/Tulips.jpg";
+	const String outPath = u"../out/FillShapesPicture_out.pptx";
+	const String templatePath = u"../templates/ConnectorLineAngle.pptx";
+	const String ImagePath = u"../templates/Tulips.jpg";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

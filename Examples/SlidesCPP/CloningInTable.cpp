@@ -56,7 +56,7 @@ void CloningInTable()
 
 	// ExStart:CloningInTable
 	// The path to the documents directory.
-	const String outPath = L"../out/CloningInTable_out.pptx";
+	const String outPath = u"../out/CloningInTable_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -100,14 +100,14 @@ void CloningInTable()
 
 	}
 
-	table->idx_get(0, 0)->get_TextFrame()->set_Text(L"00");
-	table->idx_get(0, 1)->get_TextFrame()->set_Text(L"01");
-	table->idx_get(0, 2)->get_TextFrame()->set_Text(L"02");
-	table->idx_get(0, 3)->get_TextFrame()->set_Text(L"03");
-	table->idx_get(1, 0)->get_TextFrame()->set_Text(L"10");
-	table->idx_get(2, 0)->get_TextFrame()->set_Text(L"20");
-	table->idx_get(1, 1)->get_TextFrame()->set_Text(L"11");
-	table->idx_get(2, 1)->get_TextFrame()->set_Text(L"21");
+	table->idx_get(0, 0)->get_TextFrame()->set_Text(u"00");
+	table->idx_get(0, 1)->get_TextFrame()->set_Text(u"01");
+	table->idx_get(0, 2)->get_TextFrame()->set_Text(u"02");
+	table->idx_get(0, 3)->get_TextFrame()->set_Text(u"03");
+	table->idx_get(1, 0)->get_TextFrame()->set_Text(u"10");
+	table->idx_get(2, 0)->get_TextFrame()->set_Text(u"20");
+	table->idx_get(1, 1)->get_TextFrame()->set_Text(u"11");
+	table->idx_get(2, 1)->get_TextFrame()->set_Text(u"21");
 
 	//AddClone adds a row in the end of the table
 	table->get_Rows()->AddClone(table->get_Rows()->idx_get(0), false);

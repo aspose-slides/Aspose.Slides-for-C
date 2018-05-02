@@ -75,9 +75,9 @@ void ParagraphBullets()
 
 	// ExStart:ParagraphBullets
 	// The path to the documents directory.
-	const String outPath = L"../out/ParagraphBullets_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
-	const String ImagePath = L"../templates/Tulips.jpg";
+	const String outPath = u"../out/ParagraphBullets_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
+	const String ImagePath = u"../templates/Tulips.jpg";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -89,7 +89,7 @@ void ParagraphBullets()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L"");
+	ashp->AddTextFrame(u"");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -99,7 +99,7 @@ void ParagraphBullets()
 	SharedPtr<Paragraph> paragraph = MakeObject<Paragraph>();
 
 	//Setting Text
-	paragraph->set_Text(L"Welcome to Aspose.Slides");
+	paragraph->set_Text(u"Welcome to Aspose.Slides");
 
 	// Setting bullet indent
 	paragraph->get_ParagraphFormat()->set_Indent (25);
@@ -122,7 +122,7 @@ void ParagraphBullets()
 	SharedPtr<Paragraph> paragraph2 = MakeObject<Paragraph>();
 
 	//Setting Text
-	paragraph2->set_Text(L"This is numbered bullet");
+	paragraph2->set_Text(u"This is numbered bullet");
 
 	// Setting paragraph bullet type and style
 	paragraph2->get_ParagraphFormat()->get_Bullet()->set_Type ( BulletType::Numbered);

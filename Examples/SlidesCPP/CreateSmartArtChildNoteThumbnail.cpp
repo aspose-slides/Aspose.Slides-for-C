@@ -101,8 +101,8 @@ void CreateSmartArtChildNoteThumbnail()
 	// ExStart:CreateSmartArtChildNoteThumbnail
 
 	// The path to the documents directory.
-	const String outPath = L"../out/CreateSmartArtChildNoteThumbnail_out.png";
-	const String templatePath = L"../templates/HelloWorld.pptx";
+	const String outPath = u"../out/CreateSmartArtChildNoteThumbnail_out.png";
+	const String templatePath = u"../templates/HelloWorld.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

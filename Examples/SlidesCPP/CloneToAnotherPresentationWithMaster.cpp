@@ -28,8 +28,8 @@ void CloneToAnotherPresentationWithMaster()
 	//ExStart:CloneToAnotherPresentationWithMaster
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AddSlides.pptx";
-	const String outPath = L"../out/CloneToAnotherPresentationWithMaster.pptx";
+	const String templatePath = u"../templates/AddSlides.pptx";
+	const String outPath = u"../out/CloneToAnotherPresentationWithMaster.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

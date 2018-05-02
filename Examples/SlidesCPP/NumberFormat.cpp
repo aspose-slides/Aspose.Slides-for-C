@@ -72,7 +72,7 @@ void NumberFormat()
 	//ExStart:NumberFormat
 
 	// The path to the documents directory.
-	const String outPath = L"../out/NumberFormat_out.pptx";
+	const String outPath = u"../out/NumberFormat_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

@@ -72,7 +72,7 @@ void SetAutomaticSeriesFillColor()
 	//ExStart:SetAutomaticSeriesFillColor
 
 	// The path to the documents directory.
-	const String outPath = L"../out/AutomaticSeriesFillColor_out.pptx";
+	const String outPath = u"../out/AutomaticSeriesFillColor_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

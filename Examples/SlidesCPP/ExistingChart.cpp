@@ -65,8 +65,8 @@ void ExistingChart()
 	//ExStart:ExistingChart
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/ExistingChart.pptx";
-	const String outPath = L"../out/ExistingChart_out.pptx";
+	const String templatePath = u"../templates/ExistingChart.pptx";
+	const String outPath = u"../out/ExistingChart_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -84,14 +84,14 @@ void ExistingChart()
 	SharedPtr<IChartDataWorkbook> fact = chart->get_ChartData()->get_ChartDataWorkbook();
 
 	// Changing chart Category Name
-	fact->GetCell(defaultWorksheetIndex, 1, 0, ObjectExt::Box<String>(L"Modified Category 1"));
-	fact->GetCell(defaultWorksheetIndex, 2, 0, ObjectExt::Box<String>(L"Modified Category 2"));
+	fact->GetCell(defaultWorksheetIndex, 1, 0, ObjectExt::Box<String>(u"Modified Category 1"));
+	fact->GetCell(defaultWorksheetIndex, 2, 0, ObjectExt::Box<String>(u"Modified Category 2"));
 
 	// Take first chart series
 	SharedPtr<IChartSeries> series = chart->get_ChartData()->get_Series()->idx_get(0);
 	
 	// Now updating series data
-	fact->GetCell(defaultWorksheetIndex, 0, 1, ObjectExt::Box<String>(L"New_Series1"));// Modifying series name
+	fact->GetCell(defaultWorksheetIndex, 0, 1, ObjectExt::Box<String>(u"New_Series1"));// Modifying series name
 
 	series->get_DataPoints()->idx_get(0)->get_Value()->set_Data(System::ObjectExt::Box<double>(90));
 	series->get_DataPoints()->idx_get(1)->get_Value()->set_Data(System::ObjectExt::Box<double>(123));
@@ -101,14 +101,14 @@ void ExistingChart()
 	series = chart->get_ChartData()->get_Series()->idx_get(1);
 
 	// Now updating series data
-	fact->GetCell(defaultWorksheetIndex, 0, 2, ObjectExt::Box<System::String>(L"New_Series2"));// Modifying series name
+	fact->GetCell(defaultWorksheetIndex, 0, 2, ObjectExt::Box<System::String>(u"New_Series2"));// Modifying series name
 	
 	series->get_DataPoints()->idx_get(0)->get_Value()->set_Data(System::ObjectExt::Box<double>(20));
 	series->get_DataPoints()->idx_get(1)->get_Value()->set_Data(System::ObjectExt::Box<double>(67));
 	series->get_DataPoints()->idx_get(2)->get_Value()->set_Data(System::ObjectExt::Box<double>(99));
 
 	// Now, Adding a new serie
-	chart->get_ChartData()->get_Series()->Add(fact->GetCell(defaultWorksheetIndex, 0, 3, ObjectExt::Box<System::String>(L"Series 3")), chart->get_Type());
+	chart->get_ChartData()->get_Series()->Add(fact->GetCell(defaultWorksheetIndex, 0, 3, ObjectExt::Box<System::String>(u"Series 3")), chart->get_Type());
 
 	// Take 3rd chart series
 	series = chart->get_ChartData()->get_Series()->idx_get(2);

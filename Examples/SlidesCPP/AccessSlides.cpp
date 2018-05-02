@@ -29,7 +29,7 @@ void AccessSlides()
 {
 	//ExStart:AccessSlides
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AddSlides.pptx";
+	const String templatePath = u"../templates/AddSlides.pptx";
 
 	// Instantiate Presentation class that represents the presentation file
 	// Instantiate Presentation class
@@ -42,6 +42,6 @@ void AccessSlides()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	//Prinitng slide number
-	wprintf(L"Accessed Slide Number : %d\n", slide->get_SlideNumber());
+	printf("Accessed Slide Number : %d\n", slide->get_SlideNumber());
 	//ExEnd:AccessSlides
 }

@@ -54,7 +54,7 @@ void CellSplit()
 
 	// ExStart:CellSplit
 	// The path to the documents directory.
-	const String outPath = L"../out/CellSplit_out.pptx";
+	const String outPath = u"../out/CellSplit_out.pptx";
 	
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

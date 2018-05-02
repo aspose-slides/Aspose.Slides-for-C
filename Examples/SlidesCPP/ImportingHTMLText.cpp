@@ -70,8 +70,8 @@ void ImportingHTMLText()
 
 	// ExStart:ImportingHTMLText
 	// The path to the documents directory.
-	const String outPath = L"../out/ImportingHTMLText_out.pptx";
-	const String sampleHtml = L"../templates/file.html";
+	const String outPath = u"../out/ImportingHTMLText_out.pptx";
+	const String sampleHtml = u"../templates/file.html";
 
 	
 	// Load the desired the presentation
@@ -87,7 +87,7 @@ void ImportingHTMLText()
 	ashp->get_FillFormat()->set_FillType(FillType::NoFill);
 	
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L" ");
+	ashp->AddTextFrame(u" ");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -110,13 +110,13 @@ void ImportingHTMLText()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Aspose TextBox");
+	portion->set_Text(u"Aspose TextBox");
 
 	//Get portion format
 	SharedPtr<IPortionFormat> pf = portion->get_PortionFormat();
 
 	// Set the Font for the Portion
-	pf->set_LatinFont(MakeObject<FontData>(L"Times New Roman"));
+	pf->set_LatinFont(MakeObject<FontData>(u"Times New Roman"));
 
 	// Set Bold property of the Font
 	pf->set_FontBold(NullableBool::True);

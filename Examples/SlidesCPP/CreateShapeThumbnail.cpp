@@ -96,8 +96,8 @@ void CreateShapeThumbnail()
 	// ExStart:CreateShapeThumbnail
 
 	// The path to the documents directory.
-	const String outPath = L"../out/CreateShapeThumbnail_out.png";
-	const String templatePath = L"../templates/HelloWorld.pptx";
+	const String outPath = u"../out/CreateShapeThumbnail_out.png";
+	const String templatePath = u"../templates/HelloWorld.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

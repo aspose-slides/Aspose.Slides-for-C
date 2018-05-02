@@ -38,7 +38,7 @@ void AddNodes()
 
 	// ExStart:AddNodes
 	// The path to the documents directory.
-	const String outPath = L"../out/AddNodes_out.pptx";
+	const String outPath = u"../out/AddNodes_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -52,7 +52,7 @@ void AddNodes()
 		System::SharedPtr<Aspose::Slides::SmartArt::ISmartArtNode> node = smart->get_AllNodes()->AddNode();
 
 		// Add Text
-		node->get_TextFrame()->set_Text(L"Test");
+		node->get_TextFrame()->set_Text(u"Test");
 
 //		SharedPtr<ISmartArtNodeCollection> nodeCollection = System::DynamicCast_noexcept<ISmartArtNodeCollection>(node->get_ChildNodes()); ;
 		auto nodeCollection = node->get_ChildNodes() ;
@@ -61,7 +61,7 @@ void AddNodes()
 		SharedPtr<ISmartArtNode> chNode = nodeCollection->AddNode();
 
 		// Add Text
-		chNode->get_TextFrame()->set_Text(L"Sample Text Added");
+		chNode->get_TextFrame()->set_Text(u"Sample Text Added");
 
 	}
 	// Save Presentation

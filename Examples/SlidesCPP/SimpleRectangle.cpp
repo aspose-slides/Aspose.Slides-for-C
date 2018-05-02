@@ -81,8 +81,8 @@ void SimpleRectangle()
 
 	// ExStart:SimpleRectangle
 	// The path to the documents directory.
-	const String outPath = L"../out/SimpleRectangle.pptx";
-	const String templatePath = L"../templates/HelloWorld.pptx";
+	const String outPath = u"../out/SimpleRectangle.pptx";
+	const String templatePath = u"../templates/HelloWorld.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

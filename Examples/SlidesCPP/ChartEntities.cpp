@@ -80,7 +80,7 @@ void ChartEntities()
 	//ExStart:ChartEntities
 
 	// The path to the documents directory.
-	const String outPath = L"../out/FormatChart_out.pptx";
+	const String outPath = u"../out/FormatChart_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -94,9 +94,9 @@ void ChartEntities()
 
 	// Setting Chart Titile
 	chart->set_HasTitle(true);
-	chart->get_ChartTitle()->AddTextFrameForOverriding(L"");
+	chart->get_ChartTitle()->AddTextFrameForOverriding(u"");
 	SharedPtr<IPortion> chartTitle = chart->get_ChartTitle()->get_TextFrameForOverriding()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0);
-	chartTitle->set_Text(L"Sample Chart");
+	chartTitle->set_Text(u"Sample Chart");
 	chartTitle->get_PortionFormat()->get_FillFormat()->set_FillType  (FillType::Solid);
 	chartTitle->get_PortionFormat()->get_FillFormat()->get_SolidFillColor()->set_Color (System::Drawing::Color::get_Gray());
 	chartTitle->get_PortionFormat()->set_FontHeight ( 20);
@@ -117,7 +117,7 @@ void ChartEntities()
 	// Setting value axis number format
 	chart->get_Axes()->get_VerticalAxis()->set_IsNumberFormatLinkedToSource ( false);
 	chart->get_Axes()->get_VerticalAxis()->set_DisplayUnit ( DisplayUnitType::Thousands);
-	chart->get_Axes()->get_VerticalAxis()->set_NumberFormat(L"0.0%");
+	chart->get_Axes()->get_VerticalAxis()->set_NumberFormat(u"0.0%");
 
 	// Setting chart maximum, minimum values
 	chart->get_Axes()->get_VerticalAxis()->set_IsAutomaticMajorUnit(false);
@@ -137,16 +137,16 @@ void ChartEntities()
 	txtVal->set_FontItalic ( NullableBool::True);
 	txtVal->get_FillFormat()->set_FillType ( FillType::Solid) ;
 	txtVal->get_FillFormat()->get_SolidFillColor()->set_Color(System::Drawing:: Color::get_DarkGreen());
-	SharedPtr<FontData> fontData = MakeObject<FontData>(L"Times New Roman");
+	SharedPtr<FontData> fontData = MakeObject<FontData>(u"Times New Roman");
 
-	//FontDataFactory.CreateFontData	//txtVal->set_LatinFont(MakeObject<IFontData>(L"Times New Roman"));
+	//FontDataFactory.CreateFontData	//txtVal->set_LatinFont(MakeObject<IFontData>(u"Times New Roman"));
 	txtVal->set_LatinFont(fontData);
 
 	// Setting value axis title
 	chart->get_Axes()->get_VerticalAxis()->set_HasTitle(true);
-	chart->get_Axes()->get_VerticalAxis()->get_Title()->AddTextFrameForOverriding(L"");
+	chart->get_Axes()->get_VerticalAxis()->get_Title()->AddTextFrameForOverriding(u"");
 	SharedPtr<IPortion> valtitle = chart->get_Axes()->get_VerticalAxis()->get_Title()->get_TextFrameForOverriding()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0);
-	valtitle->set_Text(L"Primary Axis");
+	valtitle->set_Text(u"Primary Axis");
 	valtitle->get_PortionFormat()->get_FillFormat()->set_FillType( FillType::Solid);
 	valtitle->get_PortionFormat()->get_FillFormat()->get_SolidFillColor()->set_Color(System::Drawing::Color::get_Gray());
 	valtitle->get_PortionFormat()->set_FontHeight ( 20);
@@ -171,16 +171,16 @@ void ChartEntities()
 	txtCat->set_FontItalic ( NullableBool::True);
 	txtCat->get_FillFormat()->set_FillType( FillType::Solid) ;
 	txtCat->get_FillFormat()->get_SolidFillColor()->set_Color(System::Drawing::Color::get_Blue());
-	SharedPtr<FontData> Arial = MakeObject<FontData>(L"Arial");
+	SharedPtr<FontData> Arial = MakeObject<FontData>(u"Arial");
 
 	txtCat->set_LatinFont(Arial);
 
 	// Setting Category Titile
 	chart->get_Axes()->get_HorizontalAxis()->set_HasTitle ( true);
-	chart->get_Axes()->get_HorizontalAxis()->get_Title()->AddTextFrameForOverriding(L"");
+	chart->get_Axes()->get_HorizontalAxis()->get_Title()->AddTextFrameForOverriding(u"");
 
 	SharedPtr<IPortion> catTitle = chart->get_Axes()->get_HorizontalAxis()->get_Title()->get_TextFrameForOverriding()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0);
-	catTitle->set_Text(L"Sample Category");
+	catTitle->set_Text(u"Sample Category");
 	catTitle->get_PortionFormat()->get_FillFormat()->set_FillType(FillType::Solid);
 	catTitle->get_PortionFormat()->get_FillFormat()->get_SolidFillColor()->set_Color(System::Drawing::Color::get_Gray());
 	catTitle->get_PortionFormat()->set_FontHeight( 20);

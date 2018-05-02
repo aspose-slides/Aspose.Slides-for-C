@@ -72,7 +72,7 @@ void SetChartSeriesOverlap()
 	//ExStart:SetChartSeriesOverlap
 
 	// The path to the documents directory.
-	const String outPath = L"../out/ChartSeriesOverlap_out.pptx";
+	const String outPath = u"../out/ChartSeriesOverlap_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

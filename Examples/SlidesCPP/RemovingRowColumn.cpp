@@ -56,7 +56,7 @@ void RemovingRowColumn()
 
 	// ExStart:RemovingRowColumn
 	// The path to the documents directory.
-	const String outPath = L"../out/RemovingRowColumn_out.pptx";
+	const String outPath = u"../out/RemovingRowColumn_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

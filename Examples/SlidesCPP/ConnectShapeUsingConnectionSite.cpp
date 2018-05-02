@@ -88,8 +88,8 @@ void ConnectShapeUsingConnectionSite()
 	// ExStart:ConnectShapeUsingConnectionSite
 
 	// The path to the documents directory.
-	const String outPath = L"../out/ConnectShapeUsingConnectionSite_out.pptx";
-	const String templatePath = L"../templates/ConnectorLineAngle.pptx";
+	const String outPath = u"../out/ConnectShapeUsingConnectionSite_out.pptx";
+	const String templatePath = u"../templates/ConnectorLineAngle.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

@@ -86,8 +86,8 @@ void FormatJoinStyles()
 
 	// ExStart:FormatJoinStyles
 	// The path to the documents directory.
-	const String outPath = L"../out/FormatJoinStyles_out.pptx";
-	const String templatePath = L"../templates/AltText.pptx";
+	const String outPath = u"../out/FormatJoinStyles_out.pptx";
+	const String templatePath = u"../templates/AltText.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -131,9 +131,9 @@ void FormatJoinStyles()
 	shape3->get_LineFormat()->set_JoinStyle(LineJoinStyle::Round);
 
 	// Add text to each rectangle
-	shape1->get_TextFrame()->set_Text(L"This is Miter Join Style");
-	shape2->get_TextFrame()->set_Text(L"This is Bevel Join Style");
-	shape3->get_TextFrame()->set_Text(L"This is Round Join Style");
+	shape1->get_TextFrame()->set_Text(u"This is Miter Join Style");
+	shape2->get_TextFrame()->set_Text(u"This is Bevel Join Style");
+	shape3->get_TextFrame()->set_Text(u"This is Round Join Style");
 
 	//Write the PPTX to Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

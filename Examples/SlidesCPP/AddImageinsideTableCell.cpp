@@ -49,8 +49,8 @@ void AddImageinsideTableCell()
 
 	// ExStart:AddImageinsideTableCell
 	// The path to the documents directory.
-	const String outPath = L"../out/Image_In_TableCell_out.pptx";
-	const String ImagePath = L"../templates/Tulips.jpg";
+	const String outPath = u"../out/Image_In_TableCell_out.pptx";
+	const String ImagePath = u"../templates/Tulips.jpg";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

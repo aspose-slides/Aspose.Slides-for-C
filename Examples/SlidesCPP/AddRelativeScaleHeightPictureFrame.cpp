@@ -78,8 +78,8 @@ void AddRelativeScaleHeightPictureFrame()
 
 	// ExStart:AddRelativeScaleHeightPictureFrame
 	// The path to the documents directory.
-	const String outPath = L"../out/AddRelativeScaleHeightPictureFrame_out.pptx";
-	const String filePath = L"../templates/Tulips.jpg";
+	const String outPath = u"../out/AddRelativeScaleHeightPictureFrame_out.pptx";
+	const String filePath = u"../templates/Tulips.jpg";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

@@ -68,8 +68,8 @@ void ParagraphsAlignment()
 
 	// ExStart:ParagraphsAlignment
 	// The path to the documents directory.
-	const String outPath = L"../out/ParagraphsAlignment_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/ParagraphsAlignment_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 
 	// Load the desired the presentation
@@ -92,8 +92,8 @@ void ParagraphsAlignment()
 
 
 	// Change the text in both placeholders
-	tf1->set_Text (L"Center Align by Aspose");
-	tf2->set_Text(L"Center Align by Aspose");
+	tf1->set_Text (u"Center Align by Aspose");
+	tf2->set_Text(u"Center Align by Aspose");
 
 
 	// Accessing the first Paragraph

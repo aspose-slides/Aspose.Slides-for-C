@@ -75,7 +75,7 @@ void SecondPlotOptionsforCharts()
 	//ExStart:SecondPlotOptionsforCharts
 
 	// The path to the documents directory.
-	const String outPath = L"../out/SecondPlotOptionsforCharts_out.pptx";
+	const String outPath = u"../out/SecondPlotOptionsforCharts_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

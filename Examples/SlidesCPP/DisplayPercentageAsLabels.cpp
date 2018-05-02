@@ -70,7 +70,7 @@ void DisplayPercentageAsLabels()
 	//ExStart:DisplayPercentageAsLabels
 
 	// The path to the documents directory.
-	const String outPath = L"../out/DisplayPercentageAsLabels_out.pptx";
+	const String outPath = u"../out/DisplayPercentageAsLabels_out.pptx";
 
 	// Create an instance of Presentation class
 	System::SharedPtr<Presentation> presentation = System::MakeObject<Presentation>();
@@ -103,9 +103,9 @@ void DisplayPercentageAsLabels()
 			dataPontPercent = (System::Convert::ToDouble(series->get_DataPoints()->idx_get(j)->get_Value()->get_Data()) / total_for_Cat[j]) * 100;
 
 			System::SharedPtr<IPortion> port = System::MakeObject<Portion>();
-			port->set_Text(System::String::Format(L"{0:F2} %", dataPontPercent));
+			port->set_Text(System::String::Format(u"{0:F2} %", dataPontPercent));
 			port->get_PortionFormat()->set_FontHeight(8.f);
-			lbl->get_TextFrameForOverriding()->set_Text(L"");
+			lbl->get_TextFrameForOverriding()->set_Text(u"");
 			System::SharedPtr<IParagraph> para = lbl->get_TextFrameForOverriding()->get_Paragraphs()->idx_get(0);
 			para->get_Portions()->Add(port);
 

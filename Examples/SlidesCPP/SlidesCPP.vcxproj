@@ -82,7 +82,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>
       </SDLCheck>
-      <AdditionalIncludeDirectories>../include/syslib;../include/slides;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../include/syslib;../include/slides;../packages/Aspose.Slides.Cpp.18.3.0/build/native/include/aspose.slides;../packages/Aspose.Slides.Cpp.18.3.0/build/native/include/asposecpplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <PreprocessorDefinitions>DEBUG;_CONSOLE;WIN32;_WINDOWS;ASPOSE_FOUNDATION_NS;ASPOSE_NULLREFCHECK;ASPOSE_COMPARE_BY_REF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
@@ -92,7 +92,7 @@
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>../bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../bin;../packages/Aspose.Slides.Cpp.18.3.0/build/native/lib/v140/x64/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>Aspose.Slides_vc140x64.lib;aspose_cpp_vc140x64.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
@@ -126,10 +126,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AccessBuiltinProperties.cpp" />
     <ClCompile Include="AccessChildNodes.cpp" />
     <ClCompile Include="AccessChildNodeSpecificPosition.cpp" />
     <ClCompile Include="AccessingAltTextinGroupshapes.cpp" />
+    <ClCompile Include="AccessModifyingProperties.cpp" />
     <ClCompile Include="AccessOLEObjectFrame.cpp" />
+    <ClCompile Include="AccessOpenDoc.cpp" />
+    <ClCompile Include="AccessProperties.cpp" />
     <ClCompile Include="AccessSlidebyID.cpp" />
     <ClCompile Include="AccessSlidebyIndex.cpp" />
     <ClCompile Include="AccessSlideComments.cpp" />
@@ -140,12 +144,17 @@
     <ClCompile Include="AddArrowShapedLine.cpp" />
     <ClCompile Include="AddArrowShapedLineToSlide.cpp" />
     <ClCompile Include="AddAudioFrame.cpp" />
+    <ClCompile Include="AddBlobToPresentation.cpp" />
+    <ClCompile Include="AddColumnInTexBoxes.cpp" />
     <ClCompile Include="AddCustomError.cpp" />
+    <ClCompile Include="AddEmbeddedFonts.cpp" />
     <ClCompile Include="AddErrorBars.cpp" />
     <ClCompile Include="AddImageinsideTableCell.cpp" />
+    <ClCompile Include="AddingEMZImagesToImageCollection.cpp" />
     <ClCompile Include="AddLayoutSlides.cpp" />
     <ClCompile Include="AddNodes.cpp" />
     <ClCompile Include="AddNodesSpecificPosition.cpp" />
+    <ClCompile Include="AddNotesSlideWithNotesStyle.cpp" />
     <ClCompile Include="AddOLEObjectFrame.cpp" />
     <ClCompile Include="AddPlainLineToSlide.cpp" />
     <ClCompile Include="AddRelativeScaleHeightPictureFrame.cpp" />
@@ -177,6 +186,7 @@
     <ClCompile Include="ChangSmartArtShapeStyle.cpp" />
     <ClCompile Include="ChartEntities.cpp" />
     <ClCompile Include="ChartTrendLines.cpp" />
+    <ClCompile Include="CheckSlidesComparison.cpp" />
     <ClCompile Include="CheckSmartArtHiddenProperty.cpp" />
     <ClCompile Include="CloneAtEndOfAnotherPresentation.cpp" />
     <ClCompile Include="CloneAtEndOfAnotherSpecificPosition.cpp" />
@@ -190,20 +200,40 @@
     <ClCompile Include="ConnectorLineAngle.cpp" />
     <ClCompile Include="ConnectShapesUsingConnectors.cpp" />
     <ClCompile Include="ConnectShapeUsingConnectionSite.cpp" />
+    <ClCompile Include="ConversionToTIFFNotes.cpp" />
+    <ClCompile Include="ConvertIndividualSlideToHTML.cpp" />
+    <ClCompile Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.cpp" />
+    <ClCompile Include="ConvertingPresentationToHTMLWithPreservingOriginalFonts.cpp" />
+    <ClCompile Include="ConvertNotesSlideViewToPDF.cpp" />
+    <ClCompile Include="ConvertPresentationToPasswordProtectedPDF.cpp" />
+    <ClCompile Include="ConvertPresentationToResponsiveHTML.cpp" />
+    <ClCompile Include="ConvertToPDF.cpp" />
+    <ClCompile Include="ConvertToPDFWithHiddenSlides.cpp" />
+    <ClCompile Include="ConvertToSWF.cpp" />
+    <ClCompile Include="ConvertWholePresentationToHTML.cpp" />
+    <ClCompile Include="ConvertWithoutXpsOptions.cpp" />
+    <ClCompile Include="ConvertWithXpsOptions.cpp" />
     <ClCompile Include="CreateBoundsShapeThumbnail.cpp" />
     <ClCompile Include="CreateGroupShape.cpp" />
+    <ClCompile Include="CreateNewPresentation.cpp" />
     <ClCompile Include="CreateScalingFactorThumbnail.cpp" />
     <ClCompile Include="CreateShapeThumbnail.cpp" />
     <ClCompile Include="CreateSlidesSVGImage.cpp" />
     <ClCompile Include="CreateSmartArtChildNoteThumbnail.cpp" />
     <ClCompile Include="CreateSmartArtShape.cpp" />
+    <ClCompile Include="CustomHeaderAndFontsController.cpp" />
+    <ClCompile Include="CustomOptionsPDFConversion.cpp" />
     <ClCompile Include="CustomRotationAngleTextframe.cpp" />
     <ClCompile Include="DefaultFonts.cpp" />
+    <ClCompile Include="DefaultPrinterPrinting.cpp" />
     <ClCompile Include="DisplayChartLabels.cpp" />
     <ClCompile Include="DisplayPercentageAsLabels.cpp" />
     <ClCompile Include="DoughnutChartHole.cpp" />
     <ClCompile Include="EmbeddedVideoFrame.cpp" />
+    <ClCompile Include="EmbedFontsInHtml.cpp" />
+    <ClCompile Include="EndParaGraphProperties.cpp" />
     <ClCompile Include="ExistingChart.cpp" />
+    <ClCompile Include="ExportBlobFromPresentation.cpp" />
     <ClCompile Include="ExportingHTMLText.cpp" />
     <ClCompile Include="ExtractVideo.cpp" />
     <ClCompile Include="FillFormatSmartArtShapeNode.cpp" />
@@ -218,10 +248,16 @@
     <ClCompile Include="FormatLines.cpp" />
     <ClCompile Include="FormattedEllipse.cpp" />
     <ClCompile Include="FormattedRectangle.cpp" />
+    <ClCompile Include="GetFontsFolders.cpp" />
+    <ClCompile Include="GetTextFromSmartArtNode.cpp" />
+    <ClCompile Include="HeaderFooterManager.cpp" />
     <ClCompile Include="Hidingshapes.cpp" />
     <ClCompile Include="ImportingHTMLText.cpp" />
+    <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
+    <ClCompile Include="ManageSlidesSections.cpp" />
     <ClCompile Include="LineSpacing.cpp" />
+    <ClCompile Include="LinkAllFontsHtmlController.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ManageEmbeddedFonts.cpp" />
     <ClCompile Include="ManageParagraphFontProperties.cpp" />
@@ -231,15 +267,23 @@
     <ClCompile Include="ManagingBetterSlideTransitions.cpp" />
     <ClCompile Include="MergeCell.cpp" />
     <ClCompile Include="MergeCells.cpp" />
+    <ClCompile Include="MeteredLicencing.cpp" />
+    <ClCompile Include="MultiCategoryChart.cpp" />
     <ClCompile Include="MultipleParagraphs.cpp" />
     <ClCompile Include="NormalCharts.cpp" />
     <ClCompile Include="NumberFormat.cpp" />
+    <ClCompile Include="OpenPasswordPresentation.cpp" />
+    <ClCompile Include="OpenPresentation.cpp" />
+    <ClCompile Include="OpenVeryLargePresentation.cpp" />
     <ClCompile Include="OrganizeChartLayoutType.cpp" />
     <ClCompile Include="ParagraphBullets.cpp" />
     <ClCompile Include="ParagraphIndent.cpp" />
     <ClCompile Include="ParagraphsAlignment.cpp" />
     <ClCompile Include="PictureFrameFormatting.cpp" />
     <ClCompile Include="PieChart.cpp" />
+    <ClCompile Include="PPTtoPPTX.cpp" />
+    <ClCompile Include="PresentationToTIFFWithCustomImagePixelFormat.cpp" />
+    <ClCompile Include="PresentationToTIFFWithDefaultSize.cpp" />
     <ClCompile Include="RemoveHyperlinks.cpp" />
     <ClCompile Include="RemoveNode.cpp" />
     <ClCompile Include="RemoveNodeSpecificPosition.cpp" />
@@ -249,12 +293,21 @@
     <ClCompile Include="RemoveSlideUsingIndex.cpp" />
     <ClCompile Include="RemoveSlideUsingReference.cpp" />
     <ClCompile Include="RemoveVBAMacros.cpp" />
+    <ClCompile Include="RemoveWriteProtection.cpp" />
     <ClCompile Include="RemovingRowColumn.cpp" />
+    <ClCompile Include="RenderComments.cpp" />
+    <ClCompile Include="RenderingNotesWhileConvertingToHTML.cpp" />
     <ClCompile Include="ReplaceFontsExplicitly.cpp" />
     <ClCompile Include="ReplacingText.cpp" />
     <ClCompile Include="RotatingShapes.cpp" />
     <ClCompile Include="RotatingText.cpp" />
     <ClCompile Include="RuleBasedFontsReplacement.cpp" />
+    <ClCompile Include="SaveAsPredefinedViewType.cpp" />
+    <ClCompile Include="SaveAsReadOnly.cpp" />
+    <ClCompile Include="SaveProperties.cpp" />
+    <ClCompile Include="SaveToFile.cpp" />
+    <ClCompile Include="SaveWithPassword.cpp" />
+    <ClCompile Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.cpp" />
     <ClCompile Include="ScatteredChart.cpp" />
     <ClCompile Include="SecondPlotOptionsforCharts.cpp" />
     <ClCompile Include="SetAlternativeText.cpp" />
@@ -264,21 +317,32 @@
     <ClCompile Include="SetBackgroundToGradient.cpp" />
     <ClCompile Include="SetCategoryAxisLabelDistance.cpp" />
     <ClCompile Include="SetChartSeriesOverlap.cpp" />
+    <ClCompile Include="SetChildFooter.cpp" />
     <ClCompile Include="SetDataLabelsPercentageSign.cpp" />
     <ClCompile Include="SetDataRange.cpp" />
     <ClCompile Include="SetGapWidth.cpp" />
     <ClCompile Include="SetImageAsBackground.cpp" />
     <ClCompile Include="SetPDFPageSize.cpp" />
+    <ClCompile Include="SetSizeAndType.cpp" />
     <ClCompile Include="SetSlideBackgroundMaster.cpp" />
     <ClCompile Include="SetSlideBackgroundNormal.cpp" />
+    <ClCompile Include="SetSlideNumber.cpp" />
+    <ClCompile Include="SetSlideSizeScale.cpp" />
     <ClCompile Include="SetTextFontProperties.cpp" />
+    <ClCompile Include="SettingAutomicPieChartSliceColors.cpp" />
     <ClCompile Include="SetTransitionEffects.cpp" />
+    <ClCompile Include="SetZoom.cpp" />
     <ClCompile Include="ShadowEffects.cpp" />
     <ClCompile Include="SimpleEllipse.cpp" />
     <ClCompile Include="SimpleRectangle.cpp" />
     <ClCompile Include="SimpleSlideTransitions.cpp" />
     <ClCompile Include="SmartArtNodeLevel.cpp" />
+    <ClCompile Include="SpecificPrinterPrinting.cpp" />
+    <ClCompile Include="SpecifyFontsUsedWithPresentation.cpp" />
     <ClCompile Include="StandardTables.cpp" />
+    <ClCompile Include="StretchOffsetLeftForPictureFrame.cpp" />
+    <ClCompile Include="AddingSuperscriptAndSubscriptTextInTextFrame.cpp" />
+    <ClCompile Include="SwitchChartRowColumns.cpp" />
     <ClCompile Include="TableFromScratch.cpp" />
     <ClCompile Include="TableWithCellBorders.cpp" />
     <ClCompile Include="TextBoxHyperlink.cpp" />
@@ -287,13 +351,33 @@
     <ClCompile Include="ThumbnailFromSlideInNotes.cpp" />
     <ClCompile Include="ThumbnailWithUserDefinedDimensions.cpp" />
     <ClCompile Include="UpdateExistingTable.cpp" />
+    <ClCompile Include="UpdatePresentationProperties.cpp" />
+    <ClCompile Include="UpdatePresentationPropertiesUsingNewTemplate.cpp" />
+    <ClCompile Include="UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.cpp" />
     <ClCompile Include="UseCustomFonts.cpp" />
+    <ClCompile Include="VerifyingPresentationWithoutloading.cpp" />
     <ClCompile Include="VerticallyAlignText.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.h" />
+    <ClInclude Include="CustomFormattingController.h" />
+    <ClInclude Include="CustomHeaderAndFontsController.h" />
+    <ClInclude Include="ExportBlobFromPresentation.h" />
+    <ClInclude Include="LinkAllFontsHtmlController.h" />
+    <ClInclude Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.h" />
     <ClInclude Include="SlidesExamples.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Aspose.Slides.Cpp.18.3.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.3.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.3.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.3.0\build\native\aspose.slides.cpp.targets'))" />
+  </Target>
 </Project>

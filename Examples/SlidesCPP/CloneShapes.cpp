@@ -118,8 +118,8 @@ void CloneShapes()
 	// ExStart:CloneShapes
 
 	// The path to the documents directory.
-	const String outPath = L"../out/CloneShapes_out.pptx";
-	const String templatePath = L"../templates/Source Frame.pptx";
+	const String outPath = u"../out/CloneShapes_out.pptx";
+	const String templatePath = u"../templates/Source Frame.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

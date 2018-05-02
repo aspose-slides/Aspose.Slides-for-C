@@ -77,26 +77,26 @@ void DefaultFonts()
 
 	// ExStart:DefaultFonts
 	// The path to the documents directory.
-	const String outPath = L"../out/DefaultFonts_out.pptx";
-	const String tempplatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/DefaultFonts_out.pptx";
+	const String tempplatePath = u"../templates/DefaultFonts.pptx";
 
 	// Use load options to define the default regualr and asian fonts// Use load options to define the default regualr and asian fonts
 	SharedPtr<LoadOptions> loadOptions = MakeObject< LoadOptions>(LoadFormat::Auto);
-	loadOptions->set_DefaultRegularFont(L"Wingdings");
-	loadOptions->set_DefaultAsianFont(L"Wingdings");
+	loadOptions->set_DefaultRegularFont(u"Wingdings");
+	loadOptions->set_DefaultAsianFont(u"Wingdings");
 
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(tempplatePath,loadOptions);
 
 	// Generate slide thumbnail
-	pres->get_Slides()->idx_get(0)->GetThumbnail(1, 1)->Save(L"../out/DefaultFonts_out.png", System::Drawing::Imaging::ImageFormat::get_Png());
+	pres->get_Slides()->idx_get(0)->GetThumbnail(1, 1)->Save(u"../out/DefaultFonts_out.png", System::Drawing::Imaging::ImageFormat::get_Png());
 
 	// Generate PDF
-	pres->Save(L"../out/DefaultFonts_out.pdf", Aspose::Slides::Export::SaveFormat::Pdf);
+	pres->Save(u"../out/DefaultFonts_out.pdf", Aspose::Slides::Export::SaveFormat::Pdf);
 
 	// Generate XPS
-	pres->Save(L"../out/DefaultFonts_out.xps", Aspose::Slides::Export::SaveFormat::Xps);
+	pres->Save(u"../out/DefaultFonts_out.xps", Aspose::Slides::Export::SaveFormat::Xps);
 
 	// ExEnd:DefaultFonts
 }

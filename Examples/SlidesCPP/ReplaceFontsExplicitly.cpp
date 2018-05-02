@@ -67,16 +67,16 @@ void ReplaceFontsExplicitly()
 
 	// ExStart:ReplaceFontsExplicitly
 	// The path to the documents directory.
-	const String outPath = L"../out/ReplaceFontsExplicitly_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/ReplaceFontsExplicitly_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
 	// Define new fonts
-	SharedPtr<FontData> sourceFont = MakeObject<FontData>(L"Arial");
-	SharedPtr<FontData> destFont = MakeObject<FontData>(L"Times New Roman");
+	SharedPtr<FontData> sourceFont = MakeObject<FontData>(u"Arial");
+	SharedPtr<FontData> destFont = MakeObject<FontData>(u"Times New Roman");
 	
 	// Replace the fonts
 	pres->get_FontsManager()->ReplaceFont(sourceFont, destFont);

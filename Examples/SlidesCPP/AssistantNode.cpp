@@ -36,8 +36,8 @@ void AssistantNode()
 
 	// ExStart:AssistantNode
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AssistantNode.pptx";
-	const String outPath = L"../out/ChangeAssitantNode_out.pptx";
+	const String templatePath = u"../templates/AssistantNode.pptx";
+	const String outPath = u"../out/ChangeAssitantNode_out.pptx";
 
 
 	// Load the desired the presentation

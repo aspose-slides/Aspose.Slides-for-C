@@ -69,7 +69,7 @@ void ChartTrendLines()
 	//ExStart:ChartTrendLines
 
 	// The path to the documents directory.
-	const String outPath = L"../out/ChartTrendLines_out.pptx";
+	const String outPath = u"../out/ChartTrendLines_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -96,13 +96,13 @@ void ChartTrendLines()
 	// Adding Logarithmic trend line for chart series 2
 	SharedPtr<ITrendline> tredLineLog = chart->get_ChartData()->get_Series()->idx_get(1)->get_TrendLines()->Add(Aspose::Slides::Charts::TrendlineType::Logarithmic);
 	tredLineLog->set_TrendlineType(TrendlineType::Logarithmic);
-	tredLineLog->AddTextFrameForOverriding(L"New log trend line");
+	tredLineLog->AddTextFrameForOverriding(u"New log trend line");
 
 	// Adding MovingAverage trend line for chart series 2
 	SharedPtr<ITrendline> tredLineMovAvg = chart->get_ChartData()->get_Series()->idx_get(1)->get_TrendLines()->Add(Aspose::Slides::Charts::TrendlineType::MovingAverage);
 	tredLineMovAvg->set_TrendlineType(TrendlineType::MovingAverage);
 	tredLineMovAvg->set_Period(3);
-	tredLineMovAvg->set_TrendlineName(L"New TrendLine Name");
+	tredLineMovAvg->set_TrendlineName(u"New TrendLine Name");
 
 	// Adding Polynomial trend line for chart series 3
 	SharedPtr<ITrendline> tredLinePol = chart->get_ChartData()->get_Series()->idx_get(2)->get_TrendLines()->Add(Aspose::Slides::Charts::TrendlineType::Polynomial);

@@ -81,8 +81,8 @@ void AddOLEObjectFrame()
 
 	// ExStart:AddOLEObjectFrame
 	// The path to the documents directory.
-	const String outPath = L"../out/AddOLEObjectFrame_out.pptx";
-	const String filePath = L"../templates/book1.xlsx";
+	const String outPath = u"../out/AddOLEObjectFrame_out.pptx";
+	const String filePath = u"../templates/book1.xlsx";
 
 
 	// Load the desired the presentation
@@ -105,7 +105,7 @@ void AddOLEObjectFrame()
 		MemStream->set_Position(0);
 
 		// Add an Ole Object Frame shape
-		System::SharedPtr<IOleObjectFrame> oof = slide->get_Shapes()->AddOleObjectFrame(0, 0, 720, 540, L"Excel.Sheet.12", MemStream->ToArray());
+		System::SharedPtr<IOleObjectFrame> oof = slide->get_Shapes()->AddOleObjectFrame(0, 0, 720, 540, u"Excel.Sheet.12", MemStream->ToArray());
 	}
 
 

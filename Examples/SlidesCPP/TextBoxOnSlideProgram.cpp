@@ -71,8 +71,8 @@ void TextBoxOnSlideProgram()
 
 	// ExStart:TextBoxOnSlideProgram
 	// The path to the documents directory.
-	const String outPath = L"../out/TextBoxOnSlideProgram_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts_out.pptx";
+	const String outPath = u"../out/TextBoxOnSlideProgram_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -84,7 +84,7 @@ void TextBoxOnSlideProgram()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L" ");
+	ashp->AddTextFrame(u" ");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -94,7 +94,7 @@ void TextBoxOnSlideProgram()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Aspose TextBox");
+	portion->set_Text(u"Aspose TextBox");
 	
 	// Save PPTX to Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

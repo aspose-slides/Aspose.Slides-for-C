@@ -38,7 +38,7 @@ void ChangeTextOnSmartArtNode()
 
 	// ExStart:ChangeTextOnSmartArtNode
 	// The path to the documents directory.
-	const String outPath = L"../out/ChangeTextOnSmartArtNode.pptx";
+	const String outPath = u"../out/ChangeTextOnSmartArtNode.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -50,7 +50,7 @@ void ChangeTextOnSmartArtNode()
 	System::SharedPtr<Aspose::Slides::SmartArt::ISmartArtNode> node = smart->get_AllNodes()->idx_get(0);
 
 	// Setting the text of the TextFrame 
-	node->get_TextFrame()->set_Text(L"Second root node");
+	node->get_TextFrame()->set_Text(u"Second root node");
 
 	// Save Presentation
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

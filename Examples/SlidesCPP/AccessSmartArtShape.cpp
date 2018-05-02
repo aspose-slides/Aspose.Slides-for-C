@@ -38,7 +38,7 @@ void AccessSmartArtShape()
 
 	// ExStart:AccessSmartArtShape
 	// The path to the documents directory.
-	const String templatePath = L"../templates/SmartArt.pptx";
+	const String templatePath = u"../templates/SmartArt.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -53,7 +53,7 @@ void AccessSmartArtShape()
 		{
 			System::SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
 
-			System::Console::WriteLine(L"Smart Art Name = " + smart->get_Name());
+			System::Console::WriteLine(u"Smart Art Name = " + smart->get_Name());
 
 		}
 	}

@@ -62,7 +62,7 @@ void VerticallyAlignText()
 
 	// ExStart:VerticallyAlignText
 	// The path to the documents directory.
-	const String outPath = L"../out/VerticallyAlignText_out.pptx";
+	const String outPath = u"../out/VerticallyAlignText_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -78,9 +78,9 @@ void VerticallyAlignText()
 	SharedPtr<ITable> table = islide->get_Shapes()->AddTable(100, 50, dblCols, dblRows);
 
 	// Set the text of the first column of second row
-	table->idx_get(1, 0)->get_TextFrame()->set_Text(L"10");
-	table->idx_get(2, 0)->get_TextFrame()->set_Text(L"20");
-	table->idx_get(3, 0)->get_TextFrame()->set_Text(L"30");
+	table->idx_get(1, 0)->get_TextFrame()->set_Text(u"10");
+	table->idx_get(2, 0)->get_TextFrame()->set_Text(u"20");
+	table->idx_get(3, 0)->get_TextFrame()->set_Text(u"30");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = table->idx_get(0, 0)->get_TextFrame();
@@ -90,7 +90,7 @@ void VerticallyAlignText()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Text here");
+	portion->set_Text(u"Text here");
 	portion->get_PortionFormat()->get_FillFormat()->set_FillType(FillType::Solid);
 	portion->get_PortionFormat()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Black());
 

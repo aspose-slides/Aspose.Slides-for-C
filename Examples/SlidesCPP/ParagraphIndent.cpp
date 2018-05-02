@@ -76,9 +76,9 @@ void ParagraphIndent()
 
 	// ExStart:ParagraphBullets
 	// The path to the documents directory.
-	const String outPath = L"../out/ParagraphIndent.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
-	const String ImagePath = L"../templates/Tulips.jpg";
+	const String outPath = u"../out/ParagraphIndent.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
+	const String ImagePath = u"../templates/Tulips.jpg";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -90,7 +90,7 @@ void ParagraphIndent()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L"This is first line \rThis is second line \rThis is third line");
+	ashp->AddTextFrame(u"This is first line \rThis is second line \rThis is third line");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();

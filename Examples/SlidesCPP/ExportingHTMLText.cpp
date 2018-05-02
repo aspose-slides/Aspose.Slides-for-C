@@ -84,8 +84,8 @@ void ExportingHTMLText()
 
 	// ExStart:ExportingHTMLText
 	// The path to the documents directory.
-	const String outPath = L"../out/output.html";
-	const String tempplatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/output.html";
+	const String tempplatePath = u"../templates/DefaultFonts.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(tempplatePath);

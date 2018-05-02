@@ -1,7 +1,9 @@
 #pragma once
 #include <DOM/NullableBool.h>
-using namespace std;
+#include <DOM/DocumentProperties.h>
 
+using namespace std;
+using namespace System;
 
 //Developer Guide > Loading, Saving and Converting
 
@@ -11,6 +13,87 @@ void ManageActiveXControl();
 #pragma endregion
 
 #pragma region Working with Presentation Decks
+#pragma region Presentation Conversions to different formats
+
+void ConversionToTIFFNotes();
+void ConvertNotesSlideViewToPDF();
+void ConvertPresentationToPasswordProtectedPDF();
+void ConvertPresentationToResponsiveHTML();
+void ConvertIndividualSlideToHTML();
+void ConvertToPDF();
+void ConvertToPDFWithHiddenSlides();
+void ConvertToSWF();
+void ConvertWholePresentationToHTML();
+void ConvertWithoutXpsOptions();
+void ConvertWithXpsOptions();
+void CustomOptionsPDFConversion();
+void PPTtoPPTX();
+void PresentationToTIFFWithCustomImagePixelFormat();
+void PresentationToTIFFWithDefaultSize();
+void LinkAllFontsHtmlController();
+void EmbedFontsInHtml();
+void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+
+
+#pragma endregion
+
+#pragma region Opening presentation decks
+
+void OpenPasswordPresentation();
+void OpenPresentation();
+void VerifyingPresentationWithoutloading();
+void OpenVeryLargePresentation();
+
+
+#pragma endregion
+
+#pragma region Loading Options
+void MeteredLicencing();
+void SpecifyFontsUsedWithPresentation();
+void AddingEMZImagesToImageCollection();
+void AddBlobToPresentation();
+
+#pragma endregion
+#pragma region Working with Presentation Document properties
+
+void AccessBuiltinProperties();
+void AccessModifyingProperties();
+void AccessOpenDoc();
+void AccessProperties();
+void UpdatePresentationProperties();
+void UpdatePresentationPropertiesUsingNewTemplate();
+void UpdateByTemplate(System::String path, System::SharedPtr<Aspose::Slides::DocumentProperties> templateprop);
+void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
+
+#pragma endregion
+
+#pragma region Saving Presentation decks
+
+void RemoveWriteProtection();
+void CreateNewPresentation();
+void SaveAsPredefinedViewType();
+void SaveAsReadOnly();
+void SaveProperties();
+void SaveToFile();
+void SaveWithPassword();
+void ExportBlobFromPresentation();
+
+
+//void SavingHTMLAndCSSFileWhenExportingIntoHTML();
+
+
+void RenderingNotesWhileConvertingToHTML();
+void ConvertingPresentationToHTMLWithPreservingOriginalFonts();
+
+#pragma endregion
+
+#pragma region Presentation Rendering-Printing
+void DefaultPrinterPrinting();
+void SetSlideNumber();
+void SetZoom();
+void SpecificPrinterPrinting();
+#pragma endregion
+
 #pragma region Managing VBA Macros
 void AddVBAMacros();
 void RemoveVBAMacros();
@@ -35,6 +118,13 @@ void CloneInAnotherPresentationAtSpecifiedPosition();
 void CloneAtEndOfAnotherSpecificPosition();
 void CloneToAnotherPresentationWithMaster();
 void CloneToAnotherPresentationWithSetSizeAndType();
+void CheckSlidesComparison();
+void HeaderFooterManager();
+void SetChildFooter();
+void SetSizeAndType();
+void ManageSlidesSections();
+void AddNotesSlideWithNotesStyle();
+
 #pragma endregion
 
 #pragma region Working with hyperlinks
@@ -71,6 +161,11 @@ void CreateSlidesSVGImage();
 void ThumbnailFromSlide();
 void ThumbnailFromSlideInNotes();
 void ThumbnailWithUserDefinedDimensions();
+void RenderComments();
+//void CustomSvgShapeFormattingController();
+//void GeneratingSVGWithCustomShapeIDS();
+
+
 #pragma endregion
 
 #pragma region Managing Slide Transitions
@@ -108,7 +203,9 @@ void SetChartSeriesOverlap();
 void SetDataLabelsPercentageSign();
 void SetDataRange();
 void SetGapWidth();
-
+void MultiCategoryChart();
+void SwitchChartRowColumns();
+void SettingAutomicPieChartSliceColors();
 
 #pragma endregion
 
@@ -143,6 +240,10 @@ void AddVideoFrameFromWebSource();
 void ChangeOLEObjectData();
 void EmbeddedVideoFrame();
 void PictureFrameFormatting();
+System::ArrayPtr<uint8_t> GetFileByteData(String fileNameZip);
+void StretchOffsetLeftForPictureFrame();
+
+
 #pragma endregion
 
 #pragma region ShapeEffects	
@@ -166,6 +267,9 @@ void InterlopShapeID();
 void RemoveShape();
 void RotatingShapes();
 void SetAlternativeText();
+void InterlopShapeID();
+void InsertSvgIntoPresentation();
+
 #pragma endregion
 
 #pragma region SmartArt	
@@ -190,6 +294,8 @@ void OrganizeChartLayoutType();
 void RemoveNode();
 void RemoveNodeSpecificPosition();
 void SmartArtNodeLevel();
+void GetTextFromSmartArtNode();
+
 #pragma endregion
 
 #pragma region Working with Tables	
@@ -236,6 +342,12 @@ void ShadowEffects();
 void TextBoxHyperlink();
 void TextBoxOnSlideProgram();
 void UseCustomFonts();
+void AddEmbeddedFonts();
+void AddColumnInTexBoxes();
+void GetFontsFolders();
+void AddingSuperscriptAndSubscriptTextInTextFrame();
+void EndParaGraphProperties();
+
 #pragma endregion		
 
 

@@ -71,9 +71,9 @@ void ManageParagraphPictureBulletsInPPT()
 
 	// ExStart:ManageParagraphPictureBulletsInPPT
 	// The path to the documents directory.
-	const String outPath = L"../out/ManageParagraphPictureBulletsInPPT_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
-	const String ImagePath = L"../templates/Tulips.jpg";
+	const String outPath = u"../out/ManageParagraphPictureBulletsInPPT_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
+	const String ImagePath = u"../templates/Tulips.jpg";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -85,7 +85,7 @@ void ManageParagraphPictureBulletsInPPT()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L"");
+	ashp->AddTextFrame(u"");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -95,7 +95,7 @@ void ManageParagraphPictureBulletsInPPT()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Welcome to Aspose.Slides");
+	portion->set_Text(u"Welcome to Aspose.Slides");
 
 	// Get the picture
 	auto bitmap = MakeObject<System::Drawing::Bitmap>(ImagePath);

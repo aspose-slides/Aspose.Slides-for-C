@@ -80,8 +80,8 @@ void AddAudioFrame()
 
 	// ExStart:AddAudioFrame
 	// The path to the documents directory.
-	const String outPath = L"../out/AudioFrameEmbed_out.pptx";
-	const String filePath = L"../templates/sampleaudio.wav";
+	const String outPath = u"../out/AudioFrameEmbed_out.pptx";
+	const String filePath = u"../templates/sampleaudio.wav";
 
 	
 

@@ -38,7 +38,7 @@ void AccessSmartArtParticularLayout()
 
 	// ExStart:AccessSmartArtParticularLayout
 	// The path to the documents directory.
-	const String templatePath = L"../templates/SmartArt.pptx";
+	const String templatePath = u"../templates/SmartArt.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -53,12 +53,12 @@ void AccessSmartArtParticularLayout()
 		{
 			System::SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
 
-			System::Console::WriteLine(L"Smart Art Name = " + smart->get_Name());
+			System::Console::WriteLine(u"Smart Art Name = " + smart->get_Name());
 
 			// Checking SmartArt Layout
 			if (smart->get_Layout() == SmartArtLayoutType::BasicBlockList)
 			{
-				System::Console::WriteLine(L"Do some thing here....");
+				System::Console::WriteLine(u"Do some thing here....");
 			}
 		}
 	}

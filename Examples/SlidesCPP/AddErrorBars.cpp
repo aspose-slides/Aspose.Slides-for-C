@@ -46,7 +46,7 @@ void AddErrorBars()
 	//ExStart:AddErrorBars
 
 	// The path to the documents directory.
-	const String outPath = L"../out/ErrorBars_out.pptx";
+	const String outPath = u"../out/ErrorBars_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

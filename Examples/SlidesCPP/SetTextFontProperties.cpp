@@ -67,8 +67,8 @@ void SetTextFontProperties()
 
 	// ExStart:SetTextFontProperties
 	// The path to the documents directory.
-	const String outPath = L"../out/SetTextFontProperties_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts_out.pptx";
+	const String outPath = u"../out/SetTextFontProperties_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -80,7 +80,7 @@ void SetTextFontProperties()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L"Aspose TextBox");
+	ashp->AddTextFrame(u"Aspose TextBox");
 
 	ashp->get_FillFormat()->set_FillType(FillType::NoFill);
 
@@ -90,7 +90,7 @@ void SetTextFontProperties()
 
 	txtFrame->get_TextFrameFormat()->set_AutofitType(TextAutofitType::Shape);
 
-	SharedPtr<FontData> destFont = MakeObject<FontData>(L"Times New Roman");
+	SharedPtr<FontData> destFont = MakeObject<FontData>(u"Times New Roman");
 
 	// Create the Paragraph object for text frame
 	SharedPtr<IParagraph> paragraph = txtFrame->get_Paragraphs()->idx_get(0);

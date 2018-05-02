@@ -70,6 +70,27 @@
     <Filter Include="Source Files\Slides\Shapes\Text">
       <UniqueIdentifier>{8ed9e119-696b-4ec4-ac56-426020bcf635}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Presentations">
+      <UniqueIdentifier>{5a0cc338-b2fb-4821-ad9d-6a70bd30e085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentations\Conversions">
+      <UniqueIdentifier>{7b27e827-825f-420f-b1fc-63b6978167ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentations\Opening">
+      <UniqueIdentifier>{6fae319a-7893-4d71-834b-7706f00e964b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentations\Saving">
+      <UniqueIdentifier>{e29c6e44-11b0-4801-98ff-6b1e9e01cff5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentations\Properties">
+      <UniqueIdentifier>{7098eff8-01a8-41dc-b2c8-eaa3ddfd9788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentations\Rendering-Printing">
+      <UniqueIdentifier>{422dc70a-601c-4fbc-ab97-e19b4b21092a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentations\LoadOptions">
+      <UniqueIdentifier>{7fa899dc-d3cb-4d62-91c9-528f4060226f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -561,10 +582,238 @@
     <ClCompile Include="UseCustomFonts.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="MultiCategoryChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckSlidesComparison.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="HeaderFooterManager.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="SetChildFooter.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="SetSizeAndType.cpp">
+      <Filter>Source Files\Slides\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="SetSlideSizeScale.cpp">
+      <Filter>Source Files\Slides\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="ConversionToTIFFNotes.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertNotesSlideViewToPDF.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertPresentationToPasswordProtectedPDF.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertPresentationToResponsiveHTML.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToPDF.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToPDFWithHiddenSlides.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToSWF.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertWholePresentationToHTML.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertWithoutXpsOptions.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertWithXpsOptions.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomOptionsPDFConversion.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="PPTtoPPTX.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="PresentationToTIFFWithCustomImagePixelFormat.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="PresentationToTIFFWithDefaultSize.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenPasswordPresentation.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenPresentation.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="VerifyingPresentationWithoutloading.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateNewPresentation.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessBuiltinProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessModifyingProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdatePresentationProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdatePresentationPropertiesUsingNewTemplate.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveWriteProtection.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveAsPredefinedViewType.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveAsReadOnly.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveProperties.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveToFile.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveWithPassword.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultPrinterPrinting.cpp">
+      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="SetSlideNumber.cpp">
+      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="SetZoom.cpp">
+      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecificPrinterPrinting.cpp">
+      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
+    </ClCompile>
+    <ClCompile Include="AccessOpenDoc.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkAllFontsHtmlController.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="EmbedFontsInHtml.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTextFromSmartArtNode.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AddColumnInTexBoxes.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportBlobFromPresentation.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBlobToPresentation.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenVeryLargePresentation.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="SwitchChartRowColumns.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFontsFolders.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AddNotesSlideWithNotesStyle.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecifyFontsUsedWithPresentation.cpp">
+      <Filter>Source Files\Presentations\LoadOptions</Filter>
+    </ClCompile>
+    <ClCompile Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingNotesWhileConvertingToHTML.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertingPresentationToHTMLWithPreservingOriginalFonts.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingAutomicPieChartSliceColors.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="EndParaGraphProperties.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderComments.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertIndividualSlideToHTML.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="AddingEMZImagesToImageCollection.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddEmbeddedFonts.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertSvgIntoPresentation.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddingSuperscriptAndSubscriptTextInTextFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="StretchOffsetLeftForPictureFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageSlidesSections.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="MeteredLicencing.cpp">
+      <Filter>Source Files\Presentations\LoadOptions</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomHeaderAndFontsController.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CustomFormattingController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomHeaderAndFontsController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExportBlobFromPresentation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkAllFontsHtmlController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

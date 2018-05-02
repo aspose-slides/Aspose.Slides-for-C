@@ -29,8 +29,8 @@ void CloneWithinSamePresentationToEnd()
 	//ExStart:CloneWithinSamePresentationToEnd
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AddSlides.pptx";
-	const String outPath = L"../out/CloneWithinSamePresentationToEnd.pptx";
+	const String templatePath = u"../templates/AddSlides.pptx";
+	const String outPath = u"../out/CloneWithinSamePresentationToEnd.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

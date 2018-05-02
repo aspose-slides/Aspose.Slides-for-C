@@ -70,8 +70,8 @@ void ShadowEffects()
 
 	// ExStart:ShadowEffects
 	// The path to the documents directory.
-	const String outPath = L"../out/ShadowEffects_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts_out.pptx";
+	const String outPath = u"../out/ShadowEffects_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -83,7 +83,7 @@ void ShadowEffects()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L" ");
+	ashp->AddTextFrame(u" ");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -93,7 +93,7 @@ void ShadowEffects()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Aspose TextBox");
+	portion->set_Text(u"Aspose TextBox");
 	portion->get_PortionFormat()->get_FillFormat()->set_FillType(FillType::Solid);
 	portion->get_PortionFormat()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Black());
 	portion->get_PortionFormat()->set_FontHeight(50);

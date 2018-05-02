@@ -70,16 +70,16 @@ void RuleBasedFontsReplacement()
 
 	// ExStart:RuleBasedFontsReplacement
 	// The path to the documents directory.
-	const String outPath = L"../out/RuleBasedFontsReplacement_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/RuleBasedFontsReplacement_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
 	// Define new fonts
-	SharedPtr<IFontData> sourceFont = MakeObject<FontData>(L"SomeRareFont");
-	SharedPtr<IFontData> destFont = MakeObject<FontData>(L"Arial");
+	SharedPtr<IFontData> sourceFont = MakeObject<FontData>(u"SomeRareFont");
+	SharedPtr<IFontData> destFont = MakeObject<FontData>(u"Arial");
 	
 	// Add font rule for font replacement
 	SharedPtr<FontSubstRule> fontSubstRule = MakeObject<FontSubstRule>(sourceFont, destFont, FontSubstCondition::WhenInaccessible);

@@ -54,7 +54,7 @@ void TableFromScratch()
 
 	// ExStart:TableFromScratch
 	// The path to the documents directory.
-	const String outPath = L"../out/TableFromScratch_out.pptx";
+	const String outPath = u"../out/TableFromScratch_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

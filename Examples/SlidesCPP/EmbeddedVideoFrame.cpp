@@ -83,8 +83,8 @@ void EmbeddedVideoFrame()
 
 	// ExStart:EmbeddedVideoFrame
 	// The path to the documents directory.
-	const String outPath = L"../out/EmbeddedVideoFrame_out.pptx";
-	const String filePath = L"../templates/Wildlife.mp4";
+	const String outPath = u"../out/EmbeddedVideoFrame_out.pptx";
+	const String filePath = u"../templates/Wildlife.mp4";
 
 
 

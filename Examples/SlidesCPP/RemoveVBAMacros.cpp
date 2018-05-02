@@ -61,8 +61,8 @@ void RemoveVBAMacros()
 
 	// ExStart:RemoveVBAMacros
 	// The path to the documents directory.
-	const String outPath = L"../out/RemoveVBAMacros_out.pptm";
-	const String templatePath = L"../templates/vba.pptm";
+	const String outPath = u"../out/RemoveVBAMacros_out.pptm";
+	const String templatePath = u"../templates/vba.pptm";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> presentation = MakeObject<Presentation>(templatePath);

@@ -55,8 +55,8 @@ void UpdateExistingTable()
 
 	// ExStart:UpdateExistingTable
 	// The path to the documents directory.
-	const String outPath = L"../out/UpdateExistingTable_out.pptx";
-	const String templatePath = L"../templates/TestTable.pptx";
+	const String outPath = u"../out/UpdateExistingTable_out.pptx";
+	const String templatePath = u"../templates/TestTable.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -68,7 +68,7 @@ void UpdateExistingTable()
 	SharedPtr<Table> table = System::DynamicCast<Aspose::Slides::Table>(islide->get_Shapes()->idx_get(0));
 
 	// Set the text of the first column of second row
-	table->idx_get(0, 1)->get_TextFrame()->set_Text(L"New");
+	table->idx_get(0, 1)->get_TextFrame()->set_Text(u"New");
 
 	// Save PPTX to Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

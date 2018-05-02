@@ -28,8 +28,8 @@ void RemoveNotesAtSpecificSlide()
 	//ExStart:RemoveNotesAtSpecificSlide
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AccessSlides.pptx";
-	const String outPath = L"../out/RemoveNotesAtSpecificSlide.pptx";
+	const String templatePath = u"../templates/AccessSlides.pptx";
+	const String outPath = u"../out/RemoveNotesAtSpecificSlide.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation>pres = MakeObject<Presentation>(templatePath);

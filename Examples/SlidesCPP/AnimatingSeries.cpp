@@ -63,8 +63,8 @@ void AnimatingSeries()
 	//ExStart:AnimatingSeries
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/ExistingChart.pptx";
-	const String outPath = L"../out/AnimatingSeries.pptx";
+	const String templatePath = u"../templates/ExistingChart.pptx";
+	const String outPath = u"../out/AnimatingSeries.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

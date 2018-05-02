@@ -68,8 +68,8 @@ void LineSpacing()
 
 	// ExStart:LineSpacing
 	// The path to the documents directory.
-	const String outPath = L"../out/LineSpacing_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/LineSpacing_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 
 	// Load the desired the presentation

@@ -25,8 +25,8 @@ void ThumbnailFromSlide()
 	//ExStart:ThumbnailFromSlide
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String outPath = L"../out/Aspose_out.png";
+	const String templatePath = u"../templates/TestDeck_050.pptx";
+	const String outPath = u"../out/Aspose_out.png";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

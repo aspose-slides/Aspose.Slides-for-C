@@ -74,7 +74,7 @@ void MultipleParagraphs()
 
 	// ExStart:MultipleParagraphs
 	// The path to the documents directory.
-	const String outPath = L"../out/MultipleParagraphs_out.pptx";
+	const String outPath = u"../out/MultipleParagraphs_out.pptx";
 
 
 
@@ -88,7 +88,7 @@ void MultipleParagraphs()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	SharedPtr<ITextFrame> tf=ashp->AddTextFrame(L" ");
+	SharedPtr<ITextFrame> tf=ashp->AddTextFrame(u" ");
 
 
 	// Accessing the first Paragraph
@@ -124,7 +124,7 @@ void MultipleParagraphs()
 	{
 		for (int j = 0; j < 3; j++)
 		{
-			tf->get_Paragraphs()->idx_get(i)->get_Portions()->idx_get(j)->set_Text(L"Portion_"+j);
+			tf->get_Paragraphs()->idx_get(i)->get_Portions()->idx_get(j)->set_Text(u"Portion_"+j);
 			SharedPtr<IPortionFormat>format = tf->get_Paragraphs()->idx_get(i)->get_Portions()->idx_get(j)->get_PortionFormat();
 
 			if (j == 0)

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg class="slides-canvas" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="10in" height="7.5in" viewBox="0 0 720 540">
+ <g text-rendering="geometricPrecision" transform="scale(1, 1)">
+  <rect x="0" y="0" width="720" height="540" fill="#FFFFFF" />
+  <g transform="matrix(1, 0, 0, 1, 43.1999969, 495.35)">
+   <text font-family="Arial" fill="#000000" font-size="10.5pt">
+    <tspan x="0" y="13.61329" textLength="54.49609" lengthAdjust="spacingAndGlyphs">1/7/2018</tspan>
+   </text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 253.2, 495.35)">
+   <text font-family="Arial" fill="#000000" font-size="10.5pt">
+    <tspan x="49.99336" y="13.61329" textLength="113.6133" lengthAdjust="spacingAndGlyphs">Sample footer text</tspan>
+   </text>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 523.2, 495.35)">
+   <text font-family="Arial" fill="#000000" font-size="10.5pt">
+    <tspan x="145.8139" y="13.61329" textLength="7.786133" lengthAdjust="spacingAndGlyphs">1</tspan>
+   </text>
+  </g>
+  <path fill="#BBE0E3" d="M162 192C162 175.54 172.83 162 186 162 199.17 162 210 175.54 210 192 210 208.46 199.17 222 186 222 172.83 222 162 208.46 162 192z" />
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M162 192C162 175.54 172.83 162 186 162 199.17 162 210 175.54 210 192 210 208.46 199.17 222 186 222 172.83 222 162 208.46 162 192z" />
+  <path fill="#BBE0E3" d="M6 240C6 223.54 18.19 210 33 210 47.81 210 60 223.54 60 240 60 256.46 47.81 270 33 270 18.19 270 6 256.46 6 240z" />
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M6 240C6 223.54 18.19 210 33 210 47.81 210 60 223.54 60 240 60 256.46 47.81 270 33 270 18.19 270 6 256.46 6 240z" />
+  <g transform="matrix(1, 0, 0, 1, 43.2000122, 25.2250366)">
+   <text font-family="Arial" fill="#000000" font-size="33pt">
+    <tspan x="209.1955" y="57.78461" textLength="215.209" lengthAdjust="spacingAndGlyphs">Text boxes</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M24 126L180 126 180 176.6 24 176.6z" />
+  <g transform="matrix(1, 0, 0, 1, 31.1999969, 129.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="139.0605" lengthAdjust="spacingAndGlyphs">Text box with line</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="139.0605" y="17.5028" lengthAdjust="spacingAndGlyphs"> </tspan>
+   </text>
+  </g>
+  <path fill="#FF0000" d="M18 175.6L186 175.6 186 204.6 18 204.6z" />
+  <g transform="matrix(1, 0, 0, 1, 25.1999969, 179.225052)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="128.0391" lengthAdjust="spacingAndGlyphs">Text box with fill</tspan>
+   </text>
+  </g>
+  <path fill="#99CC00" fill-opacity="0.53" d="M18 224.5L210 224.5 210 275.1 18 275.1z" />
+  <g transform="matrix(1, 0, 0, 1, 25.1999969, 228.1)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="106.04" lengthAdjust="spacingAndGlyphs">Text box with</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="106.04" y="17.5028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="39.1028" textLength="113.0537" lengthAdjust="spacingAndGlyphs">transparent fill</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.25" stroke="#000000" fill="none" d="M12 281.6L213.8 281.6 213.8 483.4 12 483.4z" />
+  <g transform="matrix(1, 0, 0, 1, 48, 317.625031)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="106.04" lengthAdjust="spacingAndGlyphs">Text box with</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="106.04" y="17.5028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="39.1028" textLength="86.02734" lengthAdjust="spacingAndGlyphs">.5” margin,</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="86.02734" y="39.1028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="60.7028" textLength="119.0654" lengthAdjust="spacingAndGlyphs">border to show</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="119.0654" y="60.7028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="82.3028" textLength="121.0605" lengthAdjust="spacingAndGlyphs">it, resize shape</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="121.0605" y="82.3028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="103.9028" textLength="129.0498" lengthAdjust="spacingAndGlyphs">&amp; word wrap set</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M510 120L612 120 612 200.5 510 200.5z" />
+  <g transform="matrix(1, 0, 0, 1, 517.2, 123.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="184.0781" lengthAdjust="spacingAndGlyphs">Text box with no resize</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M330 126L498 126 498 154.9 330 154.9z" />
+  <g transform="matrix(1, 0, 0, 1, 337.2, 129.599991)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="150.0557" lengthAdjust="spacingAndGlyphs">Text box with word</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="150.0557" y="17.5028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="39.1028" textLength="130.043" lengthAdjust="spacingAndGlyphs">wrap . No resize</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="130.043" y="39.1028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="60.7028" textLength="122.0889" lengthAdjust="spacingAndGlyphs">and a border to</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="122.0889" y="60.7028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="82.3028" textLength="126.0703" lengthAdjust="spacingAndGlyphs">show where the</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="126.0703" y="82.3028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="103.9028" textLength="67.04297" lengthAdjust="spacingAndGlyphs">shape is</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M228 372L378 372 378 528 228 528z" />
+  <g transform="matrix(1, 0, 0, 1, 235.2, 375.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="7.265335" y="17.5028" textLength="121.0693" lengthAdjust="spacingAndGlyphs">no resize, align</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="128.3347" y="17.5028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="7.265335" y="39.1028" textLength="80.05078" lengthAdjust="spacingAndGlyphs">top center</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M396 372L546 372 546 528 396 528z" />
+  <g transform="matrix(1, 0, 0, 1, 403.2, 375.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="7.265335" y="70.3028" textLength="121.0693" lengthAdjust="spacingAndGlyphs">no resize, align</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="128.3347" y="70.3028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="7.265335" y="91.90279" textLength="108.0527" lengthAdjust="spacingAndGlyphs">middle center</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M558 372L708 372 708 528 558 528z" />
+  <g transform="matrix(1, 0, 0, 1, 565.2, 375.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="7.265335" y="123.1028" textLength="121.0693" lengthAdjust="spacingAndGlyphs">no resize, align</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="128.3347" y="123.1028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="7.265335" y="144.7028" textLength="110.0566" lengthAdjust="spacingAndGlyphs">bottom center</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M228 264L378 264 378 366 228 366z" />
+  <g transform="matrix(1, 0, 0, 1, 235.2, 267.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="17.5028" textLength="78.03809" lengthAdjust="spacingAndGlyphs">no resize,</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="78.03809" y="17.5028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="49.9028" textLength="73.05469" lengthAdjust="spacingAndGlyphs">align: top</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M396 264L546 264 546 366 396 366z" />
+  <g transform="matrix(1, 0, 0, 1, 403.2, 267.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="37.9028" textLength="78.03809" lengthAdjust="spacingAndGlyphs">no resize,</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="78.03809" y="37.9028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="70.3028" textLength="96.05566" lengthAdjust="spacingAndGlyphs">align middle</tspan>
+   </text>
+  </g>
+  <path stroke-width="0.75" stroke="#000000" fill="none" d="M558 264L708 264 708 366 558 366z" />
+  <g transform="matrix(1, 0, 0, 1, 565.2, 267.6)">
+   <text font-family="Arial" fill="#000000" font-size="13.5pt">
+    <tspan x="0" y="58.3028" textLength="78.03809" lengthAdjust="spacingAndGlyphs">no resize,</tspan>
+    <tspan textLength="5.000977" xml:space="preserve" x="78.03809" y="58.3028" lengthAdjust="spacingAndGlyphs"> </tspan>
+    <tspan x="0" y="90.7028" textLength="98.05957" lengthAdjust="spacingAndGlyphs">align bottom</tspan>
+   </text>
+  </g>
+ </g>
+</svg>

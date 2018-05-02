@@ -37,8 +37,8 @@ void ChangSmartArtShapeStyle()
 
 	// ExStart:ChangSmartArtShapeStyle
 	// The path to the documents directory.
-	const String templatePath = L"../templates/SmartArt.pptx";
-	const String outPath = L"../out/ChangeSmartArtStyle_out.pptx";
+	const String templatePath = u"../templates/SmartArt.pptx";
+	const String outPath = u"../out/ChangeSmartArtStyle_out.pptx";
 
 
 	// Load the desired the presentation

@@ -112,8 +112,8 @@ void ApplyBevelEffects()
 	// ExStart:ApplyBevelEffects
 
 	// The path to the documents directory.
-	const String outPath = L"../out/ApplyBevelEffects_out.pptx";
-	const String templatePath = L"../templates/ConnectorLineAngle.pptx";
+	const String outPath = u"../out/ApplyBevelEffects_out.pptx";
+	const String templatePath = u"../templates/ConnectorLineAngle.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

@@ -38,10 +38,10 @@ void ExtractVideo()
 	
 	// ExStart:ExtractVideo
 	// The path to the documents directory.
-	const String templatePath = L"../templates/Video.pptx";
-	const String outPath = L"../out/Video_out";
+	const String templatePath = u"../templates/Video.pptx";
+	const String outPath = u"../out/Video_out";
 	// The path to the documents directory.
-	System::String dataDir = L"replace_with_the_correct_path";
+	System::String dataDir = u"replace_with_the_correct_path";
 
 	// Instantiate a Presentation object that represents a presentation file 
 	System::SharedPtr<Presentation> presentation = System::MakeObject<Presentation>(templatePath);
@@ -66,7 +66,7 @@ void ExtractVideo()
 						System::SharedPtr<System::IO::FileStream> stream = System::MakeObject<System::IO::FileStream>(outPath + type, System::IO::FileMode::Create, System::IO::FileAccess::Write, System::IO::FileShare::Read);
 
 						// Clearing resources under 'using' statement
-						System::Details::DisposeGuard __dispose_guard_0{ stream, ASPOSE_CURRENT_FUNCTION };
+						//System::Details::DisposeGuard __dispose_guard_0{ stream, ASPOSE_CURRENT_FUNCTION };
 						// ------------------------------------------
 						stream->Write(buffer, 0, buffer->get_Length());
 					}

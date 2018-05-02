@@ -104,8 +104,8 @@ void AnimationsOnShapes()
 	// ExStart:AnimationsOnShapes
 
 	// The path to the documents directory.
-	const String outPath = L"../out/AnimationsOnShapes_out.pptx";
-	const String templatePath = L"../templates/ConnectorLineAngle.pptx";
+	const String outPath = u"../out/AnimationsOnShapes_out.pptx";
+	const String templatePath = u"../templates/ConnectorLineAngle.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -119,7 +119,7 @@ void AnimationsOnShapes()
 	// Now create effect "PathFootball" for existing shape from scratch.
 	SharedPtr<IAutoShape> ashp = slide->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 150, 250, 25);
 
-	ashp->AddTextFrame(L"Animated TextBox");
+	ashp->AddTextFrame(u"Animated TextBox");
 
 	// Add PathFootBall animation effect
 	slide->get_Timeline()->get_MainSequence()->AddEffect(ashp, EffectType::PathFootball,

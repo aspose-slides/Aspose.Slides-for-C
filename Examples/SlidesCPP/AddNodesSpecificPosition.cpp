@@ -38,7 +38,7 @@ void AddNodesSpecificPosition()
 
 	// ExStart:AddNodesSpecificPosition
 	// The path to the documents directory.
-	const String outPath = L"../out/AddNodesSpecificPosition_out.pptx";
+	const String outPath = u"../out/AddNodesSpecificPosition_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -59,7 +59,7 @@ void AddNodesSpecificPosition()
 		SharedPtr<ISmartArtNode> chNode = node0Collection->AddNodeByPosition(2);
 
 		// Add Text
-		chNode->get_TextFrame()->set_Text(L"Sample Text Added");
+		chNode->get_TextFrame()->set_Text(u"Sample Text Added");
 
 	}
 		// Save Presentation

@@ -36,8 +36,8 @@ void RemoveNode()
 
 	// ExStart:RemoveNode
 	// The path to the documents directory.
-	const String templatePath = L"../templates/SmartArt.pptx";
-	const String outPath = L"../out/RemoveNode_out.pptx";
+	const String templatePath = u"../templates/SmartArt.pptx";
+	const String outPath = u"../out/RemoveNode_out.pptx";
 
 
 	// Load the desired the presentation

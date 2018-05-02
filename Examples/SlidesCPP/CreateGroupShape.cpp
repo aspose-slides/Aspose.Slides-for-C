@@ -118,8 +118,8 @@ void CreateGroupShape()
 	// ExStart:CreateGroupShape
 
 	// The path to the documents directory.
-	const String outPath = L"../out/CreateGroupShape_out.pptx";
-	const String templatePath = L"../templates/Source Frame.pptx";
+	const String outPath = u"../out/CreateGroupShape_out.pptx";
+	const String templatePath = u"../templates/Source Frame.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

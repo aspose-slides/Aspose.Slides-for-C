@@ -44,7 +44,7 @@ void DisplayChartLabels()
 	//ExStart:DisplayChartLabels
 
 	// The path to the documents directory.
-	const String outPath = L"../out/DisplayChartLabels_out.pptx";
+	const String outPath = u"../out/DisplayChartLabels_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

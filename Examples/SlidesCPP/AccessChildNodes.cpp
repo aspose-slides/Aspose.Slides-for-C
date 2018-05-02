@@ -30,14 +30,14 @@ using namespace Aspose::Slides::SmartArt;
 using namespace System;
 
 const int NodesCount = 5;
-const String outPath = L"../out/";
+const String outPath = u"../out/";
 
 void AccessChildNodes()
 {
 
 	// ExStart:AccessChildNodes
 	// The path to the documents directory.
-	const String templatePath = L"../templates/SmartArt.pptx";
+	const String templatePath = u"../templates/SmartArt.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -67,7 +67,7 @@ void AccessChildNodes()
 
 					// Printing the SmartArt child node parameters
 
-					System::Console::WriteLine(L"j = " + node->get_TextFrame()->get_Text()+L", Text = "+ node->get_Level()+L", Position = "+ node->get_Position());
+					System::Console::WriteLine(u"j = " + node->get_TextFrame()->get_Text()+u", Text = "+ node->get_Level()+u", Position = "+ node->get_Position());
 				}
 			}
 		}

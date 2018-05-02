@@ -12,7 +12,7 @@ using namespace Aspose::Slides;
 
 void ShowSlidesVersion()
 {
-	System::Console::WriteLine(L"API version details : " + BuildVersionInfo::Product() + L" " + BuildVersionInfo::AssemblyVersion());
+	System::Console::WriteLine(u"API version details : " + BuildVersionInfo::Product() + u" " + BuildVersionInfo::AssemblyVersion());
 
 }
 
@@ -28,7 +28,7 @@ int main(int argc, const char argv[])
 
 		#pragma region Load License
 		// The path to the License file.
-		const String LicPath = L"../license/Aspose.Slides.lic";
+		const String LicPath = u"../license/Aspose.Slides.lic";
 		System::MakeObject<Aspose::Slides::License>()->SetLicense(LicPath);
 		SharedPtr<Aspose::Slides::License> lic = MakeObject<Aspose::Slides::License>();
 		lic->SetLicense(LicPath);
@@ -36,18 +36,97 @@ int main(int argc, const char argv[])
 		//Check if License is applied
 		if (lic->IsLicensed())
 		{
-			System::Console::WriteLine(L"License properly applied");
+			System::Console::WriteLine(u"License properly applied");
 		}
 		else
 		{
-			System::Console::WriteLine(L"Warning: License is not properly applied or is expired");
+			System::Console::WriteLine(u"Warning: License is not properly applied or is expired");
 		}
 		#pragma endregion 
 
 		#pragma region Working with Presentation Decks
 	
+		#pragma region Presentation Conversions to different formats
+				//TIFF support not available in 17.12
+				//ConversionToTIFFNotes();
+				//ConvertNotesSlideViewToPDF();
+				//ConvertPresentationToPasswordProtectedPDF();
+				//ConvertPresentationToResponsiveHTML();
+				//ConvertToPDF();
+				//ConvertToPDFWithHiddenSlides();
+				//ConvertToSWF();
+				//ConvertWholePresentationToHTML();
+				//ConvertWithoutXpsOptions();
+				//ConvertWithXpsOptions();
+				//CustomOptionsPDFConversion();
+				//PPTtoPPTX();
+				//TIFF support not available in 17.12
+				//PresentationToTIFFWithCustomImagePixelFormat();
+				//PresentationToTIFFWithDefaultSize();
+//				LinkAllFontsHtmlController();
+				ConvertIndividualSlideToHTML();
+				EmbedFontsInHtml();
+//				ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+		#pragma endregion
+
+		#pragma region Opening presentation decks
+
+//				OpenPasswordPresentation();
+				//OpenPresentation();
+				//VerifyingPresentationWithoutloading();
+				//OpenVeryLargePresentation();
+
+
+
+		#pragma endregion
+
+		#pragma region Loading Options
+//		SpecifyFontsUsedWithPresentation();
+		AddingEMZImagesToImageCollection();
+		AddBlobToPresentation();
+
+		#pragma endregion
+
+		#pragma region Working with Presentation Document properties
+
+				//AccessBuiltinProperties();
+				//AccessModifyingProperties();
+				//AccessOpenDoc();
+				//AccessProperties();
+				//UpdatePresentationProperties();
+				//UpdatePresentationPropertiesUsingNewTemplate();
+				//UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
+
+		#pragma endregion
+
+		#pragma region Saving Presentation decks
+
+				//RemoveWriteProtection();
+				//CreateNewPresentation();
+				//SaveAsPredefinedViewType();
+				//SaveAsReadOnly();
+				//This is not working
+				//SaveProperties();
+				//SaveToFile();
+				//This is not working
+				//SaveWithPassword();
+//				ExportBlobFromPresentation();
+//				SavingHTMLAndCSSFileWhenExportingIntoHTML();
+				RenderingNotesWhileConvertingToHTML();
+				ConvertingPresentationToHTMLWithPreservingOriginalFonts();
+				
+
+		#pragma endregion
+
+		#pragma region Presentation Rendering-Printing
+				//DefaultPrinterPrinting();
+				//SetSlideNumber();
+				//SetZoom();
+				//SpecificPrinterPrinting();
+		#pragma endregion
+		
 		#pragma region Managing VBA Macros
-			//System::Console::WriteLine(L"Managing VBA Macros");
+			//System::Console::WriteLine(u"Managing VBA Macros");
 			//AddVBAMacros();
 			//RemoveVBAMacros();
 			#pragma endregion
@@ -57,7 +136,7 @@ int main(int argc, const char argv[])
 		#pragma region Working with Slides
 	
 		#pragma region Slide CRUD operations
-		//System::Console::WriteLine(L"Working with slide CRUD");
+		//System::Console::WriteLine(u"Working with slide CRUD");
 		//AddSlides();
 		//AddLayoutSlides();
 		//AccessSlides();
@@ -72,10 +151,14 @@ int main(int argc, const char argv[])
 		//CloneAtEndOfAnotherSpecificPosition();
 		//CloneToAnotherPresentationWithMaster();
 		//CloneToAnotherPresentationWithSetSizeAndType();
+		//ManageSlidesSections();
+		//AddNotesSlideWithNotesStyle();
+
+
 		#pragma endregion 
 
 		#pragma region Setting slides backgrounds
-		//System::Console::WriteLine(L"Setting slide backgrounds");
+		//System::Console::WriteLine(u"Setting slide backgrounds");
 		//SetBackgroundToGradient();
 		//SetImageAsBackground();
 		//SetSlideBackgroundMaster();
@@ -83,52 +166,61 @@ int main(int argc, const char argv[])
 		#pragma endregion 
 
 		#pragma region working with SlidesComments
-		//System::Console::WriteLine(L"Working with slide comments");
+		//System::Console::WriteLine(u"Working with slide comments");
 		//AddSlideComments();
 		//AccessSlideComments();
 		#pragma endregion
 
 		#pragma region Working with hyperlinks
-		//System::Console::WriteLine(L"Working with slide hyperlinks");
+		//System::Console::WriteLine(u"Working with slide hyperlinks");
 		//RemoveHyperlinks();
 		#pragma endregion
 
 		#pragma region Managing slide layouts
-			//System::Console::WriteLine(L"Setting slide size for PDF");
+			//System::Console::WriteLine(u"Setting slide size for PDF");
 			//SetPDFPageSize();
 		#pragma endregion
 
 		#pragma region Extract Data from Presentation
-			//System::Console::WriteLine(L"Extracting video from presentation");
+			//System::Console::WriteLine(u"Extracting video from presentation");
 			//ExtractVideo();
 		#pragma endregion
 			
 		#pragma region Managing slide Notes
-		//System::Console::WriteLine(L"Manaing Slide Notes");
+		//System::Console::WriteLine(u"Manaing Slide Notes");
 		//RemoveNotesAtSpecificSlide();
 		//RemoveNotesFromAllSlides();
 		#pragma endregion
 
 		#pragma region Rendering Slides
-		//System::Console::WriteLine(L"Rendering Slides");
+		//System::Console::WriteLine(u"Rendering Slides");
 		//CreateSlidesSVGImage();
 		//ThumbnailFromSlide();
 		//ThumbnailFromSlideInNotes();
 		//ThumbnailWithUserDefinedDimensions();
+	//	GeneratingSVGWithCustomShapeIDS();
+//		RenderComments();
+
 		#pragma endregion
 
 		#pragma region Managing Slide Transitions
-		//System::Console::WriteLine(L"Managing Slide Transitions");
+		//System::Console::WriteLine(u"Managing Slide Transitions");
 		//ManageSimpleSlideTransitions();
 		//ManagingBetterSlideTransitions();
 		//SetTransitionEffects();
 		//SimpleSlideTransitions();
+
+		//This is not working
+		//CheckSlidesComparison();
+		//HeaderFooterManager();
+		//SetChildFooter();
+		//SetSizeAndType();
 		#pragma endregion
 
 		#pragma region Working with Shapes
 
 		#pragma region Working with Charts
-			//System::Console::WriteLine(L"Working with Charts");
+			//System::Console::WriteLine(u"Working with Charts");
 			//AddCustomError();
 			//AddErrorBars();
 			//AnimatingCategoriesElements();
@@ -154,11 +246,15 @@ int main(int argc, const char argv[])
 			//SetDataLabelsPercentageSign();
 			//SetDataRange();
 			//SetGapWidth();
+			//MultiCategoryChart();
+			//SwitchChartRowColumns();
+			//SettingAutomicPieChartSliceColors();
+
 
 		#pragma endregion
 
 		#pragma region ManageAutoShapes	
-		//System::Console::WriteLine(L"Working with AutoShapes");
+		//System::Console::WriteLine(u"Working with AutoShapes");
 		//AccessingAltTextinGroupshapes();
 		//AddArrowShapedLine();
 		//AddArrowShapedLineToSlide();
@@ -176,7 +272,7 @@ int main(int argc, const char argv[])
 		#pragma endregion
 
 		#pragma region ManageFrameObjects	
-		//System::Console::WriteLine(L"Working with OLE Objects");
+		//System::Console::WriteLine(u"Working with OLE Objects");
 		//AccessOLEObjectFrame();
 		//AddAudioFrame();
 		//AddOLEObjectFrame();
@@ -187,10 +283,12 @@ int main(int argc, const char argv[])
 		//ChangeOLEObjectData();
 		//EmbeddedVideoFrame();
 		//PictureFrameFormatting();
+		//StretchOffsetLeftForPictureFrame();
+
 		#pragma endregion
 
 		#pragma region ShapeEffects	
-		//System::Console::WriteLine(L"Managing Shape Effects");
+		//System::Console::WriteLine(u"Managing Shape Effects");
 		//AnimationsOnShapes();
 		//Apply3DRotationEffectOnShape();
 		//ApplyBevelEffects();
@@ -210,10 +308,13 @@ int main(int argc, const char argv[])
 		//RemoveShape();
 		//RotatingShapes();
 		//SetAlternativeText();
+		//InterlopShapeID();
+//		InsertSvgIntoPresentation();
+
 		#pragma endregion
 
 		#pragma region SmartArt	
-		//System::Console::WriteLine(L"Working with SmartArt Shapes");
+		//System::Console::WriteLine(u"Working with SmartArt Shapes");
 		//AccessChildNodes();
 		//AccessChildNodeSpecificPosition();
 		//AccessSmartArt();
@@ -234,10 +335,12 @@ int main(int argc, const char argv[])
 		//RemoveNode();
 		//RemoveNodeSpecificPosition();
 		//SmartArtNodeLevel();
+		//GetTextFromSmartArtNode();
+
 		#pragma endregion
 
 		#pragma region Working with Tables	
-		//System::Console::WriteLine(L"Working with Tables");
+		//System::Console::WriteLine(u"Working with Tables");
 
 		//AddImageinsideTableCell();
 		//CellSplit();
@@ -253,7 +356,7 @@ int main(int argc, const char argv[])
 		#pragma endregion
 
 		#pragma region Formatting Text	
-		System::Console::WriteLine(L"Formatting Text");
+		System::Console::WriteLine(u"Formatting Text");
 
 		//ApplyInnerShadow();
 		//ApplyOuterShadow();
@@ -282,13 +385,19 @@ int main(int argc, const char argv[])
 		//TextBoxHyperlink();
 		//TextBoxOnSlideProgram();
 		//UseCustomFonts();
+		//AddEmbeddedFonts();
+		//AddColumnInTexBoxes();
+		//GetFontsFolders();
+		//AddingSuperscriptAndSubscriptTextInTextFrame();
+		//EndParaGraphProperties();
+
 		#pragma endregion		
 
 		#pragma endregion
 
 		#pragma endregion
 
-		System::Console::WriteLine(L"Examples processed successfully...");
+		System::Console::WriteLine(u"Examples processed successfully...");
 
 		//ChangeOLEObjectData
 		//SmartArtNodeLevel
@@ -296,7 +405,7 @@ int main(int argc, const char argv[])
 	}//end Try
 	catch (const System::Exception& error)
 	{
-		System::Console::WriteLine(L"Error: {0}", error);
+		System::Console::WriteLine(u"Error: {0}", error);
 	}
 	catch (const std::exception& error)
 	{

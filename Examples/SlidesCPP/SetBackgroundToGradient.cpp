@@ -35,8 +35,8 @@ using namespace System;
 
 	// The path to the documents directory.
 
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String OutPath = L"../out/ContentBG_Grad_out.pptx";
+	const String templatePath = u"../templates/TestDeck_050.pptx";
+	const String OutPath = u"../out/ContentBG_Grad_out.pptx";
 
 
 	// Instantiate the Presentation class that represents the presentation file

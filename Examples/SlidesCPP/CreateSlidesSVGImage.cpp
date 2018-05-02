@@ -35,8 +35,8 @@ void CreateSlidesSVGImage()
 	//ExStart:CreateSlidesSVGImage
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String outPath = L"../out/Aspose_out.svg";
+	const String templatePath = u"../templates/TestDeck_050.pptx";
+	const String outPath = u"../out/Aspose_out.svg";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -57,7 +57,7 @@ void CreateSlidesSVGImage()
 		System::SharedPtr<System::IO::Stream> fileStream = System::IO::File::OpenWrite(outPath);
 
 		// Clearing resources under 'using' statement
-		System::Details::DisposeGuard __dispose_guard_1{ fileStream, ASPOSE_CURRENT_FUNCTION };
+		//System::Details::DisposeGuard __dispose_guard_1{ fileStream, ASPOSE_CURRENT_FUNCTION };
 		// ------------------------------------------
 		System::ArrayPtr<uint8_t> buffer = System::MakeObject<System::Array<uint8_t>>(8 * 1024, 0);
 		int32_t len;

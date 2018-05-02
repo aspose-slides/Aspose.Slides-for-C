@@ -67,8 +67,8 @@ void FontProperties()
 
 	// ExStart:FontProperties
 	// The path to the documents directory.
-	const String outPath = L"../out/FontProperties_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts.pptx";
+	const String outPath = u"../out/FontProperties_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts.pptx";
 
 	
 	// Load the desired the presentation
@@ -99,8 +99,8 @@ void FontProperties()
 	SharedPtr<IPortion> port2 = para2->get_Portions()->idx_get(0);
 
 	// Define new fonts
-	SharedPtr<FontData> fd1 = MakeObject<FontData>(L"Elephant");
-	SharedPtr<FontData> fd2 = MakeObject<FontData>(L"Castellar");
+	SharedPtr<FontData> fd1 = MakeObject<FontData>(u"Elephant");
+	SharedPtr<FontData> fd2 = MakeObject<FontData>(u"Castellar");
 
 	// Assign new fonts to portion
 	port1->get_PortionFormat()->set_LatinFont ( fd1);

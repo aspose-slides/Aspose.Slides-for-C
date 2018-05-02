@@ -42,7 +42,7 @@ void AddCustomError()
 	//ExStart:AddCustomError
 
 	// The path to the documents directory.
-	const String outPath = L"../out/ErrorBarsCustomValues_out.pptx";
+	const String outPath = u"../out/ErrorBarsCustomValues_out.pptx";
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

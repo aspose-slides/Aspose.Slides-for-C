@@ -80,8 +80,8 @@ void AddVideoFrame()
 
 	// ExStart:AddVideoFrame
 	// The path to the documents directory.
-	const String outPath = L"../out/AddVideoFrame_out.pptx";
-	const String filePath = L"../templates/Wildlife.mp4";
+	const String outPath = u"../out/AddVideoFrame_out.pptx";
+	const String filePath = u"../templates/Wildlife.mp4";
 
 
 

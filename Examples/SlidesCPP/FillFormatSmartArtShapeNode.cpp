@@ -38,7 +38,7 @@ void FillFormatSmartArtShapeNode()
 
 	// ExStart:FillFormatSmartArtShapeNode
 	// The path to the documents directory.
-	const String outPath = L"../out/FillFormat_SmartArt_ShapeNode_out.pptx";
+	const String outPath = u"../out/FillFormat_SmartArt_ShapeNode_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -50,7 +50,7 @@ void FillFormatSmartArtShapeNode()
 	System::SharedPtr<Aspose::Slides::SmartArt::ISmartArtNode> NewNode = smart->get_AllNodes()->AddNode();
 
 	//Adding text to added node
-	NewNode->get_TextFrame()->set_Text( L"Some text");
+	NewNode->get_TextFrame()->set_Text( u"Some text");
 
 	// Save Presentation
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

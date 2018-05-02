@@ -36,7 +36,7 @@ void SetSlideBackgroundNormal()
 
 	// The path to the documents directory.
 
-	const String OutPath = L"../out/SetSlideBackgroundNormal_out.pptx";
+	const String OutPath = u"../out/SetSlideBackgroundNormal_out.pptx";
 
 	// Instantiate the Presentation class that represents the presentation file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

@@ -71,8 +71,8 @@ void TextBoxHyperlink()
 
 	// ExStart:TextBoxHyperlink
 	// The path to the documents directory.
-	const String outPath = L"../out/TextBoxHyperlink_out.pptx";
-	const String templatePath = L"../templates/DefaultFonts_out.pptx";
+	const String outPath = u"../out/TextBoxHyperlink_out.pptx";
+	const String templatePath = u"../templates/DefaultFonts_out.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
@@ -84,7 +84,7 @@ void TextBoxHyperlink()
 	SharedPtr<IAutoShape>  ashp = sld->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 150, 75, 150, 50);
 
 	// Add TextFrame to the Rectangle
-	ashp->AddTextFrame(L" ");
+	ashp->AddTextFrame(u" ");
 
 	// Accessing the text frame
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
@@ -94,10 +94,10 @@ void TextBoxHyperlink()
 
 	// Create Portion object for paragraph
 	SharedPtr<IPortion> portion = paragraph->get_Portions()->idx_get(0);
-	portion->set_Text(L"Aspose TextBox");
+	portion->set_Text(u"Aspose TextBox");
 	// Set Hyperlink for the portion text
 	SharedPtr<IHyperlinkManager> HypMan = portion->get_PortionFormat()->get_HyperlinkManager();
-	HypMan->SetExternalHyperlinkClick(L"http://www.aspose.com");
+	HypMan->SetExternalHyperlinkClick(u"http://www.aspose.com");
 
 	// Save PPTX to Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);

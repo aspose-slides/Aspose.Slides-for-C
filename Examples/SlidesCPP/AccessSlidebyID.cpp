@@ -29,7 +29,7 @@ void AccessSlidebyID()
 	//ExStart:AccessSlidebyID
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/AddSlides.pptx";
+	const String templatePath = u"../templates/AddSlides.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

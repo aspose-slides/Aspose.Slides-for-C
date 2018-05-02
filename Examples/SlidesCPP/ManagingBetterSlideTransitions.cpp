@@ -22,8 +22,8 @@ void ManagingBetterSlideTransitions()
 	//ExStart:ManagingBetterSlideTransitions
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/SimpleSlideTransitions.pptx";
-	const String outPath = L"../out/BetterSlideTransitions.pptx";
+	const String templatePath = u"../templates/SimpleSlideTransitions.pptx";
+	const String outPath = u"../out/BetterSlideTransitions.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation>pres = MakeObject<Presentation>(templatePath);
