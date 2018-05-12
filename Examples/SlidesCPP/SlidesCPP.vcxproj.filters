@@ -786,6 +786,51 @@
     <ClCompile Include="CustomHeaderAndFontsController.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
+    <ClCompile Include="ApplyingExternalThemeToDependingSlides.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="BestImagesCompressionRatioforPDF.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="HandoutHeaderFooterManager.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="MasterNotesSlideHeaderFooterManager.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingInterruptionToken.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationsOnOLEObject.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureOrganizationChart.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBoxAndWhiskerChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddFunnelChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddHistogramChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateShapeSVGImage.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="AddHistogramParetoChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSunburstChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddTreemapChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddWaterfallChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -811,9 +856,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

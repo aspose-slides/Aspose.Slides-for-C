@@ -5,6 +5,7 @@
 #include <DOM/Presentation.h>
 #include <DOM/ISlideCollection.h>
 #include <DOM/IMasterSlideCollection.h>
+#include <DOM/IMasterSlide.h>
 #include <DOM/ISlide.h>
 #include <DOM/ILayoutSlide.h>
 #include <DOM/SlideLayoutType.h>
@@ -15,6 +16,9 @@
 #include <DOM/SlideSizeType.h>
 #include <DOM/IBaseSlideHeaderFooterManager.h>
 #include <DOM/ISlideHeaderFooterManager.h>
+#include <DOM/IPresentationHeaderFooterManager.h>
+#include <DOM/IMasterSlideHeaderFooterManager.h>
+
 
 
 //#include <drawing/PointF.h>
@@ -39,7 +43,8 @@ void HeaderFooterManager()
 	// Instantiate SlideCollection calss
 	SharedPtr<ISlideCollection> slds = presentation->get_Slides();
 
-	SharedPtr<IBaseSlideHeaderFooterManager> headerFooterManager = presentation->get_Slides()->idx_get(0)->get_HeaderFooterManager();
+//	SharedPtr<IBaseSlideHeaderFooterManager> headerFooterManager = presentation->get_Slides()->idx_get(0)->get_HeaderFooterManager();
+	SharedPtr<IMasterSlideHeaderFooterManager> headerFooterManager = presentation->get_Masters()->idx_get(0)->get_HeaderFooterManager();
 	if (!headerFooterManager->get_IsFooterVisible()) // Property IsFooterVisible is used for indicating that a slide footer placeholder is not present.
 	{
 		headerFooterManager->SetFooterVisibility(true); // Method SetFooterVisibility is used for making a slide footer placeholder visible.
@@ -52,8 +57,12 @@ void HeaderFooterManager()
 	{
 		headerFooterManager->SetDateTimeVisibility(true); // Method SetFooterVisibility is used for making a slide date-time placeholder visible.
 	}
+
+
 	headerFooterManager->SetFooterText(u"Footer text"); // Method SetFooterText is used for setting text to slide footer placeholder.
 	headerFooterManager->SetDateTimeText(u"Date and time text"); // Method SetDateTimeText is used for setting text to slide date-time placeholder.
+
+
 
 	presentation->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
 	//ExEnd:HeaderFooterManager

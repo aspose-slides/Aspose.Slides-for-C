@@ -56,9 +56,6 @@ void CreateSlidesSVGImage()
 	{
 		System::SharedPtr<System::IO::Stream> fileStream = System::IO::File::OpenWrite(outPath);
 
-		// Clearing resources under 'using' statement
-		//System::Details::DisposeGuard __dispose_guard_1{ fileStream, ASPOSE_CURRENT_FUNCTION };
-		// ------------------------------------------
 		System::ArrayPtr<uint8_t> buffer = System::MakeObject<System::Array<uint8_t>>(8 * 1024, 0);
 		int32_t len;
 		while ((len = SvgStream->Read(buffer, 0, buffer->get_Length())) > 0)

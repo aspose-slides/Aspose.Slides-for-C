@@ -33,6 +33,7 @@ void PresentationToTIFFWithDefaultSize();
 void LinkAllFontsHtmlController();
 void EmbedFontsInHtml();
 void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+void BestImagesCompressionRatioforPDF();
 
 
 #pragma endregion
@@ -77,7 +78,8 @@ void SaveProperties();
 void SaveToFile();
 void SaveWithPassword();
 void ExportBlobFromPresentation();
-
+void ApplyingExternalThemeToDependingSlides();
+void SettingInterruptionToken();
 
 //void SavingHTMLAndCSSFileWhenExportingIntoHTML();
 
@@ -124,6 +126,8 @@ void SetChildFooter();
 void SetSizeAndType();
 void ManageSlidesSections();
 void AddNotesSlideWithNotesStyle();
+void HandoutHeaderFooterManager();
+void MasterNotesSlideHeaderFooterManager();
 
 #pragma endregion
 
@@ -206,6 +210,16 @@ void SetGapWidth();
 void MultiCategoryChart();
 void SwitchChartRowColumns();
 void SettingAutomicPieChartSliceColors();
+void AddBoxAndWhiskerChart();
+void AddFunnelChart();
+void AddHistogramChart();
+void AddHistogramParetoChart();
+void AddSunburstChart();
+void AddTreemapChart();
+void AddWaterfallChart();
+
+
+
 
 #pragma endregion
 
@@ -249,6 +263,7 @@ void StretchOffsetLeftForPictureFrame();
 #pragma region ShapeEffects	
 
 void AnimationsOnShapes();
+void AnimationsOnOLEObject();
 void Apply3DRotationEffectOnShape();
 void ApplyBevelEffects();
 void CloneShapes();
@@ -256,6 +271,7 @@ void CreateBoundsShapeThumbnail();
 void CreateGroupShape();
 void CreateScalingFactorThumbnail();
 void CreateShapeThumbnail();
+void CreateShapeSVGImage();
 void CreateSmartArtChildNoteThumbnail();
 void FillShapesGradient();
 void FillShapesPattern();
@@ -295,6 +311,7 @@ void RemoveNode();
 void RemoveNodeSpecificPosition();
 void SmartArtNodeLevel();
 void GetTextFromSmartArtNode();
+void ShowPictureOrganizationChart();
 
 #pragma endregion
 

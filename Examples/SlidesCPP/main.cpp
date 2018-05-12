@@ -29,20 +29,27 @@ int main(int argc, const char argv[])
 		#pragma region Load License
 		// The path to the License file.
 		const String LicPath = u"../license/Aspose.Slides.lic";
-		System::MakeObject<Aspose::Slides::License>()->SetLicense(LicPath);
-		SharedPtr<Aspose::Slides::License> lic = MakeObject<Aspose::Slides::License>();
-		lic->SetLicense(LicPath);
+		try {
+//			System::MakeObject<Aspose::Slides::License>()->SetLicense(LicPath);
+			SharedPtr<Aspose::Slides::License> lic = MakeObject<Aspose::Slides::License>();
+			lic->SetLicense(LicPath);
 
-		//Check if License is applied
-		if (lic->IsLicensed())
-		{
-			System::Console::WriteLine(u"License properly applied");
+			//Check if License is applied
+			if (lic->IsLicensed())
+		//	if (System::MakeObject<Aspose::Slides::License>()->IsLicensed())
+			{
+				System::Console::WriteLine(u"License properly applied");
+			}
+			else
+			{
+				System::Console::WriteLine(u"Warning: License is not properly applied or is expired");
+			}
 		}
-		else
+		catch (Exception e)
 		{
-			System::Console::WriteLine(u"Warning: License is not properly applied or is expired");
+			System::Console::WriteLine(e.get_StackTrace());
 		}
-		#pragma endregion 
+			#pragma endregion 
 
 		#pragma region Working with Presentation Decks
 	
@@ -63,15 +70,17 @@ int main(int argc, const char argv[])
 				//TIFF support not available in 17.12
 				//PresentationToTIFFWithCustomImagePixelFormat();
 				//PresentationToTIFFWithDefaultSize();
-//				LinkAllFontsHtmlController();
-				ConvertIndividualSlideToHTML();
-				EmbedFontsInHtml();
-//				ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+				//LinkAllFontsHtmlController();
+				//ConvertIndividualSlideToHTML();
+				//EmbedFontsInHtml();
+				//ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+				BestImagesCompressionRatioforPDF();
+
 		#pragma endregion
 
 		#pragma region Opening presentation decks
 
-//				OpenPasswordPresentation();
+				//OpenPasswordPresentation();
 				//OpenPresentation();
 				//VerifyingPresentationWithoutloading();
 				//OpenVeryLargePresentation();
@@ -81,9 +90,9 @@ int main(int argc, const char argv[])
 		#pragma endregion
 
 		#pragma region Loading Options
-//		SpecifyFontsUsedWithPresentation();
-		AddingEMZImagesToImageCollection();
-		AddBlobToPresentation();
+				//SpecifyFontsUsedWithPresentation();
+				//AddingEMZImagesToImageCollection();
+				//AddBlobToPresentation();
 
 		#pragma endregion
 
@@ -110,11 +119,12 @@ int main(int argc, const char argv[])
 				//SaveToFile();
 				//This is not working
 				//SaveWithPassword();
-//				ExportBlobFromPresentation();
-//				SavingHTMLAndCSSFileWhenExportingIntoHTML();
-				RenderingNotesWhileConvertingToHTML();
-				ConvertingPresentationToHTMLWithPreservingOriginalFonts();
-				
+				//ExportBlobFromPresentation();
+				//SavingHTMLAndCSSFileWhenExportingIntoHTML();
+				//RenderingNotesWhileConvertingToHTML();
+				//ConvertingPresentationToHTMLWithPreservingOriginalFonts();
+				ApplyingExternalThemeToDependingSlides();
+				SettingInterruptionToken();
 
 		#pragma endregion
 
@@ -212,7 +222,9 @@ int main(int argc, const char argv[])
 
 		//This is not working
 		//CheckSlidesComparison();
-		//HeaderFooterManager();
+		HeaderFooterManager();
+		HandoutHeaderFooterManager();
+		MasterNotesSlideHeaderFooterManager();
 		//SetChildFooter();
 		//SetSizeAndType();
 		#pragma endregion
@@ -249,6 +261,13 @@ int main(int argc, const char argv[])
 			//MultiCategoryChart();
 			//SwitchChartRowColumns();
 			//SettingAutomicPieChartSliceColors();
+			AddBoxAndWhiskerChart();
+			AddFunnelChart();
+			AddHistogramChart();
+			AddHistogramParetoChart();
+			AddSunburstChart();
+			AddTreemapChart();
+			AddWaterfallChart();
 
 
 		#pragma endregion
@@ -310,6 +329,8 @@ int main(int argc, const char argv[])
 		//SetAlternativeText();
 		//InterlopShapeID();
 //		InsertSvgIntoPresentation();
+		AnimationsOnOLEObject();
+		CreateShapeSVGImage();
 
 		#pragma endregion
 
@@ -336,6 +357,7 @@ int main(int argc, const char argv[])
 		//RemoveNodeSpecificPosition();
 		//SmartArtNodeLevel();
 		//GetTextFromSmartArtNode();
+		ShowPictureOrganizationChart();
 
 		#pragma endregion
 
