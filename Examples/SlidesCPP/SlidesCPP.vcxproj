@@ -82,18 +82,18 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>
       </SDLCheck>
-      <AdditionalIncludeDirectories>../packages/Aspose.Slides.Cpp.18.4.0/build/native/include/asposecpplib;../packages/Aspose.Slides.Cpp.18.4.0/build/native/include/aspose.slides;../include/syslib;../include/slides;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>DEBUG;_CONSOLE;WIN32;_WINDOWS;ASPOSE_FOUNDATION_NS;ASPOSE_NULLREFCHECK;ASPOSE_COMPARE_BY_REF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PrecompiledHeader />
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
+      <PreprocessorDefinitions>DEBUG;_CONSOLE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>../packages/Aspose.Slides.Cpp.18.4.0/build/native/lib/v140/x64/Release;../bin;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Aspose.Slides_vc140x64.lib;aspose_cpp_vc140x64.lib;OpenGL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <AdditionalOptions>/machine:x64</AdditionalOptions>
@@ -232,6 +232,7 @@
     <ClCompile Include="CreateSlidesSVGImage.cpp" />
     <ClCompile Include="CreateSmartArtChildNoteThumbnail.cpp" />
     <ClCompile Include="CreateSmartArtShape.cpp" />
+    <ClCompile Include="CustomChildNodesInSmartArt.cpp" />
     <ClCompile Include="CustomHeaderAndFontsController.cpp" />
     <ClCompile Include="CustomOptionsPDFConversion.cpp" />
     <ClCompile Include="CustomRotationAngleTextframe.cpp" />
@@ -390,11 +391,13 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>

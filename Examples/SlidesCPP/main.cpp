@@ -123,8 +123,8 @@ int main(int argc, const char argv[])
 				//SavingHTMLAndCSSFileWhenExportingIntoHTML();
 				//RenderingNotesWhileConvertingToHTML();
 				//ConvertingPresentationToHTMLWithPreservingOriginalFonts();
-				ApplyingExternalThemeToDependingSlides();
-				SettingInterruptionToken();
+				//ApplyingExternalThemeToDependingSlides();
+				//SettingInterruptionToken();
 
 		#pragma endregion
 
@@ -357,7 +357,8 @@ int main(int argc, const char argv[])
 		//RemoveNodeSpecificPosition();
 		//SmartArtNodeLevel();
 		//GetTextFromSmartArtNode();
-		ShowPictureOrganizationChart();
+		//ShowPictureOrganizationChart();
+		CustomChildNodesInSmartArt();
 
 		#pragma endregion
 

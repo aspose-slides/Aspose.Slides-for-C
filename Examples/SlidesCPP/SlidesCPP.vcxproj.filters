@@ -831,6 +831,9 @@
     <ClCompile Include="AddWaterfallChart.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="CustomChildNodesInSmartArt.cpp">
+      <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

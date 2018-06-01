@@ -1,5 +1,5 @@
 Aspose.Slides for C++ Readme File,
-Copyright (c) 2001-2017 Aspose Pty Ltd. All Rights Reserved.
+Copyright (c) 2001-2018 Aspose Pty Ltd. All Rights Reserved.
 
 ********* Files and Directory Introduction *********
 

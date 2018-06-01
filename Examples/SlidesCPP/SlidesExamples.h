@@ -312,6 +312,7 @@ void RemoveNodeSpecificPosition();
 void SmartArtNodeLevel();
 void GetTextFromSmartArtNode();
 void ShowPictureOrganizationChart();
+void CustomChildNodesInSmartArt();
 
 #pragma endregion
 
