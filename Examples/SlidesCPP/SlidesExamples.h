@@ -217,9 +217,13 @@ void AddHistogramParetoChart();
 void AddSunburstChart();
 void AddTreemapChart();
 void AddWaterfallChart();
-
-
-
+void SettingPrecisionOfDataLabel();
+void DateFormatForCategoryAxis();
+void VerticalAxisRotationAngle();
+void SettingPositionAxis();
+void ShowDisplayUnitLabelOnChartValueAxis();
+void SettingBubbleChartScaling();
+void SetMarkerOptionsonSeries();
 
 #pragma endregion
 

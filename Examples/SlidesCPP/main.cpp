@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Util/License.h>
-#include "AssemblyInfo.h"
-
+#include <BuildVersionInfo.h>
+//#include "AssemblyConstants.h"
 #include <system/console.h>
 #include <system/exception.h>
 #include "SlidesExamples.h"
@@ -74,7 +74,7 @@ int main(int argc, const char argv[])
 				//ConvertIndividualSlideToHTML();
 				//EmbedFontsInHtml();
 				//ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
-				BestImagesCompressionRatioforPDF();
+				//BestImagesCompressionRatioforPDF();
 
 		#pragma endregion
 
@@ -222,9 +222,9 @@ int main(int argc, const char argv[])
 
 		//This is not working
 		//CheckSlidesComparison();
-		HeaderFooterManager();
-		HandoutHeaderFooterManager();
-		MasterNotesSlideHeaderFooterManager();
+		//HeaderFooterManager();
+		//HandoutHeaderFooterManager();
+		//MasterNotesSlideHeaderFooterManager();
 		//SetChildFooter();
 		//SetSizeAndType();
 		#pragma endregion
@@ -261,14 +261,20 @@ int main(int argc, const char argv[])
 			//MultiCategoryChart();
 			//SwitchChartRowColumns();
 			//SettingAutomicPieChartSliceColors();
-			AddBoxAndWhiskerChart();
-			AddFunnelChart();
-			AddHistogramChart();
-			AddHistogramParetoChart();
-			AddSunburstChart();
-			AddTreemapChart();
-			AddWaterfallChart();
-
+			//AddBoxAndWhiskerChart();
+			//AddFunnelChart();
+			//AddHistogramChart();
+			//AddHistogramParetoChart();
+			//AddSunburstChart();
+			//AddTreemapChart();
+			//AddWaterfallChart();
+			SettingPrecisionOfDataLabel();
+			DateFormatForCategoryAxis();
+			VerticalAxisRotationAngle();
+			SettingPositionAxis();
+			ShowDisplayUnitLabelOnChartValueAxis();
+			SettingBubbleChartScaling();
+			SetMarkerOptionsonSeries();
 
 		#pragma endregion
 
@@ -358,7 +364,7 @@ int main(int argc, const char argv[])
 		//SmartArtNodeLevel();
 		//GetTextFromSmartArtNode();
 		//ShowPictureOrganizationChart();
-		CustomChildNodesInSmartArt();
+		//CustomChildNodesInSmartArt();
 
 		#pragma endregion
 

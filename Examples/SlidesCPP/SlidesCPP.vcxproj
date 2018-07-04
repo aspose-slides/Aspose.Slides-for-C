@@ -236,6 +236,7 @@
     <ClCompile Include="CustomHeaderAndFontsController.cpp" />
     <ClCompile Include="CustomOptionsPDFConversion.cpp" />
     <ClCompile Include="CustomRotationAngleTextframe.cpp" />
+    <ClCompile Include="DateFormatForCategoryAxis.cpp" />
     <ClCompile Include="DefaultFonts.cpp" />
     <ClCompile Include="DefaultPrinterPrinting.cpp" />
     <ClCompile Include="DisplayChartLabels.cpp" />
@@ -281,7 +282,6 @@
     <ClCompile Include="MasterNotesSlideHeaderFooterManager.cpp" />
     <ClCompile Include="MergeCell.cpp" />
     <ClCompile Include="MergeCells.cpp" />
-    <ClCompile Include="MeteredLicencing.cpp" />
     <ClCompile Include="MultiCategoryChart.cpp" />
     <ClCompile Include="MultipleParagraphs.cpp" />
     <ClCompile Include="NormalCharts.cpp" />
@@ -337,6 +337,7 @@
     <ClCompile Include="SetDataRange.cpp" />
     <ClCompile Include="SetGapWidth.cpp" />
     <ClCompile Include="SetImageAsBackground.cpp" />
+    <ClCompile Include="SetMarkerOptionsonSeries.cpp" />
     <ClCompile Include="SetPDFPageSize.cpp" />
     <ClCompile Include="SetSizeAndType.cpp" />
     <ClCompile Include="SetSlideBackgroundMaster.cpp" />
@@ -345,10 +346,14 @@
     <ClCompile Include="SetSlideSizeScale.cpp" />
     <ClCompile Include="SetTextFontProperties.cpp" />
     <ClCompile Include="SettingAutomicPieChartSliceColors.cpp" />
+    <ClCompile Include="SettingBubbleChartScaling.cpp" />
     <ClCompile Include="SettingInterruptionToken.cpp" />
+    <ClCompile Include="SettingPositionAxis.cpp" />
+    <ClCompile Include="SettingPrecisionOfDataLabel.cpp" />
     <ClCompile Include="SetTransitionEffects.cpp" />
     <ClCompile Include="SetZoom.cpp" />
     <ClCompile Include="ShadowEffects.cpp" />
+    <ClCompile Include="ShowDisplayUnitLabelOnChartValueAxis.cpp" />
     <ClCompile Include="SimpleEllipse.cpp" />
     <ClCompile Include="SimpleRectangle.cpp" />
     <ClCompile Include="SimpleSlideTransitions.cpp" />
@@ -372,6 +377,7 @@
     <ClCompile Include="UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate.cpp" />
     <ClCompile Include="UseCustomFonts.cpp" />
     <ClCompile Include="VerifyingPresentationWithoutloading.cpp" />
+    <ClCompile Include="VerticalAxisRotationAngle.cpp" />
     <ClCompile Include="VerticallyAlignText.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -390,14 +396,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.4.0\build\native\aspose.slides.cpp.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.5.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>

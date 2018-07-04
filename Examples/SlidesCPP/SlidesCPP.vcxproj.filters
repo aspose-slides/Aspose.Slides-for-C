@@ -780,9 +780,6 @@
     <ClCompile Include="ManageSlidesSections.cpp">
       <Filter>Source Files\Slides\CRUD</Filter>
     </ClCompile>
-    <ClCompile Include="MeteredLicencing.cpp">
-      <Filter>Source Files\Presentations\LoadOptions</Filter>
-    </ClCompile>
     <ClCompile Include="CustomHeaderAndFontsController.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
@@ -829,6 +826,27 @@
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
     <ClCompile Include="AddWaterfallChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="DateFormatForCategoryAxis.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalAxisRotationAngle.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetMarkerOptionsonSeries.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingBubbleChartScaling.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingPositionAxis.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingPrecisionOfDataLabel.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ShowDisplayUnitLabelOnChartValueAxis.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
     <ClCompile Include="CustomChildNodesInSmartArt.cpp">
