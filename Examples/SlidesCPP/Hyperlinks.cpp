@@ -10,19 +10,19 @@
 #include <system/string.h>
 #include <system/IO/file.h>
 
-#include "Hyperlinks.h"
+#include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
 
 using namespace System;
 
-void::Hyperlinks::RemoveHyperlinks()
+void RemoveHyperlinks()
 {
 	//ExStart:RemoveHyperlinks
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/Hyperlinks.pptx";
-	const String outPath = L"../out/RemoveHyperlinks.pptx";
+	const String templatePath = u"../templates/Hyperlinks.pptx";
+	const String outPath = u"../out/RemoveHyperlinks.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation>pres = MakeObject<Presentation>(templatePath);

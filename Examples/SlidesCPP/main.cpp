@@ -268,13 +268,23 @@ int main(int argc, const char argv[])
 			//AddSunburstChart();
 			//AddTreemapChart();
 			//AddWaterfallChart();
-			SettingPrecisionOfDataLabel();
-			DateFormatForCategoryAxis();
-			VerticalAxisRotationAngle();
-			SettingPositionAxis();
-			ShowDisplayUnitLabelOnChartValueAxis();
-			SettingBubbleChartScaling();
-			SetMarkerOptionsonSeries();
+			//SettingPrecisionOfDataLabel();
+			//DateFormatForCategoryAxis();
+			//VerticalAxisRotationAngle();
+			//SettingPositionAxis();
+			//ShowDisplayUnitLabelOnChartValueAxis();
+			//SettingBubbleChartScaling();
+			//SetMarkerOptionsonSeries();
+			//GetChartImage();
+			//ChangingSeriesColor();
+			//SettingChartAreaRoundedBorders();
+			//ChangeColorOfCategoriesInSeries();
+			//SettingFontPropertiesForChartDataTable();
+			//SettingFontSizeOfLegend();
+			//SettingFontSizeOfIndividualLegend();
+			//SettingInvertIfNegativePropertyForIndividualSeries();
+			//AddStockChart();
+			//AddDoughnutCallout();
 
 		#pragma endregion
 
@@ -335,8 +345,8 @@ int main(int argc, const char argv[])
 		//SetAlternativeText();
 		//InterlopShapeID();
 //		InsertSvgIntoPresentation();
-		AnimationsOnOLEObject();
-		CreateShapeSVGImage();
+		//AnimationsOnOLEObject();
+		//CreateShapeSVGImage();
 
 		#pragma endregion
 
@@ -419,7 +429,7 @@ int main(int argc, const char argv[])
 		//GetFontsFolders();
 		//AddingSuperscriptAndSubscriptTextInTextFrame();
 		//EndParaGraphProperties();
-
+		GetEffectsByTextParagraph();
 		#pragma endregion		
 
 		#pragma endregion

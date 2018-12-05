@@ -34,7 +34,7 @@ void LinkAllFontsHtmlController();
 void EmbedFontsInHtml();
 void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 void BestImagesCompressionRatioforPDF();
-
+void SetPDFPageSize();
 
 #pragma endregion
 
@@ -224,6 +224,16 @@ void SettingPositionAxis();
 void ShowDisplayUnitLabelOnChartValueAxis();
 void SettingBubbleChartScaling();
 void SetMarkerOptionsonSeries();
+void GetChartImage();
+void ChangingSeriesColor();
+void SettingChartAreaRoundedBorders();
+void ChangeColorOfCategoriesInSeries();
+void SettingFontPropertiesForChartDataTable();
+void SettingFontSizeOfLegend();
+void SettingFontSizeOfIndividualLegend();
+void SettingInvertIfNegativePropertyForIndividualSeries();
+void AddStockChart();
+void AddDoughnutCallout();
 
 #pragma endregion
 
@@ -244,6 +254,7 @@ void FormattedEllipse();
 void FormattedRectangle();
 void SimpleEllipse();
 void SimpleRectangle();
+//void RemoveHyperlinks();
 #pragma endregion
 
 #pragma region ManageFrameObjects	
@@ -317,6 +328,7 @@ void SmartArtNodeLevel();
 void GetTextFromSmartArtNode();
 void ShowPictureOrganizationChart();
 void CustomChildNodesInSmartArt();
+void GetEffectsByTextParagraph();
 
 #pragma endregion
 

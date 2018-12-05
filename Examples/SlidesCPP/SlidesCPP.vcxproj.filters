@@ -114,9 +114,6 @@
     <ClCompile Include="AddSlideComments.cpp">
       <Filter>Source Files\Slides\Comments</Filter>
     </ClCompile>
-    <ClCompile Include="AddSlides.cpp">
-      <Filter>Source Files\Slides\CRUD</Filter>
-    </ClCompile>
     <ClCompile Include="AddLayoutSlides.cpp">
       <Filter>Source Files\Slides\CRUD</Filter>
     </ClCompile>
@@ -158,9 +155,6 @@
     </ClCompile>
     <ClCompile Include="CloneToAnotherPresentationWithSetSizeAndType.cpp">
       <Filter>Source Files\Slides\CRUD</Filter>
-    </ClCompile>
-    <ClCompile Include="RemoveHyperlinks.cpp">
-      <Filter>Source Files\Slides\Hyperlinks</Filter>
     </ClCompile>
     <ClCompile Include="SetPDFPageSize.cpp">
       <Filter>Source Files\Slides\Layout</Filter>
@@ -852,6 +846,45 @@
     <ClCompile Include="CustomChildNodesInSmartArt.cpp">
       <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
     </ClCompile>
+    <ClCompile Include="Hyperlinks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageSlides.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetChartImage.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangingSeriesColor.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingChartAreaRoundedBorders.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeColorOfCategoriesInSeries.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingFontPropertiesForChartDataTable.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingFontSizeOfLegend.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingFontSizeOfIndividualLegend.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingInvertIfNegativePropertyForIndividualSeries.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddStockChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddDoughnutCallout.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="GetEffectsByTextParagraph.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -877,9 +910,9 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
   <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

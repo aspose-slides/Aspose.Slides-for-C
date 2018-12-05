@@ -164,7 +164,7 @@
     <ClCompile Include="AddRelativeScaleHeightPictureFrame.cpp" />
     <ClCompile Include="AddSimplePictureFrames.cpp" />
     <ClCompile Include="AddSlideComments.cpp" />
-    <ClCompile Include="AddSlides.cpp" />
+    <ClCompile Include="AddStockChart.cpp" />
     <ClCompile Include="AddSunburstChart.cpp" />
     <ClCompile Include="AddTreemapChart.cpp" />
     <ClCompile Include="AddVBAMacros.cpp" />
@@ -186,6 +186,7 @@
     <ClCompile Include="BestImagesCompressionRatioforPDF.cpp" />
     <ClCompile Include="CellSplit.cpp" />
     <ClCompile Include="ChangeChartCategoryAxis.cpp" />
+    <ClCompile Include="ChangeColorOfCategoriesInSeries.cpp" />
     <ClCompile Include="ChangeOLEObjectData.cpp" />
     <ClCompile Include="ChangePosition.cpp" />
     <ClCompile Include="ChangeShapeOrder.cpp" />
@@ -193,6 +194,7 @@
     <ClCompile Include="ChangeSmartArtShapeColorStyle.cpp" />
     <ClCompile Include="ChangeSmartArtState.cpp" />
     <ClCompile Include="ChangeTextOnSmartArtNode.cpp" />
+    <ClCompile Include="ChangingSeriesColor.cpp" />
     <ClCompile Include="ChangSmartArtShapeStyle.cpp" />
     <ClCompile Include="ChartEntities.cpp" />
     <ClCompile Include="ChartTrendLines.cpp" />
@@ -241,6 +243,7 @@
     <ClCompile Include="DefaultPrinterPrinting.cpp" />
     <ClCompile Include="DisplayChartLabels.cpp" />
     <ClCompile Include="DisplayPercentageAsLabels.cpp" />
+    <ClCompile Include="AddDoughnutCallout.cpp" />
     <ClCompile Include="DoughnutChartHole.cpp" />
     <ClCompile Include="EmbeddedVideoFrame.cpp" />
     <ClCompile Include="EmbedFontsInHtml.cpp" />
@@ -261,14 +264,18 @@
     <ClCompile Include="FormatLines.cpp" />
     <ClCompile Include="FormattedEllipse.cpp" />
     <ClCompile Include="FormattedRectangle.cpp" />
+    <ClCompile Include="GetChartImage.cpp" />
+    <ClCompile Include="GetEffectsByTextParagraph.cpp" />
     <ClCompile Include="GetFontsFolders.cpp" />
     <ClCompile Include="GetTextFromSmartArtNode.cpp" />
     <ClCompile Include="HandoutHeaderFooterManager.cpp" />
     <ClCompile Include="HeaderFooterManager.cpp" />
     <ClCompile Include="Hidingshapes.cpp" />
+    <ClCompile Include="Hyperlinks.cpp" />
     <ClCompile Include="ImportingHTMLText.cpp" />
     <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
+    <ClCompile Include="ManageSlides.cpp" />
     <ClCompile Include="ManageSlidesSections.cpp" />
     <ClCompile Include="LineSpacing.cpp" />
     <ClCompile Include="LinkAllFontsHtmlController.cpp" />
@@ -299,7 +306,6 @@
     <ClCompile Include="PPTtoPPTX.cpp" />
     <ClCompile Include="PresentationToTIFFWithCustomImagePixelFormat.cpp" />
     <ClCompile Include="PresentationToTIFFWithDefaultSize.cpp" />
-    <ClCompile Include="RemoveHyperlinks.cpp" />
     <ClCompile Include="RemoveNode.cpp" />
     <ClCompile Include="RemoveNodeSpecificPosition.cpp" />
     <ClCompile Include="RemoveNotesAtSpecificSlide.cpp" />
@@ -347,7 +353,12 @@
     <ClCompile Include="SetTextFontProperties.cpp" />
     <ClCompile Include="SettingAutomicPieChartSliceColors.cpp" />
     <ClCompile Include="SettingBubbleChartScaling.cpp" />
+    <ClCompile Include="SettingChartAreaRoundedBorders.cpp" />
+    <ClCompile Include="SettingFontPropertiesForChartDataTable.cpp" />
+    <ClCompile Include="SettingFontSizeOfIndividualLegend.cpp" />
+    <ClCompile Include="SettingFontSizeOfLegend.cpp" />
     <ClCompile Include="SettingInterruptionToken.cpp" />
+    <ClCompile Include="SettingInvertIfNegativePropertyForIndividualSeries.cpp" />
     <ClCompile Include="SettingPositionAxis.cpp" />
     <ClCompile Include="SettingPrecisionOfDataLabel.cpp" />
     <ClCompile Include="SetTransitionEffects.cpp" />
@@ -390,18 +401,16 @@
     <ClInclude Include="SlidesExamples.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.18.11.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.18.11.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.6.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.18.11.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.18.11.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>

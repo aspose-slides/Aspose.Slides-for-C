@@ -19,3 +19,4 @@ Copyright (c) 2001-2018 Aspose Pty Ltd. All Rights Reserved.
    (1) aspose_cpp_vc140x64.dll (lib): Aspose C++ Library runtime library.
    (2) Aspose.Slides_vc140x64.dll (lib): Aspose.Slides for C++ runtime library.
    (3) Aspose.Slides.dat: A resource file required for Aspose.Slides for C++.
+

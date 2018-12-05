@@ -10,12 +10,12 @@
 #include <system/string.h>
 #include <system/IO/file.h>
 
-#include "ManageSlideSize.h"
+#include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
 
 using namespace System;
-void::ManageSlideSize::SetPDFPageSize()
+void SetPDFPageSize()
 {
 	//ExStart:SetPDFPageSize
 
