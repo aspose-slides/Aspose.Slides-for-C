@@ -429,7 +429,8 @@ int main(int argc, const char argv[])
 		//GetFontsFolders();
 		//AddingSuperscriptAndSubscriptTextInTextFrame();
 		//EndParaGraphProperties();
-		GetEffectsByTextParagraph();
+		//GetEffectsByTextParagraph();
+		MutilevelBullets();
 		#pragma endregion		
 
 		#pragma endregion

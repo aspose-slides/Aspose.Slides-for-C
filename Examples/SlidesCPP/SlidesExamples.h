@@ -329,6 +329,7 @@ void GetTextFromSmartArtNode();
 void ShowPictureOrganizationChart();
 void CustomChildNodesInSmartArt();
 void GetEffectsByTextParagraph();
+void MutilevelBullets();
 
 #pragma endregion
 

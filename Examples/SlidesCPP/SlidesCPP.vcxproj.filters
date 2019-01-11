@@ -885,6 +885,9 @@
     <ClCompile Include="GetEffectsByTextParagraph.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="MutilevelBullets.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
