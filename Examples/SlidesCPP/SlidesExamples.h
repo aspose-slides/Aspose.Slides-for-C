@@ -177,6 +177,8 @@ void ManageSimpleSlideTransitions();
 void ManagingBetterSlideTransitions();
 void SetTransitionEffects();
 void SimpleSlideTransitions();
+void SupportOfMorphTransition();
+void SetTransitionMorphType();
 #pragma endregion
 
 #pragma region Working with Shapes
