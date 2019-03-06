@@ -219,6 +219,8 @@ int main(int argc, const char argv[])
 		//ManagingBetterSlideTransitions();
 		//SetTransitionEffects();
 		//SimpleSlideTransitions();
+		//SupportOfMorphTransition();
+		//SetTransitionMorphType();
 
 		//This is not working
 		//CheckSlidesComparison();
