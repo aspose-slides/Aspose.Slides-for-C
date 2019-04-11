@@ -133,6 +133,8 @@ void MasterNotesSlideHeaderFooterManager();
 
 #pragma region Working with hyperlinks
 void RemoveHyperlinks();
+void SetHyperlinkColor();
+void MutableHyperlink();
 #pragma endregion
 
 #pragma region Slide Background
@@ -149,6 +151,7 @@ void AddSlideComments();
 
 #pragma region Managing slide layouts
 void SetPDFPageSize();
+void ExportToHTMLWithResponsiveLayout();
 #pragma endregion
 
 #pragma region Extract Data from Presentation
@@ -384,6 +387,8 @@ void AddColumnInTexBoxes();
 void GetFontsFolders();
 void AddingSuperscriptAndSubscriptTextInTextFrame();
 void EndParaGraphProperties();
+void HighlightText();
+void HighlightTextUsingRegx();
 
 #pragma endregion		
 
