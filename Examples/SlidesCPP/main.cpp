@@ -75,6 +75,7 @@ int main(int argc, const char argv[])
 				//EmbedFontsInHtml();
 				//ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 				//BestImagesCompressionRatioforPDF();
+		                //ExportToHTMLWithResponsiveLayout();
 
 		#pragma endregion
 
@@ -184,6 +185,8 @@ int main(int argc, const char argv[])
 		#pragma region Working with hyperlinks
 		//System::Console::WriteLine(u"Working with slide hyperlinks");
 		//RemoveHyperlinks();
+		// SetHyperlinkColor();
+		 //MutableHyperlink();
 		#pragma endregion
 
 		#pragma region Managing slide layouts
@@ -432,7 +435,9 @@ int main(int argc, const char argv[])
 		//AddingSuperscriptAndSubscriptTextInTextFrame();
 		//EndParaGraphProperties();
 		//GetEffectsByTextParagraph();
-		MutilevelBullets();
+		//MutilevelBullets();
+		//HighlightText();
+		//HighlightTextUsingRegx();
 		#pragma endregion		
 
 		#pragma endregion
