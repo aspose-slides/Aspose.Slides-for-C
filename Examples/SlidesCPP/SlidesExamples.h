@@ -35,6 +35,7 @@ void EmbedFontsInHtml();
 void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 void BestImagesCompressionRatioforPDF();
 void SetPDFPageSize();
+void ExportToHTMLWithResponsiveLayout();
 
 #pragma endregion
 
@@ -135,6 +136,7 @@ void MasterNotesSlideHeaderFooterManager();
 void RemoveHyperlinks();
 void SetHyperlinkColor();
 void MutableHyperlink();
+void AddHyperlink();
 #pragma endregion
 
 #pragma region Slide Background
@@ -151,7 +153,6 @@ void AddSlideComments();
 
 #pragma region Managing slide layouts
 void SetPDFPageSize();
-void ExportToHTMLWithResponsiveLayout();
 #pragma endregion
 
 #pragma region Extract Data from Presentation
@@ -160,7 +161,7 @@ void ExtractVideo();
 
 #pragma region Managing slide Notes
 void RemoveNotesAtSpecificSlide();
-void RemoveNotesFromAllSlides();
+//void RemoveNotesFromAllSlides();
 #pragma endregion
 
 #pragma region Rendering Slides
@@ -239,6 +240,9 @@ void SettingFontSizeOfIndividualLegend();
 void SettingInvertIfNegativePropertyForIndividualSeries();
 void AddStockChart();
 void AddDoughnutCallout();
+void EditChartDatainExternalWorkbook();
+void SetExternalWorkbook();
+void CreateExternalWorkbook();
 
 #pragma endregion
 
@@ -355,6 +359,7 @@ void VerticallyAlignText();
 
 #pragma region Formatting Text	
 
+void ExtractTextFromSlide();
 void ApplyInnerShadow();
 void ApplyOuterShadow();
 void CustomRotationAngleTextframe();
@@ -389,7 +394,7 @@ void AddingSuperscriptAndSubscriptTextInTextFrame();
 void EndParaGraphProperties();
 void HighlightText();
 void HighlightTextUsingRegx();
-
+void SetTransparencyOfTextInShadow();
 #pragma endregion		
 
 

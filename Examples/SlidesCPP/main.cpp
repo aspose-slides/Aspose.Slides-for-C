@@ -28,7 +28,7 @@ int main(int argc, const char argv[])
 
 		#pragma region Load License
 		// The path to the License file.
-		const String LicPath = u"../license/Aspose.Slides.lic";
+		const String LicPath = u"../license/Aspose.Total.NET.lic";
 		try {
 //			System::MakeObject<Aspose::Slides::License>()->SetLicense(LicPath);
 			SharedPtr<Aspose::Slides::License> lic = MakeObject<Aspose::Slides::License>();
@@ -52,7 +52,7 @@ int main(int argc, const char argv[])
 			#pragma endregion 
 
 		#pragma region Working with Presentation Decks
-	
+		  ExtractTextFromSlide();
 		#pragma region Presentation Conversions to different formats
 				//TIFF support not available in 17.12
 				//ConversionToTIFFNotes();
@@ -75,7 +75,7 @@ int main(int argc, const char argv[])
 				//EmbedFontsInHtml();
 				//ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 				//BestImagesCompressionRatioforPDF();
-		                //ExportToHTMLWithResponsiveLayout();
+		        //ExportToHTMLWithResponsiveLayout();
 
 		#pragma endregion
 
@@ -185,8 +185,9 @@ int main(int argc, const char argv[])
 		#pragma region Working with hyperlinks
 		//System::Console::WriteLine(u"Working with slide hyperlinks");
 		//RemoveHyperlinks();
-		// SetHyperlinkColor();
+        // SetHyperlinkColor();
 		 //MutableHyperlink();
+        //AddHyperlink();
 		#pragma endregion
 
 		#pragma region Managing slide layouts
@@ -222,8 +223,8 @@ int main(int argc, const char argv[])
 		//ManagingBetterSlideTransitions();
 		//SetTransitionEffects();
 		//SimpleSlideTransitions();
-		//SupportOfMorphTransition();
-		//SetTransitionMorphType();
+        //SupportOfMorphTransition();
+        //SetTransitionMorphType();
 
 		//This is not working
 		//CheckSlidesComparison();
@@ -380,6 +381,9 @@ int main(int argc, const char argv[])
 		//GetTextFromSmartArtNode();
 		//ShowPictureOrganizationChart();
 		//CustomChildNodesInSmartArt();
+		//EditChartDatainExternalWorkbook();
+		//SetExternalWorkbook();
+		//CreateExternalWorkbook();
 
 		#pragma endregion
 
@@ -438,6 +442,7 @@ int main(int argc, const char argv[])
 		//MutilevelBullets();
 		//HighlightText();
 		//HighlightTextUsingRegx();
+		//SetTransparencyOfTextInShadow();
 		#pragma endregion		
 
 		#pragma endregion

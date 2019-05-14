@@ -888,6 +888,60 @@
     <ClCompile Include="MutilevelBullets.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="SupportOfMorphTransition.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTransitionMorphType.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SetTransparencyOfTextInShadow.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplyProtection.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveProtection.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyParagraph.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyPortion.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtractTextFromSlide.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportOfAnimation.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="SetHyperLinkColor.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
+    <ClCompile Include="MutableHyperlink.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadPresentation.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportToHTMLWithResponsiveLayout.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="HighlightText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="HighlightTextUsingRegx.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AddHyperlink.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveHyperlinks.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
+    <ClCompile Include="EditChartDatainExternalWorkbook.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
