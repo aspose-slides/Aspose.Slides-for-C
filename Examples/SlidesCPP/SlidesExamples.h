@@ -395,6 +395,7 @@ void EndParaGraphProperties();
 void HighlightText();
 void HighlightTextUsingRegx();
 void SetTransparencyOfTextInShadow();
+void AddColumnsinTextFrame();
 #pragma endregion		
 
 
