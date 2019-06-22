@@ -443,6 +443,7 @@ int main(int argc, const char argv[])
 		//HighlightText();
 		//HighlightTextUsingRegx();
 		//SetTransparencyOfTextInShadow();
+		//AddColumnsinTextFrame();
 		#pragma endregion		
 
 		#pragma endregion
