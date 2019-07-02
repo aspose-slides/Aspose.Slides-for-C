@@ -900,12 +900,6 @@
     <ClCompile Include="RemoveProtection.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
-    <ClCompile Include="CopyParagraph.cpp">
-      <Filter>Source Files\Slides\Shapes\Text</Filter>
-    </ClCompile>
-    <ClCompile Include="CopyPortion.cpp">
-      <Filter>Source Files\Slides\Shapes\Text</Filter>
-    </ClCompile>
     <ClCompile Include="ExtractTextFromSlide.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>

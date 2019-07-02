@@ -228,8 +228,6 @@
     <ClCompile Include="ConvertWholePresentationToHTML.cpp" />
     <ClCompile Include="ConvertWithoutXpsOptions.cpp" />
     <ClCompile Include="ConvertWithXpsOptions.cpp" />
-    <ClCompile Include="CopyParagraph.cpp" />
-    <ClCompile Include="CopyPortion.cpp" />
     <ClCompile Include="CovertToPDFWithProgressUpdate.cpp" />
     <ClCompile Include="CreateBoundsShapeThumbnail.cpp" />
     <ClCompile Include="CreateGroupShape.cpp" />
