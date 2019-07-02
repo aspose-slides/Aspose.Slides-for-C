@@ -5,7 +5,10 @@
 #include <Export/SaveFormat.h>
 #include<Dom/CommonSlideViewProperties.h>
 #include "SlidesExamples.h"
-
+#include <Export/HtmlOptions.h>
+#include <Export/HtmlFormatter.h>
+#include <Export/NotesPositions.h>
+#include <Export/INotesCommentsLayoutingOptions.h>
 using namespace Aspose;
 using namespace Aspose::Slides;
 using namespace Aspose::Slides::Export;
@@ -23,7 +26,12 @@ void RenderingNotesWhileConvertingToHTML() {
 	//pres->get_ProtectionManager()->Encrypt(u"pass");
 	//...do some work here..
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::HtmlNotes);
+	SharedPtr<HtmlOptions> htmlOptions = MakeObject<  HtmlOptions>();
+
+	System::SharedPtr<INotesCommentsLayoutingOptions> options = htmlOptions->get_NotesCommentsLayouting();
+	options->set_NotesPosition(NotesPositions::BottomFull);
+
+	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Html, htmlOptions);
 
 	//ExEnd:RenderingNotesWhileConvertingToHTML
 

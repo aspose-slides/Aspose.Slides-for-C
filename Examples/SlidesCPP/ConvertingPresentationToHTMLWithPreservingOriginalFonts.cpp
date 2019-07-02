@@ -6,7 +6,8 @@
 #include <Export/EmbedAllFontsHtmlController.h>
 #include <Export/HtmlOptions.h>
 #include <Export/HtmlFormatter.h>
-
+#include <Export/NotesPositions.h>
+#include <Export/INotesCommentsLayoutingOptions.h>
 
 #include<Dom/CommonSlideViewProperties.h>
 #include "SlidesExamples.h"
@@ -33,8 +34,10 @@ void ConvertingPresentationToHTMLWithPreservingOriginalFonts() {
 	SharedPtr<HtmlOptions> htmlOptionsEmbed = MakeObject<  HtmlOptions>();
 	htmlOptionsEmbed->set_HtmlFormatter(HtmlFormatter::CreateCustomFormatter(embedFontsController));
 
+	System::SharedPtr<INotesCommentsLayoutingOptions> options = htmlOptionsEmbed->get_NotesCommentsLayouting();
+	options->set_NotesPosition(NotesPositions::BottomFull);
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::HtmlNotes);
+	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Html, htmlOptionsEmbed);
 
 	//ExEnd:ConvertingPresentationToHTMLWithPreservingOriginalFonts
 

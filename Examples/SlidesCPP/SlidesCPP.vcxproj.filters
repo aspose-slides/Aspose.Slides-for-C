@@ -846,9 +846,6 @@
     <ClCompile Include="CustomChildNodesInSmartArt.cpp">
       <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
     </ClCompile>
-    <ClCompile Include="Hyperlinks.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ManageSlides.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -921,9 +918,6 @@
     <ClCompile Include="MutableHyperlink.cpp">
       <Filter>Source Files\Slides\Hyperlinks</Filter>
     </ClCompile>
-    <ClCompile Include="LoadPresentation.cpp">
-      <Filter>Source Files\Presentations\Opening</Filter>
-    </ClCompile>
     <ClCompile Include="ExportToHTMLWithResponsiveLayout.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
@@ -941,6 +935,15 @@
     </ClCompile>
     <ClCompile Include="EditChartDatainExternalWorkbook.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="GetBackgroundEffectiveValues.cpp">
+      <Filter>Source Files\Slides\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBlobImageToPresentation.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="CovertToPDFWithProgressUpdate.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

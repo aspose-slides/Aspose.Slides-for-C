@@ -144,6 +144,7 @@
     <ClCompile Include="AddArrowShapedLine.cpp" />
     <ClCompile Include="AddArrowShapedLineToSlide.cpp" />
     <ClCompile Include="AddAudioFrame.cpp" />
+    <ClCompile Include="AddBlobImageToPresentation.cpp" />
     <ClCompile Include="AddBlobToPresentation.cpp" />
     <ClCompile Include="AddBoxAndWhiskerChart.cpp" />
     <ClCompile Include="AddColumnInTexBoxes.cpp" />
@@ -229,6 +230,7 @@
     <ClCompile Include="ConvertWithXpsOptions.cpp" />
     <ClCompile Include="CopyParagraph.cpp" />
     <ClCompile Include="CopyPortion.cpp" />
+    <ClCompile Include="CovertToPDFWithProgressUpdate.cpp" />
     <ClCompile Include="CreateBoundsShapeThumbnail.cpp" />
     <ClCompile Include="CreateGroupShape.cpp" />
     <ClCompile Include="CreateNewPresentation.cpp" />
@@ -271,6 +273,7 @@
     <ClCompile Include="FormatLines.cpp" />
     <ClCompile Include="FormattedEllipse.cpp" />
     <ClCompile Include="FormattedRectangle.cpp" />
+    <ClCompile Include="GetBackgroundEffectiveValues.cpp" />
     <ClCompile Include="GetChartImage.cpp" />
     <ClCompile Include="GetEffectsByTextParagraph.cpp" />
     <ClCompile Include="GetFontsFolders.cpp" />
@@ -280,11 +283,9 @@
     <ClCompile Include="Hidingshapes.cpp" />
     <ClCompile Include="HighlightText.cpp" />
     <ClCompile Include="HighlightTextUsingRegx.cpp" />
-    <ClCompile Include="Hyperlinks.cpp" />
     <ClCompile Include="ImportingHTMLText.cpp" />
     <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
-    <ClCompile Include="LoadPresentation.cpp" />
     <ClCompile Include="ManageSlides.cpp" />
     <ClCompile Include="ManageSlidesSections.cpp" />
     <ClCompile Include="LineSpacing.cpp" />
@@ -424,12 +425,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.19.4.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.4.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.19.6.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.6.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.4.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.4.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.6.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.6.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>

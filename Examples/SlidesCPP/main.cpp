@@ -23,7 +23,7 @@ int main(int argc, const char argv[])
 
 		
 		#pragma region Showing API Version	
-		ShowSlidesVersion();
+		//ShowSlidesVersion();
 		#pragma endregion
 
 		#pragma region Load License
@@ -52,7 +52,7 @@ int main(int argc, const char argv[])
 			#pragma endregion 
 
 		#pragma region Working with Presentation Decks
-		  ExtractTextFromSlide();
+		//  ExtractTextFromSlide();
 		#pragma region Presentation Conversions to different formats
 				//TIFF support not available in 17.12
 				//ConversionToTIFFNotes();
@@ -76,6 +76,7 @@ int main(int argc, const char argv[])
 				//ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 				//BestImagesCompressionRatioforPDF();
 		        //ExportToHTMLWithResponsiveLayout();
+		        //CovertToPDFWithProgressUpdate();
 
 		#pragma endregion
 
@@ -126,6 +127,7 @@ int main(int argc, const char argv[])
 				//ConvertingPresentationToHTMLWithPreservingOriginalFonts();
 				//ApplyingExternalThemeToDependingSlides();
 				//SettingInterruptionToken();
+		        // AddBlobImageToPresentation();
 
 		#pragma endregion
 
@@ -174,6 +176,7 @@ int main(int argc, const char argv[])
 		//SetImageAsBackground();
 		//SetSlideBackgroundMaster();
 		//SetSlideBackgroundNormal();
+        //GetBackgroundEffectiveValues();
 		#pragma endregion 
 
 		#pragma region working with SlidesComments

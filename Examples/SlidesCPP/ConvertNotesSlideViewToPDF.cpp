@@ -3,6 +3,9 @@
 #include <DOM/Presentation.h>
 #include <Export/SaveFormat.h>
 #include "SlidesExamples.h"
+#include <Export/PdfOptions.h>
+#include <Export/NotesPositions.h>
+#include <Export/INotesCommentsLayoutingOptions.h>
 
 using namespace Aspose;
 using namespace Aspose::Slides;
@@ -21,8 +24,14 @@ void ConvertNotesSlideViewToPDF ()
 	
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
-	
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::PdfNotes);
+
+
+	System::SharedPtr<PdfOptions> opts = System::MakeObject<PdfOptions>();
+
+	System::SharedPtr<INotesCommentsLayoutingOptions> options = opts->get_NotesCommentsLayouting();
+	options->set_NotesPosition(NotesPositions::BottomFull);
+
+	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pdf, opts);
 
 	//ExEnd:ConvertNotesSlideViewToPDF
 

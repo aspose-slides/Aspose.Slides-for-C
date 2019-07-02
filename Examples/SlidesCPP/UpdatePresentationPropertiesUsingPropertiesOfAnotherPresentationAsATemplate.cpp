@@ -16,7 +16,12 @@ using namespace Aspose::Slides::Export;
 using namespace System;
 
 //ExStart:UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
-
+void UpdateByTemplate(System::String path, System::SharedPtr<DocumentProperties> templateprop)
+{
+	System::SharedPtr<IPresentationInfo> toUpdate = PresentationFactory::get_Instance()->GetPresentationInfo(path);
+	toUpdate->UpdateDocumentProperties(templateprop);
+	toUpdate->WriteBindedPresentation(path);
+}
 void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate()
 {
 
@@ -47,11 +52,5 @@ void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
 	UpdateByTemplate(templatePath2, templateprop);
 	UpdateByTemplate(templatePath3, templateprop);
 }
-/*Defined in UpdatePresentationPropertiesUsingNewTemplate.cpp
-void UpdateByTemplate(System::String path, System::SharedPtr<DocumentProperties> templateprop)
-{
-	System::SharedPtr<IPresentationInfo> toUpdate = PresentationFactory::get_Instance()->GetPresentationInfo(path);
-	toUpdate->UpdateDocumentProperties(templateprop);
-	toUpdate->WriteBindedPresentation(path);
-}*/
+
 //ExEnd:UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate

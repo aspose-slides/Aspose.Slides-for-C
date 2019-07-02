@@ -43,7 +43,7 @@ void ThumbnailWithUserDefinedDimensions()
 	float ScaleY = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Height()) * desiredY;
 
 	// Create a custom scale image
-	auto bitmap = slide->get_NotesSlideManager()->get_NotesSlide()->GetThumbnail(ScaleX, ScaleY);
+	auto bitmap = slide->GetThumbnail(ScaleX, ScaleY);
 
 	bitmap->Save(outPath, ImageFormat::get_Png());
 

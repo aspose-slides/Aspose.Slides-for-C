@@ -84,7 +84,27 @@ using namespace System;
 using namespace System::Drawing;
 
 // ExStart:ConnectorLineAngle
+double getDirection(float w, float h, Aspose::Slides::NullableBool flipH, Aspose::Slides::NullableBool flipV)
+{
+	float endLineX = w;
 
+	if (flipH == NullableBool::True)
+		endLineX = endLineX * -1;
+	else
+		endLineX = endLineX * 1;
+	//float endLineX = w * (flipH ? -1 : 1);
+	float endLineY = h;
+	if (flipV == NullableBool::True)
+		endLineY = endLineY * -1;
+	else
+		endLineY = endLineY * 1;
+	//	float endLineY = h * (flipV ? -1 : 1);
+	float endYAxisX = 0;
+	float endYAxisY = h;
+	double angle = (Math::Atan2(endYAxisY, endYAxisX) - Math::Atan2(endLineY, endLineX));
+	if (angle < 0) angle += 2 * Math::PI;
+	return angle * 180.0 / Math::PI;
+}
 void ConnectorLineAngle()
 {
 
@@ -129,25 +149,5 @@ void ConnectorLineAngle()
 
 }
 //double ConnectorLineAngle::getDirection(float w, float h, NullableBool flipH, NullableBool flipV)
-double getDirection(float w, float h, Aspose::Slides::NullableBool flipH, Aspose::Slides::NullableBool flipV)
-{
-	float endLineX = w;
 
-	if (flipH == NullableBool::True)
-		endLineX= endLineX * -1;
-	else
-		endLineX=endLineX *  1;
-	//float endLineX = w * (flipH ? -1 : 1);
-	float endLineY = h;
-	if (flipV == NullableBool::True)
-		endLineY = endLineY * -1;
-	else
-		endLineY = endLineY *  1;
-//	float endLineY = h * (flipV ? -1 : 1);
-	float endYAxisX = 0;
-	float endYAxisY = h;
-	double angle = (Math::Atan2(endYAxisY, endYAxisX) - Math::Atan2(endLineY, endLineX));
-	if (angle < 0) angle += 2 * Math::PI;
-	return angle * 180.0 / Math::PI;
-}
 //ExEnd:ConnectorLineAngle

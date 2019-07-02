@@ -39,7 +39,7 @@ void ThumbnailFromSlideInNotes()
 	int desiredY = 800;
 
 	// Create a full scale image
-	auto bitmap = slide->get_NotesSlideManager()->get_NotesSlide()->GetThumbnail(2, 2);
+	auto bitmap = slide->GetThumbnail(2, 2);
 
 	bitmap->Save(outPath, ImageFormat::get_Png());
 

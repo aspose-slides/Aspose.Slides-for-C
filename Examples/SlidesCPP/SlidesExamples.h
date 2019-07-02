@@ -36,6 +36,7 @@ void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 void BestImagesCompressionRatioforPDF();
 void SetPDFPageSize();
 void ExportToHTMLWithResponsiveLayout();
+void CovertToPDFWithProgressUpdate();
 
 #pragma endregion
 
@@ -81,8 +82,9 @@ void SaveWithPassword();
 void ExportBlobFromPresentation();
 void ApplyingExternalThemeToDependingSlides();
 void SettingInterruptionToken();
+void AddBlobImageToPresentation();
 
-//void SavingHTMLAndCSSFileWhenExportingIntoHTML();
+void SavingHTMLAndCSSFileWhenExportingIntoHTML();
 
 
 void RenderingNotesWhileConvertingToHTML();
@@ -144,6 +146,7 @@ void SetBackgroundToGradient();
 void SetImageAsBackground();
 void SetSlideBackgroundMaster();
 void SetSlideBackgroundNormal();
+void GetBackgroundEffectiveValues();
 #pragma endregion
 
 #pragma region Slide Comments
@@ -161,7 +164,7 @@ void ExtractVideo();
 
 #pragma region Managing slide Notes
 void RemoveNotesAtSpecificSlide();
-//void RemoveNotesFromAllSlides();
+void RemoveNotesFromAllSlides();
 #pragma endregion
 
 #pragma region Rendering Slides
@@ -170,8 +173,8 @@ void ThumbnailFromSlide();
 void ThumbnailFromSlideInNotes();
 void ThumbnailWithUserDefinedDimensions();
 void RenderComments();
-//void CustomSvgShapeFormattingController();
-//void GeneratingSVGWithCustomShapeIDS();
+void CustomSvgShapeFormattingController();
+void GeneratingSVGWithCustomShapeIDS();
 
 
 #pragma endregion
@@ -263,7 +266,7 @@ void FormattedEllipse();
 void FormattedRectangle();
 void SimpleEllipse();
 void SimpleRectangle();
-//void RemoveHyperlinks();
+void RemoveHyperlinks();
 #pragma endregion
 
 #pragma region ManageFrameObjects	
