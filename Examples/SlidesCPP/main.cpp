@@ -142,6 +142,7 @@ int main(int argc, const char argv[])
 			//System::Console::WriteLine(u"Managing VBA Macros");
 			//AddVBAMacros();
 			//RemoveVBAMacros();
+		    //ExtractingVBAMacros();
 			#pragma endregion
 		
 		#pragma endregion
@@ -294,7 +295,8 @@ int main(int argc, const char argv[])
 			//SettingInvertIfNegativePropertyForIndividualSeries();
 			//AddStockChart();
 			//AddDoughnutCallout();
-
+			//HideInformationFromChart();
+			//AddingCustomLines();
 		#pragma endregion
 
 		#pragma region ManageAutoShapes	
@@ -404,6 +406,7 @@ int main(int argc, const char argv[])
 		//TableWithCellBorders();
 		//UpdateExistingTable();
 		//VerticallyAlignText();
+		//LockAspectRatio();
 		#pragma endregion
 
 		#pragma region Formatting Text	
@@ -447,6 +450,7 @@ int main(int argc, const char argv[])
 		//HighlightTextUsingRegx();
 		//SetTransparencyOfTextInShadow();
 		//AddColumnsinTextFrame();
+		//AnimationEffectinParagraph();
 		#pragma endregion		
 
 		#pragma endregion

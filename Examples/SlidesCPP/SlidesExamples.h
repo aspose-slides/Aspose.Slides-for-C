@@ -102,6 +102,7 @@ void SpecificPrinterPrinting();
 #pragma region Managing VBA Macros
 void AddVBAMacros();
 void RemoveVBAMacros();
+void ExtractingVBAMacros();
 #pragma endregion
 #pragma endregion
 
@@ -246,7 +247,8 @@ void AddDoughnutCallout();
 void EditChartDatainExternalWorkbook();
 void SetExternalWorkbook();
 void CreateExternalWorkbook();
-
+void HideInformationFromChart();
+void AddingCustomLines();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -358,6 +360,7 @@ void TableFromScratch();
 void TableWithCellBorders();
 void UpdateExistingTable();
 void VerticallyAlignText();
+void LockAspectRatio();
 #pragma endregion
 
 #pragma region Formatting Text	
@@ -399,6 +402,7 @@ void HighlightText();
 void HighlightTextUsingRegx();
 void SetTransparencyOfTextInShadow();
 void AddColumnsinTextFrame();
+void AnimationEffectinParagraph();
 #pragma endregion		
 
 

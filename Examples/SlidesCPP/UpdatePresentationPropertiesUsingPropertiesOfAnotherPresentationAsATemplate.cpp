@@ -38,7 +38,7 @@ void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
 
 	System::SharedPtr<DocumentProperties> templateprop = System::DynamicCast<Aspose::Slides::DocumentProperties>(info->ReadDocumentProperties());
 
-
+	
 	templateprop->set_Author(u"Template Author");
 	templateprop->set_Title(u"Template Title");
 	templateprop->set_Category(u"Template Category");

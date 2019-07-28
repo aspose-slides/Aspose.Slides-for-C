@@ -900,6 +900,12 @@
     <ClCompile Include="RemoveProtection.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
+    <ClCompile Include="CopyParagraph.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="CopyPortion.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
     <ClCompile Include="ExtractTextFromSlide.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
@@ -938,6 +944,72 @@
     </ClCompile>
     <ClCompile Include="CovertToPDFWithProgressUpdate.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="LockAspectRatio.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="AddingCustomLines.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="HideInformationFromChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtractingVBAMacros.cpp">
+      <Filter>Source Files\Slides\VBA</Filter>
+    </ClCompile>
+    <ClCompile Include="AddColumnsinTextFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddImageFromSVGObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddImageFromSVGObjectFromExternalResource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddParentComments.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSlides.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertSvgImageObjectIntoGroupOfShapes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateExternalWorkbook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagePresenetationNormalViewState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManageSlideSize.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MeteredLicencing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PresentationExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSlides.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetExternalWorkbook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SlideComments.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SubstitutePictureTitleOfOLEObjectFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportOfBubbleSizeRepresentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
