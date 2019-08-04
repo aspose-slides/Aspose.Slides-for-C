@@ -249,6 +249,9 @@ void SetExternalWorkbook();
 void CreateExternalWorkbook();
 void HideInformationFromChart();
 void AddingCustomLines();
+void FontPropertiesForChart();
+void ClearSpecificChartSeriesDataPointsData();
+void DefaultMarkersInChart();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
