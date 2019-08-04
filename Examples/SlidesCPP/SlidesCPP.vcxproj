@@ -210,6 +210,7 @@
     <ClCompile Include="ChartTrendLines.cpp" />
     <ClCompile Include="CheckSlidesComparison.cpp" />
     <ClCompile Include="CheckSmartArtHiddenProperty.cpp" />
+    <ClCompile Include="ClearSpecificChartSeriesDataPointsData.cpp" />
     <ClCompile Include="CloneAtEndOfAnotherPresentation.cpp" />
     <ClCompile Include="CloneAtEndOfAnotherSpecificPosition.cpp" />
     <ClCompile Include="CloneInAnotherPresentationAtSpecifiedPosition.cpp" />
@@ -255,6 +256,7 @@
     <ClCompile Include="CustomRotationAngleTextframe.cpp" />
     <ClCompile Include="DateFormatForCategoryAxis.cpp" />
     <ClCompile Include="DefaultFonts.cpp" />
+     <ClCompile Include="DefaultMarkersInChart.cpp" />
     <ClCompile Include="DefaultPrinterPrinting.cpp" />
     <ClCompile Include="DisplayChartLabels.cpp" />
     <ClCompile Include="DisplayPercentageAsLabels.cpp" />
@@ -279,6 +281,7 @@
     <ClCompile Include="FindShapeInSlide.cpp" />
     <ClCompile Include="FontFamilySetting.cpp" />
     <ClCompile Include="FontProperties.cpp" />
+    <ClCompile Include="FontPropertiesForChart.cpp" />
     <ClCompile Include="FormatJoinStyles.cpp" />
     <ClCompile Include="FormatLines.cpp" />
     <ClCompile Include="FormattedEllipse.cpp" />
@@ -300,7 +303,6 @@
     <ClCompile Include="LockAspectRatio.cpp" />
     <ClCompile Include="ManagePresenetationNormalViewState.cpp" />
     <ClCompile Include="ManageSlides.cpp" />
-    <ClCompile Include="ManageSlideSize.cpp" />
     <ClCompile Include="ManageSlidesSections.cpp" />
     <ClCompile Include="LineSpacing.cpp" />
     <ClCompile Include="LinkAllFontsHtmlController.cpp" />
@@ -406,7 +408,6 @@
     <ClCompile Include="SimpleEllipse.cpp" />
     <ClCompile Include="SimpleRectangle.cpp" />
     <ClCompile Include="SimpleSlideTransitions.cpp" />
-    <ClCompile Include="SlideComments.cpp" />
     <ClCompile Include="SmartArtNodeLevel.cpp" />
     <ClCompile Include="SpecificPrinterPrinting.cpp" />
     <ClCompile Include="SpecifyFontsUsedWithPresentation.cpp" />
