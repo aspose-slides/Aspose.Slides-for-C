@@ -981,9 +981,7 @@
     <ClCompile Include="ManagePresenetationNormalViewState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ManageSlideSize.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    
     <ClCompile Include="MeteredLicencing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -999,17 +997,26 @@
     <ClCompile Include="SetExternalWorkbook.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SlideComments.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SubstitutePictureTitleOfOLEObjectFrame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SupportOfBubbleSizeRepresentation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp">
+    <ClCompile Include="AnimationEffectInParagraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearSpecificChartSeriesDataPointsData.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultMarkersInChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="FontPropertiesForChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetExternalWorkbookWithUpdateChartData  .cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
