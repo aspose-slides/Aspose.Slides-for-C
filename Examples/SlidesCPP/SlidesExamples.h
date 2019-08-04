@@ -252,6 +252,7 @@ void AddingCustomLines();
 void FontPropertiesForChart();
 void ClearSpecificChartSeriesDataPointsData();
 void DefaultMarkersInChart();
+void SetExternalWorkbookWithUpdateChartData();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
