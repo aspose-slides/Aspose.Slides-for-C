@@ -17,11 +17,6 @@ using namespace Aspose::Slides;
 using namespace System;
 
 //ExStart:CopyParagraph 
-void Run()
-{
-	//Function Call
-	SharedPtr<IParagraph> newPara = CopyParagraph(SourcePara);
-}
 
 Paragraph CopyParagraph(SharedPtr<IParagraph> par)
 {

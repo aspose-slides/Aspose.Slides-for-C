@@ -4,7 +4,7 @@
 #include <DOM/ISlideSize.h>
 #include <DOM/SlideSizeType.h>
 #include <Export/Pdfoptions.h>
-
+#include <DOM/SlideSizeScaleType.h>
 
 #include <drawing/imaging/image_format.h>
 #include <system/string.h>
@@ -20,14 +20,15 @@ void SetPDFPageSize()
 	//ExStart:SetPDFPageSize
 
 	// The path to the documents directory.
-	const String outPath = L"../out/SetPDFPageSize_out.pptx";
+	const String outPath = u"../out/SetPDFPageSize_out.pptx";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation>pres = MakeObject<Presentation>();
 
 
 	// Set SlideSize.Type Property 
-	pres->get_SlideSize()->set_Type( SlideSizeType::A4Paper);
+	pres->get_SlideSize()->SetSize(SlideSizeType::A4Paper, SlideSizeScaleType::EnsureFit);
+
 
 	// Set different properties of PDF Options
 	Aspose::Slides::Export::PdfOptions opts = Aspose::Slides::Export::PdfOptions();

@@ -27,7 +27,7 @@ void CreateExternalWorkbook()
 
 
 	System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
-	System::String externalWbPath = u"../externalWorkbook1.pptx";
+	
 
 	System::SharedPtr<Aspose::Slides::Charts::IChart> chart = pres->get_Slides()->idx_get(0)->get_Shapes()->AddChart(Aspose::Slides::Charts::ChartType::Pie, 50.0f, 50.0f, 400.0f, 600.0f);
 

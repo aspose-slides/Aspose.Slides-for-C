@@ -27,9 +27,9 @@ using namespace Aspose::Slides;
 
 using namespace System;
 
-void AddSlides()
+void ManageSlides()
 {
-	//ExStart:AddSlides
+	//ExStart:ManageSlides
 	
 	// The path to the documents directory.
 	const String outPath = u"../templates/AddSlides.pptx";
@@ -50,6 +50,6 @@ void AddSlides()
 	// Save the PPTX file to the Disk
 	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
 	
-	//ExEnd:AddSlides
+	//ExEnd:ManageSlides
 }
 

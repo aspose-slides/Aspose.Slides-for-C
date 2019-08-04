@@ -23,12 +23,7 @@ using namespace Aspose::Slides;
 using namespace System;
 
 //ExStart:CopyPortion
-void Run()
-{
-	//Function Call
-	SharedPtr<IPortion> newPortion = CopyPortion(SourcePortion);
-	
-}
+
  Portion CopyPortion(SharedPtr<IPortion> por)
 {
 	SharedPtr<Portion> temp = MakeObject<Portion>();
@@ -47,8 +42,8 @@ void Run()
 	temp->get_PortionFormat()->set_FontHeight(portData->get_FontHeight());
 	temp->get_PortionFormat()->set_FontItalic(portData->get_FontItalic() ? NullableBool::True : NullableBool::False);
 	temp->get_PortionFormat()->set_FontUnderline(portData->get_FontUnderline());
-	temp->get_PortionFormat()->get_UnderlineFillFormat()->set_FillType(portData->get_UnderlineFillFormat->set_FillType());
-	temp->get_PortionFormat()->get_UnderlineFillFormat()->get_SolidFillColor()->set_Color(portData->get_UnderlineFillFormat()->set_SolidFillColor());
+	temp->get_PortionFormat()->get_UnderlineFillFormat()->set_FillType(portData->get_UnderlineFillFormat()->get_FillType());
+	temp->get_PortionFormat()->get_UnderlineFillFormat()->get_SolidFillColor()->set_Color(portData->get_UnderlineFillFormat()->get_SolidFillColor());
 	temp->get_PortionFormat()->set_IsHardUnderlineFill(portData->get_IsHardUnderlineFill() ? NullableBool::True : NullableBool::False);
 	temp->get_PortionFormat()->set_IsHardUnderlineLine(portData->get_IsHardUnderlineLine() ? NullableBool::True : NullableBool::False);
 
@@ -69,5 +64,7 @@ void Run()
 	temp->get_PortionFormat()->set_HyperlinkMouseOver(portData->get_HyperlinkMouseOver());
 	temp->get_PortionFormat()->set_HyperlinkClick(por->get_PortionFormat()->get_HyperlinkClick());
 	temp->get_PortionFormat()->get_HighlightColor()->set_Color(portData->get_HighlightColor());
+
+	return temp;
 }
 //ExEnd:CopyPortion 

@@ -10,7 +10,7 @@
 #include <system/string.h>
 #include <system/IO/file.h>
 
-#include "RenderSlides.h"
+
 
 using namespace Aspose::Slides;
 
@@ -19,13 +19,13 @@ using namespace System::IO;
 using namespace System::Drawing::Imaging;
 using namespace System::Drawing;
 
-void::RenderSlides::CreateSlidesSVGImage()
+void RenderSlides()
 {
-	//ExStart:CreateSlidesSVGImage
+	//ExStart:RenderSlides
 
 	// The path to the documents directory.
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String outPath = L"../out/Aspose_out.svg";
+	const String templatePath = u"../templates/TestDeck_050.pptx";
+	const String outPath = u"../out/Aspose_out.svg";
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -46,7 +46,7 @@ void::RenderSlides::CreateSlidesSVGImage()
 		auto fs = File::OpenWrite(outPath);
 
 		//ArrayPtr<byte> buffer;// = ArrayPtr<byte>();
-		ArrayPtr<byte> buffer=  ArrayPtr<byte>();
+		//ArrayPtr<byte> buffer=  ArrayPtr<byte>();
 		
 //		int len;
 	//	len = SvgStream->Read(buffer, 0, buffer->Count());
@@ -60,82 +60,9 @@ void::RenderSlides::CreateSlidesSVGImage()
 	{
 	}
 	SvgStream->Close();
-	//ExEnd:CreateSlidesSVGImage
+	//ExEnd:RenderSlides
 }
 
-void::RenderSlides::ThumbnailFromSlide()
-{
-	//ExStart:ThumbnailFromSlide
 
-	// The path to the documents directory.
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String outPath = L"../out/Aspose_out.png";
 
-	// Instantiate Presentation class
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-	// Access the first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
-
-	auto bitmap = slide->GetThumbnail(1, 1);
-
-	bitmap->Save(outPath, ImageFormat::get_Png());
-	
-	//ExEnd:ThumbnailFromSlide
-}
-
-void::RenderSlides::ThumbnailFromSlideInNotes()
-{
-	//ExStart:ThumbnailFromSlideInNotes
-
-	// The path to the documents directory.
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String outPath = L"../out/Aspose_NotesSlide_out.png";
-
-	// Instantiate Presentation class
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
-
-	// Access the first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
-
-	// User defined dimension
-	int desiredX = 1200;
-	int desiredY = 800;
-
-	// Create a full scale image
-	auto bitmap = slide->get_NotesSlideManager()->get_NotesSlide()->GetThumbnail(2, 2);
-
-	bitmap->Save(outPath, ImageFormat::get_Png());
-
-	//ExEnd:ThumbnailFromSlideInNotes
-}
-
-void::RenderSlides::ThumbnailWithUserDefinedDimensions()
-{
-	//ExStart:ThumbnailWithUserDefinedDimensions
-
-	// The path to the documents directory.
-	const String templatePath = L"../templates/TestDeck_050.pptx";
-	const String outPath = L"../out/Aspose_UserDefinedDimension_Slide_out.png";
-
-	// Instantiate Presentation class
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
-
-	// Access the first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
-
-	// User defined dimension
-	int desiredX = 1200;
-	int desiredY = 800;
-
-	// Getting scaled value  of X and Y
-	float ScaleX = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Width()) * desiredX;
-	float ScaleY = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Height()) * desiredY;
-	
-	// Create a custom scale image
-	auto bitmap = slide->get_NotesSlideManager()->get_NotesSlide()->GetThumbnail(ScaleX, ScaleY);
-
-	bitmap->Save(outPath, ImageFormat::get_Png());
-
-	//ExEnd:ThumbnailWithUserDefinedDimensions
-}

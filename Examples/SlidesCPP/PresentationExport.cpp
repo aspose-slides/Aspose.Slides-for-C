@@ -7,71 +7,81 @@
 #include <DOM/Presentation.h>
 #include <DOM/ISlideCollection.h>
 #include <DOM/IShapeCollection.h>
+#include <Export/TiffOptions.h>
+#include <Export/SwfOptions.h>
+#include <Export/NotesPositions.h>
+#include <Export/INotesCommentsLayoutingOptions.h>
 
 #include <drawing/imaging/image_format.h>
 #include <system/string.h>
+#include "SlidesExamples.h"
 
-#include "PresentationExport.h"
 
+using namespace Aspose;
 using namespace Aspose::Slides;
-
+using namespace Aspose::Slides::Export;
 using namespace System;
 using namespace System::Drawing::Imaging;
 
-const String templatePath = L"../templates/TestDeck_050.pptx";
+const String templatePath = u"../templates/TestDeck_050.pptx";
 
-void PresentationExport::SamplePDF()
+void SamplePDF()
 {
 	try {
 		auto pres = MakeObject<Presentation>(templatePath);
 
-		pres->Save(L"../out/SampleAddText.pdf", Export::SaveFormat::Pdf);
+		pres->Save(u"../out/SampleAddText.pdf", Export::SaveFormat::Pdf);
 	}
 	catch (Exception e)
 	{
-		System::Console::WriteLine(L"Running Exports::PDF...");
+		System::Console::WriteLine(u"Running Exports::PDF...");
 		System::Console::WriteLine(e.get_Message());
 
 
 	}
 }
-void PresentationExport::SampleHTML()
+void SampleHTML()
 {
 	try{
 		auto pres = MakeObject<Presentation>(templatePath);
 
-	pres->Save(L"../out/SampleAddText.html", Export::SaveFormat::Html);
+	pres->Save(u"../out/SampleAddText.html", Export::SaveFormat::Html);
 	}
 	catch (Exception e)
 	{
-		System::Console::WriteLine(L"Running Exports::HTML...");
+		System::Console::WriteLine(u"Running Exports::HTML...");
 		System::Console::WriteLine(e.get_Message());
 
 
 	}
 }
-void PresentationExport::SampleXPS()
+void SampleXPS()
 {
 	try{
 	auto pres = MakeObject<Presentation>(templatePath);
 
-	pres->Save(L"../out/SampleAddText.xps", Export::SaveFormat::Xps);
+	pres->Save(u"../out/SampleAddText.xps", Export::SaveFormat::Xps);
 	}
 	catch (Exception e)
 	{
-		System::Console::WriteLine(L"Running Exports::XPS...");
+		System::Console::WriteLine(u"Running Exports::XPS...");
 		System::Console::WriteLine(e.get_Message());
 
 
 	}
 }
-void PresentationExport::SampleTIFF()
+void SampleTIFF()
 {
 	try{
 	auto pres = MakeObject<Presentation>(templatePath);
 
-	pres->Save(L"../out/SampleAddText_Tiff.tiff", Export::SaveFormat::Tiff);
-	pres->Save(L"../out/SampleAddText_TiffNotes.tiff", Export::SaveFormat::TiffNotes);
+	pres->Save(u"../out/SampleAddText_Tiff.tiff", Export::SaveFormat::Tiff);
+
+	System::SharedPtr<TiffOptions> tiffOptions = System::MakeObject<TiffOptions>();
+	System::SharedPtr<INotesCommentsLayoutingOptions> options = tiffOptions->get_NotesCommentsLayouting();
+	options->set_NotesPosition(NotesPositions::BottomFull);
+
+	pres->Save(u"../out/SampleAddText_TiffNotes.tiff", Export::SaveFormat::Tiff, tiffOptions);
 	}
 	catch (Exception e)
 	{
@@ -81,18 +91,23 @@ void PresentationExport::SampleTIFF()
 
 	}
 }
-void PresentationExport::SampleSWF()
+void SampleSWF()
 {
 	try
 	{ 
 	auto pres = MakeObject<Presentation>(templatePath);
 
-	pres->Save(L"../out/SampleAddText_Swf.swf", Export::SaveFormat::Swf);
-	pres->Save(L"../out/SampleAddText_SwfNote.swf", Export::SaveFormat::SwfNotes);
+	pres->Save(u"../out/SampleAddText_Swf.swf", Export::SaveFormat::Swf);
+
+	System::SharedPtr<SwfOptions> swfOptions = System::MakeObject<SwfOptions>();
+	System::SharedPtr<INotesCommentsLayoutingOptions> options = swfOptions->get_NotesCommentsLayouting();
+	options->set_NotesPosition(NotesPositions::BottomFull);
+
+	pres->Save(u"../out/SampleAddText_SwfNote.swf", Export::SaveFormat::Swf, swfOptions);
 	}
 	catch (Exception e)
 	{
-		System::Console::WriteLine(L"Running Exports::SWF...");
+		System::Console::WriteLine(u"Running Exports::SWF...");
 		System::Console::WriteLine(e.get_Message());
 
 

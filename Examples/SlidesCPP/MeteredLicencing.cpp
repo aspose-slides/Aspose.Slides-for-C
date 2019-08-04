@@ -32,16 +32,16 @@ void MeteredLicencing()
 	const String templatePath = u"../templates/AccessSlides.pptx";
 
 	// Create an instance of Slides Metered class
-	SharedPtr<Metered> metered = MakeObject<Metered>();
+	//SharedPtr<Metered> metered = MakeObject<Metered>();
 
 	// Access the setMeteredKey property and pass public and private keys as parameters
-	metered->SetMeteredKey(u"*****", u"*****");
+	//metered->SetMeteredKey(u"*****", u"*****");
 
 	// Get metered data amount before calling API
-	auto amountbefore = Aspose::Slides::Metered::GetConsumptionQuantity();
+	//auto amountbefore = Aspose::Slides::Metered::GetConsumptionQuantity();
 
 	// Display information
-	System::Console::WriteLine(u"Amount Consumed Before: {0}", amountbefore.ToString());
+	//System::Console::WriteLine(u"Amount Consumed Before: {0}", amountbefore.ToString());
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
@@ -50,10 +50,10 @@ void MeteredLicencing()
 
 
 	// Get metered data amount After calling API
-	auto amountafter = Aspose::Slides::Metered::GetConsumptionQuantity();
+//	auto amountafter = Aspose::Slides::Metered::GetConsumptionQuantity();
 
 	// Display information
-	System::Console::WriteLine(u"Amount Consumed After: {0}", amountafter.ToString());
+	//System::Console::WriteLine(u"Amount Consumed After: {0}", amountafter.ToString());
 
 	//ExEnd:MeteredLicencing
 }
