@@ -297,6 +297,9 @@ int main(int argc, const char argv[])
 			//AddDoughnutCallout();
 			//HideInformationFromChart();
 			//AddingCustomLines();
+		//FontPropertiesForChart();
+			//ClearSpecificChartSeriesDataPointsData();
+			//DefaultMarkersInChart();
 		#pragma endregion
 
 		#pragma region ManageAutoShapes	
