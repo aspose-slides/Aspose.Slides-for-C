@@ -1015,8 +1015,8 @@
     <ClCompile Include="FontPropertiesForChart.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
-    <ClCompile Include="SetExternalWorkbookWithUpdateChartData  .cpp">
-      <Filter>Source Files</Filter>
+        <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
