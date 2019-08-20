@@ -15,6 +15,23 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of C++ examples that help you learn the product features
 
+
+## How to Run the Examples
++ You can either clone the repository using your favorite GitHub client or download the ZIP file from here.
++ Extract the contents of ZIP file to any folder on your computer. All the examples are located in the **Examples** folder.
++ There is a C++ Visual Studio solution file.
++ The projects are created in Visual Studio 2015, but the solution files are compatible with Visual Studio 2015 and higher.
++ Open the solution file in Visual Studio and build the project.
++ Download Aspose.Slides for C++ latest release from [Download Section](https://downloads.aspose.com/slides/cpp).
++ Extract the release and copy the **Include** and **Bin** directories inside **Examples** folder
++ Open **main.cpp** file, all the examples are called from here.
++ Uncomment the examples you want to run from within the project.
++ Build and compile the solution
+
+Please find more details for how to run the examples [here](https://docs.aspose.com/display/slidescpp/How+to+Run+Examples).
+
+
+
 ## Resources
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
