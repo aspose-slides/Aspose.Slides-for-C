@@ -287,10 +287,17 @@
     <ClCompile Include="FormattedEllipse.cpp" />
     <ClCompile Include="FormattedRectangle.cpp" />
     <ClCompile Include="GetBackgroundEffectiveValues.cpp" />
+    <ClCompile Include="GetCameraEffectiveData.cpp" />
     <ClCompile Include="GetChartImage.cpp" />
+    <ClCompile Include="GetEffectiveValues.cpp" />
+    <ClCompile Include="GetEffectiveValuesOfTable.cpp" />
     <ClCompile Include="GetEffectsByTextParagraph.cpp" />
     <ClCompile Include="GetFontsFolders.cpp" />
+    <ClCompile Include="GetLightRigEffectiveData.cpp" />
+    <ClCompile Include="GetShapeBevelEffectiveData.cpp" />
+    <ClCompile Include="GetTextFrameFormatEffectiveData.cpp" />
     <ClCompile Include="GetTextFromSmartArtNode.cpp" />
+    <ClCompile Include="GetTextStyleEffectiveData.cpp" />
     <ClCompile Include="HandoutHeaderFooterManager.cpp" />
     <ClCompile Include="HeaderFooterManager.cpp" />
     <ClCompile Include="HideInformationFromChart.cpp" />
@@ -378,9 +385,12 @@
     <ClCompile Include="SetDataRange.cpp" />
     <ClCompile Include="SetExternalWorkbook.cpp" />
     <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp" />
+    <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp" />
     <ClCompile Include="SetGapWidth.cpp" />
     <ClCompile Include="SetHyperLinkColor.cpp" />
     <ClCompile Include="SetImageAsBackground.cpp" />
+    <ClCompile Include="SetLayoutMode.cpp" />
+    <ClCompile Include="SetLocalFontHeightValues.cpp" />
     <ClCompile Include="SetMarkerOptionsonSeries.cpp" />
     <ClCompile Include="SetPDFPageSize.cpp" />
     <ClCompile Include="SetSizeAndType.cpp" />
@@ -449,12 +459,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.19.7.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.7.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.7.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.7.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>
