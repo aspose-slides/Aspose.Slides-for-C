@@ -301,6 +301,7 @@ int main(int argc, const char argv[])
 			//ClearSpecificChartSeriesDataPointsData();
 			//DefaultMarkersInChart();
 		   // SetExternalWorkbookWithUpdateChartData();
+		   //SetLayoutMode();
 		#pragma endregion
 
 		#pragma region ManageAutoShapes	
@@ -319,6 +320,9 @@ int main(int argc, const char argv[])
 		//FormattedRectangle();
 		//SimpleEllipse();
 		//SimpleRectangle();
+		//GetCameraEffectiveData();
+		//GetLightRigEffectiveData();
+	        //GetShapeBevelEffectiveData();
 		#pragma endregion
 
 		#pragma region ManageFrameObjects	
@@ -334,7 +338,7 @@ int main(int argc, const char argv[])
 		//EmbeddedVideoFrame();
 		//PictureFrameFormatting();
 		//StretchOffsetLeftForPictureFrame();
-
+		//SetFileTypeForAnEmbeddingObject();
 		#pragma endregion
 
 		#pragma region ShapeEffects	
@@ -411,6 +415,7 @@ int main(int argc, const char argv[])
 		//UpdateExistingTable();
 		//VerticallyAlignText();
 		//LockAspectRatio();
+		//GetEffectiveValuesOfTable();
 		#pragma endregion
 
 		#pragma region Formatting Text	
@@ -455,6 +460,10 @@ int main(int argc, const char argv[])
 		//SetTransparencyOfTextInShadow();
 		//AddColumnsinTextFrame();
 		//AnimationEffectinParagraph();
+		//GetEffectiveValues();
+		//SetLocalFontHeightValues();
+	        //GetTextFrameFormatEffectiveData();
+		//GetTextStyleEffectiveData();
 		#pragma endregion		
 
 		#pragma endregion
