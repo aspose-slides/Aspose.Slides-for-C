@@ -1018,6 +1018,36 @@
         <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="GetEffectiveValues.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="SetLocalFontHeightValues.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GetCameraEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GetLightRigEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GetShapeBevelEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageAutoShapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GetEffectiveValuesOfTable.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
+    <ClCompile Include="SetLayoutMode.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTextFrameFormatEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTextStyleEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
