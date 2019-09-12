@@ -253,6 +253,7 @@ void FontPropertiesForChart();
 void ClearSpecificChartSeriesDataPointsData();
 void DefaultMarkersInChart();
 void SetExternalWorkbookWithUpdateChartData();
+void SetLayoutMode();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -273,6 +274,9 @@ void FormattedRectangle();
 void SimpleEllipse();
 void SimpleRectangle();
 void RemoveHyperlinks();
+void GetCameraEffectiveData();
+void GetLightRigEffectiveData();
+void GetShapeBevelEffectiveData();
 #pragma endregion
 
 #pragma region ManageFrameObjects	
@@ -289,6 +293,7 @@ void EmbeddedVideoFrame();
 void PictureFrameFormatting();
 System::ArrayPtr<uint8_t> GetFileByteData(String fileNameZip);
 void StretchOffsetLeftForPictureFrame();
+void SetFileTypeForAnEmbeddingObject();
 
 
 #pragma endregion
@@ -365,6 +370,7 @@ void TableWithCellBorders();
 void UpdateExistingTable();
 void VerticallyAlignText();
 void LockAspectRatio();
+void GetEffectiveValuesOfTable();
 #pragma endregion
 
 #pragma region Formatting Text	
@@ -407,6 +413,10 @@ void HighlightTextUsingRegx();
 void SetTransparencyOfTextInShadow();
 void AddColumnsinTextFrame();
 void AnimationEffectinParagraph();
+void GetEffectiveValues();
+void SetLocalFontHeightValues();
+void GetTextFrameFormatEffectiveData();
+void GetTextStyleEffectiveData();
 #pragma endregion		
 
 
