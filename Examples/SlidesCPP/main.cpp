@@ -464,6 +464,7 @@ int main(int argc, const char argv[])
 		//SetLocalFontHeightValues();
 	        //GetTextFrameFormatEffectiveData();
 		//GetTextStyleEffectiveData();
+		//SetCustomBulletsNumber();
 		#pragma endregion		
 
 		#pragma endregion
