@@ -381,6 +381,7 @@
     <ClCompile Include="SetCategoryAxisLabelDistance.cpp" />
     <ClCompile Include="SetChartSeriesOverlap.cpp" />
     <ClCompile Include="SetChildFooter.cpp" />
+    <ClCompile Include="SetCustomBulletsNumber.cpp" />
     <ClCompile Include="SetDataLabelsPercentageSign.cpp" />
     <ClCompile Include="SetDataRange.cpp" />
     <ClCompile Include="SetExternalWorkbook.cpp" />
@@ -459,12 +460,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.8.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>
