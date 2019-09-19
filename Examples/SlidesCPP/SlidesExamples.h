@@ -417,6 +417,7 @@ void GetEffectiveValues();
 void SetLocalFontHeightValues();
 void GetTextFrameFormatEffectiveData();
 void GetTextStyleEffectiveData();
+void SetCustomBulletsNumber();
 #pragma endregion		
 
 
