@@ -30,9 +30,9 @@ void GetTextFrameFormatEffectiveData() {
 	System::SharedPtr<IAutoShape> shape = System::DynamicCast_noexcept<Aspose::Slides::IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 	System::SharedPtr<ITextFrameFormatEffectiveData> effectiveTextFrameFormat = shape->get_TextFrame()->get_TextFrameFormat()->GetEffective();
 
-	System::Console::WriteLine(System::String(u"Anchoring type: ") + System::ObjectExt::ToString(effectiveTextFrameFormat->get_AnchoringType()));
-	System::Console::WriteLine(System::String(u"Autofit type: ") + System::ObjectExt::ToString(effectiveTextFrameFormat->get_AutofitType()));
-	System::Console::WriteLine(System::String(u"Text vertical type: ") + System::ObjectExt::ToString(effectiveTextFrameFormat->get_TextVerticalType()));
+	System::Console::WriteLine(System::String(u"Anchoring type: ") + System::ObjectExt::ToString((int)effectiveTextFrameFormat->get_AnchoringType()));
+	System::Console::WriteLine(System::String(u"Autofit type: ") + System::ObjectExt::ToString((int)effectiveTextFrameFormat->get_AutofitType()));
+	System::Console::WriteLine(System::String(u"Text vertical type: ") + System::ObjectExt::ToString((int)effectiveTextFrameFormat->get_TextVerticalType()));
 	System::Console::WriteLine(u"Margins");
 	System::Console::WriteLine(System::String(u"   Left: ") + effectiveTextFrameFormat->get_MarginLeft());
 	System::Console::WriteLine(System::String(u"   Top: ") + effectiveTextFrameFormat->get_MarginTop());

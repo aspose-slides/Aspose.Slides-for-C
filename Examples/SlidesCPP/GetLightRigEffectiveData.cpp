@@ -34,8 +34,8 @@ void GetLightRigEffectiveData()
 	System::SharedPtr<IThreeDFormatEffectiveData> threeDEffectiveData = pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)->get_ThreeDFormat()->GetEffective();
 
 	System::Console::WriteLine(u"= Effective light rig properties =");
-	System::Console::WriteLine(System::String(u"Type: ") + System::ObjectExt::ToString(threeDEffectiveData->get_LightRig()->get_LightType()));
-	System::Console::WriteLine(System::String(u"Direction: ") + System::ObjectExt::ToString(threeDEffectiveData->get_LightRig()->get_Direction()));
+	System::Console::WriteLine(System::String(u"Type: ") + System::ObjectExt::ToString((int)threeDEffectiveData->get_LightRig()->get_LightType()));
+	System::Console::WriteLine(System::String(u"Direction: ") + System::ObjectExt::ToString((int)threeDEffectiveData->get_LightRig()->get_Direction()));
 
 
 	//ExEnd:GetLightRigEffectiveData

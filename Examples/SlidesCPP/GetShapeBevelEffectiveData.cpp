@@ -34,7 +34,7 @@ void GetShapeBevelEffectiveData() {
 	System::SharedPtr<IThreeDFormatEffectiveData> threeDEffectiveData = pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)->get_ThreeDFormat()->GetEffective();
 
 	System::Console::WriteLine(u"= Effective shape's top face relief properties =");
-	System::Console::WriteLine(System::String(u"Type: ") + System::ObjectExt::ToString(threeDEffectiveData->get_BevelTop()->get_BevelType()));
+	System::Console::WriteLine(System::String(u"Type: ") + System::ObjectExt::ToString((int)threeDEffectiveData->get_BevelTop()->get_BevelType()));
 	System::Console::WriteLine(System::String(u"Width: ") + threeDEffectiveData->get_BevelTop()->get_Width());
 	System::Console::WriteLine(System::String(u"Height: ") + threeDEffectiveData->get_BevelTop()->get_Height());
 
