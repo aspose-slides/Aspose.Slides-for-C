@@ -1051,6 +1051,15 @@
     <ClCompile Include="GetTextFrameFormatEffectiveData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SaveToStream.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFileFormat.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadFormatEnumeration.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
