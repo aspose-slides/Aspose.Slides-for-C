@@ -37,7 +37,7 @@ void BestImagesCompressionRatioforPDF();
 void SetPDFPageSize();
 void ExportToHTMLWithResponsiveLayout();
 void CovertToPDFWithProgressUpdate();
-
+void SaveToStream();
 #pragma endregion
 
 #pragma region Opening presentation decks
@@ -55,7 +55,8 @@ void MeteredLicencing();
 void SpecifyFontsUsedWithPresentation();
 void AddingEMZImagesToImageCollection();
 void AddBlobToPresentation();
-
+void LoadFormatEnumeration();
+void GetFileFormat();
 #pragma endregion
 #pragma region Working with Presentation Document properties
 
