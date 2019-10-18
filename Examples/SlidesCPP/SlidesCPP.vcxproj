@@ -292,6 +292,7 @@
     <ClCompile Include="GetEffectiveValues.cpp" />
     <ClCompile Include="GetEffectiveValuesOfTable.cpp" />
     <ClCompile Include="GetEffectsByTextParagraph.cpp" />
+    <ClCompile Include="GetFileFormat.cpp" />
     <ClCompile Include="GetFontsFolders.cpp" />
     <ClCompile Include="GetLightRigEffectiveData.cpp" />
     <ClCompile Include="GetShapeBevelEffectiveData.cpp" />
@@ -307,6 +308,7 @@
     <ClCompile Include="ImportingHTMLText.cpp" />
     <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
+    <ClCompile Include="LoadFormatEnumeration.cpp" />
     <ClCompile Include="LockAspectRatio.cpp" />
     <ClCompile Include="ManagePresenetationNormalViewState.cpp" />
     <ClCompile Include="ManageSlides.cpp" />
@@ -368,6 +370,7 @@
     <ClCompile Include="SaveAsReadOnly.cpp" />
     <ClCompile Include="SaveProperties.cpp" />
     <ClCompile Include="SaveToFile.cpp" />
+    <ClCompile Include="SaveToStream.cpp" />
     <ClCompile Include="SaveWithPassword.cpp" />
     <ClCompile Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.cpp" />
     <ClCompile Include="ScatteredChart.cpp" />
