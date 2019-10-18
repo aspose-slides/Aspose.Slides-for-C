@@ -87,7 +87,8 @@ int main(int argc, const char argv[])
 				//OpenPresentation();
 				//VerifyingPresentationWithoutloading();
 				//OpenVeryLargePresentation();
-
+                                //GetFileFormat();
+		 		//LoadFormatEnumeration();
 
 
 		#pragma endregion
