@@ -77,6 +77,7 @@ int main(int argc, const char argv[])
 				//BestImagesCompressionRatioforPDF();
 		        //ExportToHTMLWithResponsiveLayout();
 		        //CovertToPDFWithProgressUpdate();
+		         //SaveToStream();
 
 		#pragma endregion
 
