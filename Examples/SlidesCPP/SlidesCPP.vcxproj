@@ -150,6 +150,7 @@
     <ClCompile Include="AddColumnInTexBoxes.cpp" />
     <ClCompile Include="AddColumnsinTextFrame.cpp" />
     <ClCompile Include="AddCustomError.cpp" />
+    <ClCompile Include="AddCustomPromptText.cpp" />
     <ClCompile Include="AddEmbeddedFonts.cpp" />
     <ClCompile Include="AddErrorBars.cpp" />
     <ClCompile Include="AddFunnelChart.cpp" />
@@ -273,6 +274,7 @@
     <ClCompile Include="ExtractingVBAMacros.cpp" />
     <ClCompile Include="ExtractTextFromSlide.cpp" />
     <ClCompile Include="ExtractVideo.cpp" />
+    <ClCompile Include="FallBackRulesCollection.cpp" />
     <ClCompile Include="FillFormatSmartArtShapeNode.cpp" />
     <ClCompile Include="FillShapesGradient.cpp" />
     <ClCompile Include="FillShapesPattern.cpp" />
@@ -298,7 +300,6 @@
     <ClCompile Include="GetShapeBevelEffectiveData.cpp" />
     <ClCompile Include="GetTextFrameFormatEffectiveData.cpp" />
     <ClCompile Include="GetTextFromSmartArtNode.cpp" />
-    <ClCompile Include="GetTextStyleEffectiveData.cpp" />
     <ClCompile Include="HandoutHeaderFooterManager.cpp" />
     <ClCompile Include="HeaderFooterManager.cpp" />
     <ClCompile Include="HideInformationFromChart.cpp" />
@@ -360,6 +361,7 @@
     <ClCompile Include="RemovingRowColumn.cpp" />
     <ClCompile Include="RenderComments.cpp" />
     <ClCompile Include="RenderingNotesWhileConvertingToHTML.cpp" />
+    <ClCompile Include="RenderingWithFallBackFont.cpp" />
     <ClCompile Include="RenderSlides.cpp" />
     <ClCompile Include="ReplaceFontsExplicitly.cpp" />
     <ClCompile Include="ReplacingText.cpp" />
@@ -390,6 +392,7 @@
     <ClCompile Include="SetExternalWorkbook.cpp" />
     <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp" />
     <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp" />
+    <ClCompile Include="SetFontFallBack.cpp" />
     <ClCompile Include="SetGapWidth.cpp" />
     <ClCompile Include="SetHyperLinkColor.cpp" />
     <ClCompile Include="SetImageAsBackground.cpp" />
@@ -463,12 +466,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.19.10.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.10.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.9.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.10.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.10.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>
