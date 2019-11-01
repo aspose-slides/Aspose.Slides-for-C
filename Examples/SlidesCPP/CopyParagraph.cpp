@@ -5,9 +5,9 @@
 #include <DOM/IParagraphFormat.h>
 #include <DOM/BulletType.h>
 #include <DOM/BulletFormat.h>
-#include <DOM/BulletFormatEffectiveData.h>
 #include <DOM/NumberedBulletStyle.h>
 #include <DOM/IBulletFormat.h>
+#include <DOM/IBulletFormatEffectiveData.h>
 #include <DOM/IColorFormat.h>
 
 #include "SlidesExamples.h"

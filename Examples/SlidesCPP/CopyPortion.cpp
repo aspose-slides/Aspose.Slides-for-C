@@ -5,7 +5,6 @@
 #include <DOM/IPortionFormat.h>
 #include <DOM/BulletType.h>
 #include <DOM/BulletFormat.h>
-#include <DOM/BulletFormatEffectiveData.h>
 #include <DOM/NumberedBulletStyle.h>
 #include <DOM/IBulletFormat.h>
 #include <DOM/IColorFormat.h>
