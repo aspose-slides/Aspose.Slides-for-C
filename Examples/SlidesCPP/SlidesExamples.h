@@ -419,6 +419,10 @@ void SetLocalFontHeightValues();
 void GetTextFrameFormatEffectiveData();
 void GetTextStyleEffectiveData();
 void SetCustomBulletsNumber();
+void SetFontFallBack();
+void FallBackRulesCollection();
+void RenderingWithFallBackFont();
+void AccessPromptText();
 #pragma endregion		
 
 
