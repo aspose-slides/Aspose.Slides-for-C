@@ -1030,12 +1030,7 @@
     <ClCompile Include="SetLayoutMode.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
-    <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp">
-      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
-    </ClCompile>
-    <ClCompile Include="GetTextStyleEffectiveData.cpp">
-      <Filter>Source Files\Slides\Shapes\Text</Filter>
-    </ClCompile>
+    
     <ClCompile Include="SetCustomBulletsNumber.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
@@ -1059,6 +1054,18 @@
     </ClCompile>
     <ClCompile Include="LoadFormatEnumeration.cpp">
       <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFontFallBack.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="FallBackRulesCollection.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderingWithFallBackFont.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCustomPromptText.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
