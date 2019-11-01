@@ -87,9 +87,7 @@ int main(int argc, const char argv[])
 				//OpenPresentation();
 				//VerifyingPresentationWithoutloading();
 				//OpenVeryLargePresentation();
-                                //GetFileFormat();
-		 		//LoadFormatEnumeration();
-
+                                
 
 		#pragma endregion
 
@@ -467,6 +465,10 @@ int main(int argc, const char argv[])
 	        //GetTextFrameFormatEffectiveData();
 		//GetTextStyleEffectiveData();
 		//SetCustomBulletsNumber();
+		//SetFontFallBack();
+		//FallBackRulesCollection();
+		//RenderingWithFallBackFont();
+		//AccessPromptText();
 		#pragma endregion		
 
 		#pragma endregion
