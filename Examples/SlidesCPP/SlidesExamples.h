@@ -94,10 +94,10 @@ void ConvertingPresentationToHTMLWithPreservingOriginalFonts();
 #pragma endregion
 
 #pragma region Presentation Rendering-Printing
-void DefaultPrinterPrinting();
+
 void SetSlideNumber();
 void SetZoom();
-void SpecificPrinterPrinting();
+
 #pragma endregion
 
 #pragma region Managing VBA Macros
