@@ -391,7 +391,6 @@
     <ClCompile Include="SetDataRange.cpp" />
     <ClCompile Include="SetExternalWorkbook.cpp" />
     <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp" />
-    <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp" />
     <ClCompile Include="SetFontFallBack.cpp" />
     <ClCompile Include="SetGapWidth.cpp" />
     <ClCompile Include="SetHyperLinkColor.cpp" />
