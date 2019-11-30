@@ -66,6 +66,8 @@
 #include <system/io/path.h>
 #include <drawing/imaging/image_format.h>
 #include <system/string.h>
+#include <DOM/ISvgImage.h>
+#include <DOM/SvgImage.h>
 
 #include "SlidesExamples.h"
 
@@ -91,7 +93,9 @@ void InsertSvgIntoPresentation()
 
 	auto svgContent = File::ReadAllText(filePath);
 
-	SharedPtr<IPPImage> imgx = pres->get_Images()->AddFromSvg(svgContent);
+	SharedPtr<ISvgImage> svgImage = MakeObject<SvgImage>(svgContent);
+
+	SharedPtr<IPPImage> imgx = pres->get_Images()->AddImage(svgImage);
 
 	//Adding picture frame with EMZ image	
 	auto m = slide->get_Shapes()->AddPictureFrame(ShapeType::Rectangle, 0, 0, pres->get_SlideSize()->get_Size().get_Width(), pres->get_SlideSize()->get_Size().get_Height(), imgx);
