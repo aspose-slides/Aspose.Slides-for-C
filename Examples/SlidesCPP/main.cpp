@@ -339,6 +339,7 @@ int main(int argc, const char argv[])
 		//PictureFrameFormatting();
 		//StretchOffsetLeftForPictureFrame();
 		//SetFileTypeForAnEmbeddingObject();
+		//ExtractEmbeddedFileDataFromOLEObject();
 		#pragma endregion
 
 		#pragma region ShapeEffects	
