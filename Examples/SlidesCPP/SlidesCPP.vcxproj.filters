@@ -1067,6 +1067,9 @@
     <ClCompile Include="AddCustomPromptText.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExtractEmbeddedFileDataFromOLEObject.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
