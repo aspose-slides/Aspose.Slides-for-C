@@ -295,7 +295,7 @@ void PictureFrameFormatting();
 System::ArrayPtr<uint8_t> GetFileByteData(String fileNameZip);
 void StretchOffsetLeftForPictureFrame();
 void SetFileTypeForAnEmbeddingObject();
-
+void ExtractEmbeddedFileDataFromOLEObject();
 
 #pragma endregion
 
