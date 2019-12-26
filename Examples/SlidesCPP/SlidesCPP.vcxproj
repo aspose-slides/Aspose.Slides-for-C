@@ -147,6 +147,7 @@
     <ClCompile Include="AddBlobImageToPresentation.cpp" />
     <ClCompile Include="AddBlobToPresentation.cpp" />
     <ClCompile Include="AddBoxAndWhiskerChart.cpp" />
+    <ClCompile Include="AddColorToDataPoints.cpp" />
     <ClCompile Include="AddColumnInTexBoxes.cpp" />
     <ClCompile Include="AddColumnsinTextFrame.cpp" />
     <ClCompile Include="AddCustomError.cpp" />
@@ -216,6 +217,7 @@
     <ClCompile Include="CloneAtEndOfAnotherSpecificPosition.cpp" />
     <ClCompile Include="CloneInAnotherPresentationAtSpecifiedPosition.cpp" />
     <ClCompile Include="CloneShapes.cpp" />
+    <ClCompile Include="CloneSlideIntoSpecifiedSection.cpp" />
     <ClCompile Include="CloneToAnotherPresentationWithMaster.cpp" />
     <ClCompile Include="CloneToAnotherPresentationWithSetSizeAndType.cpp" />
     <ClCompile Include="CloneWithInSamePresentation.cpp" />
@@ -378,6 +380,7 @@
     <ClCompile Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.cpp" />
     <ClCompile Include="ScatteredChart.cpp" />
     <ClCompile Include="SecondPlotOptionsforCharts.cpp" />
+    <ClCompile Include="SetAccessPermissionsToPDF.cpp" />
     <ClCompile Include="SetAlternativeText.cpp" />
     <ClCompile Include="SetAnchorOfTextFrame.cpp" />
     <ClCompile Include="SetAutofitOftextframe.cpp" />
@@ -466,12 +469,14 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.19.11.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.11.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.19.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.19.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.19.12.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.19.12.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.11.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.11.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.19.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.19.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.19.12.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.19.12.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>
