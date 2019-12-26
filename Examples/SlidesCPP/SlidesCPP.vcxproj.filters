@@ -1070,6 +1070,15 @@
     <ClCompile Include="ExtractEmbeddedFileDataFromOLEObject.cpp">
       <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
     </ClCompile>
+    <ClCompile Include="CloneSlideIntoSpecifiedSection.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="SetAccessPermissionsToPDF.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="AddColorToDataPoints.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
