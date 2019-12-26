@@ -47,7 +47,7 @@ int main(int argc, const char argv[])
 		}
 		catch (Exception e)
 		{
-			System::Console::WriteLine(e.get_StackTrace());
+			System::Console::WriteLine(e->get_StackTrace());
 		}
 			#pragma endregion 
 
@@ -87,6 +87,8 @@ int main(int argc, const char argv[])
 				//OpenPresentation();
 				//VerifyingPresentationWithoutloading();
 				//OpenVeryLargePresentation();
+		                //CloneSlideIntoSpecifiedSection();
+				//SetAccessPermissionsToPDF();
                                 
 
 		#pragma endregion
@@ -323,6 +325,7 @@ int main(int argc, const char argv[])
 		//GetCameraEffectiveData();
 		//GetLightRigEffectiveData();
 	        //GetShapeBevelEffectiveData();
+		//AddColorToDataPoints();
 		#pragma endregion
 
 		#pragma region ManageFrameObjects	
