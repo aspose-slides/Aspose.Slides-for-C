@@ -46,6 +46,9 @@ void OpenPasswordPresentation();
 void OpenPresentation();
 void VerifyingPresentationWithoutloading();
 void OpenVeryLargePresentation();
+void CloneSlideIntoSpecifiedSection();
+void SetAccessPermissionsToPDF();
+
 
 
 #pragma endregion
@@ -255,6 +258,7 @@ void ClearSpecificChartSeriesDataPointsData();
 void DefaultMarkersInChart();
 void SetExternalWorkbookWithUpdateChartData();
 void SetLayoutMode();
+void AddColorToDataPoints();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
