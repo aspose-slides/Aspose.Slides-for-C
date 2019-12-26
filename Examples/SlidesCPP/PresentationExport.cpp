@@ -15,6 +15,7 @@
 #include <drawing/imaging/image_format.h>
 #include <system/string.h>
 #include "SlidesExamples.h"
+#include <system/exception.h>
 
 
 using namespace Aspose;
@@ -35,7 +36,7 @@ void SamplePDF()
 	catch (Exception e)
 	{
 		System::Console::WriteLine(u"Running Exports::PDF...");
-		System::Console::WriteLine(e.get_Message());
+		System::Console::WriteLine(e->get_Message());
 
 
 	}
@@ -50,7 +51,7 @@ void SampleHTML()
 	catch (Exception e)
 	{
 		System::Console::WriteLine(u"Running Exports::HTML...");
-		System::Console::WriteLine(e.get_Message());
+		System::Console::WriteLine(e->get_Message());
 
 
 	}
@@ -65,7 +66,7 @@ void SampleXPS()
 	catch (Exception e)
 	{
 		System::Console::WriteLine(u"Running Exports::XPS...");
-		System::Console::WriteLine(e.get_Message());
+		System::Console::WriteLine(e->get_Message());
 
 
 	}
@@ -86,7 +87,7 @@ void SampleTIFF()
 	catch (Exception e)
 	{
 		System::Console::WriteLine(L"Running Exports::Tiff...");
-		System::Console::WriteLine(e.get_Message());
+		System::Console::WriteLine(e->get_Message());
 
 
 	}
@@ -108,7 +109,7 @@ void SampleSWF()
 	catch (Exception e)
 	{
 		System::Console::WriteLine(u"Running Exports::SWF...");
-		System::Console::WriteLine(e.get_Message());
+		System::Console::WriteLine(e->get_Message());
 
 
 	}

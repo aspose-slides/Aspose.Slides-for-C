@@ -22,7 +22,7 @@
 
 #include <iostream>
 #include <system/console.h>
-
+#include <system/exception.h>
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
@@ -67,7 +67,7 @@ void RenderComments()
 	}
 	catch (Exception e)
 	{
-		System::Console::WriteLine(u"Exception " + e.get_Message());
+		System::Console::WriteLine(u"Exception " + e->get_Message());
 
 	}
 	//ExEnd:RenderComments

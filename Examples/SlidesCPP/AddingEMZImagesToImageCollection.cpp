@@ -24,7 +24,7 @@
 #include <DOM/Effects/IInnerShadow.h>
 #include <DOM/SchemeColor.h>
 #include <DOM/ColorType.h>
-
+#include <system/io/file.h> 
 #include <DOM/FillType.h>
 #include <DOM/TileFlip.h>
 #include <drawing/imaging/image_format.h>

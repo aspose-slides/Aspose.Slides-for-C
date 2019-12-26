@@ -59,7 +59,7 @@
 #include <system/io/file_share.h>
 #include <system/io/file_mode.h>
 #include <system/io/file_access.h>
-
+#include <system/io/file.h> 
 #include <system/object.h>
 #include <system/object_ext.h>
 #include <system/special_casts.h>
