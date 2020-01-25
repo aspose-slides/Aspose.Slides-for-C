@@ -427,6 +427,7 @@ void SetFontFallBack();
 void FallBackRulesCollection();
 void RenderingWithFallBackFont();
 void AccessPromptText();
+void SetDefaultFont();
 #pragma endregion		
 
 
