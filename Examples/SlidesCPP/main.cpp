@@ -473,6 +473,7 @@ int main(int argc, const char argv[])
 		//FallBackRulesCollection();
 		//RenderingWithFallBackFont();
 		//AccessPromptText();
+		//SetDefaultFont();
 		#pragma endregion		
 
 		#pragma endregion
