@@ -1079,6 +1079,9 @@
     <ClCompile Include="AddColorToDataPoints.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="SetDefaultFont.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
