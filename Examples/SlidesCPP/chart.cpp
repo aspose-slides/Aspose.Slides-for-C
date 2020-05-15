@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include <system/object_ext.h>
 
 #include <DOM/Presentation.h>

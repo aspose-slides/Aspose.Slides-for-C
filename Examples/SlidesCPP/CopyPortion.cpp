@@ -1,29 +1,12 @@
-#include <DOM/IPortion.h>
-#include <DOM/Portion.h>
-#include <DOM/IPortionCollection.h>
-#include <DOM/IPortionFormatEffectiveData.h>
-#include <DOM/IPortionFormat.h>
-#include <DOM/BulletType.h>
-#include <DOM/BulletFormat.h>
-#include <DOM/NumberedBulletStyle.h>
-#include <DOM/IBulletFormat.h>
-#include <DOM/IColorFormat.h>
-#include <DOM/IFillFormat.h>
-#include <DOM/PortionFormat.h>
-#include <DOM/FillType.h>
-#include <DOM/FillFormat.h>
-#include <DOM/ColorFormat.h>
-#include <DOM/IFillFormatEffectiveData.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
-using namespace Aspose;
-using namespace Aspose::Slides;
 
+using namespace Aspose::Slides;
 using namespace System;
 
 //ExStart:CopyPortion
 
- Portion CopyPortion(SharedPtr<IPortion> por)
+SharedPtr<Portion> CopyPortion(SharedPtr<IPortion> por)
 {
 	SharedPtr<Portion> temp = MakeObject<Portion>();
 

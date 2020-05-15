@@ -1,49 +1,59 @@
-#include <system/object_ext.h>
-
-#include <DOM/Presentation.h>
-#include <Export/SaveFormat.h>
-#include <Export/HtmlOptions.h>
-#include<Export/ResponsiveHtmlController.h>
-#include <Export/HtmlFormatter.h>
-#include <DOM/ISlideCollection.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
-//#include "ConvertIndividualSlide.h"
 
 using namespace Aspose;
-using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Slides;
+using namespace Export;
 
 using namespace System;
 
+//ExStart:ConvertIndividualSlideToHTML
+class CustomFormattingController : public IHtmlFormattingController
+{
+    void WriteDocumentStart(SharedPtr<IHtmlGenerator> generator, SharedPtr<IPresentation> presentation) override
+    {}
+
+    void WriteDocumentEnd(SharedPtr<IHtmlGenerator> generator, SharedPtr<IPresentation> presentation) override
+    {}
+
+    void WriteSlideStart(SharedPtr<IHtmlGenerator> generator, SharedPtr<ISlide> slide) override
+    {
+        generator->AddHtml(String::Format(SlideHeader, generator->get_SlideIndex() + 1));
+    }
+
+    void WriteSlideEnd(SharedPtr<IHtmlGenerator> generator, SharedPtr<ISlide> slide) override
+    {
+        generator->AddHtml(SlideFooter);
+    }
+
+    void WriteShapeStart(SharedPtr<IHtmlGenerator> generator, SharedPtr<IShape> shape) override
+    {}
+
+    void WriteShapeEnd(SharedPtr<IHtmlGenerator> generator, SharedPtr<IShape> shape) override
+    {}
+
+    static const String SlideHeader;
+    static const String SlideFooter;
+};
+const String CustomFormattingController::SlideHeader = String(u"<div class=\"slide\" name=\"slide\" id=\"slide{0}\">");
+const String CustomFormattingController::SlideFooter = String(u"</div>");
+
 void ConvertIndividualSlideToHTML()
 {
-
-	//ExStart:ConvertIndividualSlideToHTML
-
 	// The path to the documents directory.
-//	const String outPath = u"../out/ConvertWholePresentationToHTML_out.html";
 	const String outPath = u"../out/";
 	const String templatePath = u"../templates/AccessSlides.pptx";
 
-//	ConvertIndividualSlide::Run();
 	//Instantiate Presentation class that represents PPTX file
-	//SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-	//	ResponsiveHtmlController controller = new ResponsiveHtmlController();
-	//SharedPtr<Aspose::Slides::Export::ResponsiveHtmlController> controller = MakeObject <Aspose::Slides::Export::ResponsiveHtmlController>();
-
-//	SharedPtr<Aspose::Slides::Export::HtmlOptions> htmlOptions = MakeObject <Aspose::Slides::Export::HtmlOptions>();
-	//htmlOptions->set_HtmlFormatter((HtmlFormatter::CreateSlideShowFormatter(u"", false)));
-//	htmlOptions->set_HtmlFormatter(HtmlFormatter::CreateCustomFormatter(System::MakeObject<ConvertIndividualSlide::CustomFormattingController>()));
-//	htmlOptions->set_IncludeComments( true);
-	
+	SharedPtr<HtmlOptions> htmlOptions = MakeObject<HtmlOptions>();
+    htmlOptions->set_HtmlFormatter(HtmlFormatter::CreateCustomFormatter(System::MakeObject<CustomFormattingController>()));
+    
 	// Saving File              
-	/*for (int i = 0; i < pres->get_Slides()->get_Count(); i++)
+	for (int i = 0; i < pres->get_Slides()->get_Count(); i++)
 	{
 		pres->Save(outPath + u"Individual Slide" + (i + 1) + u"_out.html", System::MakeArray<int32_t>({ i + 1 }), SaveFormat::Html, htmlOptions);
-
-	}*/
-	
-	//ExEnd:ConvertIndividualSlideToHTML
+	}
 }
+//ExEnd:ConvertIndividualSlideToHTML

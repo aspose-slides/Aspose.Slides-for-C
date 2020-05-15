@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include <DOM/Presentation.h>
 #include <DOM/ISlide.h>
 #include <DOM/ISlideCollection.h>

@@ -1,29 +1,11 @@
-#include <DOM/Presentation.h>
-#include <DOM/ISlide.h>
-#include <DOM/IChart.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/Chart/ChartType.h>
-#include <DOM/NullableBool.h>
-#include <DOM/Chart/ChartTitle.h>
-#include <DOM/Chart/IChartData.h>
-#include <DOM/Chart/IChartDataCell.h>
-#include <DOM/Chart/IChartSeriesCollection.h>
-#include <DOM/Chart/IChartDataPointCollection.h>
-#include <DOM/Chart/IStringOrDoubleChartValue.h>
-#include <DOM/Chart/IDoubleChartValue.h>
-#include <DOM/NullableBool.h>
-#include <Export/SaveFormat.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Charts;
+using namespace Charts;
 
-
-void ClearSpecificChartSeriesDataPointsData() {
-
+void ClearSpecificChartSeriesDataPointsData()
+{
 	//ExStart:ClearSpecificChartSeriesDataPointsData
 
 	// The path to the documents directory.
@@ -50,7 +32,7 @@ void ClearSpecificChartSeriesDataPointsData() {
 
 	chart->get_ChartData()->get_Series()->idx_get(0)->get_DataPoints()->Clear();
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, Export::SaveFormat::Pptx);
 
 	//ExEnd:ClearSpecificChartSeriesDataPointsData
 }

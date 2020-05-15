@@ -1,3 +1,4 @@
+#include "stdafx.h"
 
 #include <DOM/Presentation.h>
 #include <Export/SaveFormat.h>

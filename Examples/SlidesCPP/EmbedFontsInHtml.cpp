@@ -1,22 +1,13 @@
-#include <system/object_ext.h>
-
-#include <DOM/Presentation.h>
-#include <Export/SaveFormat.h>
-#include <Export/HtmlOptions.h>
-#include<Export\EmbedAllFontsHtmlController.h>
-#include <Export/HtmlFormatter.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose;
 using namespace Aspose::Slides;
 using namespace Aspose::Slides::Export;
-
 using namespace System;
 
 void EmbedFontsInHtml()
 {
-
 	//ExStart:EmbedFontsInHtml
 
 	// The path to the documents directory.
@@ -28,13 +19,12 @@ void EmbedFontsInHtml()
 
 	//	Add EmbedAllFontsHtmlController 
 	ArrayPtr<String> fontNameExcludeList = MakeArray<String>({ u"Calibri", u"Arial" });
-	SharedPtr<Aspose::Slides::Export::EmbedAllFontsHtmlController> EmbedFontController = MakeObject <Aspose::Slides::Export::EmbedAllFontsHtmlController>(fontNameExcludeList);
+	SharedPtr<EmbedAllFontsHtmlController> EmbedFontController = MakeObject<EmbedAllFontsHtmlController>(fontNameExcludeList);
 
-	SharedPtr<Aspose::Slides::Export::HtmlOptions> htmlOptions = MakeObject <Aspose::Slides::Export::HtmlOptions>();
+	SharedPtr<HtmlOptions> htmlOptions = MakeObject<HtmlOptions>();
 	htmlOptions->set_HtmlFormatter((HtmlFormatter::CreateCustomFormatter(EmbedFontController)));
 
-
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Html, htmlOptions);
+	pres->Save(outPath, SaveFormat::Html, htmlOptions);
 
 	//ExEnd:EmbedFontsInHtml
 }

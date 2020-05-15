@@ -1,36 +1,8 @@
-#include <iostream>
-#include <system/console.h>
-
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IMasterSlideCollection.h>
-#include <DOM/IMasterSlide.h>
-#include <DOM/ISlide.h>
-#include <DOM/ILayoutSlide.h>
-#include <DOM/SlideLayoutType.h>
-#include <DOM/IGlobalLayoutSlideCollection.h>
-#include <DOM/IMasterLayoutSlideCollection.h>
-#include <DOM/ICommentAuthorCollection.h>
-#include <DOM/ISlideSize.h>
-#include <DOM/SlideSizeType.h>
-#include <DOM/IBaseSlideHeaderFooterManager.h>
-#include <DOM/ISlideHeaderFooterManager.h>
-#include <DOM/IPresentationHeaderFooterManager.h>
-#include <DOM/IMasterSlideHeaderFooterManager.h>
-
-
-
-//#include <drawing/PointF.h>
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-//#include <system/datetime.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
 using namespace System;
-
 
 void HeaderFooterManager()
 {
@@ -58,13 +30,9 @@ void HeaderFooterManager()
 		headerFooterManager->SetDateTimeVisibility(true); // Method SetFooterVisibility is used for making a slide date-time placeholder visible.
 	}
 
-
 	headerFooterManager->SetFooterText(u"Footer text"); // Method SetFooterText is used for setting text to slide footer placeholder.
 	headerFooterManager->SetDateTimeText(u"Date and time text"); // Method SetDateTimeText is used for setting text to slide date-time placeholder.
 
-
-
-	presentation->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	presentation->Save(outPath, Export::SaveFormat::Pptx);
 	//ExEnd:HeaderFooterManager
-
 }

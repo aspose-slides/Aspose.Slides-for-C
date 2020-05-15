@@ -1,10 +1,4 @@
-#include <system/object_ext.h>
-
-#include <DOM/Presentation.h>
-#include <Export/SaveFormat.h>
-#include <Export/TiffOptions.h>
-#include <Export/ImagePixelFormat.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose;
@@ -15,7 +9,6 @@ using namespace System;
 
 void PresentationToTIFFWithCustomImagePixelFormat()
 {
-
 	//ExStart:PresentationToTIFFWithCustomImagePixelFormat
 	// The path to the documents directory.
 	const String outPath = u"../out/PresentationToTIFFWithCustomImagePixelFormat_out.tiff";
@@ -24,12 +17,11 @@ void PresentationToTIFFWithCustomImagePixelFormat()
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-	SharedPtr<Aspose::Slides::Export::TiffOptions> tiffOptions = MakeObject <Aspose::Slides::Export::TiffOptions>();
+	SharedPtr<TiffOptions> tiffOptions = MakeObject<TiffOptions>();
 	tiffOptions->set_PixelFormat(ImagePixelFormat::Format8bppIndexed);
 
 	//Saving to Tiff
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Tiff, tiffOptions);
+	pres->Save(outPath, SaveFormat::Tiff, tiffOptions);
 	
 	//ExEnd:PresentationToTIFFWithCustomImagePixelFormat
-
 }

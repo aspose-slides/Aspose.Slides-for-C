@@ -1,73 +1,8 @@
-
-#include <system/object_ext.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlide.h>
-#include <DOM/IChart.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/Chart/ChartType.h>
-#include <DOM/NullableBool.h>
-#include <DOM/Chart/ChartTitle.h>
-#include <DOM/Chart/IChartData.h>
-#include <DOM/ITextFrame.h>
-#include <DOM/ITextFrameFormat.h>
-#include <DOM/IChart.h>
-#include <DOM/Chart/IAxis.h>
-#include <DOM/Chart/IAxesManager.h>
-#include <DOM/Chart/IChartCategoryCollection.h>
-#include <DOM/Chart/IChartDataWorkbook.h>
-#include <DOM/Chart/IChartSeriesCollection.h>
-#include <DOM/Chart/IDataLabelCollection.h>
-#include <DOM/Chart/DisplayUnitType.h>
-#include <DOM/Chart/IChartDataPointCollection.h>
-#include <DOM/Chart/ErrorBarValueType.h>
-#include <DOM/Chart/IErrorBarsFormat.h>
-#include <DOM/Chart/DataSourceType.h>
-#include <DOM/Chart/DataSourceTypeForErrorBarsCustomValues.h>
-#include <DOM/Chart/ErrorBarsCustomValues.h>
-#include <DOM/Chart/IDoubleChartValue.h>
-#include <DOM/Chart/ErrorBarType.h>
-#include <DOM/Chart/IDoubleChartValue.h>
-#include <DOM/Chart/IFormat.h>
-#include <DOM/Chart/IChartDataWorkbook.h>
-#include <DOM/Chart/IChartDataCell.h>
-#include <DOM/ILineFormat.h>
-#include <DOM/IFillFormat.h>
-#include <DOM/FillType.h>
-#include <DOM/Chart/IDataLabelFormat.h>
-#include <DOM/IColorFormat.h>
-#include <DOM/Chart/ITrendline.h>
-#include <DOM/Chart/TrendlineType.h>
-#include <DOM/Chart/IRotation3D.h>
-
-#include <DOM/Chart/IChartSeriesGroupCollection.h>
-#include <DOM/Chart/IChartSeriesGroup.h>
-
-#include <DOM/Chart/IChartDataPointCollection.h>
-#include <DOM/Chart/IChartDataPoint.h>
-#include <DOM/Chart/IFormat.h>
-
-#include <DOM/ITextFrame.h>
-#include <DOM/IParagraph.h>
-#include <DOM/IParagraphCollection.h>
-#include <DOM/IParagraphFormat.h>
-#include <DOM/IPortion.h>
-#include <DOM/IPortionCollection.h>
-#include <DOM/IPortionFormat.h>
-#include <DOM/IColorFormat.h>
-#include <DOM/ILineFormat.h>
-#include <DOM/ILineFillFormat.h>
-#include <DOM/IFontData.h>
-
-#include <DOM/Animation/AnimationTimeLine.h>
-#include <DOM/Animation/ISequence.h>
-#include <drawing/imaging/image_format.h>
-#include <Export/SaveFormat.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Charts;
+using namespace Charts;
 
 using namespace System;
 
@@ -85,8 +20,7 @@ void NormalCharts()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Add chart with default data
-	SharedPtr<IChart> chart = slide->get_Shapes()->AddChart(Aspose::Slides::Charts::ChartType::ClusteredColumn, 0, 0, 500, 500);
-
+	SharedPtr<IChart> chart = slide->get_Shapes()->AddChart(ChartType::ClusteredColumn, 0, 0, 500, 500);
 
 	// Setting the index of chart data sheet
 	int defaultWorksheetIndex = 0;
@@ -106,16 +40,14 @@ void NormalCharts()
 	int s = chart->get_ChartData()->get_Series()->get_Count();
 	s = chart->get_ChartData()->get_Categories()->get_Count();
 
-
 	// Now, Adding a new series
-	chart->get_ChartData()->get_Series()->Add(fact->GetCell(defaultWorksheetIndex, 0, 1, ObjectExt::Box<System::String>(u"Series 1")), chart->get_Type());
-	chart->get_ChartData()->get_Series()->Add(fact->GetCell(defaultWorksheetIndex, 0, 2, ObjectExt::Box<System::String>(u"Series 2")), chart->get_Type());
+	chart->get_ChartData()->get_Series()->Add(fact->GetCell(defaultWorksheetIndex, 0, 1, ObjectExt::Box<String>(u"Series 1")), chart->get_Type());
+	chart->get_ChartData()->get_Series()->Add(fact->GetCell(defaultWorksheetIndex, 0, 2, ObjectExt::Box<String>(u"Series 2")), chart->get_Type());
 
 	// Add Catrgories
-	chart->get_ChartData()->get_Categories()->Add(fact->GetCell(defaultWorksheetIndex, 1, 0, ObjectExt::Box<System::String>(u"Caetegoty 1")));
-	chart->get_ChartData()->get_Categories()->Add(fact->GetCell(defaultWorksheetIndex, 2, 0, ObjectExt::Box<System::String>(u"Caetegoty 2")));
-	chart->get_ChartData()->get_Categories()->Add(fact->GetCell(defaultWorksheetIndex, 3, 0, ObjectExt::Box<System::String>(u"Caetegoty 3")));
-
+	chart->get_ChartData()->get_Categories()->Add(fact->GetCell(defaultWorksheetIndex, 1, 0, ObjectExt::Box<String>(u"Caetegoty 1")));
+	chart->get_ChartData()->get_Categories()->Add(fact->GetCell(defaultWorksheetIndex, 2, 0, ObjectExt::Box<String>(u"Caetegoty 2")));
+	chart->get_ChartData()->get_Categories()->Add(fact->GetCell(defaultWorksheetIndex, 3, 0, ObjectExt::Box<String>(u"Caetegoty 3")));
 	
 	// Take first chart series
 	SharedPtr<IChartSeries> series = chart->get_ChartData()->get_Series()->idx_get(0);
@@ -129,9 +61,8 @@ void NormalCharts()
 	series->get_Format()->get_Fill()->set_FillType(FillType::Solid);
 	series->get_Format()->get_Fill()->get_SolidFillColor()->set_Color(System::Drawing::Color::get_Red());
 
-
 	// Take second chart series
-	 series = chart->get_ChartData()->get_Series()->idx_get(1);
+	series = chart->get_ChartData()->get_Series()->idx_get(1);
 
 	// Now populating series data
 	series->get_DataPoints()->AddDataPointForBarSeries(fact->GetCell(defaultWorksheetIndex, 1, 2, ObjectExt::Box<double>(30)));
@@ -141,7 +72,6 @@ void NormalCharts()
 	// Setting fill color for series
 	series->get_Format()->get_Fill()->set_FillType(FillType::Solid);
 	series->get_Format()->get_Fill()->get_SolidFillColor()->set_Color(System::Drawing::Color::get_Green());
-
 
 	// First label will be show Category name
 	SharedPtr<IDataLabel> lbl = series->get_DataPoints()->idx_get(0)->get_Label();
@@ -157,7 +87,7 @@ void NormalCharts()
 	lbl->get_DataLabelFormat()->set_Separator (u"/");
 
 	// Write the presentation file to disk
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, Export::SaveFormat::Pptx);
 
 	//ExEnd:NormalCharts
 }

@@ -5,13 +5,8 @@ If you do not wish to use NuGet, you can manually download Aspose.Slides for .NE
 install it and then add its reference to this project. For any issues, questions or suggestions 
 please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
 */
+#include "stdafx.h"
 #include "CustomHeaderAndFontsController.h"
-
-#include <system/string.h>
-#include <Export/IHtmlGenerator.h>
-#include <Export/EmbedAllFontsHtmlController.h>
-#include <DOM/IPresentation.h>
-
 
 using namespace Aspose::Slides::Export;
 namespace Aspose {

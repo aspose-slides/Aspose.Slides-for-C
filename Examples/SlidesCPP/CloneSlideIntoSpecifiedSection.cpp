@@ -1,23 +1,14 @@
-#include<Dom/LoadOptions.h>
-#include <DOM/Presentation.h>
-#include<DOM/LoadOptions.h>
-#include<DOM/ISlideCollection.h>
-#include <Export/SaveFormat.h>
-#include<DOM/ShapeType.h>
-#include<DOM/IShapeCollection.h>
-#include<DOM/ISectionCollection.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Export;
 
 using namespace System;
 
-void CloneSlideIntoSpecifiedSection() {
-
-  //ExStart:CloneSlideIntoSpecifiedSection
+void CloneSlideIntoSpecifiedSection()
+{
+    //ExStart:CloneSlideIntoSpecifiedSection
 
 	const String outPath = u"../out/CloneSlideIntoSpecifiedSection.pptx";
 	auto presentation = MakeObject<Presentation>();
@@ -30,8 +21,7 @@ void CloneSlideIntoSpecifiedSection() {
 
 	presentation->get_Slides()->AddClone(presentation->get_Slides()->idx_get(0), section2);
 
-	presentation->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	presentation->Save(outPath, SaveFormat::Pptx);
 
-  //ExEnd:CloneSlideIntoSpecifiedSection
-
+    //ExEnd:CloneSlideIntoSpecifiedSection
 }

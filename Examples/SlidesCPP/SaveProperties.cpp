@@ -1,18 +1,12 @@
-#include <system/object_ext.h>
-#include<Dom/ProtectionManager.h>
-#include <DOM/Presentation.h>
-#include<Dom/IProtectionManager.h>
-#include <Export/SaveFormat.h>
-#include<Dom/CommonSlideViewProperties.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
-
+using namespace Export;
 using namespace System;
-void SaveProperties() {
 
+void SaveProperties()
+{
 	//ExStart:SaveProperties
 
 	const String outPath = u"../out/SaveProperties_out.pptx";
@@ -22,8 +16,7 @@ void SaveProperties() {
 	pres->get_ProtectionManager()->set_EncryptDocumentProperties(false);
 	pres->get_ProtectionManager()->Encrypt(u"pass");
 	
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, SaveFormat::Pptx);
 
 	//ExEnd:SaveProperties
-
 }

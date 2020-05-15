@@ -1,18 +1,12 @@
-#include <system/object_ext.h>
-#include<Dom/ProtectionManager.h>
-#include <DOM/Presentation.h>
-#include<Dom/IProtectionManager.h>
-#include <Export/SaveFormat.h>
-#include<Dom/CommonSlideViewProperties.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
-
+using namespace Export;
 using namespace System;
-void SaveAsReadOnly() {
 
+void SaveAsReadOnly()
+{
 	//ExStart:SaveAsReadOnly
 
 	const String outPath = u"../out/SaveAsReadOnly_out.ppt";
@@ -21,8 +15,7 @@ void SaveAsReadOnly() {
 
 	pres->get_ProtectionManager()->SetWriteProtection(u"test");
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, SaveFormat::Pptx);
 
 	//ExEnd:SaveAsReadOnly
-
 }

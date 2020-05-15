@@ -1,24 +1,10 @@
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/INotesSlideManager.h>
-#include <DOM/INotesSlide.h>
-#include <DOM/SlideSize.h>
-
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-#include <system/IO/file.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
 
 using namespace System;
-using namespace System::IO;
 using namespace System::Drawing::Imaging;
-using namespace System::Drawing;
-
 
 void ThumbnailWithUserDefinedDimensions()
 {

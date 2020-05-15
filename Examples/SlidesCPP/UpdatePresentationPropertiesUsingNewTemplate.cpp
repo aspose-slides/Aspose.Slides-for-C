@@ -1,50 +1,46 @@
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-#include <system/string.h>
-#include <system/shared_ptr.h>
-#include <system/object.h>
-#include <DOM/PresentationFactory.h>
-#include <DOM/IPresentationInfo.h>
-#include <DOM/IDocumentProperties.h>
-#include <DOM/DocumentProperties.h>
-#include <Export/SaveFormat.h>
-#include<Export/IPptxOptions.h>
-
 using namespace Aspose;
-using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Slides;
+using namespace Export;
 using namespace System;
+using namespace IO;
 
 //ExStart:UpdatePresentationPropertiesUsingNewTemplate
-void UpdateByTemplates(System::String path, System::SharedPtr<DocumentProperties> templateprop)
+void UpdateByTemplates(String path, SharedPtr<DocumentProperties> templateprop)
 {
-	System::SharedPtr<IPresentationInfo> toUpdate = PresentationFactory::get_Instance()->GetPresentationInfo(path);
+	SharedPtr<IPresentationInfo> toUpdate = PresentationFactory::get_Instance()->GetPresentationInfo(path);
 	toUpdate->UpdateDocumentProperties(templateprop);
 	toUpdate->WriteBindedPresentation(path);
 }
-void UpdatePresentationPropertiesUsingNewTemplate ()
+void UpdatePresentationPropertiesUsingNewTemplate()
 {
-	
 	// The path to the documents directory.
 	const String templatePath1 = u"../templates/doc1.pptx";
 	const String templatePath2 = u"../templates/doc2.odp";
 	const String templatePath3 = u"../templates/doc3.ppt";
 
+    const String outPath1 = u"../out/doc1.pptx";
+    const String outPath2 = u"../out/doc2.odp";
+    const String outPath3 = u"../out/doc3.ppt";
 
-	System::SharedPtr<DocumentProperties> templateprop = System::MakeObject<DocumentProperties>();
-	templateprop->set_Author(u"Template Author");
-	templateprop->set_Title(u"Template Title");
-	templateprop->set_Category(u"Template Category");
-	templateprop->set_Keywords(u"Keyword1, Keyword2, Keyword3");
-	templateprop->set_Company(u"Our Company");
-	templateprop->set_Comments(u"Created from template");
-	templateprop->set_ContentType(u"Template Content");
-	templateprop->set_Subject(u"Template Subject");
+    Copy(templatePath1, outPath1);
+    Copy(templatePath2, outPath2);
+    Copy(templatePath3, outPath3);
 
-	UpdateByTemplates(templatePath1, templateprop);
-	UpdateByTemplates(templatePath2, templateprop);
-	UpdateByTemplates(templatePath3, templateprop);
+	SharedPtr<DocumentProperties> templateProp = System::MakeObject<DocumentProperties>();
+	templateProp->set_Author(u"Template Author");
+	templateProp->set_Title(u"Template Title");
+	templateProp->set_Category(u"Template Category");
+	templateProp->set_Keywords(u"Keyword1, Keyword2, Keyword3");
+	templateProp->set_Company(u"Our Company");
+	templateProp->set_Comments(u"Created from template");
+	templateProp->set_ContentType(u"Template Content");
+	templateProp->set_Subject(u"Template Subject");
+
+	UpdateByTemplates(outPath1, templateProp);
+	UpdateByTemplates(outPath2, templateProp);
+	UpdateByTemplates(outPath3, templateProp);
 }
-
-
 //ExEnd:UpdatePresentationPropertiesUsingNewTemplate

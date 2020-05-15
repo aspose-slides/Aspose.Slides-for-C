@@ -91,6 +91,9 @@
     <Filter Include="Source Files\Presentations\LoadOptions">
       <UniqueIdentifier>{7fa899dc-d3cb-4d62-91c9-528f4060226f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Slides\Views">
+      <UniqueIdentifier>{986a2ee0-a4f7-490e-a3e2-b8f4c9b9f5de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -846,9 +849,6 @@
     <ClCompile Include="CustomChildNodesInSmartArt.cpp">
       <Filter>Source Files\Slides\Shapes\SmartArt</Filter>
     </ClCompile>
-    <ClCompile Include="ManageSlides.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GetChartImage.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
@@ -909,9 +909,6 @@
     <ClCompile Include="ExtractTextFromSlide.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
-    <ClCompile Include="SupportOfAnimation.cpp">
-      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
-    </ClCompile>
     <ClCompile Include="SetHyperLinkColor.cpp">
       <Filter>Source Files\Slides\Hyperlinks</Filter>
     </ClCompile>
@@ -957,59 +954,16 @@
     <ClCompile Include="ExtractingVBAMacros.cpp">
       <Filter>Source Files\Slides\VBA</Filter>
     </ClCompile>
-    <ClCompile Include="AddColumnsinTextFrame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AddImageFromSVGObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AddImageFromSVGObjectFromExternalResource.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AddParentComments.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AddSlides.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ConvertSvgImageObjectIntoGroupOfShapes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CreateExternalWorkbook.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ManagePresenetationNormalViewState.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    
     <ClCompile Include="MeteredLicencing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="PresentationExport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RenderSlides.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SetBackground.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SetExternalWorkbook.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SubstitutePictureTitleOfOLEObjectFrame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SupportOfBubbleSizeRepresentation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="AnimationEffectInParagraph.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ClearSpecificChartSeriesDataPointsData.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
-     <ClCompile Include="DefaultMarkersInChart.cpp">
+    <ClCompile Include="DefaultMarkersInChart.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
     <ClCompile Include="FontPropertiesForChart.cpp">
@@ -1030,21 +984,8 @@
     <ClCompile Include="SetLayoutMode.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
-    
     <ClCompile Include="SetCustomBulletsNumber.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
-    </ClCompile>
-    <ClCompile Include="GetCameraEffectiveData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GetLightRigEffectiveData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GetShapeBevelEffectiveData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GetTextFrameFormatEffectiveData.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SaveToStream.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
@@ -1064,9 +1005,6 @@
     <ClCompile Include="RenderingWithFallBackFont.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
-    <ClCompile Include="AddCustomPromptText.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ExtractEmbeddedFileDataFromOLEObject.cpp">
       <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
     </ClCompile>
@@ -1082,34 +1020,112 @@
     <ClCompile Include="SetDefaultFont.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTextStyleEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp">
+      <Filter>Source Files\Slides\Shapes\ManageFrameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratingSVGWithCustomShapeIDS.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="SetExternalWorkbook.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="AddImageFromSVGObject.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="AddColumnsinTextFrame.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AddCustomPromptText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AddSlides.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
+    <ClCompile Include="AddParentComments.cpp">
+      <Filter>Source Files\Slides\Comments</Filter>
+    </ClCompile>
+    <ClCompile Include="GetTextFrameFormatEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GetShapeBevelEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationEffectInParagraph.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GetCameraEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateExternalWorkbook.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportOfBubbleSizeRepresentation.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="GetLightRigEffectiveData.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AddImageFromSVGObjectFromExternalResource.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertSvgImageObjectIntoGroupOfShapes.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagePresenetationNormalViewState.cpp">
+      <Filter>Source Files\Slides\Views</Filter>
+    </ClCompile>
+    <ClCompile Include="SubstitutePictureTitleOfOLEObjectFrame.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="PortionGetRect.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AddRadarChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToFodp.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="AddMathematicalShape.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="SetChartDataCellFormulas.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadOnlyRecommendedProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="SpreadsheetFormulasOptions.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToPdfConformancePdf1A_PdfUa.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CustomFormattingController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CustomHeaderAndFontsController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ExportBlobFromPresentation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LinkAllFontsHtmlController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

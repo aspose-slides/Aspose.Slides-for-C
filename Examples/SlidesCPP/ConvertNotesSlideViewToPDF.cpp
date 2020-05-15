@@ -1,39 +1,29 @@
-#include <system/object_ext.h>
-
-#include <DOM/Presentation.h>
-#include <Export/SaveFormat.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
-#include <Export/PdfOptions.h>
-#include <Export/NotesPositions.h>
-#include <Export/INotesCommentsLayoutingOptions.h>
 
 using namespace Aspose;
-using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Slides;
+using namespace Export;
 
 using namespace System;
 
-void ConvertNotesSlideViewToPDF ()
+void ConvertNotesSlideViewToPDF()
 {
+    //ExStart:ConvertNotesSlideViewToPDF
 
-	//ExStart:ConvertNotesSlideViewToPDF
+    // The path to the documents directory.
+    const String outPath = u"../out/ConvertNotesSlideViewToPDF_out.pdf";
+    const String templatePath = u"../templates/AccessSlides.pptx";
 
-	// The path to the documents directory.
-	const String outPath = u"../out/ConvertNotesSlideViewToPDF_out.pdf";
-	const String templatePath = u"../templates/AccessSlides.pptx";
-	
-	//Instantiate Presentation class that represents PPTX file
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    //Instantiate Presentation class that represents PPTX file
+    SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
+    SharedPtr<PdfOptions> opts = System::MakeObject<PdfOptions>();
 
-	System::SharedPtr<PdfOptions> opts = System::MakeObject<PdfOptions>();
+    SharedPtr<INotesCommentsLayoutingOptions> options = opts->get_NotesCommentsLayouting();
+    options->set_NotesPosition(NotesPositions::BottomFull);
 
-	System::SharedPtr<INotesCommentsLayoutingOptions> options = opts->get_NotesCommentsLayouting();
-	options->set_NotesPosition(NotesPositions::BottomFull);
+    pres->Save(outPath, SaveFormat::Pdf, opts);
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pdf, opts);
-
-	//ExEnd:ConvertNotesSlideViewToPDF
-
-
+    //ExEnd:ConvertNotesSlideViewToPDF
 }

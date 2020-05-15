@@ -1,15 +1,8 @@
-#include <system/object_ext.h>
-
-#include <DOM/Presentation.h>
-#include <DOM/IViewProperties.h>
-#include <DOM/ICommonSlideViewProperties.h>
-
-#include <Export/SaveFormat.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Export;
 
 using namespace System;
 
@@ -26,7 +19,7 @@ void SetZoom()
 
 	pres->get_ViewProperties()->get_SlideViewProperties()->set_Scale(100);
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, SaveFormat::Pptx);
 
 	//ExEnd:SetZoom
 }

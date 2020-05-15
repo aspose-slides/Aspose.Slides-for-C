@@ -1,37 +1,12 @@
-#include <iostream>
-#include <system/console.h>
-#include <Export/SaveFormat.h>
-#include <DOM/SmartArt/SmartArtQuickStyleType.h>
-#include <DOM/SmartArt/SmartArtNode.h>
-#include <DOM/SmartArt/SmartArtLayoutType.h>
-#include <DOM/SmartArt/SmartArtColorType.h>
-#include <DOM/SmartArt/SmartArt.h>
-#include <DOM/SmartArt/ISmartArtNodeCollection.h>
-#include <DOM/SmartArt/ISmartArtNode.h>
-#include <DOM/SmartArt/ISmartArt.h>
-#include <DOM/SmartArt/OrganizationChartLayoutType.h>
-#include <DOM/Shape.h>
-#include <DOM/Presentation.h>
-#include <DOM/ITextFrame.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/ISlide.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/IShape.h>
-
-#include <system/object.h>
-#include <system/object_ext.h>
-#include <system/special_casts.h>
-#include <system/io/path.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::SmartArt;
+using namespace SmartArt;
 using namespace System;
 
 void ShowPictureOrganizationChart()
 {
-
 	// ExStart:ShowPictureOrganizationChart
 
 	// The path to the documents directory.
@@ -41,10 +16,9 @@ void ShowPictureOrganizationChart()
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
 	
 	//Adding Picture Organization Chart
-	System::SharedPtr<ISmartArt> smartArt = pres->get_Slides()->idx_get(0)->get_Shapes()->AddSmartArt(0, 0, 400, 400, Aspose::Slides::SmartArt::SmartArtLayoutType::PictureOrganizationChart);
+	SharedPtr<ISmartArt> smartArt = pres->get_Slides()->idx_get(0)->get_Shapes()->AddSmartArt(0, 0, 400, 400, SmartArtLayoutType::PictureOrganizationChart);
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, Export::SaveFormat::Pptx);
 
 	// ExEnd:ShowPictureOrganizationChart
 }
-

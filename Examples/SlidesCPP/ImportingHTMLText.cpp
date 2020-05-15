@@ -1,79 +1,17 @@
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IMasterSlideCollection.h>
-#include <DOM/IMasterSlide.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/ShapeType.h>
-#include <DOM/Background.h>
-#include <DOM/BackgroundType.h>
-#include <DOM/GradientFormat.h>
-#include <DOM/FillFormat.h>
-#include <DOM/ILineFormat.h>
-#include <DOM/ILineFillFormat.h>
-#include <DOM/PictureFillFormat.h>
-#include <DOM/PictureFillMode.h>
-#include <DOM/IPPImage.h>
-#include <DOM/IImageCollection.h>
-#include <DOM/ISlidesPicture.h>
-#include <DOM/IColorFormat.h>
-#include <DOM/IAutoShape.h>
-#include <DOM/AutoShape.h>
-#include <DOM/IEffectFormat.h>
-#include <DOM/Effects/IInnerShadow.h>
-#include <DOM/SchemeColor.h>
-#include <DOM/ColorType.h>
-
-#include <DOM/FillType.h>
-#include <DOM/TileFlip.h>
-#include <drawing/imaging/image_format.h>
-#include <DOM/Shape.h>
-#include <DOM/Presentation.h>
-#include <DOM/ITextFrame.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/ISlide.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/IShape.h>
-#include <DOM/TextVerticalType.h>
-#include <DOM/TextAnchorType.h>
-#include <DOM/IPortionCollection.h>
-#include <DOM/IPortion.h>
-#include <DOM/IPortionFormat.h>
-#include <DOM/IParagraphCollection.h>
-#include <DOM/IParagraph.h>
-#include <DOM/Fonts/FontData.h>
-#include <DOM/NullableBool.h>
-#include <DOM/TextUnderlineType.h>
-
-
-#include <system/object.h>
-#include <system/object_ext.h>
-#include <system/special_casts.h>
-#include <system/io/path.h>
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-
-#include <system/io/stream_reader.h>
-//#include <system/io/fwd.h>
-#include <system/text/Encoding.h>
-
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
 using namespace System;
 using namespace System::Drawing;
 
-
 void ImportingHTMLText()
 {
-
 	// ExStart:ImportingHTMLText
 	// The path to the documents directory.
 	const String outPath = u"../out/ImportingHTMLText_out.pptx";
 	const String sampleHtml = u"../templates/file.html";
 
-	
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
 
@@ -93,17 +31,16 @@ void ImportingHTMLText()
 	SharedPtr<ITextFrame>  txtFrame = ashp->get_TextFrame();
 
 	//GetParagraphs collection
-	SharedPtr<Aspose::Slides::IParagraphCollection>ParaCollection = txtFrame->get_Paragraphs();
+	SharedPtr<IParagraphCollection>ParaCollection = txtFrame->get_Paragraphs();
 
 	// Clearing all paragraphs in added text frame
 	ParaCollection->Clear();
 
 	// Loading the HTML file using stream reader
-	SharedPtr<System::IO::StreamReader>  tr = MakeObject<System::IO::StreamReader>(sampleHtml);
+	SharedPtr<IO::StreamReader>  tr = MakeObject<IO::StreamReader>(sampleHtml);
 
 	// Adding text from HTML stream reader in text frame
 	ParaCollection->AddFromHtml(tr->ReadToEnd());
-
 
 	// Create the Paragraph object for text frame
 	SharedPtr<IParagraph> paragraph = txtFrame->get_Paragraphs()->idx_get(0);
@@ -135,8 +72,7 @@ void ImportingHTMLText()
 	pf->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Blue());
 
 	// Save PPTX to Disk
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
-
+	pres->Save(outPath, Export::SaveFormat::Pptx);
 
 	// ExEnd:ImportingHTMLText
 }

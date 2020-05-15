@@ -1,37 +1,8 @@
-
-#include <iostream>
-#include <system/console.h>
-
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IMasterHandoutSlide.h>
-#include <DOM/IMasterHandoutSlideManager.h>
-#include <DOM/ISlide.h>
-#include <DOM/ILayoutSlide.h>
-#include <DOM/SlideLayoutType.h>
-#include <DOM/IGlobalLayoutSlideCollection.h>
-#include <DOM/IMasterLayoutSlideCollection.h>
-#include <DOM/ICommentAuthorCollection.h>
-#include <DOM/ISlideSize.h>
-#include <DOM/SlideSizeType.h>
-#include <DOM/IBaseSlideHeaderFooterManager.h>
-#include <DOM/ISlideHeaderFooterManager.h>
-#include <DOM/IPresentationHeaderFooterManager.h>
-#include <DOM/IMasterHandoutSlideHeaderFooterManager.h>
-
-
-
-//#include <drawing/PointF.h>
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-//#include <system/datetime.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
 using namespace System;
-
 
 void HandoutHeaderFooterManager()
 {
@@ -62,10 +33,7 @@ void HandoutHeaderFooterManager()
 		headerFooterManager->SetDateTimeText(u"New date and time text"); // set master handout to notes slide Date-time placeholder
 	}
 
-		
 	presentation->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
 	
-		
 	//ExEnd:HandoutHeaderFooterManager
-
 }

@@ -1,31 +1,18 @@
-#include <DOM/IParagraph.h>
-#include <DOM/Paragraph.h>
-#include <DOM/IParagraphCollection.h>
-#include <DOM/IParagraphFormatEffectiveData.h>
-#include <DOM/IParagraphFormat.h>
-#include <DOM/BulletType.h>
-#include <DOM/BulletFormat.h>
-#include <DOM/NumberedBulletStyle.h>
-#include <DOM/IBulletFormat.h>
-#include <DOM/IBulletFormatEffectiveData.h>
-#include <DOM/IColorFormat.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
-using namespace Aspose;
-using namespace Aspose::Slides;
 
+using namespace Aspose::Slides;
 using namespace System;
 
 //ExStart:CopyParagraph 
-
-Paragraph CopyParagraph(SharedPtr<IParagraph> par)
+SharedPtr<Paragraph> CopyParagraph(SharedPtr<IParagraph> par)
 {
 	SharedPtr<Paragraph> para = MakeObject<Paragraph>();
 
 	// use CreateParagraphFormatData !!!
 	SharedPtr<IParagraphFormatEffectiveData> paraData = par->CreateParagraphFormatEffective();
 
-	// use ParagraphFormat  to set values
+	// use ParagraphFormat to set values
 
 	para->get_ParagraphFormat()->set_Alignment(paraData->get_Alignment());
 	para->get_ParagraphFormat()->set_DefaultTabSize(paraData->get_DefaultTabSize());
@@ -37,7 +24,6 @@ Paragraph CopyParagraph(SharedPtr<IParagraph> par)
 	para->get_ParagraphFormat()->set_SpaceAfter(paraData->get_SpaceAfter());
 	para->get_ParagraphFormat()->set_SpaceBefore(paraData->get_SpaceBefore());
 	para->get_ParagraphFormat()->set_SpaceWithin(paraData->get_SpaceWithin());
-
 
 	para->get_ParagraphFormat()->get_Bullet()->set_Type(paraData->get_Bullet()->get_Type());
 	para->get_ParagraphFormat()->get_Bullet()->set_Char(paraData->get_Bullet()->get_Char());

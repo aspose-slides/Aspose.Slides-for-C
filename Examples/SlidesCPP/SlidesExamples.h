@@ -4,6 +4,26 @@
 
 using namespace std;
 using namespace System;
+using namespace IO;
+
+inline void Copy(const String& from, const String& to)
+{
+    if (File::Exists(to))
+    {
+        File::Delete(to);
+    }
+    File::Copy(from, to);
+}
+
+inline String GetDataPath()
+{
+    return Path::Combine(Directory::GetCurrentDirectory(), u"../templates/");
+}
+
+inline String GetOutPath()
+{
+    return Path::Combine(Directory::GetCurrentDirectory(), u"../out/");
+}
 
 //Developer Guide > Loading, Saving and Converting
 
@@ -30,7 +50,6 @@ void CustomOptionsPDFConversion();
 void PPTtoPPTX();
 void PresentationToTIFFWithCustomImagePixelFormat();
 void PresentationToTIFFWithDefaultSize();
-void LinkAllFontsHtmlController();
 void EmbedFontsInHtml();
 void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 void BestImagesCompressionRatioforPDF();
@@ -38,6 +57,8 @@ void SetPDFPageSize();
 void ExportToHTMLWithResponsiveLayout();
 void CovertToPDFWithProgressUpdate();
 void SaveToStream();
+void ConvertToFodp();
+void ConvertToPdfConformancePdf1A_PdfUa();
 #pragma endregion
 
 #pragma region Opening presentation decks
@@ -69,8 +90,9 @@ void AccessOpenDoc();
 void AccessProperties();
 void UpdatePresentationProperties();
 void UpdatePresentationPropertiesUsingNewTemplate();
-void UpdateByTemplate(System::String path, System::SharedPtr<Aspose::Slides::DocumentProperties> templateprop);
+void UpdateByTemplate(String path, SharedPtr<Aspose::Slides::DocumentProperties> templateprop);
 void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
+void ReadOnlyRecommendedProperties();
 
 #pragma endregion
 
@@ -89,7 +111,9 @@ void SettingInterruptionToken();
 void AddBlobImageToPresentation();
 
 void SavingHTMLAndCSSFileWhenExportingIntoHTML();
-
+void AddImageFromSVGObjectFromExternalResource();
+void ConvertSvgImageObjectIntoGroupOfShapes();
+void AddImageFromSVGObject();
 
 void RenderingNotesWhileConvertingToHTML();
 void ConvertingPresentationToHTMLWithPreservingOriginalFonts();
@@ -132,6 +156,7 @@ void CheckSlidesComparison();
 void HeaderFooterManager();
 void SetChildFooter();
 void SetSizeAndType();
+void SetSlideSizeScale();
 void ManageSlidesSections();
 void AddNotesSlideWithNotesStyle();
 void HandoutHeaderFooterManager();
@@ -157,6 +182,7 @@ void GetBackgroundEffectiveValues();
 #pragma region Slide Comments
 void AccessSlideComments();
 void AddSlideComments();
+void AddParentComments();
 #pragma endregion
 
 #pragma region Managing slide layouts
@@ -178,7 +204,6 @@ void ThumbnailFromSlide();
 void ThumbnailFromSlideInNotes();
 void ThumbnailWithUserDefinedDimensions();
 void RenderComments();
-void CustomSvgShapeFormattingController();
 void GeneratingSVGWithCustomShapeIDS();
 
 
@@ -194,6 +219,12 @@ void SetTransitionMorphType();
 #pragma endregion
 
 #pragma region Working with Shapes
+
+void GetCameraEffectiveData();
+void GetLightRigEffectiveData();
+void GetShapeBevelEffectiveData();
+void SubstitutePictureTitleOfOLEObjectFrame();
+void AddMathematicalShape();
 
 #pragma region Working with Charts
 void AddCustomError();
@@ -259,6 +290,10 @@ void DefaultMarkersInChart();
 void SetExternalWorkbookWithUpdateChartData();
 void SetLayoutMode();
 void AddColorToDataPoints();
+void SupportOfBubbleSizeRepresentation();
+void AddRadarChart();
+void SetChartDataCellFormulas();
+void SpreadsheetFormulasOptions();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -279,9 +314,6 @@ void FormattedRectangle();
 void SimpleEllipse();
 void SimpleRectangle();
 void RemoveHyperlinks();
-void GetCameraEffectiveData();
-void GetLightRigEffectiveData();
-void GetShapeBevelEffectiveData();
 #pragma endregion
 
 #pragma region ManageFrameObjects	
@@ -296,7 +328,7 @@ void AddVideoFrameFromWebSource();
 void ChangeOLEObjectData();
 void EmbeddedVideoFrame();
 void PictureFrameFormatting();
-System::ArrayPtr<uint8_t> GetFileByteData(String fileNameZip);
+ArrayPtr<uint8_t> GetFileByteData(String fileNameZip);
 void StretchOffsetLeftForPictureFrame();
 void SetFileTypeForAnEmbeddingObject();
 void ExtractEmbeddedFileDataFromOLEObject();
@@ -322,7 +354,6 @@ void FillShapesPicture();
 void FillShapeswithSolidColor();
 void FindShapeInSlide();
 void Hidingshapes();
-void InterlopShapeID();
 void RemoveShape();
 void RotatingShapes();
 void SetAlternativeText();
@@ -426,10 +457,15 @@ void SetCustomBulletsNumber();
 void SetFontFallBack();
 void FallBackRulesCollection();
 void RenderingWithFallBackFont();
-void AccessPromptText();
 void SetDefaultFont();
+void AddCustomPromptText();
+void PortionGetRect();
+
 #pragma endregion		
 
+#pragma region Views
+void ManagePresenetationNormalViewState();
+#pragma endregion
 
 #pragma endregion
 

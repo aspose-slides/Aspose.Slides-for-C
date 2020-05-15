@@ -1,39 +1,13 @@
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IShapeCollection.h>
-#include <DOM/INotesSlideManager.h>
-#include <DOM/INotesSlide.h>
-#include <DOM/SlideSize.h>
-#include <export/NotesCommentsLayoutingOptions.h>
-#include <Export/CommentsPositions.h>
-#include <Export/NotesPositions.h>
-
-
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-#include <system/IO/file.h>
-#include <system/diagnostics/process.h>
-
-#include <system/object.h>
-#include <system/object_ext.h>
-#include <system/special_casts.h>
-#include <system/io/path.h>
-
-#include <iostream>
-#include <system/console.h>
-#include <system/exception.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Export;
 
 using namespace System;
-using namespace System::IO;
+using namespace IO;
 using namespace System::Drawing::Imaging;
 using namespace System::Drawing;
-using namespace System::Diagnostics;
-
 
 void RenderComments()
 {
@@ -62,13 +36,13 @@ void RenderComments()
 
 	// Access and render the first slide
 	pres->get_Slides()->idx_get(0)->RenderToGraphics(opts, graphics);
-	try {
+	try
+    {
  		bmp->Save(outPath, ImageFormat::get_Png());
 	}
 	catch (Exception e)
 	{
-		System::Console::WriteLine(u"Exception " + e->get_Message());
-
+		Console::WriteLine(u"Exception " + e->get_Message());
 	}
 	//ExEnd:RenderComments
 }

@@ -1,32 +1,8 @@
-#include <iostream>
-#include <system/console.h>
-
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IMasterSlideCollection.h>
-#include <DOM/ISlide.h>
-#include <DOM/ILayoutSlide.h>
-#include <DOM/SlideLayoutType.h>
-#include <DOM/IGlobalLayoutSlideCollection.h>
-#include <DOM/IMasterLayoutSlideCollection.h>
-#include <DOM/ICommentAuthorCollection.h>
-#include <DOM/ISlideSize.h>
-#include <DOM/SlideSizeType.h>
-#include <DOM/IBaseSlideHeaderFooterManager.h>
-#include <DOM/IMasterSlideHeaderFooterManager.h>
-
-
-//#include <drawing/PointF.h>
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-//#include <system/datetime.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
 using namespace System;
-
 
 void SetChildFooter()
 {
@@ -47,7 +23,6 @@ void SetChildFooter()
 	headerFooterManager->SetFooterAndChildFootersText(u"Footer text"); // Method SetFooterAndChildFootersText is used for setting text to master slide and all child footer placeholders.
 	headerFooterManager->SetDateTimeAndChildDateTimesText(u"Date and time text"); // Method SetDateTimeAndChildDateTimesText is used for setting text to master slide and all child date-time placeholders.
 
-	presentation->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	presentation->Save(outPath, Export::SaveFormat::Pptx);
 	//ExEnd:SetChildFooter
-
 }

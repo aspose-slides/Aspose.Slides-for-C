@@ -86,7 +86,7 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <PrecompiledHeader />
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4250</DisableSpecificWarnings>
       <PreprocessorDefinitions>DEBUG;_CONSOLE;WIN32;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -119,6 +119,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -164,12 +165,14 @@
     <ClCompile Include="AddingCustomLines.cpp" />
     <ClCompile Include="AddingEMZImagesToImageCollection.cpp" />
     <ClCompile Include="AddLayoutSlides.cpp" />
+    <ClCompile Include="AddMathematicalShape.cpp" />
     <ClCompile Include="AddNodes.cpp" />
     <ClCompile Include="AddNodesSpecificPosition.cpp" />
     <ClCompile Include="AddNotesSlideWithNotesStyle.cpp" />
     <ClCompile Include="AddOLEObjectFrame.cpp" />
     <ClCompile Include="AddParentComments.cpp" />
     <ClCompile Include="AddPlainLineToSlide.cpp" />
+    <ClCompile Include="AddRadarChart.cpp" />
     <ClCompile Include="AddRelativeScaleHeightPictureFrame.cpp" />
     <ClCompile Include="AddSimplePictureFrames.cpp" />
     <ClCompile Include="AddSlideComments.cpp" />
@@ -228,13 +231,18 @@
     <ClCompile Include="ConnectShapeUsingConnectionSite.cpp" />
     <ClCompile Include="ConversionToTIFFNotes.cpp" />
     <ClCompile Include="ConvertIndividualSlideToHTML.cpp" />
-    <ClCompile Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.cpp" />
+    <ClCompile Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="ConvertingPresentationToHTMLWithPreservingOriginalFonts.cpp" />
     <ClCompile Include="ConvertNotesSlideViewToPDF.cpp" />
     <ClCompile Include="ConvertPresentationToPasswordProtectedPDF.cpp" />
     <ClCompile Include="ConvertPresentationToResponsiveHTML.cpp" />
     <ClCompile Include="ConvertSvgImageObjectIntoGroupOfShapes.cpp" />
+    <ClCompile Include="ConvertToFodp.cpp" />
     <ClCompile Include="ConvertToPDF.cpp" />
+    <ClCompile Include="ConvertToPdfConformancePdf1A_PdfUa.cpp" />
     <ClCompile Include="ConvertToPDFWithHiddenSlides.cpp" />
     <ClCompile Include="ConvertToSWF.cpp" />
     <ClCompile Include="ConvertWholePresentationToHTML.cpp" />
@@ -254,12 +262,15 @@
     <ClCompile Include="CreateSmartArtChildNoteThumbnail.cpp" />
     <ClCompile Include="CreateSmartArtShape.cpp" />
     <ClCompile Include="CustomChildNodesInSmartArt.cpp" />
-    <ClCompile Include="CustomHeaderAndFontsController.cpp" />
+    <ClCompile Include="CustomHeaderAndFontsController.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="CustomOptionsPDFConversion.cpp" />
     <ClCompile Include="CustomRotationAngleTextframe.cpp" />
     <ClCompile Include="DateFormatForCategoryAxis.cpp" />
     <ClCompile Include="DefaultFonts.cpp" />
-     <ClCompile Include="DefaultMarkersInChart.cpp" />
+    <ClCompile Include="DefaultMarkersInChart.cpp" />
     <ClCompile Include="DefaultPrinterPrinting.cpp" />
     <ClCompile Include="DisplayChartLabels.cpp" />
     <ClCompile Include="DisplayPercentageAsLabels.cpp" />
@@ -270,7 +281,10 @@
     <ClCompile Include="EmbedFontsInHtml.cpp" />
     <ClCompile Include="EndParaGraphProperties.cpp" />
     <ClCompile Include="ExistingChart.cpp" />
-    <ClCompile Include="ExportBlobFromPresentation.cpp" />
+    <ClCompile Include="ExportBlobFromPresentation.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="ExportingHTMLText.cpp" />
     <ClCompile Include="ExportToHTMLWithResponsiveLayout.cpp" />
     <ClCompile Include="ExtractEmbeddedFileDataFromOLEObject.cpp" />
@@ -291,6 +305,7 @@
     <ClCompile Include="FormatLines.cpp" />
     <ClCompile Include="FormattedEllipse.cpp" />
     <ClCompile Include="FormattedRectangle.cpp" />
+    <ClCompile Include="GeneratingSVGWithCustomShapeIDS.cpp" />
     <ClCompile Include="GetBackgroundEffectiveValues.cpp" />
     <ClCompile Include="GetCameraEffectiveData.cpp" />
     <ClCompile Include="GetChartImage.cpp" />
@@ -303,6 +318,7 @@
     <ClCompile Include="GetShapeBevelEffectiveData.cpp" />
     <ClCompile Include="GetTextFrameFormatEffectiveData.cpp" />
     <ClCompile Include="GetTextFromSmartArtNode.cpp" />
+    <ClCompile Include="GetTextStyleEffectiveData.cpp" />
     <ClCompile Include="HandoutHeaderFooterManager.cpp" />
     <ClCompile Include="HeaderFooterManager.cpp" />
     <ClCompile Include="HideInformationFromChart.cpp" />
@@ -315,10 +331,12 @@
     <ClCompile Include="LoadFormatEnumeration.cpp" />
     <ClCompile Include="LockAspectRatio.cpp" />
     <ClCompile Include="ManagePresenetationNormalViewState.cpp" />
-    <ClCompile Include="ManageSlides.cpp" />
     <ClCompile Include="ManageSlidesSections.cpp" />
     <ClCompile Include="LineSpacing.cpp" />
-    <ClCompile Include="LinkAllFontsHtmlController.cpp" />
+    <ClCompile Include="LinkAllFontsHtmlController.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ManageEmbeddedFonts.cpp" />
     <ClCompile Include="ManageParagraphFontProperties.cpp" />
@@ -346,10 +364,12 @@
     <ClCompile Include="PictureFrameFormatting.cpp" />
     <ClCompile Include="PictureOrganizationChart.cpp" />
     <ClCompile Include="PieChart.cpp" />
+    <ClCompile Include="PortionGetRect.cpp" />
     <ClCompile Include="PPTtoPPTX.cpp" />
     <ClCompile Include="PresentationExport.cpp" />
     <ClCompile Include="PresentationToTIFFWithCustomImagePixelFormat.cpp" />
     <ClCompile Include="PresentationToTIFFWithDefaultSize.cpp" />
+    <ClCompile Include="ReadOnlyRecommendedProperties.cpp" />
     <ClCompile Include="RemoveHyperlinks.cpp" />
     <ClCompile Include="RemoveNode.cpp" />
     <ClCompile Include="RemoveNodeSpecificPosition.cpp" />
@@ -365,7 +385,6 @@
     <ClCompile Include="RenderComments.cpp" />
     <ClCompile Include="RenderingNotesWhileConvertingToHTML.cpp" />
     <ClCompile Include="RenderingWithFallBackFont.cpp" />
-    <ClCompile Include="RenderSlides.cpp" />
     <ClCompile Include="ReplaceFontsExplicitly.cpp" />
     <ClCompile Include="ReplacingText.cpp" />
     <ClCompile Include="RotatingShapes.cpp" />
@@ -377,7 +396,10 @@
     <ClCompile Include="SaveToFile.cpp" />
     <ClCompile Include="SaveToStream.cpp" />
     <ClCompile Include="SaveWithPassword.cpp" />
-    <ClCompile Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.cpp" />
+    <ClCompile Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="ScatteredChart.cpp" />
     <ClCompile Include="SecondPlotOptionsforCharts.cpp" />
     <ClCompile Include="SetAccessPermissionsToPDF.cpp" />
@@ -385,9 +407,9 @@
     <ClCompile Include="SetAnchorOfTextFrame.cpp" />
     <ClCompile Include="SetAutofitOftextframe.cpp" />
     <ClCompile Include="SetAutomaticSeriesFillColor.cpp" />
-    <ClCompile Include="SetBackground.cpp" />
     <ClCompile Include="SetBackgroundToGradient.cpp" />
     <ClCompile Include="SetCategoryAxisLabelDistance.cpp" />
+    <ClCompile Include="SetChartDataCellFormulas.cpp" />
     <ClCompile Include="SetChartSeriesOverlap.cpp" />
     <ClCompile Include="SetChildFooter.cpp" />
     <ClCompile Include="SetCustomBulletsNumber.cpp" />
@@ -396,6 +418,7 @@
     <ClCompile Include="SetDefaultFont.cpp" />
     <ClCompile Include="SetExternalWorkbook.cpp" />
     <ClCompile Include="SetExternalWorkbookWithUpdateChartData.cpp" />
+    <ClCompile Include="SetFileTypeForAnEmbeddingObject.cpp" />
     <ClCompile Include="SetFontFallBack.cpp" />
     <ClCompile Include="SetGapWidth.cpp" />
     <ClCompile Include="SetHyperLinkColor.cpp" />
@@ -432,11 +455,15 @@
     <ClCompile Include="SmartArtNodeLevel.cpp" />
     <ClCompile Include="SpecificPrinterPrinting.cpp" />
     <ClCompile Include="SpecifyFontsUsedWithPresentation.cpp" />
+    <ClCompile Include="SpreadsheetFormulasOptions.cpp" />
     <ClCompile Include="StandardTables.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="StretchOffsetLeftForPictureFrame.cpp" />
     <ClCompile Include="AddingSuperscriptAndSubscriptTextInTextFrame.cpp" />
     <ClCompile Include="SubstitutePictureTitleOfOLEObjectFrame.cpp" />
-    <ClCompile Include="SupportOfAnimation.cpp" />
     <ClCompile Include="SupportOfBubbleSizeRepresentation.cpp" />
     <ClCompile Include="SupportOfMorphTransition.cpp" />
     <ClCompile Include="SwitchChartRowColumns.cpp" />
@@ -457,27 +484,24 @@
     <ClCompile Include="VerticallyAlignText.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.h" />
-    <ClInclude Include="CustomFormattingController.h" />
     <ClInclude Include="CustomHeaderAndFontsController.h" />
-    <ClInclude Include="ExportBlobFromPresentation.h" />
     <ClInclude Include="LinkAllFontsHtmlController.h" />
-    <ClInclude Include="SavingHTMLAndCSSFileWhenExportingIntoHTML.h" />
     <ClInclude Include="SlidesExamples.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.20.1.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.20.1.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.20.1.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.20.1.0\build\native\aspose.slides.cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.20.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.20.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.20.4.0\build\native\aspose.slides.cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.20.4.0\build\native\aspose.slides.cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.20.1.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.20.1.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.20.1.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.20.1.0\build\native\aspose.slides.cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.20.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.20.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.20.4.0\build\native\aspose.slides.cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.20.4.0\build\native\aspose.slides.cpp.targets'))" />
   </Target>
 </Project>

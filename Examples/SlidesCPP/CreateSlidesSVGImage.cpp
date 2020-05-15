@@ -1,34 +1,9 @@
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IShapeCollection.h>
-#include <system/details/dispose_guard.h>
-#include <system/array.h>
-#include <DOM/SlideSize.h>
-#include <system/shared_ptr.h>
-#include <system/object.h>
-#include <system/io/stream.h>
-#include <system/io/memory_stream.h>
-#include <system/io/file_stream.h>
-#include <system/io/file.h>
-#include <system/details/dispose_guard.h>
-#include <system/array.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlide.h>
-#include <cstdint>
-
-
-#include <system/string.h>
-#include <system/IO/file.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
 using namespace System;
-using namespace System::IO;
-using namespace System::Drawing::Imaging;
-using namespace System::Drawing;
+using namespace IO;
 
 void CreateSlidesSVGImage()
 {
@@ -45,7 +20,7 @@ void CreateSlidesSVGImage()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Create a memory stream object
-	SharedPtr<System::IO::MemoryStream> SvgStream = MakeObject<System::IO::MemoryStream>();
+	SharedPtr<MemoryStream> SvgStream = MakeObject<MemoryStream>();
 
 	// Generate SVG image of slide and save in memory stream
 	slide->WriteAsSvg(SvgStream);
@@ -54,9 +29,9 @@ void CreateSlidesSVGImage()
 	// Save memory stream to file
 	try
 	{
-		System::SharedPtr<System::IO::Stream> fileStream = System::IO::File::OpenWrite(outPath);
+		SharedPtr<Stream> fileStream = File::OpenWrite(outPath);
 
-		System::ArrayPtr<uint8_t> buffer = System::MakeObject<System::Array<uint8_t>>(8 * 1024, 0);
+		ArrayPtr<uint8_t> buffer = System::MakeObject<Array<uint8_t>>(8 * 1024, 0);
 		int32_t len;
 		while ((len = SvgStream->Read(buffer, 0, buffer->get_Length())) > 0)
 		{
@@ -71,4 +46,3 @@ void CreateSlidesSVGImage()
 
 	//ExEnd:CreateSlidesSVGImage
 }
-

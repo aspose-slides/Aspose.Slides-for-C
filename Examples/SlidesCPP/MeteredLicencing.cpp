@@ -1,30 +1,14 @@
-
-#include <system/object_ext.h>
-#include <system/console.h>
-
-#include <DOM/Presentation.h>
-#include <Export/SaveFormat.h>
-#include <DOM/LoadOptions.h>
-#include <IBlobManagementOptions.h>
-#include <IFontSources.h>
-#include <system\io\file.h>
-//#include <Metered\Imported\Metered.h>
-//#include <Metered\Imported\Metered.h>
-#include <Util/License.h>
-
-
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose;
-using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
+using namespace Slides;
+using namespace Export;
 using namespace System;
-using namespace System::IO;
+using namespace IO;
 
 void MeteredLicencing()
 {
-
 	//ExStart:MeteredLicencing
 	
 	// The path to the documents directory.
@@ -46,11 +30,10 @@ void MeteredLicencing()
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pdf);
-
+	pres->Save(outPath, SaveFormat::Pdf);
 
 	// Get metered data amount After calling API
-//	auto amountafter = Aspose::Slides::Metered::GetConsumptionQuantity();
+    //auto amountafter = Aspose::Slides::Metered::GetConsumptionQuantity();
 
 	// Display information
 	//System::Console::WriteLine(u"Amount Consumed After: {0}", amountafter.ToString());

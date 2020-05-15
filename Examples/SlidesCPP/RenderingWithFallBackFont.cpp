@@ -1,19 +1,11 @@
-
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/Fonts/FontFallBackRule.h>
-#include <DOM/Fonts/FontFallBackRulesCollection.h>
-#include <DOM/IFontFallBackRule.h>
-#include <DOM/IFontFallBackRulesCollection.h>
-#include <DOM/IFontsManager.h>
-
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
 using namespace System;
 
-void RenderingWithFallBackFont() {
-
+void RenderingWithFallBackFont()
+{
 	//ExStart:RenderingWithFallBackFont
 
 	// The path to the documents directory.
@@ -21,7 +13,7 @@ void RenderingWithFallBackFont() {
 	const String templatePath = u"../templates/input.pptx";
 
 	// Create new instance of a rules collection
-	System::SharedPtr<IFontFallBackRulesCollection> rulesList = System::MakeObject<FontFallBackRulesCollection>();
+	SharedPtr<IFontFallBackRulesCollection> rulesList = System::MakeObject<FontFallBackRulesCollection>();
 
 	// create a number of rules
 	rulesList->Add(System::MakeObject<FontFallBackRule>(static_cast<uint32_t>(0x400), static_cast<uint32_t>(0x4FF), u"Times New Roman"));
@@ -47,14 +39,12 @@ void RenderingWithFallBackFont() {
 		rulesList->Remove(rulesList->idx_get(0));
 	}
 
-	
-		System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
+	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-		//Assigning a prepared rules list for using
-		pres->get_FontsManager()->set_FontFallBackRulesCollection(rulesList);
+	//Assigning a prepared rules list for using
+	pres->get_FontsManager()->set_FontFallBackRulesCollection(rulesList);
 
-		// Rendering of thumbnail with using of initialized rules collection and saving to PNG
-		pres->get_Slides()->idx_get(0)->GetThumbnail(1.f, 1.f)->Save(outPNG, System::Drawing::Imaging::ImageFormat::get_Png());
+	// Rendering of thumbnail with using of initialized rules collection and saving to PNG
+	pres->get_Slides()->idx_get(0)->GetThumbnail(1.f, 1.f)->Save(outPNG, System::Drawing::Imaging::ImageFormat::get_Png());
 	//ExEnd:RenderingWithFallBackFont
-
 }

@@ -1,28 +1,9 @@
-#include <iostream>
-#include <system/console.h>
-
-#include <Export/SaveFormat.h>
-#include <DOM/Presentation.h>
-#include <DOM/ISlideCollection.h>
-#include <DOM/IMasterSlideCollection.h>
-#include <DOM/ISlide.h>
-#include <DOM/ILayoutSlide.h>
-#include <DOM/IGlobalLayoutSlideCollection.h>
-#include <DOM/ICommentAuthorCollection.h>
-#include <DOM/ICommentCollection.h>
-#include <DOM/IComment.h>
-#include <DOM/ICommentAuthor.h>
-
-
-//#include <drawing/PointF.h>
-#include <drawing/imaging/image_format.h>
-#include <system/string.h>
-//#include <system/datetime.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
 using namespace System;
+using System::Drawing::PointF;
 
 void AddSlideComments()
 {
@@ -32,8 +13,8 @@ void AddSlideComments()
 	const String outPath = u"../out/AddComments.pptx";
 
 	// Instantiate Presentation class
-	SharedPtr<Presentation>pres = MakeObject<Presentation>();
-	SharedPtr<ILayoutSlide>layout = pres->get_LayoutSlides()->idx_get(0);
+	SharedPtr<Presentation> pres = MakeObject<Presentation>();
+	SharedPtr<ILayoutSlide> layout = pres->get_LayoutSlides()->idx_get(0);
 
 	pres->get_Slides()->AddEmptySlide(layout);
 
@@ -41,11 +22,10 @@ void AddSlideComments()
 	SharedPtr<ICommentAuthor> author = pres->get_CommentAuthors()->AddAuthor(u"Mudassir", u"MF");
 
 	// Position of comments
-	System::Drawing::PointF point = System::Drawing::PointF(0.2f, 0.2f);
-
+	PointF point = PointF(0.2f, 0.2f);
 
 	// Adding slide comment for an author on slide 1
-	author->get_Comments()->AddComment(u"Hello Mudassir, this is slide comment", pres->get_Slides()->idx_get(0), point, System::DateTime::get_Now());
+	author->get_Comments()->AddComment(u"Hello Mudassir, this is slide comment", pres->get_Slides()->idx_get(0), point, DateTime::get_Now());
 
 	// Adding slide comment for an author on slide 1
 	author->get_Comments()->AddComment(u"Hello Mudassir, this is second slide comment", pres->get_Slides()->idx_get(1), point, DateTime::get_Now());
@@ -53,7 +33,7 @@ void AddSlideComments()
 	// Accessing ISlide 1
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
-	pres->Save(outPath, Aspose::Slides::Export::SaveFormat::Pptx);
+	pres->Save(outPath, Export::SaveFormat::Pptx);
 
 	//ExEnd:AddSlideComments
 }

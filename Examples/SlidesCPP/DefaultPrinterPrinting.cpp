@@ -1,19 +1,11 @@
-#include <system/object_ext.h>
-
-#include <DOM/Presentation.h>
-#include <Export/SaveFormat.h>
-#include <Export/PdfOptions.h>
+#include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
-
 using namespace System;
 
 void DefaultPrinterPrinting()
 {
-
 	//ExStart:DefaultPrinterPrinting
 	// The path to the documents directory.
 
@@ -22,8 +14,7 @@ void DefaultPrinterPrinting()
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-//	pres->Print();
+    //pres->Print();
 
 	//ExEnd:DefaultPrinterPrinting
-
 }

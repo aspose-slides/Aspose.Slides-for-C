@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include <Export/SaveFormat.h>
 #include <DOM/SmartArt/SmartArtQuickStyleType.h>
 #include <DOM/SmartArt/SmartArtNode.h>
