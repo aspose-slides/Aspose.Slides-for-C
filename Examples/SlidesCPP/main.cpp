@@ -94,7 +94,7 @@ int main(int argc, const char argv[])
 	    AddBlobToPresentation();
 
 	    #pragma endregion
-
+        
 	    #pragma region Working with Presentation Document properties
 
 	    AccessBuiltinProperties();
@@ -105,6 +105,7 @@ int main(int argc, const char argv[])
 	    UpdatePresentationPropertiesUsingNewTemplate();
 	    UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
         ReadOnlyRecommendedProperties();
+        CheckPresentationProtection();
 
 	    #pragma endregion
 
@@ -135,6 +136,7 @@ int main(int argc, const char argv[])
         //SpecificPrinterPrinting();
 	    SetSlideNumber();
 	    SetZoom();
+        SupportOfDigitalSignature();
 	    #pragma endregion
 	    
 	    #pragma region Managing VBA Macros
@@ -254,6 +256,7 @@ int main(int argc, const char argv[])
         GetShapeBevelEffectiveData();
         SubstitutePictureTitleOfOLEObjectFrame();
         AddMathematicalShape();
+        ShapesAlignment();
 
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");

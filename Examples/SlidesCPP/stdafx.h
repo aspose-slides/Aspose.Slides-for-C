@@ -303,6 +303,9 @@
 #include <DOM/MathText/IMathSuperscriptElement.h>
 #include <DOM/MathText/IMathParagraph.h>
 #include <DOM/MathText/IMathBlock.h>
+#include <DOM/ShapesAlignmentType.h>
+#include <DOM/DigitalSignature.h>
+#include <DOM/IDigitalSignatureCollection.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>

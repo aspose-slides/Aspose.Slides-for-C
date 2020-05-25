@@ -1107,6 +1107,15 @@
     <ClCompile Include="ConvertToPdfConformancePdf1A_PdfUa.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="ShapesAlignment.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckPresentationProtection.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportOfDigitalSignature.cpp">
+      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

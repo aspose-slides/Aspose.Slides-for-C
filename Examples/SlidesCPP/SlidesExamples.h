@@ -70,8 +70,6 @@ void OpenVeryLargePresentation();
 void CloneSlideIntoSpecifiedSection();
 void SetAccessPermissionsToPDF();
 
-
-
 #pragma endregion
 
 #pragma region Loading Options
@@ -93,6 +91,7 @@ void UpdatePresentationPropertiesUsingNewTemplate();
 void UpdateByTemplate(String path, SharedPtr<Aspose::Slides::DocumentProperties> templateprop);
 void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
 void ReadOnlyRecommendedProperties();
+void CheckPresentationProtection();
 
 #pragma endregion
 
@@ -124,6 +123,7 @@ void ConvertingPresentationToHTMLWithPreservingOriginalFonts();
 
 void SetSlideNumber();
 void SetZoom();
+void SupportOfDigitalSignature();
 
 #pragma endregion
 
@@ -225,6 +225,7 @@ void GetLightRigEffectiveData();
 void GetShapeBevelEffectiveData();
 void SubstitutePictureTitleOfOLEObjectFrame();
 void AddMathematicalShape();
+void ShapesAlignment();
 
 #pragma region Working with Charts
 void AddCustomError();
