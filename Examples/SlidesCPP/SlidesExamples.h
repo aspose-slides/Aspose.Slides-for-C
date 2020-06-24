@@ -295,6 +295,7 @@ void SupportOfBubbleSizeRepresentation();
 void AddRadarChart();
 void SetChartDataCellFormulas();
 void SpreadsheetFormulasOptions();
+void RecoverWorkbook();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

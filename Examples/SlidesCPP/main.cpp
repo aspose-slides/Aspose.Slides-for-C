@@ -335,6 +335,7 @@ int main(int argc, const char argv[])
         AddRadarChart();
         SetChartDataCellFormulas();
         SpreadsheetFormulasOptions();
+        RecoverWorkbook();
 	    #pragma endregion
 
 	    #pragma region ManageAutoShapes	

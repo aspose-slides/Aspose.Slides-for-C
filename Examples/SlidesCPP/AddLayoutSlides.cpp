@@ -9,7 +9,7 @@ void AddLayoutSlides()
 	//ExStart:AddLayoutSlides
 
 	// The path to the documents directory.
-	const String templatePath = u"../templates/AddSlides.pptx";
+	const String templatePath = u"../templates/AccessSlides.pptx";
 	const String outPath = u"../out/AddLayoutSlides.pptx";
 
 	// Instantiate Presentation class that represents the presentation file

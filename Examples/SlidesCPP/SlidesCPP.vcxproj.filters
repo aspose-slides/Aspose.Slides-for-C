@@ -1116,6 +1116,9 @@
     <ClCompile Include="SupportOfDigitalSignature.cpp">
       <Filter>Source Files\Presentations\Rendering-Printing</Filter>
     </ClCompile>
+    <ClCompile Include="RecoverWorkbook.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
