@@ -73,6 +73,7 @@ int main(int argc, const char argv[])
 	    SaveToStream();
         ConvertToFodp();
         ConvertToPdfConformancePdf1A_PdfUa();
+        ExportMathParagraphToMathML();
 
 	    #pragma endregion
 

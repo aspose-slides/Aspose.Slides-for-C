@@ -59,6 +59,7 @@ void CovertToPDFWithProgressUpdate();
 void SaveToStream();
 void ConvertToFodp();
 void ConvertToPdfConformancePdf1A_PdfUa();
+void ExportMathParagraphToMathML();
 #pragma endregion
 
 #pragma region Opening presentation decks

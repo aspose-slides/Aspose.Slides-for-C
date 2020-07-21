@@ -1119,6 +1119,9 @@
     <ClCompile Include="RecoverWorkbook.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="ExportMathParagraphToMathML.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
