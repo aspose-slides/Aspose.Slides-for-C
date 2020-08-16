@@ -60,7 +60,7 @@ pres->Save(u"output.pptx", Aspose::Slides::Export::SaveFormat::Pptx);
 
 ## Convert PPTX to PDF using C++
 
-``c++
+```c++
 // instantiate Presentation class
 SharedPtr<Presentation> pres = MakeObject<Presentation>(u"template.pptx");
 // save the loaded presentation in PDF format
@@ -68,5 +68,3 @@ pres->Save(u"output.pdf", Aspose::Slides::Export::SaveFormat::Pdf);
 ```
 
 [Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/slides/cpp) | [Docs](https://docs.aspose.com/slides/cpp/) | [Demos](https://products.aspose.app/slides/family) | [API Reference](https://apireference.aspose.com/slides/cpp) | [Examples](https://github.com/aspose-slides/Aspose.Slides-for-C) | [Blog](https://blog.aspose.com/category/slides/) | [Free Support](https://forum.aspose.com/c/slides) | [Temporary License](https://purchase.aspose.com/temporary-license)
-
-
