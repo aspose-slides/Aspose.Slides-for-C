@@ -1,4 +1,4 @@
-## Aspose.Slides for C++
+# C++ Class Library for PowerPoint Files
 
 [Aspose.Slides for C++](https://products.aspose.com/slides/cpp) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
 
@@ -9,22 +9,20 @@
   </a>
 </p>
 
-This repository contains [Examples](Examples) for [Aspose.Slides for C++](https://products.aspose.com/slides/cpp) to help you learn and write your own applications.
-
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of C++ examples that help you learn the product features
 
+## Presentation Processing via C++
 
-# C++ Class Library to Process Presentations
+Checkout the [product overview](https://docs.aspose.com/slides/cpp/product-overview/) to know all about Aspose.Slides for C++.
 
-A [standalone C++ class library](https://products.aspose.com/slides/cpp) to create, read, write, edit & convert Microsoft PowerPoint® presentations without needing PowerPoint or Office Automation.
+- Create, open and manipulate presentations without Microsoft PowerPoint.
+- [Convert presentations](https://docs.aspose.com/slides/cpp/converting-a-presentation/) to any of the [supported file formats](https://docs.aspose.com/slides/cpp/supported-file-formats/).
+- High fidelity rendering of slides to various graphics formats.
+- Access, modify or create almost all the possible contents of the presentation.
+- Format text and shapes on slides in a presentation.
 
-## Presentation Processing Features
-
-- Create, open and [work with presentations](https://docs.aspose.com/display/slidescpp/Creating%2C+Saving+and+Converting+a+Presentation) without Microsoft PowerPoint.
-- [Convert presentation](https://docs.aspose.com/display/slidescpp/Converting+a+Presentation) to any of the [supported file formats](https://docs.aspose.com/display/slidescpp/Supported+File+Formats).
-- Adding, formatting, and manipulating [charts](https://docs.aspose.com/display/slidescpp/Adding%2C+Formatting+and+Manipulating+Charts), [shapes](https://docs.aspose.com/display/slidescpp/Adding%2C+Formatting+and+Manipulating+Shapes), [slides](https://docs.aspose.com/display/slidescpp/Adding%2C+Formatting+and+Manipulating+Slides), [SmartArt](https://docs.aspose.com/display/slidescpp/Adding%2C+Formatting+and+Manipulating+SmartArt), [tables](https://docs.aspose.com/display/slidescpp/Adding%2C+Updating+and+Manipulating+Tables), and [text](https://docs.aspose.com/display/slidescpp/Adding+Formatting+and+Manipulating+Text) in presentations.
 
 ## Read & Write PowerPoint Files
 
@@ -43,13 +41,11 @@ A [standalone C++ class library](https://products.aspose.com/slides/cpp) to crea
 
 Aspose.Slides for C++ is a native C++ library that supports 64-bit operating systems, such as, Windows (XP and onward) & Linux (Ubuntu 16.04 or later). The supported platforms include Windows (Microsoft Visual C++)  & Linux (Clang).
 
-## Getting Started with Aspose.Slides for C++
+## Get Started with Aspose.Slides for C++
 
 Let's give Aspose.Slides for C++ a try! Simply execute `Install-Package Aspose.Slides.Cpp` from Package Manager Console in Visual Studio to fetch the NuGet package. If you already have Aspose.Slides for C++ and want to upgrade the version, please execute `Update-Package Aspose.Slides.Cpp` to get the latest version.
 
-## Create PPTX Presentation using C++
-
-Try executing below code snippet to see how Aspose.Slides for C++ performs in your environment or check the [GitHub Repository](https://github.com/aspose-slides/Aspose.Slides-for-C) for other common usage scenarios. 
+## Create PPTX Presentation from scratch
 
 ```c++
 // instantiate Presentation class that represents PPTX file
@@ -64,14 +60,13 @@ pres->Save(u"output.pptx", Aspose::Slides::Export::SaveFormat::Pptx);
 
 ## Convert PPTX to PDF using C++
 
-The following code sample demonstrates the conversion of Microsoft PowerPoint PPTX presentation to PDF format with C++:
-
-```c++
-// instantiate Presentation class that represents PPTX file
+``c++
+// instantiate Presentation class
 SharedPtr<Presentation> pres = MakeObject<Presentation>(u"template.pptx");
+// save the loaded presentation in PDF format
 pres->Save(u"output.pdf", Aspose::Slides::Export::SaveFormat::Pdf);
 ```
 
-[Product Page](https://products.aspose.com/slides/cpp) | [Docs](https://docs.aspose.com/display/slidescpp/Home) | [Demos](https://products.aspose.app/slides/family) | [API Reference](https://apireference.aspose.com/slides/cpp) | [Examples](https://github.com/aspose-slides/Aspose.Slides-for-C) | [Blog](https://blog.aspose.com/category/slides/) | [Free Support](https://forum.aspose.com/c/slides) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/slides/cpp) | [Docs](https://docs.aspose.com/slides/cpp/) | [Demos](https://products.aspose.app/slides/family) | [API Reference](https://apireference.aspose.com/slides/cpp) | [Examples](https://github.com/aspose-slides/Aspose.Slides-for-C) | [Blog](https://blog.aspose.com/category/slides/) | [Free Support](https://forum.aspose.com/c/slides) | [Temporary License](https://purchase.aspose.com/temporary-license)
 
 
