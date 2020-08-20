@@ -306,6 +306,8 @@
 #include <DOM/ShapesAlignmentType.h>
 #include <DOM/DigitalSignature.h>
 #include <DOM/IDigitalSignatureCollection.h>
+#include <DOM/LineSketchType.h>
+#include <DOM/ISketchFormat.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>

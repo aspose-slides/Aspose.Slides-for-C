@@ -227,6 +227,7 @@ void GetShapeBevelEffectiveData();
 void SubstitutePictureTitleOfOLEObjectFrame();
 void AddMathematicalShape();
 void ShapesAlignment();
+void SketchedShapes();
 
 #pragma region Working with Charts
 void AddCustomError();
@@ -297,6 +298,7 @@ void AddRadarChart();
 void SetChartDataCellFormulas();
 void SpreadsheetFormulasOptions();
 void RecoverWorkbook();
+void ChartGetRange();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

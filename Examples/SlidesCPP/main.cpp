@@ -258,6 +258,7 @@ int main(int argc, const char argv[])
         SubstitutePictureTitleOfOLEObjectFrame();
         AddMathematicalShape();
         ShapesAlignment();
+        SketchedShapes();
 
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");
@@ -337,6 +338,7 @@ int main(int argc, const char argv[])
         SetChartDataCellFormulas();
         SpreadsheetFormulasOptions();
         RecoverWorkbook();
+        ChartGetRange();
 	    #pragma endregion
 
 	    #pragma region ManageAutoShapes	
