@@ -74,7 +74,8 @@ int main(int argc, const char argv[])
         ConvertToFodp();
         ConvertToPdfConformancePdf1A_PdfUa();
         ExportMathParagraphToMathML();
-
+        SvgFormattingController();
+        
 	    #pragma endregion
 
 	    #pragma region Opening presentation decks
@@ -510,18 +511,19 @@ int main(int argc, const char argv[])
 	    SetDefaultFont();
         AddCustomPromptText();
         PortionGetRect();
-
+        BulletFillFormatEffective();
+        
 	    #pragma endregion		
 
         #pragma region Views
         Console::WriteLine(u"Views");
         ManagePresenetationNormalViewState();
         #pragma endregion
-
+        
 	    #pragma endregion
 
 	    #pragma endregion
-
+        
 	    Console::WriteLine(u"Examples processed successfully...");
     }
     catch (const Exception& error)

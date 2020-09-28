@@ -60,6 +60,8 @@ void SaveToStream();
 void ConvertToFodp();
 void ConvertToPdfConformancePdf1A_PdfUa();
 void ExportMathParagraphToMathML();
+void SvgFormattingController();
+
 #pragma endregion
 
 #pragma region Opening presentation decks
@@ -465,6 +467,7 @@ void RenderingWithFallBackFont();
 void SetDefaultFont();
 void AddCustomPromptText();
 void PortionGetRect();
+void BulletFillFormatEffective();
 
 #pragma endregion		
 

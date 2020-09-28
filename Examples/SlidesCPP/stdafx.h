@@ -308,6 +308,9 @@
 #include <DOM/IDigitalSignatureCollection.h>
 #include <DOM/LineSketchType.h>
 #include <DOM/ISketchFormat.h>
+#include <DOM/IGradientFormatEffectiveData.h>
+#include <DOM/IGradientStopCollectionEffectiveData.h>
+#include <DOM/IPatternFormatEffectiveData.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
@@ -337,6 +340,8 @@
 #include <Export/CommentsPositions.h>
 #include <Export/NotesPositions.h>
 #include <Export/EmbedFontCharacters.h>
-#include "Export/ISvgShapeFormattingController.h"
-#include "Export/SvgShape.h"
-#include "Export/SVGOptions.h"
+#include <Export/ISvgShapeFormattingController.h>
+#include <Export/SvgShape.h>
+#include <Export/SVGOptions.h>
+#include <Export/ISvgShapeAndTextFormattingController.h>
+#include <Export/ISvgTSpan.h>
