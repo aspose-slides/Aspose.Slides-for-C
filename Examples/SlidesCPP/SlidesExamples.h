@@ -208,7 +208,8 @@ void ThumbnailFromSlideInNotes();
 void ThumbnailWithUserDefinedDimensions();
 void RenderComments();
 void GeneratingSVGWithCustomShapeIDS();
-
+void RenderOptions();
+void Rendering3D();
 
 #pragma endregion
 
@@ -468,6 +469,7 @@ void SetDefaultFont();
 void AddCustomPromptText();
 void PortionGetRect();
 void BulletFillFormatEffective();
+void WordArt();
 
 #pragma endregion		
 

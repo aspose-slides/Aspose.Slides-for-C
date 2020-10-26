@@ -1134,6 +1134,15 @@
     <ClCompile Include="SvgFormattingController.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="RenderOptions.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="WordArt.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Rendering3D.cpp">
+      <Filter>Source Files\Slides\Rendering</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

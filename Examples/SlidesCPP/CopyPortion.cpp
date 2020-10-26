@@ -10,8 +10,7 @@ SharedPtr<Portion> CopyPortion(SharedPtr<IPortion> por)
 {
 	SharedPtr<Portion> temp = MakeObject<Portion>();
 
-	//use CreatePortionFormatData!!!
-	 SharedPtr<IPortionFormatEffectiveData> portData = por->CreatePortionFormatEffective();
+	SharedPtr<IPortionFormatEffectiveData> portData = por->get_PortionFormat()->GetEffective();
 
 	// use PortionFormat to set values
 	temp->get_PortionFormat()->set_AlternativeLanguageId(portData->get_AlternativeLanguageId());

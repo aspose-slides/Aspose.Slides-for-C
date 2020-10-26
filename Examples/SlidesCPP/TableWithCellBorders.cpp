@@ -31,10 +31,10 @@ void TableWithCellBorders()
 		{
 			SharedPtr<ICell> cell = row->idx_get(y);
 
-			cell->get_BorderTop()->get_FillFormat()->set_FillType(FillType::NoFill);
-			cell->get_BorderBottom()->get_FillFormat()->set_FillType(FillType::NoFill);
-			cell->get_BorderLeft()->get_FillFormat()->set_FillType(FillType::NoFill);
-			cell->get_BorderRight()->get_FillFormat()->set_FillType(FillType::NoFill);
+			cell->get_CellFormat()->get_BorderTop()->get_FillFormat()->set_FillType(FillType::NoFill);
+			cell->get_CellFormat()->get_BorderBottom()->get_FillFormat()->set_FillType(FillType::NoFill);
+			cell->get_CellFormat()->get_BorderLeft()->get_FillFormat()->set_FillType(FillType::NoFill);
+			cell->get_CellFormat()->get_BorderRight()->get_FillFormat()->set_FillType(FillType::NoFill);
 		}
 	}
 

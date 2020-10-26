@@ -32,9 +32,9 @@ void AddImageinsideTableCell()
 	SharedPtr<IPPImage> imgx = pres->get_Images()->AddImage(bitmap);
 
 	// Add image to first table cell
-	tbl->idx_get(0,0)->get_FillFormat()->set_FillType(FillType::Picture);
-	tbl->idx_get(0,0)->get_FillFormat()->get_PictureFillFormat()->set_PictureFillMode ( PictureFillMode::Stretch);
-	tbl->idx_get(0,0)->get_FillFormat()->get_PictureFillFormat()->get_Picture()->set_Image(imgx);
+	tbl->idx_get(0,0)->get_CellFormat()->get_FillFormat()->set_FillType(FillType::Picture);
+	tbl->idx_get(0,0)->get_CellFormat()->get_FillFormat()->get_PictureFillFormat()->set_PictureFillMode(PictureFillMode::Stretch);
+	tbl->idx_get(0,0)->get_CellFormat()->get_FillFormat()->get_PictureFillFormat()->get_Picture()->set_Image(imgx);
 
 	// Save PPTX to Disk
 	pres->Save(outPath, Export::SaveFormat::Pptx);

@@ -230,6 +230,8 @@ int main(int argc, const char argv[])
 	    ThumbnailWithUserDefinedDimensions();
         GeneratingSVGWithCustomShapeIDS();
         RenderComments();
+        RenderOptions();
+        Rendering3D();
 
 	    #pragma endregion
 
@@ -512,7 +514,8 @@ int main(int argc, const char argv[])
         AddCustomPromptText();
         PortionGetRect();
         BulletFillFormatEffective();
-        
+        WordArt();
+
 	    #pragma endregion		
 
         #pragma region Views

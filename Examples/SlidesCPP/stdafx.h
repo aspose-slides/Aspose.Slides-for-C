@@ -93,6 +93,13 @@
 #include <DOM/SlideSizeScaleType.h>
 #include <DOM/VideoFrame.h>
 #include <DOM/IChart.h>
+#include "DOM/ColorTransformOperation.h"
+#include "DOM/TextShapeType.h"
+#include "DOM/RectangleAlignment.h"
+#include "DOM/MaterialPresetType.h"
+#include "DOM/IColorOperationCollection.h"
+#include "DOM/Effects/IReflection.h"
+#include "DOM/Effects/IGlow.h"
 #include <DOM/Chart/ChartType.h>
 #include <DOM/Chart/ChartTitle.h>
 #include <DOM/Chart/IChartData.h>
@@ -345,3 +352,4 @@
 #include <Export/SVGOptions.h>
 #include <Export/ISvgShapeAndTextFormattingController.h>
 #include <Export/ISvgTSpan.h>
+#include <Export/RenderingOptions.h>

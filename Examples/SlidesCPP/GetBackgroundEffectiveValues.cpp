@@ -12,7 +12,7 @@ void GetBackgroundEffectiveValues()
 	const String templatePath = u"../templates/SamplePresentation.pptx";
 
 	auto pres = System::MakeObject<Presentation>(templatePath);
-	SharedPtr<IBackgroundEffectiveData> effBackground = pres->get_Slides()->idx_get(0)->CreateBackgroundEffective();
+	SharedPtr<IBackgroundEffectiveData> effBackground = pres->get_Slides()->idx_get(0)->get_Background()->GetEffective();
 	if (effBackground->get_FillFormat()->get_FillType() == FillType::Solid)
 	{
 		Console::WriteLine(String(u"Fill color: ") + effBackground->get_FillFormat()->get_SolidFillColor());

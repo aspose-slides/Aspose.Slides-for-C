@@ -9,11 +9,9 @@ SharedPtr<Paragraph> CopyParagraph(SharedPtr<IParagraph> par)
 {
 	SharedPtr<Paragraph> para = MakeObject<Paragraph>();
 
-	// use CreateParagraphFormatData !!!
-	SharedPtr<IParagraphFormatEffectiveData> paraData = par->CreateParagraphFormatEffective();
+	SharedPtr<IParagraphFormatEffectiveData> paraData = par->get_ParagraphFormat()->GetEffective();
 
 	// use ParagraphFormat to set values
-
 	para->get_ParagraphFormat()->set_Alignment(paraData->get_Alignment());
 	para->get_ParagraphFormat()->set_DefaultTabSize(paraData->get_DefaultTabSize());
 	para->get_ParagraphFormat()->set_MarginLeft(paraData->get_MarginLeft());

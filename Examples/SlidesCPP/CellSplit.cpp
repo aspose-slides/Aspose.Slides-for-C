@@ -32,21 +32,21 @@ void CellSplit()
 		{
 			SharedPtr<ICell> cell = row->idx_get(y);
 
-			cell->get_BorderTop()->get_FillFormat()->set_FillType(FillType::Solid);
-			cell->get_BorderTop()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
-			cell->get_BorderTop()->set_Width( 5);
+			cell->get_CellFormat()->get_BorderTop()->get_FillFormat()->set_FillType(FillType::Solid);
+			cell->get_CellFormat()->get_BorderTop()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
+			cell->get_CellFormat()->get_BorderTop()->set_Width(5);
 
-			cell->get_BorderBottom()->get_FillFormat()->set_FillType(FillType::Solid);
-			cell->get_BorderBottom()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
-			cell->get_BorderBottom()->set_Width(5);
+			cell->get_CellFormat()->get_BorderBottom()->get_FillFormat()->set_FillType(FillType::Solid);
+			cell->get_CellFormat()->get_BorderBottom()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
+			cell->get_CellFormat()->get_BorderBottom()->set_Width(5);
 
-			cell->get_BorderLeft()->get_FillFormat()->set_FillType(FillType::Solid);
-			cell->get_BorderLeft()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
-			cell->get_BorderLeft()->set_Width(5);
+			cell->get_CellFormat()->get_BorderLeft()->get_FillFormat()->set_FillType(FillType::Solid);
+			cell->get_CellFormat()->get_BorderLeft()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
+			cell->get_CellFormat()->get_BorderLeft()->set_Width(5);
 
-			cell->get_BorderRight()->get_FillFormat()->set_FillType(FillType::Solid);
-			cell->get_BorderRight()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
-			cell->get_BorderRight()->set_Width(5);
+			cell->get_CellFormat()->get_BorderRight()->get_FillFormat()->set_FillType(FillType::Solid);
+			cell->get_CellFormat()->get_BorderRight()->get_FillFormat()->get_SolidFillColor()->set_Color(Color::get_Red());
+			cell->get_CellFormat()->get_BorderRight()->set_Width(5);
 		}
 	}
 
