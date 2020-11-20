@@ -108,7 +108,8 @@ int main(int argc, const char argv[])
 	    UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
         ReadOnlyRecommendedProperties();
         CheckPresentationProtection();
-
+        CheckPasswordExample();
+        
 	    #pragma endregion
 
 	    #pragma region Saving Presentation decks
@@ -342,6 +343,7 @@ int main(int argc, const char argv[])
         SpreadsheetFormulasOptions();
         RecoverWorkbook();
         ChartGetRange();
+        MapChart();
 	    #pragma endregion
 
 	    #pragma region ManageAutoShapes	
@@ -515,6 +517,7 @@ int main(int argc, const char argv[])
         PortionGetRect();
         BulletFillFormatEffective();
         WordArt();
+        KeepTextFlat();
 
 	    #pragma endregion		
 

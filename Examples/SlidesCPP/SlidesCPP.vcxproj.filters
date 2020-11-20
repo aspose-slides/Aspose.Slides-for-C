@@ -1143,6 +1143,15 @@
     <ClCompile Include="Rendering3D.cpp">
       <Filter>Source Files\Slides\Rendering</Filter>
     </ClCompile>
+    <ClCompile Include="MapChart.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckPasswordExample.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="KeepTextFlat.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

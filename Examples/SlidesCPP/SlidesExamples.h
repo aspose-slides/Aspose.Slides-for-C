@@ -95,6 +95,7 @@ void UpdateByTemplate(String path, SharedPtr<Aspose::Slides::DocumentProperties>
 void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
 void ReadOnlyRecommendedProperties();
 void CheckPresentationProtection();
+void CheckPasswordExample();
 
 #pragma endregion
 
@@ -302,6 +303,7 @@ void SetChartDataCellFormulas();
 void SpreadsheetFormulasOptions();
 void RecoverWorkbook();
 void ChartGetRange();
+void MapChart();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -470,6 +472,7 @@ void AddCustomPromptText();
 void PortionGetRect();
 void BulletFillFormatEffective();
 void WordArt();
+void KeepTextFlat();
 
 #pragma endregion		
 
