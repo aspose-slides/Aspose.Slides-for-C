@@ -12,7 +12,7 @@ void EmbedFontsInHtml()
 
 	// The path to the documents directory.
 	const String outPath = u"../out/EmbedFontsInHtml_out.html";
-	const String templatePath = u"../templates/AccessSlides.pptx";
+	const String templatePath = Path::Combine(GetDataPath(), u"input.pptx");
 
 	//Instantiate Presentation class that represents PPTX file
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);

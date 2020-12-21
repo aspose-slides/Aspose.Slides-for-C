@@ -61,6 +61,7 @@ void ConvertToFodp();
 void ConvertToPdfConformancePdf1A_PdfUa();
 void ExportMathParagraphToMathML();
 void SvgFormattingController();
+void PdfImport();
 
 #pragma endregion
 

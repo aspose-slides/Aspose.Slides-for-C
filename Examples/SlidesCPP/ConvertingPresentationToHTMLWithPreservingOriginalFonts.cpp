@@ -9,8 +9,8 @@ void ConvertingPresentationToHTMLWithPreservingOriginalFonts()
 {
 	//ExStart:ConvertingPresentationToHTMLWithPreservingOriginalFonts
 
-	const String outPath = u"../out/oHTMLWithPreservingOriginalFonts_out.hmtl";
-	const String templatePath = u"../templates/AccessSlides.pptx";
+	const String outPath = u"../out/oHTMLWithPreservingOriginalFonts_out.html";
+    const String templatePath = Path::Combine(GetDataPath(), u"input.pptx");
 
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 

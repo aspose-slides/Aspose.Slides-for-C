@@ -66,7 +66,7 @@ int main(int argc, const char argv[])
 	    PresentationToTIFFWithDefaultSize();
 	    ConvertIndividualSlideToHTML();
 	    EmbedFontsInHtml();
-        ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+        //ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 	    BestImagesCompressionRatioforPDF();
 	    ExportToHTMLWithResponsiveLayout();
 	    CovertToPDFWithProgressUpdate();
@@ -75,7 +75,8 @@ int main(int argc, const char argv[])
         ConvertToPdfConformancePdf1A_PdfUa();
         ExportMathParagraphToMathML();
         SvgFormattingController();
-        
+        PdfImport();
+
 	    #pragma endregion
 
 	    #pragma region Opening presentation decks
@@ -134,7 +135,6 @@ int main(int argc, const char argv[])
 	    #pragma endregion
 
 	    #pragma region Presentation Rendering-Printing
-        // This doesn't work.
 	    //DefaultPrinterPrinting();
         //SpecificPrinterPrinting();
 	    SetSlideNumber();
@@ -293,7 +293,6 @@ int main(int argc, const char argv[])
 	    SetDataRange();
 	    SetGapWidth();
 	    MultiCategoryChart();
-        // This doesn't work.
 	    //SwitchChartRowColumns();
 	    SettingAutomicPieChartSliceColors();
 	    AddBoxAndWhiskerChart();
