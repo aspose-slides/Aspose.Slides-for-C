@@ -1,6 +1,7 @@
 #pragma once
 #include <DOM/NullableBool.h>
 #include <DOM/DocumentProperties.h>
+#include <system/io/directory.h>
 
 using namespace std;
 using namespace System;
@@ -233,6 +234,11 @@ void SubstitutePictureTitleOfOLEObjectFrame();
 void AddMathematicalShape();
 void ShapesAlignment();
 void SketchedShapes();
+void GeometryShapeAddSegment();
+void GeometryShapeCompositeObjects();
+void GeometryShapeCreatesCustomGeometry();
+void GeometryShapeRemoveSegment();
+void GeometryShapeUsingShapeUtil();
 
 #pragma region Working with Charts
 void AddCustomError();

@@ -263,7 +263,12 @@ int main(int argc, const char argv[])
         AddMathematicalShape();
         ShapesAlignment();
         SketchedShapes();
-
+        GeometryShapeAddSegment();
+        GeometryShapeCompositeObjects();
+        GeometryShapeCreatesCustomGeometry();
+        GeometryShapeRemoveSegment();
+        GeometryShapeUsingShapeUtil();
+                
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");
 
@@ -370,7 +375,7 @@ int main(int argc, const char argv[])
         
 	    #pragma region ManageFrameObjects	
 	    System::Console::WriteLine(u"Working with OLE Objects");
-
+        
 	    AccessOLEObjectFrame();
 	    AddAudioFrame();
 	    AddOLEObjectFrame();

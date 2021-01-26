@@ -1155,6 +1155,21 @@
     <ClCompile Include="PdfImport.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="GeometryShapeAddSegment.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryShapeCompositeObjects.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryShapeCreatesCustomGeometry.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryShapeRemoveSegment.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryShapeUsingShapeUtil.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

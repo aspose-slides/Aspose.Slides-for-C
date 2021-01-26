@@ -7,7 +7,12 @@
 #include <system/io/file.h>
 #include <system/io/file_mode.h>
 #include <system/io/file_stream.h>
+#include <system/io/memory_stream.h>
 #include <system/math.h>
+#include <system/uri.h>
+#include <system/special_casts.h>
+#include <drawing/graphics.h>
+#include <drawing/bitmap.h>
 
 #include <IFontSources.h>
 #include <LoadFormat.h>
@@ -16,6 +21,11 @@
 #include <ViewType.h>
 #include <ISpreadsheetOptions.h>
 
+#include <DOM/PathFillModeType.h>
+#include <Util/ShapeUtil.h>
+#include <DOM/GeometryPath.h>
+#include <DOM/IPPImage.h>
+#include <DOM/IComment.h>
 #include <DOM/Presentation.h>
 #include <DOM/IPresentationInfo.h>
 #include <DOM/IViewProperties.h>
@@ -56,6 +66,9 @@
 #include <DOM/IColorFormat.h>
 #include <DOM/ICommentAuthorCollection.h>
 #include <DOM/ICommentCollection.h>
+#include <DOM/ICommentAuthor.h>
+#include <DOM/IVideo.h>
+#include <DOM/Animation/IEffect.h>
 #include <DOM/IGlobalLayoutSlideCollection.h>
 #include <DOM/ILayoutSlide.h>
 #include <DOM/SlideLayoutType.h>
@@ -93,6 +106,7 @@
 #include <DOM/SlideSizeScaleType.h>
 #include <DOM/VideoFrame.h>
 #include <DOM/IChart.h>
+#include <DOM/ISection.h>
 #include "DOM/ColorTransformOperation.h"
 #include "DOM/TextShapeType.h"
 #include "DOM/RectangleAlignment.h"
@@ -100,6 +114,7 @@
 #include "DOM/IColorOperationCollection.h"
 #include "DOM/Effects/IReflection.h"
 #include "DOM/Effects/IGlow.h"
+#include <DOM/Chart/IChartCategory.h>
 #include <DOM/Chart/ChartType.h>
 #include <DOM/Chart/ChartTitle.h>
 #include <DOM/Chart/IChartData.h>
@@ -180,6 +195,7 @@
 #include <DOM/Chart/ILegendEntryProperties.h>
 #include <DOM/Chart/BubbleSizeRepresentationType.h>
 #include <DOM/TileFlip.h>
+#include <DOM/ISlide.h>
 #include <DOM/GroupShape.h>
 #include <DOM/LineArrowheadLength.h>
 #include <DOM/LineArrowheadStyle.h>

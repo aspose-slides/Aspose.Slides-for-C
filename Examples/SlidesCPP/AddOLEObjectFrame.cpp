@@ -2,7 +2,9 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
+using namespace DOM::Ole;
 using namespace System;
+using namespace System::Drawing;
 
 void AddOLEObjectFrame()
 {
@@ -11,31 +13,38 @@ void AddOLEObjectFrame()
 	const String outPath = u"../out/AddOLEObjectFrame_out.pptx";
 	const String filePath = u"../templates/book1.xlsx";
 
-	// Load the desired the presentation
-	SharedPtr<Presentation> pres = MakeObject<Presentation>();
+    // Instantiate Prseetation class that represents the PPTX
+    SharedPtr<Presentation> pres = System::MakeObject<Presentation>();
 
-	// Access first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
+    // Access the first slide
+    SharedPtr<ISlide> sld = pres->get_Slides()->idx_get(0);
 
-	// Save file to memory stream 
-	{
-		SharedPtr<IO::Stream> fileStream = IO::File::OpenRead(filePath);
-		SharedPtr<IO::MemoryStream> MemStream = MakeObject< IO::MemoryStream>();
+    // Load an cel file to stream
+    SharedPtr<MemoryStream> mstream = System::MakeObject<MemoryStream>();
+    
+    SharedPtr<FileStream> fs = System::MakeObject<FileStream>(filePath, FileMode::Open, FileAccess::Read);
 
-		ArrayPtr<uint8_t> buffer = System::MakeObject<Array<uint8_t>>(4 * 1024, 0);
-		int32_t len;
-		while ((len = fileStream->Read(buffer, 0, buffer->get_Length())) > 0)
-		{
-			MemStream->Write(buffer, 0, len);
-		}
-		MemStream->set_Position(0);
+    ArrayPtr<uint8_t> buf = System::MakeArray<uint8_t>(4096, 0);
 
-		// Add an Ole Object Frame shape
-		SharedPtr<IOleObjectFrame> oof = slide->get_Shapes()->AddOleObjectFrame(0, 0, 720, 540, u"Excel.Sheet.12", MemStream->ToArray());
-	}
+    while (true)
+    {
+        int32_t bytesRead = fs->Read(buf, 0, buf->get_Length());
+        if (bytesRead <= 0)
+        {
+            break;
+        }
+        mstream->Write(buf, 0, bytesRead);
+    }
+            
+    // Create data object for embedding
+    SharedPtr<IOleEmbeddedDataInfo> dataInfo = System::MakeObject<OleEmbeddedDataInfo>(mstream->ToArray(), u"xlsx");
 
-	//Write the PPTX file to disk
-	pres->Save(outPath, Export::SaveFormat::Pptx);
+    SizeF slideSize = pres->get_SlideSize()->get_Size();
+    // Add an Ole Object Frame shape
+    SharedPtr<IOleObjectFrame> oleObjectFrame = sld->get_Shapes()->AddOleObjectFrame(0.0f, 0.0f, slideSize.get_Width(), slideSize.get_Height(), dataInfo);
 
-	//ExEnd:AddOLEObjectFrame
+    //Write the PPTX to disk
+    pres->Save(outPath, Export::SaveFormat::Pptx);
+
+    //ExEnd:AddOLEObjectFrame
 }

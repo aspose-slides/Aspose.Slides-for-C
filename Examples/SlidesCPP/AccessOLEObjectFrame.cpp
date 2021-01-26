@@ -8,28 +8,33 @@ void AccessOLEObjectFrame()
 {
     // ExStart:AccessOLEObjectFrame
 	// The path to the documents directory.
-	const String outPath = u"../out/excelFromOLE_out.xlsx";
 	const String templatePath = u"../templates/AccessingOLEObjectFrame.pptx";
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-	// Access first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
+    // Access the first slide
+    SharedPtr<ISlide> sld = pres->get_Slides()->idx_get(0);
 
-	// Cast the shape to OleObjectFrame
-	SharedPtr<OleObjectFrame> oof = DynamicCast<OleObjectFrame>(slide->get_Shapes()->idx_get(0));
+    // Cast the shape to OleObjectFrame
+    SharedPtr<OleObjectFrame> oleObjectFrame = System::DynamicCast_noexcept<OleObjectFrame>(sld->get_Shapes()->idx_get(0));
 
-	// Read the OLE Object and write it to disk
-	if (oof != nullptr)
-	{
-		ArrayPtr<uint8_t> buffer = oof->get_ObjectData();
-		{
-			SharedPtr<IO::FileStream> stream = System::MakeObject<IO::FileStream>(outPath, IO::FileMode::Create, IO::FileAccess::Write, IO::FileShare::Read);
+    // Read the OLE Object and write it to disk
+    if (oleObjectFrame != nullptr)
+    {
+        // Get embedded file data
+        ArrayPtr<uint8_t> data = oleObjectFrame->get_EmbeddedFileData();
 
-			stream->Flush();
-			stream->Close();
-		}
-	}
+        // Get embedded file extention
+        String fileExtention = oleObjectFrame->get_EmbeddedFileExtension();
+
+        // Create path for saving the extracted file
+        String extractedPath = Path::Combine(GetOutPath(), u"excelFromOLE_out" + fileExtention);
+
+        // Save extracted data
+        SharedPtr<FileStream> fstr = System::MakeObject<FileStream>(extractedPath, FileMode::Create, FileAccess::Write);
+        fstr->Write(data, 0, data->get_Length());
+    }
+    
 	//ExEnd:AccessOLEObjectFrame
 }
