@@ -5,6 +5,7 @@ using namespace Aspose;
 using namespace Aspose::Slides;
 using namespace Aspose::Slides::Export;
 using namespace System;
+using namespace System::IO;
 
 void EmbedFontsInHtml()
 {

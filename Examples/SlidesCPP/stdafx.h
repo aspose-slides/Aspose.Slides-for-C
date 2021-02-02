@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+#include <system/enumerator_adapter.h>
 #include <system/console.h>
 #include <system/string.h>
 #include <system/io/file.h>

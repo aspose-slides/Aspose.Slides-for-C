@@ -3,6 +3,7 @@
 
 using namespace Aspose::Slides;
 using namespace Export;
+using namespace System;
 
 void SetAccessPermissionsToPDF()
 {

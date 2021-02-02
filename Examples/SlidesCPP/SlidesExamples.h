@@ -3,27 +3,23 @@
 #include <DOM/DocumentProperties.h>
 #include <system/io/directory.h>
 
-using namespace std;
-using namespace System;
-using namespace IO;
-
-inline void Copy(const String& from, const String& to)
+inline void Copy(const System::String& from, const System::String& to)
 {
-    if (File::Exists(to))
+    if (System::IO::File::Exists(to))
     {
-        File::Delete(to);
+        System::IO::File::Delete(to);
     }
-    File::Copy(from, to);
+    System::IO::File::Copy(from, to);
 }
 
-inline String GetDataPath()
+inline System::String GetDataPath()
 {
-    return Path::Combine(Directory::GetCurrentDirectory(), u"../templates/");
+    return System::IO::Path::Combine(System::IO::Directory::GetCurrentDirectory(), u"../templates/");
 }
 
-inline String GetOutPath()
+inline System::String GetOutPath()
 {
-    return Path::Combine(Directory::GetCurrentDirectory(), u"../out/");
+    return System::IO::Path::Combine(System::IO::Directory::GetCurrentDirectory(), u"../out/");
 }
 
 //Developer Guide > Loading, Saving and Converting
@@ -93,7 +89,7 @@ void AccessOpenDoc();
 void AccessProperties();
 void UpdatePresentationProperties();
 void UpdatePresentationPropertiesUsingNewTemplate();
-void UpdateByTemplate(String path, SharedPtr<Aspose::Slides::DocumentProperties> templateprop);
+void UpdateByTemplate(System::String path, System::SharedPtr<Aspose::Slides::DocumentProperties> templateprop);
 void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate();
 void ReadOnlyRecommendedProperties();
 void CheckPresentationProtection();
@@ -345,7 +341,7 @@ void AddVideoFrameFromWebSource();
 void ChangeOLEObjectData();
 void EmbeddedVideoFrame();
 void PictureFrameFormatting();
-ArrayPtr<uint8_t> GetFileByteData(String fileNameZip);
+System::ArrayPtr<uint8_t> GetFileByteData(System::String fileNameZip);
 void StretchOffsetLeftForPictureFrame();
 void SetFileTypeForAnEmbeddingObject();
 void ExtractEmbeddedFileDataFromOLEObject();

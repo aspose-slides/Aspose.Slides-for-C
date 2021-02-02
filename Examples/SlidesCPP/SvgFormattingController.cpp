@@ -5,6 +5,7 @@ using namespace Aspose;
 using namespace Slides;
 using namespace Export;
 using namespace System;
+using namespace System::IO;
 
 //ExStart:SvgFormattingController
 class MySvgShapeFormattingController : public ISvgShapeAndTextFormattingController

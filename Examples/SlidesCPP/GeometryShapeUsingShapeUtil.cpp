@@ -4,6 +4,7 @@
 using namespace Aspose::Slides;
 using namespace Util;
 using namespace System;
+using namespace System::IO;
 using namespace System::Drawing;
 
 void GeometryShapeUsingShapeUtil()

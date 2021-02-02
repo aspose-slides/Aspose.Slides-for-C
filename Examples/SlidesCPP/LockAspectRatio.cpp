@@ -3,6 +3,7 @@
 
 using namespace Aspose;
 using namespace Slides;
+using namespace System;
 
 void LockAspectRatio()
 {

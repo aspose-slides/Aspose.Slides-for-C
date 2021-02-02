@@ -4,6 +4,7 @@
 using namespace Aspose::Slides;
 using namespace Export;
 using namespace Charts;
+using namespace System;
 using namespace System::IO;
 
 void RecoverWorkbook()

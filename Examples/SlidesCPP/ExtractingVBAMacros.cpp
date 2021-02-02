@@ -4,6 +4,7 @@
 using namespace Aspose;
 using namespace Slides;
 using namespace Vba;
+using namespace System;
 
 void ExtractingVBAMacros()
 {

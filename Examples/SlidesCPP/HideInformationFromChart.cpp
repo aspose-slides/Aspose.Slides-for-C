@@ -4,6 +4,7 @@
 using namespace Aspose::Slides;
 using namespace Charts;
 using namespace System::Drawing;
+using namespace System;
 
 void HideInformationFromChart()
 {

@@ -3,6 +3,7 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
+using namespace System;
 using namespace Export;
 using namespace Examples::CSharp::Conversion;
 

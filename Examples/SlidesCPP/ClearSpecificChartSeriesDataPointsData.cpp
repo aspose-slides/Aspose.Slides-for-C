@@ -2,6 +2,7 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
+using namespace System;
 using namespace Charts;
 
 void ClearSpecificChartSeriesDataPointsData()

@@ -5,6 +5,7 @@ using namespace Aspose::Slides;
 using namespace Export;
 
 using namespace System;
+using namespace System::IO;
 using namespace System::Drawing::Imaging;
 
 void RenderOptions()

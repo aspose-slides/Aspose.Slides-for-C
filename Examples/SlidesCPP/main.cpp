@@ -4,6 +4,7 @@
 #include "SlidesExamples.h"
 
 using namespace System;
+using namespace System::IO;
 using namespace Aspose::Slides;
 
 void ShowSlidesVersion()

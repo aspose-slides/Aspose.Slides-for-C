@@ -3,6 +3,7 @@
 
 using namespace Aspose::Slides;
 using namespace Charts;
+using namespace System;
 
 void DefaultMarkersInChart()
 {

@@ -5,6 +5,7 @@ using namespace Aspose::Slides;
 using namespace Export;
 using namespace Util;
 using namespace System;
+using namespace System::IO;
 
 using System::Drawing::Imaging::ImageFormat;
 

@@ -6,6 +6,7 @@ using namespace Slides;
 using namespace MathText;
 
 using namespace System;
+using namespace System::IO;
 
 void ExportMathParagraphToMathML()
 {

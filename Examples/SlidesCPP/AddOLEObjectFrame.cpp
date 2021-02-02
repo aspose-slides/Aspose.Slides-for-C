@@ -4,6 +4,8 @@
 using namespace Aspose::Slides;
 using namespace DOM::Ole;
 using namespace System;
+using namespace System::IO;
+
 using namespace System::Drawing;
 
 void AddOLEObjectFrame()

@@ -3,6 +3,7 @@
 
 using namespace Aspose::Slides;
 using namespace System;
+using namespace System::IO;
 
 void GeometryShapeRemoveSegment()
 {

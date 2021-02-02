@@ -4,6 +4,7 @@
 using namespace Aspose::Slides;
 using namespace System;
 using namespace System::Drawing;
+using namespace System::IO;
 
 void WordArt()
 {
