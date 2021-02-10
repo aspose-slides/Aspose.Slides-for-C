@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.slides.Cpp) ![Nuget](https://img.shields.io/nuget/dt/Aspose.slides.Cpp)
 # C++ Class Library for PowerPoint Files
 
 [Aspose.Slides for C++](https://products.aspose.com/slides/cpp) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
