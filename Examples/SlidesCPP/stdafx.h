@@ -22,6 +22,9 @@
 #include <ViewType.h>
 #include <ISpreadsheetOptions.h>
 
+#include <DOM/IMasterSlide.h>
+#include <DOM/Table/IColumn.h>
+#include <DOM/IGradientStopEffectiveData.h>
 #include <DOM/PathFillModeType.h>
 #include <Util/ShapeUtil.h>
 #include <DOM/GeometryPath.h>

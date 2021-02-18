@@ -18,8 +18,8 @@ void SubstitutePictureTitleOfOLEObjectFrame()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Add Ole objects
-	ArrayPtr<uint8_t> allbytes = File::ReadAllBytes(Path::Combine(path, oleSourceFile));
-	SharedPtr<IOleObjectFrame> oof = slide->get_Shapes()->AddOleObjectFrame(20.0f, 20.0f, 50.0f, 50.0f, u"Excel.Sheet.12", allbytes);
+	String oleFilePath = Path::Combine(path, oleSourceFile);
+	SharedPtr<IOleObjectFrame> oof = slide->get_Shapes()->AddOleObjectFrame(20.0f, 20.0f, 50.0f, 50.0f, u"Excel.Sheet.12", oleFilePath);
 	oof->set_IsObjectIcon(true);
 
 	// Add image object
