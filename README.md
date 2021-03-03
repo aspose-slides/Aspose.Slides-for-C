@@ -1,7 +1,7 @@
 ![Nuget](https://img.shields.io/nuget/v/Aspose.slides.Cpp) ![Nuget](https://img.shields.io/nuget/dt/Aspose.slides.Cpp)
 # C++ Class Library for PowerPoint Files
 
-[Aspose.Slides for C++](https://products.aspose.com/slides/cpp) is a unique PowerPoint® management API that enables .NET applications to read, write and manipulate PowerPoint documents without using Microsoft PowerPoint.
+[Aspose.Slides for C++](https://products.aspose.com/slides/cpp) is a presentation file formats processing library that enables the C++ applications to manipulate, render and convert Microsoft PowerPoint® presentations without requiring Microsoft PowerPoint application. Aspose.Slides for C++ supports most of the Microsoft PowerPoint presentation and slideshow file formats including PPT, POT, PPS, PPTX, POTX, PPSX and ODP.
 
 <p align="center">
 
@@ -23,6 +23,7 @@ Checkout the [product overview](https://docs.aspose.com/slides/cpp/product-overv
 - High fidelity rendering of slides to various graphics formats.
 - Access, modify or create almost all the possible contents of the presentation.
 - Format text and shapes on slides in a presentation.
+- Load protected presentations or control access to presentations, slides or objects via advanced security features.
 
 
 ## Read & Write PowerPoint Files
@@ -34,7 +35,7 @@ Checkout the [product overview](https://docs.aspose.com/slides/cpp/product-overv
 
 ## Save Presentation As
 
-**Fixed Layout:** PDF, XPS\
+**Fixed Layout:** PDF, PDF/A, XPS\
 **Images:** JPEG, PNG, GIF, BMP, SVG\
 **Web:** HTML
 
