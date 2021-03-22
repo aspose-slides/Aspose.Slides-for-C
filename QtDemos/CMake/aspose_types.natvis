@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+  
+    <!-- System::String -->
+
+    <Type Name="System::String::IcuDebugHelper">
+        <DisplayString><![CDATA[{fFields.fLengthAndFlags & 2 ? fStackFields.fBuffer : fFields.fArray,[fFields.fLengthAndFlags >= 0 ? fFields.fLengthAndFlags >> 5 : fFields.fLength]su}]]></DisplayString>
+        <StringView><![CDATA[fFields.fLengthAndFlags & 2 ? fStackFields.fBuffer : fFields.fArray,[fFields.fLengthAndFlags >= 0 ? fFields.fLengthAndFlags >> 5 : fFields.fLength]su]]></StringView>
+        <Expand>
+            <Item Name="Length"><![CDATA[fFields.fLengthAndFlags >= 0 ? fFields.fLengthAndFlags >> 5 : fFields.fLength]]></Item>
+            <ArrayItems>
+                <Size><![CDATA[fFields.fLengthAndFlags >= 0 ? fFields.fLengthAndFlags >> 5 : fFields.fLength]]></Size>
+                <ValuePointer><![CDATA[fFields.fLengthAndFlags & 2 ? fStackFields.fBuffer : fFields.fArray]]></ValuePointer>
+            </ArrayItems>
+        </Expand>
+    </Type>
+  
+    <Type Name="System::String">
+        <DisplayString Condition="m_is_null">nullptr</DisplayString>
+        <DisplayString>{*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))}</DisplayString>
+        <StringView Condition="!m_is_null">*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))</StringView>
+        <Expand>
+            <Item Name="IsNull">m_is_null</Item>
+            <ExpandedItem>*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Text::StringBuilder -->
+  
+    <Type Name="System::Text::StringBuilder">
+        <DisplayString>{*(System::String::IcuDebugHelper*)((char*)&amp;m_storage.m_data + sizeof(void*))}</DisplayString>
+        <StringView>*(System::String::IcuDebugHelper*)((char*)&amp;m_storage.m_data + sizeof(void*))</StringView>
+        <Expand>
+            <ExpandedItem>*(System::String::IcuDebugHelper*)((char*)&amp;m_storage.m_data + sizeof(void*))</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::SharedPtr -->
+
+    <Type Name="System::SmartPtr&lt;*&gt;">
+        <DisplayString Condition="m_data.m_pointee == nullptr || (m_data.m_mode == System::SmartPtrMode::Weak &amp;&amp; m_data.m_counter-&gt;m_object == nullptr)">nullptr</DisplayString>
+        <DisplayString>{*m_data.m_pointee}</DisplayString>
+        <Expand>
+            <ExpandedItem>*m_data.m_pointee</ExpandedItem>
+            <Item Name="[ptr]">m_data.m_pointee</Item>
+            <Item Name="[type]">&quot;$T1&quot;,sb</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::WeakPtr -->
+
+    <Type Name="System::WeakPtr&lt;*&gt;">
+        <DisplayString Condition="m_data.m_pointee == nullptr">nullptr</DisplayString>
+        <DisplayString Condition="(m_data.m_mode == System::SmartPtrMode::Weak &amp;&amp; m_data.m_counter-&gt;m_object == nullptr)">&lt;object deleted&gt;</DisplayString>
+        <DisplayString>{*m_data.m_pointee}</DisplayString>
+        <Expand>
+            <ExpandedItem>*m_data.m_pointee</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Object -->
+
+    <Type Name="System::Object" Inheritable="false">
+        <DisplayString>{{shared_count={m_shared_count.m_count}}}</DisplayString>
+    </Type>
+
+    <!-- System::Drawing::Point -->
+
+    <Type Name="System::Drawing::Point">
+        <DisplayString>X = {m_x}, Y = {m_y}</DisplayString>
+    </Type>
+
+    <!-- System::Drawing::PointF -->
+
+    <Type Name="System::Drawing::PointF">
+        <DisplayString>X = {m_x}, Y = {m_y}}}</DisplayString>
+    </Type>
+
+    <!-- System::Drawing::Rectangle -->
+
+    <Type Name="System::Drawing::Rectangle">
+        <DisplayString>X = {m_x}, Y = {m_y}, Width = {m_width}, Height = {m_height}</DisplayString>
+        <Expand>
+            <Item Name="Top">m_y</Item>
+            <Item Name="Left">m_x</Item>
+            <Item Name="Right">m_x + m_width</Item>
+            <Item Name="Bottom">m_y + m_height</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::Drawing::RectangleF -->
+
+    <Type Name="System::Drawing::RectangleF">
+        <DisplayString>X = {m_x}, Y = {m_y}, Width = {m_width}, Height = {m_height}</DisplayString>
+        <Expand>
+            <Item Name="Top">m_y</Item>
+            <Item Name="Left">m_x</Item>
+            <Item Name="Right">m_x + m_width</Item>
+            <Item Name="Bottom">m_y + m_height</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::Drawing::Size -->
+
+    <Type Name="System::Drawing::Size">
+        <DisplayString>Width = {m_width}, Height = {m_height}</DisplayString>
+    </Type>
+
+    <!-- System::Drawing::SizeF -->
+
+    <Type Name="System::Drawing::SizeF">
+        <DisplayString>Width = {m_width}, Height = {m_height}</DisplayString>
+    </Type>
+
+    <!-- System::Drawing::Color -->
+
+    <Type Name="System::Drawing::Color">
+        <DisplayString Condition="m_is_empty">Empty</DisplayString>
+        <DisplayString>Name = {m_argb,H}, ARGB = {{{(m_argb &gt;&gt; 24) &amp; 0xFF}, {(m_argb &gt;&gt; 16) &amp; 0xFF}, {(m_argb &gt;&gt; 8) &amp; 0xFF}, {(m_argb &gt;&gt; 0) &amp; 0xFF}}}</DisplayString>
+        <Expand>
+            <Item Name="IsEmpty">m_is_empty</Item>
+            <Item Name="A">(m_argb &gt;&gt; 24) &amp; 0xFF</Item>
+            <Item Name="R">(m_argb &gt;&gt; 16) &amp; 0xFF</Item>
+            <Item Name="G">(m_argb &gt;&gt; 8) &amp; 0xFF</Item>
+            <Item Name="B">(m_argb &gt;&gt; 0) &amp; 0xFF</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::Drawing::Drawing2D::Matrix -->
+
+    <Type Name="System::Drawing::Drawing2D::Matrix">
+        <Expand>
+            <Synthetic Name="Elements">
+                <DisplayString>float[6]</DisplayString>
+                <Expand>
+                    <Item Name="[0]">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[0]</Item>
+                    <Item Name="[1]">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[3]</Item>
+                    <Item Name="[2]">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[1]</Item>
+                    <Item Name="[3]">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[4]</Item>
+                    <Item Name="[4]">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[2]</Item>
+                    <Item Name="[5]">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[5]</Item>
+                </Expand>
+            </Synthetic>
+            <Item Name="IsIdentity">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fTypeMask == 0 &amp;&amp; m_is_identity</Item>
+            <Item Name="OffsetX">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[2]</Item>
+            <Item Name="OffsetY">((MatrixDebugHelper*)((char*)&amp;m_sk_matrix.m_data))-&gt;fMat[5]</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::TimeSpan -->
+
+    <Type Name="System::TimeSpan::NatvisHelpers::Days">
+        <DisplayString Condition="ticks &gt;= TicksPerDay || ticks &lt;= -TicksPerDay">{ticks / TicksPerDay}.</DisplayString>
+        <DisplayString></DisplayString>
+    </Type>
+  
+    <Type Name="System::TimeSpan::NatvisHelpers::HoursMinutesSeconds">
+        <DisplayString><![CDATA[{((ticks / TicksPerHour * (ticks < 0 ? -1 : 1)) % 24) / 10}{((ticks / TicksPerHour * (ticks < 0 ? -1 : 1)) % 24) % 10}:{((ticks / TicksPerMinute * (ticks < 0 ? -1 : 1)) % 60) / 10}{((ticks / TicksPerMinute * (ticks < 0 ? -1 : 1)) % 60) % 10}:{((ticks / TicksPerSecond * (ticks < 0 ? -1 : 1)) % 60) / 10}{((ticks / TicksPerSecond * (ticks < 0 ? -1 : 1)) % 60) % 10}]]></DisplayString>
+    </Type>
+
+    <Type Name="System::TimeSpan::NatvisHelpers::HoursMinutes">
+        <DisplayString><![CDATA[{((ticks / TicksPerHour * (ticks < 0 ? -1 : 1)) % 24) / 10}{((ticks / TicksPerHour * (ticks < 0 ? -1 : 1)) % 24) % 10}:{((ticks / TicksPerMinute * (ticks < 0 ? -1 : 1)) % 60) / 10}{((ticks / TicksPerMinute * (ticks < 0 ? -1 : 1)) % 60) % 10}]]></DisplayString>
+    </Type>
+  
+    <Type Name="System::TimeSpan::NatvisHelpers::Fraction">
+        <DisplayString Condition="ticks % 10"><![CDATA[.{(ticks / 1000000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 100000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 10000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 1000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 100 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 10 * (ticks < 0 ? -1 : 1)) % 10}{(ticks % 10) * (ticks < 0 ? -1 : 1)}]]></DisplayString>
+        <DisplayString Condition="ticks % TicksPerMillisecond"><![CDATA[.{(ticks / 1000000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 100000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 10000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 1000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 100 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 10 * (ticks < 0 ? -1 : 1)) % 10}]]></DisplayString>
+        <DisplayString Condition="ticks % TicksPerSecond"><![CDATA[.{(ticks / 1000000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 100000 * (ticks < 0 ? -1 : 1)) % 10}{(ticks / 10000 * (ticks < 0 ? -1 : 1)) % 10}]]></DisplayString>
+        <DisplayString></DisplayString>
+    </Type>
+  
+    <Type Name="System::TimeSpan">
+        <DisplayString>{{{(NatvisHelpers::Days*)&amp;m_ticks,na}{(NatvisHelpers::HoursMinutesSeconds*)&amp;m_ticks,na}{(NatvisHelpers::Fraction*)&amp;m_ticks,na}}}</DisplayString>
+        <Expand>
+            <Item Name="Days">m_ticks / TicksPerDay</Item>
+            <Item Name="Hours">(m_ticks / TicksPerHour * (m_ticks &lt; 0 ? -1 : 1)) % 24</Item>
+            <Item Name="Milliseconds">(m_ticks / TicksPerMillisecond * (m_ticks &lt; 0 ? -1 : 1)) % 1000</Item>
+            <Item Name="Minutes">(m_ticks / TicksPerMinute * (m_ticks &lt; 0 ? -1 : 1)) % 60</Item>
+            <Item Name="Seconds">(m_ticks / TicksPerSecond * (m_ticks &lt; 0 ? -1 : 1)) % 60</Item>
+            <Item Name="Ticks">m_ticks</Item>
+            <Item Name="TotalDays">(double)m_ticks / TicksPerDay</Item>
+            <Item Name="TotalHours">(double)m_ticks / TicksPerHour</Item>
+            <Item Name="TotalMilliseconds">(double)m_ticks / TicksPerMillisecond</Item>
+            <Item Name="TotalMinutes">(double)m_ticks / TicksPerMinute</Item>
+            <Item Name="TotalSeconds">(double)m_ticks / TicksPerSecond</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::DateTime -->
+
+    <Type Name="System::DateTime::NatvisHelpers::Date">
+        <Intrinsic Name="days" Expression="ticks / TicksPerDay" />
+        <Intrinsic Name="day_of_leap_year_to_day_of_month" Expression="day &lt;= 31 ? day : day &lt;= 60 ? day - 31 : day &lt;= 91 ? day - 60 : day &lt;= 121 ? day - 91 : day &lt;= 152 ? day - 121 : day &lt;= 182 ? day - 152 : day &lt;= 213 ? day - 182 : day &lt;= 244 ? day - 213 : day &lt;= 274 ? day - 244 : day &lt;= 305 ? day - 274 : day &lt;= 335 ? day - 305 : day - 335">
+            <Parameter Name="day" Type="int"/>
+        </Intrinsic>
+        <Intrinsic Name="day_of_year_to_day_of_month" Expression="day &lt;= 31 ? day : day &lt;= 59 ? day - 31 : day &lt;= 90 ? day - 59 : day &lt;= 120 ? day - 90 : day &lt;= 151 ? day - 120 : day &lt;= 181 ? day - 151 : day &lt;= 212 ? day - 181 : day &lt;= 243 ? day - 212 : day &lt;= 273 ? day - 243 : day &lt;= 304 ? day - 273 : day &lt;= 334 ? day - 304 : day - 334">
+            <Parameter Name="day" Type="int"/>
+        </Intrinsic>
+        <Intrinsic Name="day_of_leap_year_to_month" Expression="day &lt;= 31 ? 1 : day &lt;= 60 ? 2 : day &lt;= 91 ? 3 : day &lt;= 121 ? 4 : day &lt;= 152 ? 5 : day &lt;= 182 ? 6 : day &lt;= 213 ? 7 : day &lt;= 244 ? 8 : day &lt;= 274 ? 9 : day &lt;= 305 ? 10 : day &lt;= 335 ? 11 : 12">
+            <Parameter Name="day" Type="int"/>
+        </Intrinsic>
+        <Intrinsic Name="day_of_year_to_month" Expression="day &lt;= 31 ? 1 : day &lt;= 59 ? 2 : day &lt;= 90 ? 3 : day &lt;= 120 ? 4 : day &lt;= 151 ? 5 : day &lt;= 181 ? 6 : day &lt;= 212 ? 7 : day &lt;= 243 ? 8 : day &lt;= 273 ? 9 : day &lt;= 304 ? 10 : day &lt;= 334 ? 11 : 12">
+            <Parameter Name="day" Type="int"/>
+        </Intrinsic>
+        <!-- Leap years from 1901 to 2099 -->
+        <DisplayString Condition="days() &gt;= DaysTo1901 &amp;&amp; days() &lt; DaysTo2100 &amp;&amp; ((days() - DaysTo1901) % DaysPer4Years) &gt;= 1095" Optional="true">{day_of_leap_year_to_day_of_month(((days() - DaysTo1901) % DaysPer4Years) - 1094)}/{day_of_leap_year_to_month(((days() - DaysTo1901) % DaysPer4Years) - 1094)}/{1904 + (days() - DaysTo1901) / DaysPer4Years * 4}{" ",sb}</DisplayString>
+        <!-- Non leap years from 1901 to 2099 -->
+        <DisplayString Condition="days() &gt;= DaysTo1901 &amp;&amp; days() &lt; DaysTo2100" Optional="true">{day_of_year_to_day_of_month((days() - DaysTo1901) % DaysPer4Years % 365 + 1)}/{day_of_year_to_month((days() - DaysTo1901) % DaysPer4Years % 365 + 1)}/{1901 + (days() - DaysTo1901) / DaysPer4Years * 4 + ((days() - DaysTo1901) % DaysPer4Years) / 365}{" ",sb}</DisplayString>
+        <!-- Date 31/12/9999 -->
+        <DisplayString Condition="days() == DaysTo10000">31/12/9999{" ",sb}</DisplayString>
+        <!-- Date 01/01/0001 -->
+        <DisplayString Condition="days() == 0"></DisplayString>
+        <!-- All other dates -->
+        <DisplayString Condition="ticks &gt;= TicksPerDay">{days()}{" ",sb}</DisplayString>
+    </Type>
+   
+    <Type Name="System::DateTime::NatvisHelpers::HoursMinutesSeconds">
+        <Intrinsic Name="hours" Expression="(ticks / TicksPerHour) % 24" />
+        <Intrinsic Name="minutes" Expression="(ticks / TicksPerMinute) % 60" />
+        <Intrinsic Name="seconds" Expression="(ticks / TicksPerSecond) % 60" />
+        <DisplayString>{hours() / 10}{hours() % 10}:{minutes() / 10}{minutes() % 10}:{seconds() / 10}{seconds() % 10}</DisplayString>
+    </Type>
+  
+    <Type Name="System::DateTime::NatvisHelpers::Fraction">
+        <DisplayString Condition="ticks % 10">.{(ticks / 1000000) % 10}{(ticks / 100000) % 10}{(ticks / 10000) % 10}{(ticks / 1000) % 10}{(ticks / 100) % 10}{(ticks / 10) % 10}{ticks % 10}</DisplayString>
+        <DisplayString Condition="ticks % TicksPerMillisecond">.{(ticks / 1000000) % 10}{(ticks / 100000) % 10}{(ticks / 10000) % 10}{(ticks / 1000) % 10}{(ticks / 100) % 10}{(ticks / 10) % 10}</DisplayString>
+        <DisplayString Condition="ticks % TicksPerSecond">.{(ticks / 1000000) % 10}{(ticks / 100000) % 10}{(ticks / 10000) % 10}</DisplayString>
+        <DisplayString></DisplayString>
+    </Type>
+  
+    <Type Name="System::DateTime::NatvisHelpers::TimeOfDay">
+        <DisplayString>{(System::DateTime::NatvisHelpers::HoursMinutesSeconds*)&amp;data,na}{(System::DateTime::NatvisHelpers::Fraction*)&amp;data,na}</DisplayString>
+    </Type>
+  
+    <Type Name="System::DateTime">
+        <DisplayString>{{{(NatvisHelpers::Date*)&amp;m_data,na}{(NatvisHelpers::HoursMinutesSeconds*)&amp;m_data,na}}}</DisplayString>
+        <Expand>
+          <Item Name="Date">(NatvisHelpers::Date*)&amp;m_data,na</Item>
+          <Item Name="DayOfWeek">((m_data &amp; TicksMask) / TicksPerDay + 1) % 7</Item>
+          <Item Name="DaysFromAD">(m_data &amp; TicksMask) / TicksPerDay</Item>
+          <Item Name="Hour">((m_data &amp; TicksMask) / TicksPerHour) % 24</Item>
+          <Item Name="Kind">(DateTimeKind)(m_data &gt;&gt; 62)</Item>
+          <Item Name="Millisecond">((m_data &amp; TicksMask) / TicksPerMillisecond) % 1000</Item>
+          <Item Name="Minute">((m_data &amp; TicksMask) / TicksPerMinute) % 60</Item>
+          <Item Name="Second">((m_data &amp; TicksMask) / TicksPerSecond) % 60</Item>
+          <Item Name="Ticks">m_data &amp; TicksMask</Item>
+          <Item Name="TimeOfDay">(NatvisHelpers::TimeOfDay*)&amp;m_data,na</Item>
+       </Expand>
+    </Type>
+
+    <!-- System::DateTimeOffset -->
+
+    <Type Name="System::DateTimeOffset">
+        <DisplayString Condition="m_offset.m_ticks &gt;= 0">{{{(System::DateTime::NatvisHelpers::Date*)&amp;m_date_time,na}{(System::DateTime::NatvisHelpers::HoursMinutesSeconds*)&amp;m_date_time,na} UTC +{(System::TimeSpan::NatvisHelpers::HoursMinutes*)&amp;m_offset,na}}}</DisplayString>
+        <DisplayString>{{{(System::DateTime::NatvisHelpers::Date*)&amp;m_date_time,na}{(System::DateTime::NatvisHelpers::HoursMinutesSeconds*)&amp;m_date_time,na} UTC -{(System::TimeSpan::NatvisHelpers::HoursMinutes*)&amp;m_offset,na}}}</DisplayString>
+        <Expand>
+            <Item Name="Offset">m_offset</Item>
+            <Item Name="UtcDateTime">m_date_time</Item>
+        </Expand>
+    </Type>
+  
+    <!-- System::Nullable -->
+
+    <Type Name="System::Nullable&lt;*&gt;">
+        <DisplayString Condition="m_has_value">{m_value}</DisplayString>
+        <DisplayString>nullptr</DisplayString>
+    </Type>
+
+    <!-- System::Details::Lazy -->
+
+    <Type Name="System::Details::Lazy&lt;*&gt;">
+        <DisplayString Condition="*(bool*)&amp;m_call_once.m_called &amp;&amp; $T3 == 0">{*($T1*)(&amp;m_value)}</DisplayString>
+        <DisplayString Condition="*(bool*)&amp;m_call_once.m_called &amp;&amp; $T3 == 1">{**($T1**)(&amp;m_value)}</DisplayString>
+        <DisplayString>Not initialized</DisplayString>
+        <Expand>
+            <ExpandedItem Condition="*(bool*)&amp;m_call_once.m_called &amp;&amp; $T3 == 0">*($T1*)(&amp;m_value)</ExpandedItem>
+            <ExpandedItem Condition="*(bool*)&amp;m_call_once.m_called &amp;&amp; $T3 == 1">**($T1**)(&amp;m_value)</ExpandedItem>
+            <Item Name="[lazy.ptr]" Condition="*(bool*)&amp;m_call_once.m_called &amp;&amp; $T3 == 0">($T1*)(&amp;m_value)</Item>
+            <Item Name="[lazy.ptr]" Condition="*(bool*)&amp;m_call_once.m_called &amp;&amp; $T3 == 1">*($T1**)(&amp;m_value)</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::Details::SynchronizedValue -->
+
+    <Type Name="System::Details::SynchronizedValue&lt;*&gt;">
+        <DisplayString>{m_value}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_value</ExpandedItem>
+            <Item Name="[sync.ptr]">&amp;m_value</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::Array -->
+
+    <Type Name="System::Array&lt;*&gt;">
+        <Intrinsic Name="data_size" Expression="m_data._Mypair._Myval2._Mylast - m_data._Mypair._Myval2._Myfirst" />
+        <Intrinsic Name="data_ptr" Expression="m_data._Mypair._Myval2._Myfirst" />
+        <DisplayString>{m_data}</DisplayString>
+        <Expand>
+            <Item Name="Data (UTF-8)" Condition="sizeof($T1) == 1">data_ptr(),[data_size()]s8</Item>
+            <ExpandedItem>m_data</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Collections::Generic::ArrayList -->
+
+    <Type Name="System::Collections::Generic::ArrayList&lt;*&gt;">
+        <DisplayString>{m_data}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_data</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Collections::Generic::Dictionary -->
+
+    <Type Name="System::Collections::Generic::Dictionary&lt;*&gt;">
+        <DisplayString>{m_map}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_map</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Collections::Generic::HashSet -->
+
+    <Type Name="System::Collections::Generic::HashSet&lt;*&gt;">
+        <DisplayString>{m_data}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_data</ExpandedItem>
+        </Expand>
+    </Type>
+    
+    <!-- System::Collections::Generic::List -->
+
+    <Type Name="System::Collections::Generic::List&lt;*&gt;">
+        <DisplayString>{m_data}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_data</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Collections::Generic::SortedDictionary -->
+
+    <Type Name="System::Collections::Generic::SortedDictionary&lt;*&gt;">
+        <DisplayString>{m_map}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_map</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Collections::Generic::SortedList -->
+
+    <Type Name="System::Collections::Generic::Detail::FlatMap&lt;*&gt;">
+        <DisplayString>{m_data}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_data</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <Type Name="System::Collections::Generic::SortedList&lt;*&gt;">
+        <DisplayString>{m_map}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_map</ExpandedItem>
+        </Expand>
+    </Type>
+    
+    <!-- System::Collections::Generic::Stack -->
+
+    <Type Name="System::Collections::Generic::Stack&lt;*&gt;">
+        <DisplayString>{m_data}</DisplayString>
+        <Expand>
+            <ExpandedItem>m_data</ExpandedItem>
+        </Expand>
+    </Type>
+
+    <!-- System::Globalization::DateTimeFormatInfo -->
+
+    <Type Name="System::Globalization::DateTimeFormatInfo">
+        <DisplayString>System::Globalization::DateTimeFormatInfo(&quot;{m_culture_name}&quot;)</DisplayString>
+        <Expand>
+            <Item Name="AMDesignator">m_am_designator</Item>
+            <Item Name="AbbreviatedDayNames">m_abbreviated_day_names</Item>
+            <Item Name="AbbreviatedMonthGenitiveNames">m_abbreviated_month_genitive_names</Item>
+            <Item Name="AbbreviatedMonthNames">m_abbreviated_month_names</Item>
+            <Item Name="Calendar">m_calendar</Item>
+            <Item Name="CalendarWeekRule">m_week_rule</Item>
+            <Item Name="DateSeparator">m_date_separator</Item>
+            <Item Name="DayNames">m_day_names</Item>
+            <Item Name="FirstDayOfWeek">m_first_day_of_week</Item>
+            <Item Name="FullDateTimePattern">m_full_date_time_pattern</Item>
+            <Item Name="IsReadOnly">m_is_read_only</Item>
+            <Item Name="LongDatePattern">m_long_date_pattern</Item>
+            <Item Name="LongTimePattern">m_long_time_pattern</Item>
+            <Item Name="MonthDayPattern">m_month_day_pattern</Item>
+            <Item Name="MonthGenitiveNames">m_month_genitive_names</Item>
+            <Item Name="MonthNames">m_month_names</Item>
+            <Item Name="NativeCalendarName">m_native_calendar_name</Item>
+            <Item Name="PmDesignator">m_pm_designator</Item>
+            <Item Name="ShortDatePattern">m_short_date_pattern</Item>
+            <Item Name="ShortTimePattern">m_short_time_pattern</Item>
+            <Item Name="ShortestDayNames">m_shortest_day_names</Item>
+            <Item Name="TimeSeparator">m_time_separator</Item>
+            <Item Name="YearMonthPattern">m_year_month_pattern</Item>
+        </Expand>
+    </Type>
+  
+    <!-- System::Globalization::NumberFormatInfo -->
+
+    <Type Name="System::Globalization::NumberFormatInfo">
+        <DisplayString>System::Globalization::NumberFormatInfo(&quot;{m_culture_name}&quot;)</DisplayString>
+        <Expand>
+            <Item Name="CurrencyDecimalDigits">m_currency_decimal_digits</Item>
+            <Item Name="CurrencyDecimalSeparator">m_currency_decimal_separator</Item>
+            <Item Name="CurrencyGroupSeparator">m_currency_group_separator</Item>
+            <Item Name="CurrencyGroupSizes">m_currency_group_sizes</Item>
+            <Item Name="CurrencyNegativePattern">m_currency_negative_pattern</Item>
+            <Item Name="CurrencyPositivePattern">m_currency_positive_pattern</Item>
+            <Item Name="CurrencySymbol">m_currency_symbol</Item>
+            <Item Name="DigitSubstitution">m_digit_substitution</Item>
+            <Item Name="IsReadOnly">m_is_read_only</Item>
+            <Item Name="NaNSymbol">m_nan_symbol</Item>
+            <Item Name="NativeDigits">m_native_digits</Item>
+            <Item Name="NegativeInfinitySymbol">m_negative_infinity_symbol</Item>
+            <Item Name="NegativeSign">m_negative_sign</Item>
+            <Item Name="NumberDecimalDigits">m_number_decimal_digits</Item>
+            <Item Name="NumberDecimalSeparator">m_number_decimal_separator</Item>
+            <Item Name="NumberGroupSeparator">m_number_group_separator</Item>
+            <Item Name="NumberGroupSizes">m_number_group_sizes</Item>
+            <Item Name="NumberNegativePattern">m_number_negative_pattern</Item>
+            <Item Name="PerMilleSymbol">m_permille_symbol</Item>
+            <Item Name="PercentDecimalDigits">m_percent_decimal_digits</Item>
+            <Item Name="PercentDecimalSeparator">m_percent_decimal_separator</Item>
+            <Item Name="PercentGroupSeparator">m_percent_group_separator</Item>
+            <Item Name="PercentGroupSizes">m_percent_group_sizes</Item>
+            <Item Name="PercentNegativePattern">m_percent_negative_pattern</Item>
+            <Item Name="PercentPositivePattern">m_percent_positive_pattern</Item>
+            <Item Name="PercentSymbol">m_percent_symbol</Item>
+            <Item Name="PositiveInfinitySymbol">m_positive_infinity_symbol</Item>
+            <Item Name="PositiveSign">m_positive_sign</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::IO::MemoryStream -->
+
+    <Type Name="System::IO::MemoryStream">
+        <DisplayString>{{System::IO::MemoryStream}}</DisplayString>
+        <Expand>
+            <Item Name="CanRead">m_readable</Item>
+            <Item Name="CanSeek">m_seekable</Item>
+            <Item Name="CanWrite">m_writable</Item>
+            <Item Name="Capacity">capacity</Item>
+            <Item Name="Length">length</Item>
+            <Item Name="Position">position</Item>
+            <Item Name="InternalBuffer">internalBuffer</Item>
+        </Expand>
+    </Type>
+
+    <!-- System::IO::FileStream -->
+
+    <Type Name="System::IO::FileStream">
+        <DisplayString>{{System::IO::FileStream}}</DisplayString>
+        <Expand>
+            <Item Name="Name">m_path</Item>
+            <Item Name="Position">m_file_pos - m_read_length + m_read_pos + m_write_pos</Item>
+            <Synthetic Name="Options">
+                <Expand>
+                    <Item Name="BufferSize">m_buffer_size</Item>
+                    <Item Name="FileAccess">m_access</Item>
+                    <Item Name="FileMode">m_mode</Item>
+                    <Item Name="FileOptions">m_options</Item>
+                    <Item Name="FileShare">m_share</Item>
+                </Expand>
+            </Synthetic>
+        </Expand>
+    </Type>
+
+    <!-- System::Guid -->
+
+    <Type Name="System::Guid::NatvisHelpers::HexLow">
+        <DisplayString Condition="((c &amp; 0x0F) == 0x00)">0</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x01)">1</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x02)">2</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x03)">3</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x04)">4</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x05)">5</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x06)">6</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x07)">7</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x08)">8</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x09)">9</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x0A)">A</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x0B)">B</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x0C)">C</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x0D)">D</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x0E)">E</DisplayString>
+        <DisplayString Condition="((c &amp; 0x0F) == 0x0F)">F</DisplayString>
+        <DisplayString>?</DisplayString>
+    </Type>
+
+    <Type Name="System::Guid::NatvisHelpers::HexHigh">
+        <DisplayString Condition="((c &amp; 0xF0) == 0x00)">0</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x10)">1</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x20)">2</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x30)">3</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x40)">4</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x50)">5</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x60)">6</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x70)">7</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x80)">8</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0x90)">9</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0xA0)">A</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0xB0)">B</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0xC0)">C</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0xD0)">D</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0xE0)">E</DisplayString>
+        <DisplayString Condition="((c &amp; 0xF0) == 0xF0)">F</DisplayString>
+        <DisplayString>?</DisplayString>
+    </Type>
+
+    <Type Name="System::Guid::NatvisHelpers::Hex">
+        <DisplayString>{(System::Guid::NatvisHelpers::HexHigh*)(&amp;c),na}{(System::Guid::NatvisHelpers::HexLow*)(&amp;c),na}</DisplayString>
+    </Type>
+    
+    <Type Name="System::Guid">
+        <Intrinsic Name="data" Expression="(System::Guid::NatvisHelpers::Hex*)((char*)&amp;m_uuid + offset)">
+            <Parameter Name="offset" Type="int" />
+        </Intrinsic>
+        <DisplayString>{{{*data(0)}{*data(1)}{*data(2)}{*data(3)}-{*data(4)}{*data(5)}-{*data(6)}{*data(7)}-{*data(8)}{*data(9)}-{*data(10)}{*data(11)}{*data(12)}{*data(13)}{*data(14)}{*data(15)}}}</DisplayString>
+        <Expand>
+        </Expand>
+    </Type>
+
+</AutoVisualizer>
