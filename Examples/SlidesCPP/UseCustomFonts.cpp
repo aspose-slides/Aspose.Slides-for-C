@@ -15,10 +15,10 @@ void UseCustomFonts()
 	const String templatePath = u"../templates/DefaultFonts.pptx";
 	
 	//Setting fonts path
-	ArrayPtr<String> loadFonts = System::MakeObject<Array<String>>(1, fontPath + u"CustomFonts.ttf");
+	ArrayPtr<String> folders = System::MakeObject<Array<String>>(1, fontPath);
 
 	// Load the custom font directory fonts
-	FontsLoader::LoadExternalFonts(loadFonts);
+	FontsLoader::LoadExternalFonts(folders);
 
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
