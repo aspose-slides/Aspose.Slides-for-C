@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}</ProjectGuid>
+    <RootNamespace>AsposeSlidesCppExtension</RootNamespace>
+    <PythonVersion>3.6</PythonVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="PythonConfiguration">
+    <RegistryView>RegistryView.Registry32</RegistryView>
+    <RegistryView Condition="$(Platform) == 'x64'">RegistryView.Registry64</RegistryView>
+    <PythonTag>$(PythonVersion)-32</PythonTag>
+    <PythonTag Condition="$(Platform) == 'x64'">$(PythonVersion)</PythonTag>
+    <PythonHome Condition="$(PythonHome) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\$(PythonTag)\InstallPath', null, null, $(RegistryView)))</PythonHome>
+    <PythonHome Condition="$(PythonHome) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\$(PythonTag)\InstallPath', null, null, $(RegistryView)))</PythonHome>
+    <PythonExe Condition="$(PythonExe) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\$(PythonTag)\InstallPath', 'ExecutablePath', null, $(RegistryView)))</PythonExe>
+    <PythonExe Condition="$(PythonExe) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\$(PythonTag)\InstallPath', 'ExecutablePath', null, $(RegistryView)))</PythonExe>
+    <PythonExe Condition="$(PythonExe) == '' and $(PythonHome) != ''">$(PythonHome)python.exe</PythonExe>
+    <PythonDevVersion>$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\$(PythonTag)\InstalledFeatures', 'dev', null, $(RegistryView)))</PythonDevVersion>
+    <PythonDevVersion Condition="$(PythonDevVersion) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\$(PythonTag)\InstalledFeatures', 'dev', null, $(RegistryView)))</PythonDevVersion>
+    <PythonCorePDBVersion>$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\$(PythonTag)\InstalledFeatures', 'core_pdb', null, $(RegistryView)))</PythonCorePDBVersion>
+    <PythonCorePDBVersion Condition="$(PythonCorePDBVersion) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\$(PythonTag)\InstalledFeatures', 'core_pdb', null, $(RegistryView)))</PythonCorePDBVersion>
+    <PythonCoreDVersion>$([MSBuild]::GetRegistryValueFromView('HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\$(PythonTag)\InstalledFeatures', 'core_d', null, $(RegistryView)))</PythonCoreDVersion>
+    <PythonCoreDVersion Condition="$(PythonCoreDVersion) == ''">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\$(PythonTag)\InstalledFeatures', 'core_d', null, $(RegistryView)))</PythonCoreDVersion>
+    <PythonDebugSuffix Condition="$(PythonCoreDVersion) != ''">_d</PythonDebugSuffix>
+    <PythonDExe Condition="$(PythonExe) != '' and $(PythonDExe) == ''">$([System.IO.Path]::GetDirectoryName($(PythonExe)))\python$(PythonDebugSuffix).exe</PythonDExe>
+    <PythonDExe Condition="!Exists($(PythonDExe))">$(PythonExe)</PythonDExe>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <DefaultDebuggerFlavor>WindowsLocalDebugger</DefaultDebuggerFlavor>
+    <DefaultDebuggerFlavor Condition="$(HasPythonDebugLaunchProvider) == 'true'">PythonDebugLaunchProvider</DefaultDebuggerFlavor>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>AsposeSlidesCppExtension</TargetName>
+    <TargetExt>.pyd</TargetExt>
+    <LocalDebuggerCommand>$(PythonExe)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>-i -c "print('&gt;&gt;&gt; import AsposeSlidesCppExtension'); import AsposeSlidesCppExtension"</LocalDebuggerCommandArguments>
+    <LocalDebuggerEnvironment>PYTHONPATH=$(OutDir)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>$(DefaultDebuggerFlavor)</DebuggerFlavor>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>AsposeSlidesCppExtension</TargetName>
+    <TargetExt>.pyd</TargetExt>
+    <LocalDebuggerCommand>$(PythonExe)</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments>-i -c "print('&gt;&gt;&gt; import AsposeSlidesCppExtension'); import AsposeSlidesCppExtension"</LocalDebuggerCommandArguments>
+    <LocalDebuggerEnvironment>PYTHONPATH=$(OutDir)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>$(DefaultDebuggerFlavor)</DebuggerFlavor>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(PythonHome)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>libucrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>ucrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PythonHome)libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(PythonHome)Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>libucrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <AdditionalDependencies>ucrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(PythonHome)libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\AsposeSlidesCppExtension.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.21.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.21.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.21.4.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.21.4.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.21.4.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.21.4.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+  </ImportGroup>
+  <Target Name="_ValidatePythonInstall" BeforeTargets="PrepareForBuild">
+    <Error Condition="$(PythonHome) == ''" Text="Python $(PythonTag) is not installed. Please install Python $(PythonTag) and try again." />
+    <Error Condition="$(PythonDevVersion) == ''" Text="Python development files are not installed. Please add the development files, or repair your existing installation." />
+    <Warning Condition="$(PythonCorePDBVersion) == ''" Text="Python debug symbols are not installed. Installing the symbols through the Python installer is strongly recommended." />
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.21.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.21.4.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.21.4.0\build\native\Aspose.Slides.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.21.4.0\build\native\Aspose.Slides.Cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.x86.21.4.0\build\native\Aspose.Slides.Cpp.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.x86.21.4.0\build\native\Aspose.Slides.Cpp.x86.targets'))" />
+  </Target>
+</Project>

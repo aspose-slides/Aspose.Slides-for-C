@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1433
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AsposeSlidesCppExtension", "AsposeSlidesCppExtension\AsposeSlidesCppExtension.vcxproj", "{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication", "PythonApplication\PythonApplication.pyproj", "{5CEF5D7C-8D55-4E04-A53C-E717883404CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}.Release|Any CPU.ActiveCfg = Release|Win32
+		{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}.Release|x64.ActiveCfg = Release|x64
+		{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}.Release|x64.Build.0 = Release|x64
+		{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}.Release|x86.ActiveCfg = Release|Win32
+		{78EC1A85-E86B-40D6-AD13-44EBF7A25B19}.Release|x86.Build.0 = Release|Win32
+		{5CEF5D7C-8D55-4E04-A53C-E717883404CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEF5D7C-8D55-4E04-A53C-E717883404CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{5CEF5D7C-8D55-4E04-A53C-E717883404CA}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D27764A2-DD89-405B-BE98-362F819189F6}
+	EndGlobalSection
+EndGlobal
