@@ -7,40 +7,30 @@ using namespace System;
 void ExtractEmbeddedFileDataFromOLEObject()
 {
 	//ExStart:ExtractEmbeddedFileDataFromOLEObject
+    String OutDir = GetOutPath();
+    String pptxFileName = u"../templates/TestOlePresentation.pptx";
+    
+    SharedPtr<Presentation> pres = System::MakeObject<Presentation>(pptxFileName);
 
-	const String templatePath = u"../templates/TestOlePresentation.pptx";
-	
-	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
-
-	SharedPtr<ISlide> slide;
-	SharedPtr<IShape> shape;
-
-	for (int slideCount = 0; slideCount < pres->get_Slides()->get_Count(); slideCount++)
+    int32_t objectnum = 0;
+    for (auto sld : IterateOver(pres->get_Slides()))
     {
-		slide = pres->get_Slides()->idx_get(slideCount);
-
-		for (int count = 0; count < slide->get_Shapes()->get_Count(); count++)
+        for (auto shape : IterateOver(sld->get_Shapes()))
         {
-			shape = slide->get_Shapes()->idx_get(count);
-
-			if (ObjectExt::Is<OleObjectFrame>(shape))
+            if (ObjectExt::Is<OleObjectFrame>(shape))
             {
-				// Cast the shape to OleObjectFrame
-				SharedPtr<OleObjectFrame> oof = DynamicCast<OleObjectFrame>(shape);
+                objectnum++;
+                SharedPtr<OleObjectFrame> oleFrame = System::DynamicCast_noexcept<OleObjectFrame>(shape);
+                ArrayPtr<uint8_t> data = oleFrame->get_EmbeddedData()->get_EmbeddedFileData();
+                String fileExtention = oleFrame->get_EmbeddedData()->get_EmbeddedFileExtension();
 
-				ArrayPtr<uint8_t> buffer = oof->get_EmbeddedFileData();
-				{
-					String fileExtention = oof->get_EmbeddedFileExtension();				
-					String extractedPath = u"../out/ExtractedObject_out" + fileExtention;
-
-					SharedPtr<IO::FileStream> stream = System::MakeObject<IO::FileStream>(extractedPath, IO::FileMode::Create, IO::FileAccess::Write, IO::FileShare::Read);
-
-					stream->Flush();
-					stream->Close();
-				}
-			}
-		}
-	}
+                String extractedPath = OutDir + u"ExtractedObject_out" + objectnum + fileExtention;
+                SharedPtr<IO::FileStream> fs = System::MakeObject<IO::FileStream>(extractedPath, IO::FileMode::Create);
+                   
+                fs->Write(data, 0, data->get_Length());
+            }
+        }
+    }
 
 	//ExEnd:ExtractEmbeddedFileDataFromOLEObject
 }

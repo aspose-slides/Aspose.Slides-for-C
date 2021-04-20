@@ -24,10 +24,10 @@ void AccessOLEObjectFrame()
     if (oleObjectFrame != nullptr)
     {
         // Get embedded file data
-        ArrayPtr<uint8_t> data = oleObjectFrame->get_EmbeddedFileData();
+        ArrayPtr<uint8_t> data = oleObjectFrame->get_EmbeddedData()->get_EmbeddedFileData();
 
         // Get embedded file extention
-        String fileExtention = oleObjectFrame->get_EmbeddedFileExtension();
+        String fileExtention = oleObjectFrame->get_EmbeddedData()->get_EmbeddedFileExtension();
 
         // Create path for saving the extracted file
         String extractedPath = Path::Combine(GetOutPath(), u"excelFromOLE_out" + fileExtention);

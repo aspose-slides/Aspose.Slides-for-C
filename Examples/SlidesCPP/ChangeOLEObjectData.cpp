@@ -10,6 +10,7 @@
 #include "boost\smart_ptr\intrusive_ptr.hpp"
 
 using namespace Aspose::Slides;
+using namespace Aspose::Slides::DOM::Ole;
 using namespace boost;
 
 intrusive_ptr<Aspose::Cells::Systems::IO::MemoryStream> ToCellsMemoryStream(System::ArrayPtr<uint8_t> buffer)
@@ -62,8 +63,10 @@ void ChangeOLEObjectData()
         // Changing Ole frame object data
         cellsOutputStream->SetPosition(0);
         System::SharedPtr<System::IO::MemoryStream> msout = ToSlidesMemoryStream(cellsOutputStream);
-        ole->set_ObjectData(msout->ToArray());
-        
+
+        System::SharedPtr<IOleEmbeddedDataInfo> newData = System::MakeObject<OleEmbeddedDataInfo>(msout->ToArray(), ole->get_EmbeddedData()->get_EmbeddedFileExtension());
+        ole->SetEmbeddedData(newData);
+
         pres->Save(GetOutPath() + u"OleEdit_out.pptx", Export::SaveFormat::Pptx);
     }
 }
