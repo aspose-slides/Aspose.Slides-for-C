@@ -52,6 +52,7 @@ void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 void BestImagesCompressionRatioforPDF();
 void SetPDFPageSize();
 void ExportToHTMLWithResponsiveLayout();
+void ExportToHtmlWithImageLinks();
 void CovertToPDFWithProgressUpdate();
 void SaveToStream();
 void ConvertToFodp();

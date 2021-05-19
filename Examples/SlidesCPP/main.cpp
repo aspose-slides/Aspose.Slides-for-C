@@ -77,11 +77,12 @@ int main(int argc, const char argv[])
         ExportMathParagraphToMathML();
         SvgFormattingController();
         PdfImport();
+        ExportToHtmlWithImageLinks();
 
 	    #pragma endregion
 
 	    #pragma region Opening presentation decks
-
+        
 	    OpenPasswordPresentation();
 	    OpenPresentation();
 	    VerifyingPresentationWithoutloading();

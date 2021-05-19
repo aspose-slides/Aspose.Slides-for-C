@@ -1170,6 +1170,12 @@
     <ClCompile Include="GeometryShapeUsingShapeUtil.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="ExportToHtmlWithImageLinks.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkController.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1182,6 +1188,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkController.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

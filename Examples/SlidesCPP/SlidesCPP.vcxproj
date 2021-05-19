@@ -300,6 +300,7 @@
     </ClCompile>
     <ClCompile Include="ExportingHTMLText.cpp" />
     <ClCompile Include="ExportMathParagraphToMathML.cpp" />
+    <ClCompile Include="ExportToHtmlWithImageLinks.cpp" />
     <ClCompile Include="ExportToHTMLWithResponsiveLayout.cpp" />
     <ClCompile Include="ExtractEmbeddedFileDataFromOLEObject.cpp" />
     <ClCompile Include="ExtractingVBAMacros.cpp" />
@@ -348,6 +349,7 @@
     <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
     <ClCompile Include="KeepTextFlat.cpp" />
+    <ClCompile Include="LinkController.cpp" />
     <ClCompile Include="LoadFormatEnumeration.cpp" />
     <ClCompile Include="LockAspectRatio.cpp" />
     <ClCompile Include="ManagePresenetationNormalViewState.cpp" />
@@ -518,6 +520,7 @@
   <ItemGroup>
     <ClInclude Include="CustomHeaderAndFontsController.h" />
     <ClInclude Include="LinkAllFontsHtmlController.h" />
+    <ClInclude Include="LinkController.h" />
     <ClInclude Include="SlidesExamples.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

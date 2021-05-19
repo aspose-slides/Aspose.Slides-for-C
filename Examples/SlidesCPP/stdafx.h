@@ -373,3 +373,4 @@
 #include <Export/ISvgShapeAndTextFormattingController.h>
 #include <Export/ISvgTSpan.h>
 #include <Export/RenderingOptions.h>
+#include <Export/SlideImageFormat.h>
