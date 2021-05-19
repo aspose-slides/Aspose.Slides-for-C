@@ -112,7 +112,8 @@ int main(int argc, const char argv[])
         ReadOnlyRecommendedProperties();
         CheckPresentationProtection();
         CheckPasswordExample();
-        
+        RootDirectoryClsId();
+
 	    #pragma endregion
 
 	    #pragma region Saving Presentation decks
@@ -203,6 +204,7 @@ int main(int argc, const char argv[])
         SetHyperlinkColor();
 	    MutableHyperlink();
         AddHyperlink();
+        MacroHyperlink();
 	    #pragma endregion
 
 	    #pragma region Managing slide layouts
@@ -270,7 +272,9 @@ int main(int argc, const char argv[])
         GeometryShapeCreatesCustomGeometry();
         GeometryShapeRemoveSegment();
         GeometryShapeUsingShapeUtil();
-                
+        CreateSummaryZoom();
+        CreateZoomFrame();
+
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");
 

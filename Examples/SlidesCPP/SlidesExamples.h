@@ -95,6 +95,7 @@ void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
 void ReadOnlyRecommendedProperties();
 void CheckPresentationProtection();
 void CheckPasswordExample();
+void RootDirectoryClsId();
 
 #pragma endregion
 
@@ -172,6 +173,7 @@ void RemoveHyperlinks();
 void SetHyperlinkColor();
 void MutableHyperlink();
 void AddHyperlink();
+void MacroHyperlink();
 #pragma endregion
 
 #pragma region Slide Background
@@ -236,6 +238,8 @@ void GeometryShapeCompositeObjects();
 void GeometryShapeCreatesCustomGeometry();
 void GeometryShapeRemoveSegment();
 void GeometryShapeUsingShapeUtil();
+void CreateSummaryZoom();
+void CreateZoomFrame();
 
 #pragma region Working with Charts
 void AddCustomError();

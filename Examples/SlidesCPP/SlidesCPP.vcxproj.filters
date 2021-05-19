@@ -1176,6 +1176,18 @@
     <ClCompile Include="LinkController.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="RootDirectoryClsId.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateSummaryZoom.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateZoomFrame.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="MacroHyperlink.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

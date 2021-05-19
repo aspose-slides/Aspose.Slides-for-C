@@ -338,6 +338,7 @@
 #include <DOM/IGradientFormatEffectiveData.h>
 #include <DOM/IGradientStopCollectionEffectiveData.h>
 #include <DOM/IPatternFormatEffectiveData.h>
+#include <DOM/IZoomFrame.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
@@ -374,3 +375,4 @@
 #include <Export/ISvgTSpan.h>
 #include <Export/RenderingOptions.h>
 #include <Export/SlideImageFormat.h>
+#include <Export/PptOptions.h>
