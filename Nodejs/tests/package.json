@@ -1,0 +1,9 @@
+{
+  "name": "Aspose.Slides.Cpp.Nodejs.Test",
+  "version": "1.0.0",
+  "description": "An example of using Aspose.Slides for C++ in Node.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
