@@ -1,4 +1,4 @@
-# Node.js addon example to use Aspose.Slides for C++
+# Demo examples of using Aspose.Slides for C++ in Node.js
 
 This example demonstrates a C++ Node.js addon that allows to use Aspose.Slides for C++ library. This sample code can be used as a skeleton for developing other specific applications that use different features of the library.
 

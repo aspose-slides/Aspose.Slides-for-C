@@ -1,7 +1,7 @@
-# The example of a PHP extension to use the Aspose.Slides for C++
+# Demo examples of using Aspose.Slides for C++ in PHP
 
-The example demonstrates PHP extension that allows to use Aspose.Slides for C++ library.
-The sample code can be used as a skeleton for developing other specific applications that use the different capabilities of the library.
+This example demonstrates PHP extension that allows to use Aspose.Slides for C++ library.
+This sample code can be used as a skeleton for developing other specific applications that use the different capabilities of the library.
 
 ## How to build example
 

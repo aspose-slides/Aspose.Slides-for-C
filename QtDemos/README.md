@@ -1,4 +1,4 @@
-## The demo examples of using Aspose.Slides for C++ in Qt applications.
+## Demo examples of using Aspose.Slides for C++ in Qt applications
 - **CMake** folder contains the example of CMakeLists.txt.
 
 - **QtCreator** folder contains the examples of QtCreator projects. In the internal folder **QtCreatorDebuggingHelpers** you can find the debugging helper file for Qt Creator.

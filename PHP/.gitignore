@@ -1,3 +1,4 @@
 build/
 tests/*.dll
 tests/Files/*.pdf
+aspose-slides-cpp*

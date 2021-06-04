@@ -1,0 +1,6 @@
+Files/*.pdf
+Python distutils/Aspose.Slides*
+Python distutils/aspose_cpp_*
+Python distutils/aspose-slides-cpp*
+Python distutils/AsposeSlidesCppExtension.cpp
+Python distutils/build/

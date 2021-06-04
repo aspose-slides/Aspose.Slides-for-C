@@ -13,6 +13,10 @@
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of C++ examples that help you learn the product features
+[Nodejs](Nodejs)  | Demo examples of using Aspose.Slides for C++ in Node.js
+[PHP](PHP)  | Demo examples of using Aspose.Slides for C++ in PHP
+[Python](Python)  | Demo examples of using Aspose.Slides for C++ in Python
+[QtDemos](QtDemos)  | Demo examples of using Aspose.Slides for C++ in Qt applications
 
 ## Presentation Processing via C++
 

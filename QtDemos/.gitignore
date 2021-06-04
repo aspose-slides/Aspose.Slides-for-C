@@ -66,3 +66,8 @@ Thumbs.db
 *.dll
 *.exe
 
+Visual Studio/Qt_AsposeSlides_VS/Presentation.pptx
+CMake/build
+QtCreator/build-Qt_AsposeSlides_QMake*
+QtCreator/build-QtWidgets*
+aspose-slides-cpp*
