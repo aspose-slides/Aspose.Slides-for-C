@@ -15,14 +15,14 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.2/lib/ -lAspose.Slides_vc14x64
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.2/lib/ -lAspose.Slides_vc14x64d
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/lib/ -lAspose.Slides_vc14x64
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/lib/ -lAspose.Slides_vc14x64d
 
-INCLUDEPATH += $$PWD/aspose-slides-cpp-21.2/include/aspose.slides.cpp
-DEPENDPATH += $$PWD/aspose-slides-cpp-21.2/include/aspose.slides.cpp
+INCLUDEPATH += $$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/include/aspose.slides.cpp
+DEPENDPATH += $$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/include/aspose.slides.cpp
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.2/lib/ -laspose_cpp_vc14x64
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.2/lib/ -laspose_cpp_vc14x64d
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/lib/ -laspose_cpp_vc14x64
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/lib/ -laspose_cpp_vc14x64d
 
-INCLUDEPATH += $$PWD/aspose-slides-cpp-21.2/include/asposecpplib
-DEPENDPATH += $$PWD/aspose-slides-cpp-21.2/include/asposecpplib
+INCLUDEPATH += $$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/include
+DEPENDPATH += $$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/include
