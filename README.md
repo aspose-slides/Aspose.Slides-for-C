@@ -13,6 +13,7 @@
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of C++ examples that help you learn the product features
+[Docker](Docker)  | Demo examples that show how to run Aspose.Slides for C++ in Docker
 [Nodejs](Nodejs)  | Demo examples of using Aspose.Slides for C++ in Node.js
 [PHP](PHP)  | Demo examples of using Aspose.Slides for C++ in PHP
 [Python](Python)  | Demo examples of using Aspose.Slides for C++ in Python
