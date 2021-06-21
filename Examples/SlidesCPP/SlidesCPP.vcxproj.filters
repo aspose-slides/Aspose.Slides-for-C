@@ -1188,6 +1188,12 @@
     <ClCompile Include="MacroHyperlink.cpp">
       <Filter>Source Files\Slides\Hyperlinks</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToXaml.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationTargetShapes.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

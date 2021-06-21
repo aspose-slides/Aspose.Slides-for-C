@@ -78,6 +78,7 @@ int main(int argc, const char argv[])
         SvgFormattingController();
         PdfImport();
         ExportToHtmlWithImageLinks();
+        ConvertToXaml();
 
 	    #pragma endregion
 
@@ -274,6 +275,7 @@ int main(int argc, const char argv[])
         GeometryShapeUsingShapeUtil();
         CreateSummaryZoom();
         CreateZoomFrame();
+        
 
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");
@@ -422,6 +424,7 @@ int main(int argc, const char argv[])
 	    InsertSvgIntoPresentation();
 	    AnimationsOnOLEObject();
 	    CreateShapeSVGImage();
+        AnimationTargetShapes();
 
 	    #pragma endregion
 

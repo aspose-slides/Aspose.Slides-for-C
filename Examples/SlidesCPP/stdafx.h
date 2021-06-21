@@ -12,6 +12,7 @@
 #include <system/math.h>
 #include <system/uri.h>
 #include <system/special_casts.h>
+#include <system/collections/dictionary.h>
 #include <drawing/graphics.h>
 #include <drawing/bitmap.h>
 
@@ -376,3 +377,5 @@
 #include <Export/RenderingOptions.h>
 #include <Export/SlideImageFormat.h>
 #include <Export/PptOptions.h>
+#include <Export/Xaml/IXamlOutputSaver.h>
+#include <Export/Xaml/XamlOptions.h>

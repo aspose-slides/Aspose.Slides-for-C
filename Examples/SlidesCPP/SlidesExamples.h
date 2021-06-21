@@ -60,6 +60,7 @@ void ConvertToPdfConformancePdf1A_PdfUa();
 void ExportMathParagraphToMathML();
 void SvgFormattingController();
 void PdfImport();
+void ConvertToXaml();
 
 #pragma endregion
 
@@ -240,6 +241,7 @@ void GeometryShapeRemoveSegment();
 void GeometryShapeUsingShapeUtil();
 void CreateSummaryZoom();
 void CreateZoomFrame();
+void AnimationTargetShapes();
 
 #pragma region Working with Charts
 void AddCustomError();
