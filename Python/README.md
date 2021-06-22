@@ -1,4 +1,4 @@
-## Demo examples of using Aspose.Slides for C++ in Python.
+# Demo examples of using Aspose.Slides for C++ in Python.
 
 - **Python distutils** folder contains examples of building a C++ extension module using distutils, which is included in Python.
 
