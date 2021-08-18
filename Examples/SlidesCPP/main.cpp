@@ -253,7 +253,7 @@ int main(int argc, const char argv[])
 	    CheckSlidesComparison();
 	    HeaderFooterManager();
 	    HandoutHeaderFooterManager();
-	    MasterNotesSlideHeaderFooterManager();
+	    MasterNotesSlideHeaderFooterManager1();
 	    SetChildFooter();
 	    SetSizeAndType();
         SetSlideSizeScale();

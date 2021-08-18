@@ -94,6 +94,9 @@
     <Filter Include="Source Files\Slides\Views">
       <UniqueIdentifier>{986a2ee0-a4f7-490e-a3e2-b8f4c9b9f5de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="packages">
+      <UniqueIdentifier>{020af4b4-33a1-4463-abb4-cf871cb353fb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -789,9 +792,6 @@
     <ClCompile Include="HandoutHeaderFooterManager.cpp">
       <Filter>Source Files\Slides\CRUD</Filter>
     </ClCompile>
-    <ClCompile Include="MasterNotesSlideHeaderFooterManager.cpp">
-      <Filter>Source Files\Slides\CRUD</Filter>
-    </ClCompile>
     <ClCompile Include="SettingInterruptionToken.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
@@ -1194,6 +1194,9 @@
     <ClCompile Include="AnimationTargetShapes.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="MasterNotesSlideHeaderFooterManager1.cpp">
+      <Filter>Source Files\Slides\CRUD</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1210,6 +1213,45 @@
     </ClInclude>
     <ClInclude Include="LinkController.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="charts.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="effects.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="export.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="import.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="math_text.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="ole.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="smart_art.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="table.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="transition.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>packages</Filter>
+    </ClInclude>
+    <ClInclude Include="vba.h">
+      <Filter>packages</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

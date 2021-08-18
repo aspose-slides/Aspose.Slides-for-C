@@ -372,7 +372,7 @@
     <ClCompile Include="ManageSimpleSlideTransitions.cpp" />
     <ClCompile Include="ManagingBetterSlideTransitions.cpp" />
     <ClCompile Include="MapChart.cpp" />
-    <ClCompile Include="MasterNotesSlideHeaderFooterManager.cpp" />
+    <ClCompile Include="MasterNotesSlideHeaderFooterManager1.cpp" />
     <ClCompile Include="MergeCell.cpp" />
     <ClCompile Include="MergeCells.cpp" />
     <ClCompile Include="MeteredLicencing.cpp" />
@@ -524,11 +524,24 @@
     <ClCompile Include="WordArt.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="animation.h" />
+    <ClInclude Include="charts.h" />
+    <ClInclude Include="common.h" />
     <ClInclude Include="CustomHeaderAndFontsController.h" />
+    <ClInclude Include="effects.h" />
+    <ClInclude Include="export.h" />
+    <ClInclude Include="import.h" />
     <ClInclude Include="LinkAllFontsHtmlController.h" />
     <ClInclude Include="LinkController.h" />
+    <ClInclude Include="math_text.h" />
+    <ClInclude Include="ole.h" />
     <ClInclude Include="SlidesExamples.h" />
+    <ClInclude Include="smart_art.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="table.h" />
+    <ClInclude Include="transition.h" />
+    <ClInclude Include="util.h" />
+    <ClInclude Include="vba.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

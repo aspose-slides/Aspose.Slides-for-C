@@ -165,7 +165,7 @@ void SetSlideSizeScale();
 void ManageSlidesSections();
 void AddNotesSlideWithNotesStyle();
 void HandoutHeaderFooterManager();
-void MasterNotesSlideHeaderFooterManager();
+void MasterNotesSlideHeaderFooterManager1();
 
 #pragma endregion
 
