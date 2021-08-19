@@ -61,6 +61,7 @@ void ExportMathParagraphToMathML();
 void SvgFormattingController();
 void PdfImport();
 void ConvertToXaml();
+void ConvertToGif();
 
 #pragma endregion
 
@@ -314,6 +315,7 @@ void SpreadsheetFormulasOptions();
 void RecoverWorkbook();
 void ChartGetRange();
 void MapChart();
+void CalculateFormulas();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

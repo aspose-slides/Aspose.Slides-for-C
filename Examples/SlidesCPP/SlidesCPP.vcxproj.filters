@@ -1194,6 +1194,12 @@
     <ClCompile Include="AnimationTargetShapes.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToGif.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="CalculateFormulas.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

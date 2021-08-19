@@ -379,3 +379,4 @@
 #include <Export/PptOptions.h>
 #include <Export/Xaml/IXamlOutputSaver.h>
 #include <Export/Xaml/XamlOptions.h>
+#include <Export/GifOptions.h>

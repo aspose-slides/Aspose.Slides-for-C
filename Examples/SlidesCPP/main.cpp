@@ -4,6 +4,8 @@
 #include "SlidesExamples.h"
 
 using namespace System;
+using namespace Aspose::Slides::Export;
+using namespace System::Drawing;
 using namespace System::IO;
 using namespace Aspose::Slides;
 
@@ -79,6 +81,7 @@ int main(int argc, const char argv[])
         PdfImport();
         ExportToHtmlWithImageLinks();
         ConvertToXaml();
+        ConvertToGif();
 
 	    #pragma endregion
 
@@ -352,10 +355,11 @@ int main(int argc, const char argv[])
         SupportOfBubbleSizeRepresentation();
         AddRadarChart();
         SetChartDataCellFormulas();
-        SpreadsheetFormulasOptions();
+        //SpreadsheetFormulasOptions();
         RecoverWorkbook();
         ChartGetRange();
         MapChart();
+        CalculateFormulas();
 	    #pragma endregion
 
 	    #pragma region ManageAutoShapes	
