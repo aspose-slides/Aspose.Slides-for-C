@@ -82,6 +82,7 @@ int main(int argc, const char argv[])
         ExportToHtmlWithImageLinks();
         ConvertToXaml();
         ConvertToGif();
+        ConvertToHtml5();
 
 	    #pragma endregion
 
@@ -278,7 +279,6 @@ int main(int argc, const char argv[])
         GeometryShapeUsingShapeUtil();
         CreateSummaryZoom();
         CreateZoomFrame();
-        
 
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");
@@ -360,6 +360,7 @@ int main(int argc, const char argv[])
         ChartGetRange();
         MapChart();
         CalculateFormulas();
+        WorksheetsExample();
 	    #pragma endregion
 
 	    #pragma region ManageAutoShapes	
@@ -429,6 +430,7 @@ int main(int argc, const char argv[])
 	    AnimationsOnOLEObject();
 	    CreateShapeSVGImage();
         AnimationTargetShapes();
+        DuotoneEffectsPVI();
 
 	    #pragma endregion
 

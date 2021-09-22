@@ -62,6 +62,7 @@ void SvgFormattingController();
 void PdfImport();
 void ConvertToXaml();
 void ConvertToGif();
+void ConvertToHtml5();
 
 #pragma endregion
 
@@ -316,6 +317,7 @@ void RecoverWorkbook();
 void ChartGetRange();
 void MapChart();
 void CalculateFormulas();
+void WorksheetsExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -381,6 +383,7 @@ void RotatingShapes();
 void SetAlternativeText();
 void InterlopShapeID();
 void InsertSvgIntoPresentation();
+void DuotoneEffectsPVI();
 
 #pragma endregion
 

@@ -125,6 +125,8 @@
 #include <DOM/Chart/IChartData.h>
 #include <DOM/Chart/IChartCategoryCollection.h>
 #include <DOM/Chart/IChartDataWorkbook.h>
+#include <DOM/Chart/IChartDataWorksheetCollection.h>
+#include <DOM/Chart/IChartDataWorksheet.h>
 #include <DOM/Chart/IChartSeriesCollection.h>
 #include <DOM/Chart/IChartDataPointCollection.h>
 #include <DOM/Chart/QuartileMethodType.h>
@@ -340,6 +342,8 @@
 #include <DOM/IGradientStopCollectionEffectiveData.h>
 #include <DOM/IPatternFormatEffectiveData.h>
 #include <DOM/IZoomFrame.h>
+#include <DOM/Effects/IDuotone.h>
+#include <DOM/Effects/IImageTransformOperationCollection.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
@@ -380,3 +384,4 @@
 #include <Export/Xaml/IXamlOutputSaver.h>
 #include <Export/Xaml/XamlOptions.h>
 #include <Export/GifOptions.h>
+#include <Export/Html5Options.h>

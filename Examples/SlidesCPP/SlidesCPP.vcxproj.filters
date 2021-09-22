@@ -1200,6 +1200,15 @@
     <ClCompile Include="CalculateFormulas.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="WorksheetsExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToHtml5.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="DuotoneEffectsPVI.cpp">
+      <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
