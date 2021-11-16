@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>images/actions/CollapseAll.png</file>
+        <file>images/actions/ExpandAll.png</file>
+        <file>images/MainWindow.ico</file>
+        <file>images/SlidesLogo.png</file>
+        <file>images/nodes/Shape.png</file>
+        <file>images/nodes/Picture.png</file>
+        <file>images/nodes/Audio from File.png</file>
+        <file>images/nodes/Chart.png</file>
+        <file>images/nodes/Table.png</file>
+        <file>images/nodes/Text Body.png</file>
+        <file>images/nodes/Unknown.png</file>
+        <file>images/nodes/Group Shape.png</file>
+        <file>images/nodes/Smart Art Diagram.png</file>
+        <file>images/nodes/Video from File.png</file>
+        <file>images/nodes/Slide.png</file>
+        <file>images/nodes/Presentation.png</file>
+        <file>images/actions/Open.png</file>
+        <file>images/actions/SaveAs.png</file>
+        <file>images/actions/LoadLicense.png</file>
+        <file>images/actions/Preview.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

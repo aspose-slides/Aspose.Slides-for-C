@@ -18,6 +18,7 @@ Directory | Description
 [PHP](PHP)  | Demo examples of using Aspose.Slides for C++ in PHP
 [Python](Python)  | Demo examples of using Aspose.Slides for C++ in Python
 [QtDemos](QtDemos)  | Demo examples of using Aspose.Slides for C++ in Qt applications
+[Showcases](Showcases)  | Standalone ready-to-use applications that demonstrate some specific use cases
 
 ## Presentation Processing via C++
 
