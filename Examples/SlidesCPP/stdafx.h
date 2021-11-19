@@ -344,6 +344,10 @@
 #include <DOM/IZoomFrame.h>
 #include <DOM/Effects/IDuotone.h>
 #include <DOM/Effects/IImageTransformOperationCollection.h>
+#include <DOM/MathText/IMathElement.h>
+#include <DOM/MathText/IMathFraction.h>
+#include <DOM/MathText/MathBlock.h>
+#include <DOM/MathText/MathBar.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>

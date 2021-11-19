@@ -1209,6 +1209,12 @@
     <ClCompile Include="DuotoneEffectsPVI.cpp">
       <Filter>Source Files\Slides\Shapes\ShapeEffects</Filter>
     </ClCompile>
+    <ClCompile Include="ModernComments.cpp">
+      <Filter>Source Files\Slides\Comments</Filter>
+    </ClCompile>
+    <ClCompile Include="MathShape_GetChildren.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

@@ -26,6 +26,8 @@ void SpreadsheetFormulasOptions()
     // Use the Formula property of the IChartDataCell interface to write a formula in a cell.
     cell->set_Formula(u"FINDB(\"ス\", \"テキスト\")");
 
+    workbook->CalculateFormulas();
+
     //Check calculation.
     if (Int32::Parse(ObjectExt::ToString(cell->get_Value())) == 5)
     {

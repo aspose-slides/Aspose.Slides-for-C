@@ -3,14 +3,15 @@
 
 using namespace Aspose::Slides;
 using namespace System;
+using namespace System::IO;
 using System::Drawing::PointF;
 
 void AddSlideComments()
 {
 	//ExStart:AddSlideComments
 	
-	//Presentation path
-	const String outPath = u"../out/AddComments.pptx";
+	// The path to the output file.
+	const String outPath = Path::Combine(GetOutPath(), u"AddComments.pptx");
 
 	// Instantiate Presentation class
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();

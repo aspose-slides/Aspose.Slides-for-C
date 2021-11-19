@@ -47,10 +47,14 @@ void AddParentComments()
 		Console::Write(u"{0} : {1}", ObjectExt::Box<String>(comments[i]->get_Author()->get_Name()), ObjectExt::Box<String>(comments[i]->get_Text()));
 		Console::WriteLine();
 	}
-	pres->Save(u"../out/parent_comment.pptx", Export::SaveFormat::Pptx);
+
+    // The path to the output directory.
+    String outputPath = GetOutPath();
+
+	pres->Save(outputPath + u"parent_comment.pptx", Export::SaveFormat::Pptx);
 	// Remove comment1 and all its replies
 	comment1->Remove();
 
-	pres->Save(u"../out/remove_comment.pptx", Export::SaveFormat::Pptx);
+	pres->Save(outputPath + u"remove_comment.pptx", Export::SaveFormat::Pptx);
 	//ExEnd:AddParentComments
 }

@@ -191,6 +191,7 @@ void GetBackgroundEffectiveValues();
 void AccessSlideComments();
 void AddSlideComments();
 void AddParentComments();
+void ModernComments();
 #pragma endregion
 
 #pragma region Managing slide layouts
@@ -234,6 +235,7 @@ void GetLightRigEffectiveData();
 void GetShapeBevelEffectiveData();
 void SubstitutePictureTitleOfOLEObjectFrame();
 void AddMathematicalShape();
+void MathShape_GetChildren();
 void ShapesAlignment();
 void SketchedShapes();
 void GeometryShapeAddSegment();

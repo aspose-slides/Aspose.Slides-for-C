@@ -68,7 +68,7 @@ int main(int argc, const char argv[])
 	    PresentationToTIFFWithCustomImagePixelFormat();
 	    PresentationToTIFFWithDefaultSize();
 	    ConvertIndividualSlideToHTML();
-	    EmbedFontsInHtml();
+	    //EmbedFontsInHtml();
         //ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
 	    BestImagesCompressionRatioforPDF();
 	    ExportToHTMLWithResponsiveLayout();
@@ -133,7 +133,7 @@ int main(int argc, const char argv[])
 	    ExportBlobFromPresentation();
 	    SavingHTMLAndCSSFileWhenExportingIntoHTML();
 	    RenderingNotesWhileConvertingToHTML();
-	    ConvertingPresentationToHTMLWithPreservingOriginalFonts();
+	    //ConvertingPresentationToHTMLWithPreservingOriginalFonts();
 	    ApplyingExternalThemeToDependingSlides();
 	    SettingInterruptionToken();
 	    AddBlobImageToPresentation();
@@ -200,6 +200,7 @@ int main(int argc, const char argv[])
 	    AddSlideComments();
 	    AccessSlideComments();
         AddParentComments();
+        ModernComments();
 	    #pragma endregion
 
 	    #pragma region Working with hyperlinks
@@ -270,6 +271,7 @@ int main(int argc, const char argv[])
         GetShapeBevelEffectiveData();
         SubstitutePictureTitleOfOLEObjectFrame();
         AddMathematicalShape();
+        MathShape_GetChildren();
         ShapesAlignment();
         SketchedShapes();
         GeometryShapeAddSegment();
@@ -355,7 +357,7 @@ int main(int argc, const char argv[])
         SupportOfBubbleSizeRepresentation();
         AddRadarChart();
         SetChartDataCellFormulas();
-        //SpreadsheetFormulasOptions();
+        SpreadsheetFormulasOptions();
         RecoverWorkbook();
         ChartGetRange();
         MapChart();
