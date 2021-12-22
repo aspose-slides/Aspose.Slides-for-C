@@ -274,6 +274,7 @@
     <ClCompile Include="CreateGroupShape.cpp" />
     <ClCompile Include="CreateNewPresentation.cpp" />
     <ClCompile Include="CreateScalingFactorThumbnail.cpp" />
+    <ClCompile Include="CreateSectionZoom.cpp" />
     <ClCompile Include="CreateShapeSVGImage.cpp" />
     <ClCompile Include="CreateShapeThumbnail.cpp" />
     <ClCompile Include="CreateSlidesSVGImage.cpp" />
@@ -310,6 +311,7 @@
     <ClCompile Include="ExportMathParagraphToMathML.cpp" />
     <ClCompile Include="ExportToHtmlWithImageLinks.cpp" />
     <ClCompile Include="ExportToHTMLWithResponsiveLayout.cpp" />
+    <ClCompile Include="ExtractAudio.cpp" />
     <ClCompile Include="ExtractEmbeddedFileDataFromOLEObject.cpp" />
     <ClCompile Include="ExtractingVBAMacros.cpp" />
     <ClCompile Include="ExtractTextFromSlide.cpp" />
@@ -543,17 +545,17 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\Aspose.Cells.Cpp.21.5.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.21.5.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.21.11.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.21.11.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.21.11.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.21.11.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.21.11.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.21.11.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.21.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.21.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.21.12.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.21.12.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.21.12.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.21.12.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Aspose.Cells.Cpp.21.5.0\build\native\Aspose.Cells.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Cells.Cpp.21.5.0\build\native\Aspose.Cells.Cpp.targets'))" />
-    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.21.11.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.21.11.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.21.11.0\build\native\Aspose.Slides.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.21.11.0\build\native\Aspose.Slides.Cpp.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.x86.21.11.0\build\native\Aspose.Slides.Cpp.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.x86.21.11.0\build\native\Aspose.Slides.Cpp.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.21.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.21.12.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.21.12.0\build\native\Aspose.Slides.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.21.12.0\build\native\Aspose.Slides.Cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.x86.21.12.0\build\native\Aspose.Slides.Cpp.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.x86.21.12.0\build\native\Aspose.Slides.Cpp.x86.targets'))" />
   </Target>
 </Project>

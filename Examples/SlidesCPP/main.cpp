@@ -223,6 +223,7 @@ int main(int argc, const char argv[])
 	    System::Console::WriteLine(u"Extracting video from presentation");
 
 	    ExtractVideo();
+        ExtractAudio();
 	    #pragma endregion
 		    
 	    #pragma region Managing slide Notes
@@ -281,6 +282,7 @@ int main(int argc, const char argv[])
         GeometryShapeUsingShapeUtil();
         CreateSummaryZoom();
         CreateZoomFrame();
+        CreateSectionZoom();
 
 	    #pragma region Working with Charts
 	    System::Console::WriteLine(u"Working with Charts");

@@ -19,7 +19,7 @@ void EmbedFontsInHtml()
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
 	//	Add EmbedAllFontsHtmlController 
-	ArrayPtr<String> fontNameExcludeList = MakeArray<String>({ u"Calibri", u"Arial" });
+	ArrayPtr<String> fontNameExcludeList = MakeArray<String>({ u"Arial" });
 	SharedPtr<EmbedAllFontsHtmlController> EmbedFontController = MakeObject<EmbedAllFontsHtmlController>(fontNameExcludeList);
 
 	SharedPtr<HtmlOptions> htmlOptions = MakeObject<HtmlOptions>();

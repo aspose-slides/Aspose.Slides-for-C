@@ -29,13 +29,11 @@ void ManageEmbeddedFonts()
 	SharedPtr<IFontData> funSizedEmbeddedFont = MakeObject<FontData>(u"Calibri");
 
 	// find "Calibri" font
-	auto enumerator_0 =embeddedFonts->GetEnumerator();
-	decltype(enumerator_0->get_Current()) font_0= enumerator_0->get_Current();
-	while (enumerator_0->MoveNext() && (font_0 = enumerator_0->get_Current(), true))
+	for (auto font : embeddedFonts)
 	{
-		if (font_0->get_FontName() == data->get_FontName())
+		if (font->get_FontName() == data->get_FontName())
 		{
-			funSizedEmbeddedFont = font_0;
+			funSizedEmbeddedFont = font;
 			break;
 		}
 	}

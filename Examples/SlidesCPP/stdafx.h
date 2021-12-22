@@ -73,6 +73,7 @@
 #include <DOM/ICommentCollection.h>
 #include <DOM/ICommentAuthor.h>
 #include <DOM/IVideo.h>
+#include <DOM/IAudio.h>
 #include <DOM/Animation/IEffect.h>
 #include <DOM/IGlobalLayoutSlideCollection.h>
 #include <DOM/ILayoutSlide.h>
@@ -341,7 +342,7 @@
 #include <DOM/IGradientFormatEffectiveData.h>
 #include <DOM/IGradientStopCollectionEffectiveData.h>
 #include <DOM/IPatternFormatEffectiveData.h>
-#include <DOM/IZoomFrame.h>
+#include <DOM/Zoom/IZoomFrame.h>
 #include <DOM/Effects/IDuotone.h>
 #include <DOM/Effects/IImageTransformOperationCollection.h>
 #include <DOM/MathText/IMathElement.h>

@@ -1215,6 +1215,12 @@
     <ClCompile Include="MathShape_GetChildren.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="CreateSectionZoom.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtractAudio.cpp">
+      <Filter>Source Files\Slides\ManagingMedia</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

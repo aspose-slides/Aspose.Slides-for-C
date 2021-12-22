@@ -16,7 +16,7 @@ void ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController()
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
    
     // exclude default presentation fonts
-    ArrayPtr<String> fontNameExcludeList = System::MakeArray<String>({u"Calibri", u"Arial"});
+    ArrayPtr<String> fontNameExcludeList = System::MakeArray<String>();
         
     SharedPtr<Paragraph> para = System::MakeObject<Paragraph>();
     SharedPtr<ITextFrame> txt;

@@ -37,7 +37,7 @@ void ChangeOLEObjectData()
     System::SharedPtr<OleObjectFrame> ole;
 
     // Traversing all shapes for Ole frame
-    for (auto shape : IterateOver(slide->get_Shapes()))
+    for (auto shape : slide->get_Shapes())
     {
         if (System::ObjectExt::Is<OleObjectFrame>(shape))
         {
@@ -48,7 +48,7 @@ void ChangeOLEObjectData()
     if (ole != nullptr)
     {
         // Reading object data in Workbook
-        intrusive_ptr<Aspose::Cells::Systems::IO::MemoryStream> cellsInputStream = ToCellsMemoryStream(ole->get_ObjectData());
+        intrusive_ptr<Aspose::Cells::Systems::IO::MemoryStream> cellsInputStream = ToCellsMemoryStream(ole->get_EmbeddedData()->get_EmbeddedFileData());
         intrusive_ptr<Aspose::Cells::IWorkbook> Wb = Aspose::Cells::Factory::CreateIWorkbook(cellsInputStream);
 
         // Modifying the workbook data

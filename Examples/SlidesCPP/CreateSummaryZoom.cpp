@@ -4,43 +4,54 @@
 using namespace Aspose::Slides;
 using namespace Export;
 using namespace System;
+using namespace System::Drawing;
 using namespace IO;
+
+void SetSlideBackground(SharedPtr<ISlide> slide, Color color)
+{
+    slide->get_Background()->get_FillFormat()->set_FillType(FillType::Solid);
+    slide->get_Background()->get_FillFormat()->get_SolidFillColor()->set_Color(color);
+    slide->get_Background()->set_Type(BackgroundType::OwnBackground);
+}
 
 void CreateSummaryZoom()
 {
-    //ExStart:CreateSummaryZoom
+    // Output file name
     String resultPath = Path::Combine(GetOutPath(), u"SummaryZoomPresentation.pptx");
 
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>();
-    
-    // Create slides array
-    for (int32_t slideNumber = 0; slideNumber < 5; slideNumber++)
-    {
-        //Add new slides to presentation
-        SharedPtr<ISlide> slide = pres->get_Slides()->AddEmptySlide(pres->get_Slides()->idx_get(0)->get_LayoutSlide());
 
-        // Create a background for the slide
-        slide->get_Background()->set_Type(BackgroundType::OwnBackground);
-        slide->get_Background()->get_FillFormat()->set_FillType(FillType::Solid);
-        slide->get_Background()->get_FillFormat()->get_SolidFillColor()->set_Color(System::Drawing::Color::get_DarkKhaki());
+    // Adds a new slide to the presentation
+    SharedPtr<ISlide> slide = pres->get_Slides()->AddEmptySlide(pres->get_Slides()->idx_get(0)->get_LayoutSlide());
+    SetSlideBackground(slide, Color::get_Brown());
 
-        // Create a text box for the slide
-        SharedPtr<IAutoShape> autoshape = slide->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 100.0f, 200.0f, 500.0f, 200.0f);
-        autoshape->get_TextFrame()->set_Text(String::Format(u"Slide - {0}", slideNumber + 2));
-    }
+    // Adds a new section to the presentation
+    pres->get_Sections()->AddSection(u"Section 1", slide);
 
-    // Create zoom objects for all slides in the first slide
-    for (int32_t slideNumber = 1; slideNumber < pres->get_Slides()->get_Count(); slideNumber++)
-    {
-        int32_t x = (slideNumber - 1) * 100;
-        int32_t y = (slideNumber - 1) * 100;
-        SharedPtr<IZoomFrame> zoomFrame = pres->get_Slides()->idx_get(0)->get_Shapes()->AddZoomFrame(static_cast<float>(x), static_cast<float>(y), 150.0f, 120.0f, pres->get_Slides()->idx_get(slideNumber));
+    // Adds a new slide to the presentation
+    slide = pres->get_Slides()->AddEmptySlide(pres->get_Slides()->idx_get(0)->get_LayoutSlide());
+    SetSlideBackground(slide, Color::get_Aqua());
 
-        // Set the ReturnToParent property to return to the first slide
-        zoomFrame->set_ReturnToParent(true);
-    }
+    // Adds a new section to the presentation
+    pres->get_Sections()->AddSection(u"Section 2", slide);
 
-    // Save the presentation
+    // Adds a new slide to the presentation
+    slide = pres->get_Slides()->AddEmptySlide(pres->get_Slides()->idx_get(0)->get_LayoutSlide());
+    SetSlideBackground(slide, Color::get_Chartreuse());
+
+    // Adds a new section to the presentation
+    pres->get_Sections()->AddSection(u"Section 3", slide);
+
+    // Adds a new slide to the presentation
+    slide = pres->get_Slides()->AddEmptySlide(pres->get_Slides()->idx_get(0)->get_LayoutSlide());
+    SetSlideBackground(slide, Color::get_DarkGreen());
+
+    // Adds a new section to the presentation
+    pres->get_Sections()->AddSection(u"Section 4", slide);
+
+    // Adds a SummaryZoomFrame object
+    SharedPtr<ISummaryZoomFrame> summaryZoomFrame = pres->get_Slides()->idx_get(0)->get_Shapes()->AddSummaryZoomFrame(150.0f, 50.0f, 300.0f, 200.0f);
+
+    // Saves the presentation
     pres->Save(resultPath, SaveFormat::Pptx);
-    //ExEnd:CreateSummaryZoom
 }

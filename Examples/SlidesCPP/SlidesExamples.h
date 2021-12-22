@@ -200,6 +200,7 @@ void SetPDFPageSize();
 
 #pragma region Extract Data from Presentation
 void ExtractVideo();
+void ExtractAudio();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -245,6 +246,7 @@ void GeometryShapeRemoveSegment();
 void GeometryShapeUsingShapeUtil();
 void CreateSummaryZoom();
 void CreateZoomFrame();
+void CreateSectionZoom();
 void AnimationTargetShapes();
 
 #pragma region Working with Charts
