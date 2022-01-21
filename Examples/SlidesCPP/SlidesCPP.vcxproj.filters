@@ -1221,6 +1221,9 @@
     <ClCompile Include="ExtractAudio.cpp">
       <Filter>Source Files\Slides\ManagingMedia</Filter>
     </ClCompile>
+    <ClCompile Include="TimeUnitTypeEnum.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

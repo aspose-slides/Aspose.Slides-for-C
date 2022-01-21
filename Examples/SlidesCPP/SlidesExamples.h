@@ -322,6 +322,7 @@ void ChartGetRange();
 void MapChart();
 void CalculateFormulas();
 void WorksheetsExample();
+void TimeUnitTypeEnum();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

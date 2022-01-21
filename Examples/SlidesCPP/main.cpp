@@ -29,11 +29,10 @@ int main(int argc, const char argv[])
 	    const String LicPath = u"../license/Aspose.Total.NET.lic";
 	    try
         {
-            //System::MakeObject<Aspose::Slides::License>()->SetLicense(LicPath);
 		    SharedPtr<License> lic = MakeObject<License>();
 		    lic->SetLicense(LicPath);
 
-		    //Check if License is applied
+		    // Check if License is applied
 		    if (lic->IsLicensed())
 		    {
 			    Console::WriteLine(u"License properly applied");
@@ -313,7 +312,7 @@ int main(int argc, const char argv[])
 	    SetDataRange();
 	    SetGapWidth();
 	    MultiCategoryChart();
-	    //SwitchChartRowColumns();
+	    SwitchChartRowColumns();
 	    SettingAutomicPieChartSliceColors();
 	    AddBoxAndWhiskerChart();
 	    AddFunnelChart();
@@ -365,6 +364,7 @@ int main(int argc, const char argv[])
         MapChart();
         CalculateFormulas();
         WorksheetsExample();
+        TimeUnitTypeEnum();
 	    #pragma endregion
 
 	    #pragma region ManageAutoShapes	
