@@ -83,6 +83,9 @@
       <SDLCheck>true</SDLCheck>
       <PrecompiledHeader>Use</PrecompiledHeader>
     </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -119,6 +122,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -133,6 +137,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -358,6 +363,7 @@
     <ClCompile Include="ImportingHTMLText.cpp" />
     <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
+    <ClCompile Include="IsTextShape.cpp" />
     <ClCompile Include="KeepTextFlat.cpp" />
     <ClCompile Include="LinkController.cpp" />
     <ClCompile Include="LoadFormatEnumeration.cpp" />
@@ -545,18 +551,18 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.22.2.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.22.2.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.22.2.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.22.2.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.22.2.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.22.2.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Cells.Cpp.22.2.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.22.2.0\build\native\Aspose.Cells.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Native.Cs2Cpp.API.22.3.0\build\native\CodePorting.Native.Cs2Cpp.API.targets" Condition="Exists('..\packages\CodePorting.Native.Cs2Cpp.API.22.3.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.22.3.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.22.3.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.22.3.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.22.3.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Cells.Cpp.22.3.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.22.3.0\build\native\Aspose.Cells.Cpp.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.22.2.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.22.2.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.22.2.0\build\native\Aspose.Slides.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.22.2.0\build\native\Aspose.Slides.Cpp.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.x86.22.2.0\build\native\Aspose.Slides.Cpp.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.x86.22.2.0\build\native\Aspose.Slides.Cpp.x86.targets'))" />
-    <Error Condition="!Exists('..\packages\Aspose.Cells.Cpp.22.2.0\build\native\Aspose.Cells.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Cells.Cpp.22.2.0\build\native\Aspose.Cells.Cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\CodePorting.Native.Cs2Cpp.API.22.3.0\build\native\CodePorting.Native.Cs2Cpp.API.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CodePorting.Native.Cs2Cpp.API.22.3.0\build\native\CodePorting.Native.Cs2Cpp.API.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.22.3.0\build\native\Aspose.Slides.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.22.3.0\build\native\Aspose.Slides.Cpp.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Slides.Cpp.x86.22.3.0\build\native\Aspose.Slides.Cpp.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Slides.Cpp.x86.22.3.0\build\native\Aspose.Slides.Cpp.x86.targets'))" />
+    <Error Condition="!Exists('..\packages\Aspose.Cells.Cpp.22.3.0\build\native\Aspose.Cells.Cpp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Aspose.Cells.Cpp.22.3.0\build\native\Aspose.Cells.Cpp.targets'))" />
   </Target>
 </Project>

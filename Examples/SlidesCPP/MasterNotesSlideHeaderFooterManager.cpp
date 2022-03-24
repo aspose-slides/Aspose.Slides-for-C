@@ -4,7 +4,7 @@
 using namespace Aspose::Slides;
 using namespace System;
 
-void MasterNotesSlideHeaderFooterManager()
+void ManageMasterNotesSlideHeaderFooter()
 {
 	//ExStart:MasterNotesSlideHeaderFooterManager
 	// The path to the documents directory.

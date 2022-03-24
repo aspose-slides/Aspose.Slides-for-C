@@ -160,14 +160,14 @@ void CloneAtEndOfAnotherSpecificPosition();
 void CloneToAnotherPresentationWithMaster();
 void CloneToAnotherPresentationWithSetSizeAndType();
 void CheckSlidesComparison();
-void HeaderFooterManager();
+void ManageHeaderFooter();
 void SetChildFooter();
 void SetSizeAndType();
 void SetSlideSizeScale();
 void ManageSlidesSections();
 void AddNotesSlideWithNotesStyle();
-void HandoutHeaderFooterManager();
-void MasterNotesSlideHeaderFooterManager();
+void ManageHandoutHeaderFooter();
+void ManageMasterNotesSlideHeaderFooter();
 
 #pragma endregion
 
@@ -222,7 +222,7 @@ void Rendering3D();
 
 #pragma region Managing Slide Transitions
 void ManageSimpleSlideTransitions();
-void ManagingBetterSlideTransitions();
+void ManageBetterSlideTransitions();
 void SetTransitionEffects();
 void SimpleSlideTransitions();
 void SupportOfMorphTransition();
@@ -439,7 +439,7 @@ void LockAspectRatio();
 void GetEffectiveValuesOfTable();
 #pragma endregion
 
-#pragma region Formatting Text	
+#pragma region Text	
 
 void ExtractTextFromSlide();
 void ApplyInnerShadow();
@@ -493,7 +493,7 @@ void PortionGetRect();
 void BulletFillFormatEffective();
 void WordArt();
 void KeepTextFlat();
-
+void IsTextShape();
 #pragma endregion		
 
 #pragma region Views

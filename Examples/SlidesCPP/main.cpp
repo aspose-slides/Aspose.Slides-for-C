@@ -250,15 +250,15 @@ int main(int argc, const char argv[])
 	    System::Console::WriteLine(u"Managing Slide Transitions");
 
 	    ManageSimpleSlideTransitions();
-	    ManagingBetterSlideTransitions();
+        ManageBetterSlideTransitions();
 	    SetTransitionEffects();
 	    SimpleSlideTransitions();
         SupportOfMorphTransition();
         SetTransitionMorphType();
 	    CheckSlidesComparison();
-	    HeaderFooterManager();
-	    HandoutHeaderFooterManager();
-	    MasterNotesSlideHeaderFooterManager();
+        ManageHeaderFooter();
+        ManageHandoutHeaderFooter();
+        ManageMasterNotesSlideHeaderFooter();
 	    SetChildFooter();
 	    SetSizeAndType();
         SetSlideSizeScale();
@@ -435,6 +435,7 @@ int main(int argc, const char argv[])
 	    CreateShapeSVGImage();
         AnimationTargetShapes();
         DuotoneEffectsPVI();
+        IsTextShape();
 
 	    #pragma endregion
 

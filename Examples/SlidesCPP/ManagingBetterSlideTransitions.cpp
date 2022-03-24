@@ -5,7 +5,7 @@ using namespace Aspose::Slides;
 using namespace SlideShow;
 using namespace System;
 
-void ManagingBetterSlideTransitions()
+void ManageBetterSlideTransitions()
 {
 	//ExStart:ManagingBetterSlideTransitions
 

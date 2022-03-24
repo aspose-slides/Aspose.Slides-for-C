@@ -4,7 +4,7 @@
 using namespace Aspose::Slides;
 using namespace System;
 
-void HandoutHeaderFooterManager()
+void ManageHandoutHeaderFooter()
 {
 	//ExStart:HandoutHeaderFooterManager
 	// The path to the documents directory.
