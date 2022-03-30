@@ -191,6 +191,8 @@ int main(int argc, const char argv[])
 	    SetSlideBackgroundMaster();
 	    SetSlideBackgroundNormal();
         GetBackgroundEffectiveValues();
+        AccessToGradientStopParameters();
+
 	    #pragma endregion 
 
 	    #pragma region working with SlidesComments

@@ -156,6 +156,7 @@
     <ClCompile Include="AccessSmartArt.cpp" />
     <ClCompile Include="AccessSmartArtParticularLayout.cpp" />
     <ClCompile Include="AccessSmartArtShape.cpp" />
+    <ClCompile Include="AccessToGradientStopParameters.cpp" />
     <ClCompile Include="AddArrowShapedLine.cpp" />
     <ClCompile Include="AddArrowShapedLineToSlide.cpp" />
     <ClCompile Include="AddAudioFrame.cpp" />

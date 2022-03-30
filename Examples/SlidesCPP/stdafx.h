@@ -68,6 +68,8 @@
 #include <DOM/FillType.h>
 #include <DOM/IPictureFillFormat.h>
 #include <DOM/ISlidesPicture.h>
+#include <DOM/IColorOperationCollection.h>
+#include <DOM/IColorOperation.h>
 #include <DOM/IColorFormat.h>
 #include <DOM/ICommentAuthorCollection.h>
 #include <DOM/ICommentCollection.h>

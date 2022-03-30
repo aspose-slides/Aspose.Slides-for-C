@@ -185,6 +185,7 @@ void SetImageAsBackground();
 void SetSlideBackgroundMaster();
 void SetSlideBackgroundNormal();
 void GetBackgroundEffectiveValues();
+void AccessToGradientStopParameters();
 #pragma endregion
 
 #pragma region Slide Comments
