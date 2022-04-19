@@ -59,7 +59,7 @@ void ConvertToFodp();
 void ConvertToPdfConformancePdf1A_PdfUa();
 void ExportMathParagraphToMathML();
 void SvgFormattingController();
-void PdfImport();
+void ImportFromPdf();
 void ConvertToXaml();
 void ConvertToGif();
 void ConvertToHtml5();
@@ -197,6 +197,7 @@ void ModernComments();
 
 #pragma region Managing slide layouts
 void SetPDFPageSize();
+void RemoveUnusedLayoutMaster();
 #pragma endregion
 
 #pragma region Extract Data from Presentation
@@ -334,7 +335,7 @@ void AddArrowShapedLineToSlide();
 void AddPlainLineToSlide();
 void ChangeShapeOrder();
 void ConnectorLineAngle();
-static double getDirection(float w, float h, Aspose::Slides:: NullableBool flipH, Aspose::Slides::NullableBool flipV);
+static double getDirection(float w, float h, Aspose::Slides::NullableBool flipH, Aspose::Slides::NullableBool flipV);
 void ConnectShapesUsingConnectors();
 void ConnectShapeUsingConnectionSite();
 void FormatJoinStyles();

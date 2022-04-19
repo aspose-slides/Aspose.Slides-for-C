@@ -6,9 +6,10 @@ using namespace Export;
 using namespace System;
 using namespace System::IO;
 
-void PdfImport()
+void ImportFromPdf()
 {
     //ExStart:PdfImport
+
     String pdfFileName = Path::Combine(GetDataPath(), u"welcome-to-powerpoint.pdf");
     String resultPath = Path::Combine(GetOutPath(), u"fromPdfDocument.pptx");
 
