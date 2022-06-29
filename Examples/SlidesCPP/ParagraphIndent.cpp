@@ -38,8 +38,7 @@ void ParagraphIndent()
 
 	// Setting paragraph bullet style and symbol
 	paragraph->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);
-	//paragraph->get_ParagraphFormat()->get_Bullet()->set_Char(Convert.ToChar(8226));
-	paragraph->get_ParagraphFormat()->get_Bullet()->set_Char('\8226');
+	paragraph->get_ParagraphFormat()->get_Bullet()->set_Char(System::Convert::ToChar(8226));
 	
 	paragraph->get_ParagraphFormat()->set_Alignment( TextAlignment::Left);
 
@@ -53,8 +52,7 @@ void ParagraphIndent()
 
 	// Setting paragraph bullet style and symbol
 	paragraph2->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);
-	//paragraph->get_ParagraphFormat()->get_Bullet()->set_Char(Convert.ToChar(8226));
-	paragraph2->get_ParagraphFormat()->get_Bullet()->set_Char('\8226');
+	paragraph2->get_ParagraphFormat()->get_Bullet()->set_Char(System::Convert::ToChar(8226));
 
 	paragraph2->get_ParagraphFormat()->set_Alignment(TextAlignment::Left);
 
@@ -67,8 +65,7 @@ void ParagraphIndent()
 
 	// Setting paragraph bullet style and symbol
 	paragraph3->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);
-	//paragraph->get_ParagraphFormat()->get_Bullet()->set_Char(Convert.ToChar(8226));
-	paragraph3->get_ParagraphFormat()->get_Bullet()->set_Char('\8226');
+	paragraph3->get_ParagraphFormat()->get_Bullet()->set_Char(System::Convert::ToChar(8226));
 
 	paragraph3->get_ParagraphFormat()->set_Alignment(TextAlignment::Left);
 
@@ -80,4 +77,4 @@ void ParagraphIndent()
 	pres->Save(outPath, Export::SaveFormat::Pptx);
 
 	// ExEnd:ParagraphIndent
-}
+ }

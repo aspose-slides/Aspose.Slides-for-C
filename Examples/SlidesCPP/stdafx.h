@@ -12,6 +12,7 @@
 #include <system/math.h>
 #include <system/uri.h>
 #include <system/special_casts.h>
+#include <system/convert.h>
 #include <system/collections/dictionary.h>
 #include <drawing/graphics.h>
 #include <drawing/bitmap.h>
