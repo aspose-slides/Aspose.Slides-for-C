@@ -117,6 +117,7 @@ int main(int argc, const char argv[])
         CheckPresentationProtection();
         CheckPasswordExample();
         RootDirectoryClsId();
+        PresentationSlideShowSetup();
 
 #pragma endregion
 
@@ -226,6 +227,7 @@ int main(int argc, const char argv[])
 
         ExtractVideo();
         ExtractAudio();
+        ExtractAudioFromTimeline();
 #pragma endregion
 
 #pragma region Managing slide Notes
