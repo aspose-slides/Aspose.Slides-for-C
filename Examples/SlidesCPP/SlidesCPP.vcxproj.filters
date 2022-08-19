@@ -1233,6 +1233,12 @@
     <ClCompile Include="RemoveUnusedLayoutMaster.cpp">
       <Filter>Source Files\Slides\Layout</Filter>
     </ClCompile>
+    <ClCompile Include="ExtractAudioFromTimeline.cpp">
+      <Filter>Source Files\Slides\ManagingMedia</Filter>
+    </ClCompile>
+    <ClCompile Include="PresentationSlideShowSetup.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

@@ -99,6 +99,7 @@ void ReadOnlyRecommendedProperties();
 void CheckPresentationProtection();
 void CheckPasswordExample();
 void RootDirectoryClsId();
+void PresentationSlideShowSetup();
 
 #pragma endregion
 
@@ -203,6 +204,7 @@ void RemoveUnusedLayoutMaster();
 #pragma region Extract Data from Presentation
 void ExtractVideo();
 void ExtractAudio();
+void ExtractAudioFromTimeline();
 #pragma endregion
 
 #pragma region Managing slide Notes

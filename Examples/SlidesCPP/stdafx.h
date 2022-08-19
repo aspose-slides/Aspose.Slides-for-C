@@ -90,6 +90,7 @@
 #include <DOM/IBulletFormat.h>
 #include <DOM/SlideSizeScaleType.h>
 #include <DOM/ISlideSize.h>
+#include <DOM/SlidesRange.h>
 #include <DOM/IMasterHandoutSlide.h>
 #include <DOM/IMasterHandoutSlideManager.h>
 #include <DOM/IBaseSlideHeaderFooterManager.h>
@@ -309,6 +310,7 @@
 #include <DOM/SlideShowTransition/OptionalBlackTransition.h>
 #include <DOM/SlideShowTransition/TransitionMorphType.h>
 #include <DOM/SlideShowTransition/IMorphTransition.h>
+#include <DOM/SlideShowSettings.h>
 #include <DOM/Vba/VbaProject.h>
 #include <DOM/Vba/IVbaModule.h>
 #include <DOM/Vba/IVbaModuleCollection.h>
@@ -347,6 +349,7 @@
 #include <DOM/IPatternFormatEffectiveData.h>
 #include <DOM/Zoom/IZoomFrame.h>
 #include <DOM/Effects/IDuotone.h>
+#include <DOM/Effects/IDuotoneEffectiveData.h>
 #include <DOM/Effects/IImageTransformOperationCollection.h>
 #include <DOM/MathText/IMathElement.h>
 #include <DOM/MathText/IMathFraction.h>

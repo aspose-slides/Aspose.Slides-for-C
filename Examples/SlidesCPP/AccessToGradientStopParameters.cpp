@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "SlidesExamples.h"
 #include <cmath>
+#include <cassert>
 
 using namespace Aspose::Slides;
 using namespace System;
