@@ -231,6 +231,7 @@ void SetTransitionEffects();
 void SimpleSlideTransitions();
 void SupportOfMorphTransition();
 void SetTransitionMorphType();
+void AnimationRepeatOnSlide();
 #pragma endregion
 
 #pragma region Working with Shapes
@@ -456,6 +457,7 @@ void FontProperties();
 void ImportingHTMLText();
 void LineSpacing();
 void ManageEmbeddedFonts();
+void GetFontsSubstitution();
 void ManageParagraphFontProperties();
 void ManageParagraphPictureBulletsInPPT();
 void MultipleParagraphs();

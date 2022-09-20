@@ -260,6 +260,7 @@ int main(int argc, const char argv[])
         SimpleSlideTransitions();
         SupportOfMorphTransition();
         SetTransitionMorphType();
+        AnimationRepeatOnSlide();
         CheckSlidesComparison();
         ManageHeaderFooter();
         ManageHandoutHeaderFooter();
@@ -504,6 +505,7 @@ int main(int argc, const char argv[])
         ImportingHTMLText();
         LineSpacing();
         ManageEmbeddedFonts();
+        GetFontsSubstitution();
         ManageParagraphFontProperties();
         ManageParagraphPictureBulletsInPPT();
         MultipleParagraphs();
