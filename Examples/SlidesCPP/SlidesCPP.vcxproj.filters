@@ -1239,6 +1239,12 @@
     <ClCompile Include="PresentationSlideShowSetup.cpp">
       <Filter>Source Files\Presentations\Properties</Filter>
     </ClCompile>
+    <ClCompile Include="GetFontsSubstitution.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationRepeatOnSlide.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

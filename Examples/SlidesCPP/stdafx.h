@@ -78,6 +78,7 @@
 #include <DOM/IVideo.h>
 #include <DOM/IAudio.h>
 #include <DOM/Animation/IEffect.h>
+#include <DOM/Animation/ITiming.h>
 #include <DOM/IGlobalLayoutSlideCollection.h>
 #include <DOM/ILayoutSlide.h>
 #include <DOM/SlideLayoutType.h>
@@ -277,6 +278,7 @@
 #include <DOM/TextAnchorType.h>
 #include <DOM/TextVerticalType.h>
 #include <DOM/Fonts/FontData.h>
+#include <DOM/FontSubstitutionInfo.h>
 #include <DOM/IFontData.h>
 #include <DOM/IFontsManager.h>
 #include <DOM/Paragraph.h>
