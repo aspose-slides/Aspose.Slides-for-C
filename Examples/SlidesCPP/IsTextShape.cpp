@@ -13,7 +13,7 @@ void IsTextShape()
     {
         for (auto&& shape : slide->get_Shapes())
         {
-            auto autoShape = System::DynamicCast_noexcept<Aspose::Slides::AutoShape>(shape);
+            auto autoShape = System::AsCast<Aspose::Slides::AutoShape>(shape);
             if (autoShape != nullptr)
             {
                 System::Console::WriteLine(autoShape->get_IsTextBox() 

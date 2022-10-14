@@ -14,7 +14,7 @@ void LockAspectRatio()
 	// Load the desired the presentation
 	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-	SharedPtr<ITable> table = DynamicCast<ITable>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)) ;
+	SharedPtr<ITable> table = ExplicitCast<ITable>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)) ;
 
 	Console::WriteLine(u"Lock aspect ratio set: " + table->get_GraphicalObjectLock()->get_AspectRatioLocked());
 

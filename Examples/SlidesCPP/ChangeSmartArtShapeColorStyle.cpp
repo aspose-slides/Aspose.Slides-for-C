@@ -22,7 +22,7 @@ void ChangeSmartArtShapeColorStyle()
 
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 
 			if (smart->get_ColorStyle() == SmartArtColorType::ColoredFillAccent1)
 			{

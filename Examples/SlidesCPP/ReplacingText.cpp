@@ -19,7 +19,7 @@ void ReplacingText()
 
 	// Accessing the first and second placeholder in the slide and typecasting it as AutoShape
 	SharedPtr<IShape> shape = slide->get_Shapes()->idx_get(0);
-	SharedPtr<AutoShape> ashp = DynamicCast<AutoShape>(shape);
+	SharedPtr<AutoShape> ashp = ExplicitCast<AutoShape>(shape);
 
 	SharedPtr<ITextFrame> textframe = ashp->get_TextFrame();
 

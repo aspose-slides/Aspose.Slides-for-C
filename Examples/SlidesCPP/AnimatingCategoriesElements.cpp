@@ -21,12 +21,12 @@ void AnimatingCategoriesElements()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Add chart with default data
-	auto chart = DynamicCast<Chart>(slide->get_Shapes()->idx_get(0));
+	auto chart = ExplicitCast<Chart>(slide->get_Shapes()->idx_get(0));
 
 	// Animate categories' elements
 	slide->get_Timeline()->get_MainSequence()->AddEffect(chart, EffectType::Fade, EffectSubtype::None, EffectTriggerType::AfterPrevious);
 
-	auto sequence = DynamicCast<Sequence>(slide->get_Timeline()->get_MainSequence());
+	auto sequence = ExplicitCast<Sequence>(slide->get_Timeline()->get_MainSequence());
 	
 	sequence->AddEffect(chart, EffectChartMinorGroupingType::ByElementInCategory, 0, 0, EffectType::Appear, EffectSubtype::None, EffectTriggerType::AfterPrevious);
 	sequence->AddEffect(chart, EffectChartMinorGroupingType::ByElementInCategory, 0, 1, EffectType::Appear, EffectSubtype::None, EffectTriggerType::AfterPrevious);

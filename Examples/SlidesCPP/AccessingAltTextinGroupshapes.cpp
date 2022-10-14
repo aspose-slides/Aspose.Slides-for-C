@@ -25,7 +25,7 @@ void AccessingAltTextinGroupshapes()
 		if (ObjectExt::Is<GroupShape>(shape))
 		{
 			// Accessing the group shape.
-			SharedPtr<GroupShape> grphShape = DynamicCast<GroupShape>(shape);
+			SharedPtr<GroupShape> grphShape = ExplicitCast<GroupShape>(shape);
 
 			for (int j = 0; j < grphShape->get_Shapes()->get_Count(); j++)
 			{

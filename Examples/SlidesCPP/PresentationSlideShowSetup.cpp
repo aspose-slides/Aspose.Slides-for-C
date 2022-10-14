@@ -24,7 +24,7 @@ void PresentationSlideShowSetup()
     slideShowSettings->set_UseTimings(false);
 
     // Sets Pen color
-    auto penColor = System::StaticCast<IColorFormat>(slideShowSettings->get_PenColor());
+    auto penColor = System::ExplicitCast<IColorFormat>(slideShowSettings->get_PenColor());
     penColor->set_Color(Color::get_Green());
 
     // Adds slides for

@@ -22,7 +22,7 @@ void AssistantNode()
 
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 
 			for (int i = 0; i < smart->get_AllNodes()->get_Count(); i++)
 			{

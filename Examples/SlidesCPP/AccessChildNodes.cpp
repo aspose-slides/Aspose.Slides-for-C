@@ -21,19 +21,19 @@ void AccessChildNodes()
 		
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 		
 			// Traverse through all nodes inside SmartArt
 			for (int i = 0; i < smart->get_AllNodes()->get_Count(); i++)
 			{
 				// Accessing SmartArt node at index i
-				SharedPtr<SmartArtNode> node0 = System::DynamicCast_noexcept<SmartArtNode>(smart->get_AllNodes()->idx_get(i));
+				SharedPtr<SmartArtNode> node0 = System::AsCast<SmartArtNode>(smart->get_AllNodes()->idx_get(i));
 
 				// Traversing through the child nodes in SmartArt node at index i
 				for (int j = 0; j < node0->get_ChildNodes()->get_Count(); j++)
 				{
 					// Accessing the child node in SmartArt node
-					SharedPtr<SmartArtNode> node = System::DynamicCast_noexcept<SmartArtNode>(node0->get_ChildNodes()->idx_get(j));
+					SharedPtr<SmartArtNode> node = System::AsCast<SmartArtNode>(node0->get_ChildNodes()->idx_get(j));
 
 					// Printing the SmartArt child node parameters
 					Console::WriteLine(u"j = " + node->get_TextFrame()->get_Text() + u", Text = " + node->get_Level() + u", Position = "+ node->get_Position());

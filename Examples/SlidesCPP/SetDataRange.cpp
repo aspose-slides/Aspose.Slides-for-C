@@ -20,8 +20,8 @@ void SetDataRange()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Add chart with default data
-//	SharedPtr<IChart> chart = DynamicCast<Aspose::Slides::Charts::IChart>(slide->get_Shapes()->idx_get(0));
-	auto chart = DynamicCast<Chart>(slide->get_Shapes()->idx_get(0));
+//	SharedPtr<IChart> chart = ExplicitCast<Aspose::Slides::Charts::IChart>(slide->get_Shapes()->idx_get(0));
+	auto chart = ExplicitCast<Chart>(slide->get_Shapes()->idx_get(0));
 
 	//Not working
 

@@ -20,9 +20,9 @@ void AddNodesSpecificPosition()
 	if (smart->get_AllNodes()->get_Count() > 0)
 	{
 		// Accessing SmartArt node at index 0
-		SharedPtr<SmartArtNode> node0 = System::DynamicCast_noexcept<SmartArtNode>(smart->get_AllNodes()->idx_get(0));
+		SharedPtr<SmartArtNode> node0 = System::AsCast<SmartArtNode>(smart->get_AllNodes()->idx_get(0));
 
-//		SharedPtr<ISmartArtNodeCollection> node0Collection = System::DynamicCast_noexcept<ISmartArtNodeCollection>(node0->get_ChildNodes()); ;
+//		SharedPtr<ISmartArtNodeCollection> node0Collection = System::AsCast<ISmartArtNodeCollection>(node0->get_ChildNodes()); ;
 		SharedPtr<ISmartArtNodeCollection> node0Collection = node0->get_ChildNodes() ;
 
 		// Adding new child node at position 2 in parent node

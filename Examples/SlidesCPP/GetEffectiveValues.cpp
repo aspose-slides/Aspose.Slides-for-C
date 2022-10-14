@@ -11,7 +11,7 @@ void GetEffectiveValues()
 	const String templatePath = u"../templates/Presentation1.pptx";
 
 	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
-	SharedPtr<IAutoShape> shape = System::DynamicCast_noexcept<IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+	SharedPtr<IAutoShape> shape = System::AsCast<IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
 	SharedPtr<ITextFrameFormat> localTextFrameFormat = shape->get_TextFrame()->get_TextFrameFormat();
 	SharedPtr<ITextFrameFormatEffectiveData> effectiveTextFrameFormat = localTextFrameFormat->GetEffective();

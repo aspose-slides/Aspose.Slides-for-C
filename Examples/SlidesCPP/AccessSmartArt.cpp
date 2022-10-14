@@ -21,13 +21,13 @@ void AccessSmartArt()
 
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 
 			// Traverse through all nodes inside SmartArt
 			for (int i = 0; i < smart->get_AllNodes()->get_Count(); i++)
 			{
 				// Accessing SmartArt node at index i
-				SharedPtr<SmartArtNode> node = System::DynamicCast_noexcept<SmartArtNode>(smart->get_AllNodes()->idx_get(i));
+				SharedPtr<SmartArtNode> node = System::AsCast<SmartArtNode>(smart->get_AllNodes()->idx_get(i));
 
 				// Printing the SmartArt node parameters
 				Console::WriteLine(u"j = " + node->get_TextFrame()->get_Text() + u", Text = " + node->get_Level() + u", Position = " + node->get_Position());

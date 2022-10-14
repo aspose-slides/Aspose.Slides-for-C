@@ -33,7 +33,7 @@ void SetAlternativeText()
 	{
 		// Accessing the added shape
 		SharedPtr<IShape> shape = slide->get_Shapes()->idx_get(i);
-		SharedPtr<AutoShape>  ashape = DynamicCast<AutoShape>(shape);
+		SharedPtr<AutoShape>  ashape = ExplicitCast<AutoShape>(shape);
 
 		if (ashape != nullptr)
 		{

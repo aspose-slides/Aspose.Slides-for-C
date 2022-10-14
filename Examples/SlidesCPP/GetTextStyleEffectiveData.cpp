@@ -12,7 +12,7 @@ void GetTextStyleEffectiveData()
 	const String templatePath = u"../templates/Presentation1.pptx";
 
 	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
-	SharedPtr<IAutoShape> shape = System::DynamicCast_noexcept<IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+	SharedPtr<IAutoShape> shape = System::AsCast<IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 	SharedPtr<ITextStyleEffectiveData> effectiveTextStyle = shape->get_TextFrame()->get_TextFrameFormat()->get_TextStyle()->GetEffective();
 
 	for (int32_t i = 0; i <= 8; i++)

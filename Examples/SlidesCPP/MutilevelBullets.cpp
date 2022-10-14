@@ -31,7 +31,7 @@ void MutilevelBullets()
 
 	// Create the first level bullet paragraph
 	SharedPtr<Paragraph> Para1 = MakeObject<Paragraph>();
-	SharedPtr<IParagraph> para1 = DynamicCast<IParagraph>(Para1);
+	SharedPtr<IParagraph> para1 = ExplicitCast<IParagraph>(Para1);
 	para1->set_Text(u"Content");
 	// Setting paragraph bullet style 
 	para1->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);
@@ -44,7 +44,7 @@ void MutilevelBullets()
 
 	// Create the second level bullet paragraph
 	SharedPtr<Paragraph> Para2 = MakeObject<Paragraph>();
-	SharedPtr<IParagraph> para2 = DynamicCast<IParagraph>(Para2);
+	SharedPtr<IParagraph> para2 = ExplicitCast<IParagraph>(Para2);
 	para2->set_Text(u"Second level");
 	// Setting paragraph bullet style 
 	para2->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);
@@ -57,7 +57,7 @@ void MutilevelBullets()
 
 	// Create the third level bullet paragraph
 	SharedPtr<Paragraph> Para3 = MakeObject<Paragraph>();
-	SharedPtr<IParagraph> para3 = DynamicCast<IParagraph>(Para3);
+	SharedPtr<IParagraph> para3 = ExplicitCast<IParagraph>(Para3);
 	para3->set_Text(u"Content");
 	// Setting paragraph bullet style 
 	para3->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);
@@ -70,7 +70,7 @@ void MutilevelBullets()
 
 	// Create the fourth level bullet paragraph
 	SharedPtr<Paragraph> Para4 = MakeObject<Paragraph>();
-	SharedPtr<IParagraph> para4 = DynamicCast<IParagraph>(Para4);
+	SharedPtr<IParagraph> para4 = ExplicitCast<IParagraph>(Para4);
 	para4->set_Text(u"Fourth level");
 	// Setting paragraph bullet style 
 	para4->get_ParagraphFormat()->get_Bullet()->set_Type(BulletType::Symbol);

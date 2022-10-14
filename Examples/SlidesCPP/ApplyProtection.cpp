@@ -34,8 +34,8 @@ void ApplyProtection()
 			if (ObjectExt::Is<IAutoShape>(shape)) {
 
 				//Type casting to Auto shape and  getting auto shape lock
-				SharedPtr<IAutoShape> aShp = DynamicCast<IAutoShape>(shape);
-				SharedPtr<IAutoShapeLock> autoShapeLock = DynamicCast<IAutoShapeLock>(aShp->get_ShapeLock());
+				SharedPtr<IAutoShape> aShp = ExplicitCast<IAutoShape>(shape);
+				SharedPtr<IAutoShapeLock> autoShapeLock = ExplicitCast<IAutoShapeLock>(aShp->get_ShapeLock());
 
 				//Applying shapes locks
 				autoShapeLock->set_PositionLocked(true);
@@ -46,8 +46,8 @@ void ApplyProtection()
 			else if (ObjectExt::Is<IGroupShape>(shape)) {
 
 				//Type casting to group shape and  getting group shape lock
-				SharedPtr<IGroupShape> group = DynamicCast<IGroupShape>(shape);
-				SharedPtr<IGroupShapeLock> groupShapeLock = DynamicCast<IGroupShapeLock>(group->get_ShapeLock());
+				SharedPtr<IGroupShape> group = ExplicitCast<IGroupShape>(shape);
+				SharedPtr<IGroupShapeLock> groupShapeLock = ExplicitCast<IGroupShapeLock>(group->get_ShapeLock());
 
 				//Applying shapes locks
 				groupShapeLock->set_GroupingLocked(true);
@@ -59,8 +59,8 @@ void ApplyProtection()
 			else if (ObjectExt::Is<IConnector>(shape)) {
 
 				//Type casting to connector shape and  getting connector shape lock
-				SharedPtr<IConnector> conn = DynamicCast<IConnector>(shape);
-				SharedPtr<IConnectorLock> connLock = DynamicCast<IConnectorLock>(conn->get_ShapeLock());
+				SharedPtr<IConnector> conn = ExplicitCast<IConnector>(shape);
+				SharedPtr<IConnectorLock> connLock = ExplicitCast<IConnectorLock>(conn->get_ShapeLock());
 
 				//Applying shapes locks				
 				connLock->set_PositionMove(true);
@@ -71,8 +71,8 @@ void ApplyProtection()
 			else if (ObjectExt::Is<IPictureFrame>(shape)) {
 
 				//Type casting to pitcture frame shape and  getting picture frame shape lock
-				SharedPtr<IPictureFrame> pic = DynamicCast<IPictureFrame>(shape);
-				SharedPtr<IPictureFrameLock> picLock = DynamicCast<IPictureFrameLock>(pic->get_ShapeLock());
+				SharedPtr<IPictureFrame> pic = ExplicitCast<IPictureFrame>(shape);
+				SharedPtr<IPictureFrameLock> picLock = ExplicitCast<IPictureFrameLock>(pic->get_ShapeLock());
 
 				//Applying shapes locks				
 				picLock->set_PositionLocked(true);

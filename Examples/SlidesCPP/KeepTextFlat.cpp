@@ -15,8 +15,8 @@ void KeepTextFlat()
 
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>(pptxFileName);
 
-    auto shape1 = System::DynamicCast_noexcept<AutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
-    auto shape2 = System::DynamicCast_noexcept<AutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(1));
+    auto shape1 = System::AsCast<AutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto shape2 = System::AsCast<AutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(1));
 
     shape1->get_TextFrame()->get_TextFrameFormat()->set_KeepTextFlat(false);
     shape2->get_TextFrame()->get_TextFrameFormat()->set_KeepTextFlat(true);
