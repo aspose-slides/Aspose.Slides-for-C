@@ -18,7 +18,7 @@ void UpdateExistingTable()
 	SharedPtr<ISlide> islide = pres->get_Slides()->idx_get(0);
 
 	// Add table shape to slide
-	SharedPtr<Table> table = System::DynamicCast<Table>(islide->get_Shapes()->idx_get(0));
+	SharedPtr<Table> table = System::ExplicitCast<Table>(islide->get_Shapes()->idx_get(0));
 
 	// Set the text of the first column of second row
 	table->idx_get(0, 1)->get_TextFrame()->set_Text(u"New");

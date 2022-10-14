@@ -31,7 +31,7 @@ void Hidingshapes()
 	for (int i = 0; i < iCount; i++)
 	{
 		// Accessing the added shape
-		SharedPtr<AutoShape>  ashape = DynamicCast<AutoShape>(slide->get_Shapes()->idx_get(i));
+		SharedPtr<AutoShape>  ashape = ExplicitCast<AutoShape>(slide->get_Shapes()->idx_get(i));
 
 		if (String::Compare(ashape->get_AlternativeText(), alttext, StringComparison::Ordinal) == 0)
 		{

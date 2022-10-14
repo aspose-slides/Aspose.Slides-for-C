@@ -19,7 +19,7 @@ void ClearSpecificChartSeriesDataPointsData()
 	//Access first slide
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
-	SharedPtr<IChart> chart = System::DynamicCast<IChart>(slide->get_Shapes()->idx_get(0));
+	SharedPtr<IChart> chart = System::ExplicitCast<IChart>(slide->get_Shapes()->idx_get(0));
 
 	// Take  chart series
 	SharedPtr<IChartSeries> series = chart->get_ChartData()->get_Series()->idx_get(0);

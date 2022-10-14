@@ -25,7 +25,7 @@ void GetEffectsByTextParagraph()
 
 	// Accessing second shape from slide.
 	SharedPtr<IShape> shape = slide->get_Shapes()->idx_get(1);
-	SharedPtr<AutoShape> ashp = DynamicCast<AutoShape>(shape);
+	SharedPtr<AutoShape> ashp = ExplicitCast<AutoShape>(shape);
 	
 	for (int i = 0; i < ashp->get_TextFrame()->get_Paragraphs()->get_Count(); i++)
 	{

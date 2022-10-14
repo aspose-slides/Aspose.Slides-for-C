@@ -21,7 +21,7 @@ void AccessSmartArtParticularLayout()
 
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 
 			Console::WriteLine(u"Smart Art Name = " + smart->get_Name());
 

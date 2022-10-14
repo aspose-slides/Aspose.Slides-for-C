@@ -11,7 +11,7 @@ void SupportOfMorphTransition()
 
 	const String outPath = u"../out/presentation-out.pptx";
 	auto presentation = System::MakeObject<Presentation>();
-	auto autoshape = System::DynamicCast<AutoShape>(presentation->get_Slides()->idx_get(0)->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 100, 100, 400, 100));
+	auto autoshape = System::ExplicitCast<AutoShape>(presentation->get_Slides()->idx_get(0)->get_Shapes()->AddAutoShape(ShapeType::Rectangle, 100, 100, 400, 100));
 	
 	autoshape->get_TextFrame()->set_Text(u"Test text");
 	presentation->get_Slides()->AddClone(presentation->get_Slides()->idx_get(0));

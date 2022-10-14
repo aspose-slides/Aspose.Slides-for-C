@@ -18,7 +18,7 @@ void LineSpacing()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Accessing the first and second placeholder in the slide and typecasting it as AutoShape
-	SharedPtr<ITextFrame> tf1 = (DynamicCast<Aspose::Slides::AutoShape>(slide->get_Shapes()->idx_get(0)))->get_TextFrame();
+	SharedPtr<ITextFrame> tf1 = (ExplicitCast<Aspose::Slides::AutoShape>(slide->get_Shapes()->idx_get(0)))->get_TextFrame();
 
 	// Accessing the first Paragraph
 	SharedPtr<IParagraph> para1 = tf1->get_Paragraphs()->idx_get(0);

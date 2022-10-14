@@ -16,7 +16,7 @@ void ExportMathParagraphToMathML()
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>();
 
     SharedPtr<IAutoShape> autoShape = pres->get_Slides()->idx_get(0)->get_Shapes()->AddMathShape(0, 0, 500, 50);
-    SharedPtr<IMathParagraph> mathParagraph = (System::DynamicCast<MathPortion>(autoShape->get_TextFrame()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0)))->get_MathParagraph();
+    SharedPtr<IMathParagraph> mathParagraph = (System::ExplicitCast<MathPortion>(autoShape->get_TextFrame()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0)))->get_MathParagraph();
 
     SharedPtr<IMathBlock> mathBlock = System::MakeObject<MathematicalText>(u"a")
             ->SetSuperscript(u"2")

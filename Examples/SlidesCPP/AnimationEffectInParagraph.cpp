@@ -12,7 +12,7 @@ void AnimationEffectinParagraph()
 
 	auto presentation = System::MakeObject<Presentation>(templatePath);
 	// select paragraph to add effect
-	auto autoShape = System::DynamicCast<IAutoShape>(presentation->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+	auto autoShape = System::ExplicitCast<IAutoShape>(presentation->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 	auto paragraph = autoShape->get_TextFrame()->get_Paragraphs()->idx_get(0);
 	// add Fly animation effect to selected paragraph
 	auto effect = presentation->get_Slides()->idx_get(0)->get_Timeline()->get_MainSequence()->AddEffect(

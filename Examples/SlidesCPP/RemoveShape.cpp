@@ -31,7 +31,7 @@ void RemoveShape()
 	for (int i = 0; i < iCount; i++)
 	{
 		// Accessing the added shape
-		SharedPtr<Shape>  ashape = DynamicCast<Shape>(slide->get_Shapes()->idx_get(i));
+		SharedPtr<Shape>  ashape = ExplicitCast<Shape>(slide->get_Shapes()->idx_get(i));
 
 		if (String::Compare(ashape->get_AlternativeText(), alttext, StringComparison::Ordinal) == 0)
 		{

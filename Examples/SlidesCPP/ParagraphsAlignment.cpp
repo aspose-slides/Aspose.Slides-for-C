@@ -21,8 +21,8 @@ void ParagraphsAlignment()
 	SharedPtr<IShape> shape1 = slide->get_Shapes()->idx_get(0);
 	SharedPtr<IShape> shape2 = slide->get_Shapes()->idx_get(1);
 
-	SharedPtr<AutoShape> ashp1 = DynamicCast<AutoShape>(shape1);
-	SharedPtr<AutoShape> ashp2 = DynamicCast<AutoShape>(shape2);
+	SharedPtr<AutoShape> ashp1 = ExplicitCast<AutoShape>(shape1);
+	SharedPtr<AutoShape> ashp2 = ExplicitCast<AutoShape>(shape2);
 
 	SharedPtr<ITextFrame> tf1 = ashp1->get_TextFrame();
 	SharedPtr<ITextFrame> tf2 = ashp2->get_TextFrame();

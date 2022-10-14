@@ -12,7 +12,7 @@ void GetTextFrameFormatEffectiveData()
 	const String templatePath = u"../templates/Presentation1.pptx";
 
 	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
-    auto shape = System::DynamicCast_noexcept<IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto shape = System::AsCast<IAutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
     auto effectiveTextFrameFormat = shape->get_TextFrame()->get_TextFrameFormat()->GetEffective();
 
 	Console::WriteLine(String(u"Anchoring type: ") + ObjectExt::ToString((int)effectiveTextFrameFormat->get_AnchoringType()));

@@ -21,20 +21,20 @@ void GetTextFromSmartArtNode()
 
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 
 			// Traverse through all nodes inside SmartArt
 			for (int i = 0; i < smart->get_AllNodes()->get_Count(); i++)
 			{
 				// Accessing SmartArt node at index i
-				SharedPtr<SmartArtNode> node = System::DynamicCast_noexcept<SmartArtNode>(smart->get_AllNodes()->idx_get(i));
+				SharedPtr<SmartArtNode> node = System::AsCast<SmartArtNode>(smart->get_AllNodes()->idx_get(i));
 				
 				int iNodeShapeCount = node->get_Shapes()->get_Count();
 
 				for(int j=0; j < iNodeShapeCount;j++)
 				{
-					SharedPtr<SmartArtShape> nodeShape=System::DynamicCast_noexcept<SmartArtShape>(node->get_Shapes()->idx_get(j));
-					//auto nodeShape = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArtShape>(node->get_Shapes()->idx_get(j));
+					SharedPtr<SmartArtShape> nodeShape=System::AsCast<SmartArtShape>(node->get_Shapes()->idx_get(j));
+					//auto nodeShape = System::AsCast<Aspose::Slides::SmartArt::SmartArtShape>(node->get_Shapes()->idx_get(j));
 
 					if (nodeShape->get_TextFrame() != nullptr)
 					{

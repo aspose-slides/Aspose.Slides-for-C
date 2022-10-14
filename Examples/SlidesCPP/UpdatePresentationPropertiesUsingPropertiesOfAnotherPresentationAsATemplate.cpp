@@ -30,7 +30,7 @@ void UpdatePresentationPropertiesUsingPropertiesOfAnotherPresentationAsATemplate
 
 	SharedPtr<IPresentationInfo> info = PresentationFactory::get_Instance()->GetPresentationInfo(templatePath);
 
-	SharedPtr<DocumentProperties> templateprop = System::DynamicCast<DocumentProperties>(info->ReadDocumentProperties());
+	SharedPtr<DocumentProperties> templateprop = System::ExplicitCast<DocumentProperties>(info->ReadDocumentProperties());
 	
 	templateprop->set_Author(u"Template Author");
 	templateprop->set_Title(u"Template Title");

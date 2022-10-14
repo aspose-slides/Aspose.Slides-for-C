@@ -14,7 +14,7 @@ void SetTransitionMorphType()
 
 	presentation->get_Slides()->idx_get(0)->get_SlideShowTransition()->set_Type(TransitionType::Morph);
 
-	auto morphTransition = System::DynamicCast<IMorphTransition>(presentation->get_Slides()->idx_get(0)->get_SlideShowTransition()->get_Value());
+	auto morphTransition = System::ExplicitCast<IMorphTransition>(presentation->get_Slides()->idx_get(0)->get_SlideShowTransition()->get_Value());
 	morphTransition->set_MorphType(TransitionMorphType::ByWord);
 
 	presentation->Save(outPath, Export::SaveFormat::Pptx);

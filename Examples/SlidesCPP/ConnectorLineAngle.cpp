@@ -46,7 +46,7 @@ void ConnectorLineAngle()
 
 		if (ObjectExt::Is<AutoShape>(shape))
 		{
-			SharedPtr<AutoShape> aShape = DynamicCast<AutoShape>(shape);
+			SharedPtr<AutoShape> aShape = ExplicitCast<AutoShape>(shape);
 			if (aShape->get_ShapeType() == ShapeType::Line)
 			{
 				dir = getDirection(aShape->get_Width(), aShape->get_Height(), aShape->get_Frame()->get_FlipH(), aShape->get_Frame()->get_FlipV());
@@ -55,7 +55,7 @@ void ConnectorLineAngle()
 
 		else if (ObjectExt::Is<Connector>(shape))
 		{
-			SharedPtr<Connector> aShape = DynamicCast<Connector>(shape);
+			SharedPtr<Connector> aShape = ExplicitCast<Connector>(shape);
 			dir = getDirection(aShape->get_Width(), aShape->get_Height(), aShape->get_Frame()->get_FlipH(), aShape->get_Frame()->get_FlipV());
 		}
 

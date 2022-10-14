@@ -20,7 +20,7 @@ void ExistingChart()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Add chart with default data
-	SharedPtr<Chart> chart = DynamicCast<Chart>(slide->get_Shapes()->idx_get(0));
+	SharedPtr<Chart> chart = ExplicitCast<Chart>(slide->get_Shapes()->idx_get(0));
 
 	// Setting the index of chart data sheet
 	int defaultWorksheetIndex = 0;

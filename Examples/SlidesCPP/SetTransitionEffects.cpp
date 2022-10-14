@@ -19,7 +19,7 @@ void SetTransitionEffects()
 	// Apply circle type transition on slide 1
 	pres->get_Slides()->idx_get(0)->get_SlideShowTransition()->set_Type(TransitionType::Cut);
 
-	auto transition = DynamicCast<OptionalBlackTransition>(pres->get_Slides()->idx_get(0)->get_SlideShowTransition()->get_Value());
+	auto transition = ExplicitCast<OptionalBlackTransition>(pres->get_Slides()->idx_get(0)->get_SlideShowTransition()->get_Value());
 	transition->set_FromBlack(true);
 
 	// Write the presentation to disk

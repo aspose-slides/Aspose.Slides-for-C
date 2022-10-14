@@ -25,7 +25,7 @@ void AddNodes()
 		// Add Text
 		node->get_TextFrame()->set_Text(u"Test");
 
-//		SharedPtr<ISmartArtNodeCollection> nodeCollection = System::DynamicCast_noexcept<ISmartArtNodeCollection>(node->get_ChildNodes()); ;
+//		SharedPtr<ISmartArtNodeCollection> nodeCollection = System::AsCast<ISmartArtNodeCollection>(node->get_ChildNodes()); ;
 		auto nodeCollection = node->get_ChildNodes() ;
 
 		// Adding new child node at end of parent node

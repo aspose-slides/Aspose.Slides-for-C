@@ -18,7 +18,7 @@ void WordArt()
 
     SharedPtr<ITextFrame> textFrame = shape->get_TextFrame();
 
-    SharedPtr<Portion> portion = System::DynamicCast<Portion>(textFrame->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0));
+    SharedPtr<Portion> portion = System::ExplicitCast<Portion>(textFrame->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0));
     portion->set_Text(u"Aspose.Slides");
     SharedPtr<FontData> fontData = System::MakeObject<FontData>(u"Arial Black");
     portion->get_PortionFormat()->set_LatinFont(fontData);

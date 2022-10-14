@@ -16,7 +16,7 @@ void AnimationsOnOLEObject()
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
     //Accessing OLE Object
-    SharedPtr<IOleObjectFrame> ole = System::DynamicCast<IOleObjectFrame>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    SharedPtr<IOleObjectFrame> ole = System::ExplicitCast<IOleObjectFrame>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     //Applying animation effects
     SharedPtr<IEffect> effect = pres->get_Slides()->idx_get(0)->get_Timeline()->get_MainSequence()->AddEffect(ole, EffectType::OLEObjectOpen, EffectSubtype::None, EffectTriggerType::OnClick);

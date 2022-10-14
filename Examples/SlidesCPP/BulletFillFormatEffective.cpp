@@ -13,7 +13,7 @@ void BulletFillFormatEffective()
 
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>(pptxFile);
 
-    SharedPtr<AutoShape> autoShape = System::DynamicCast<AutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    SharedPtr<AutoShape> autoShape = System::ExplicitCast<AutoShape>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
     for (auto para : autoShape->get_TextFrame()->get_Paragraphs())
     {
         SharedPtr<IBulletFormatEffectiveData> bulletFormatEffective = para->get_ParagraphFormat()->get_Bullet()->GetEffective();

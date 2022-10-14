@@ -12,7 +12,7 @@ void ConvertSvgImageObjectIntoGroupOfShapes()
 	String outPptxPath = u"../out/image_group.pptx";
 
 	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(pptxFileName);
-	SharedPtr<PictureFrame> pFrame = System::DynamicCast_noexcept<PictureFrame>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+	SharedPtr<PictureFrame> pFrame = System::AsCast<PictureFrame>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 	SharedPtr<ISvgImage> svgImage = pFrame->get_PictureFormat()->get_Picture()->get_Image()->get_SvgImage();
 	if (svgImage != nullptr)
 	{

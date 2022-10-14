@@ -18,7 +18,7 @@ void RecoverWorkbook()
 
     SharedPtr<Presentation> pres = System::MakeObject<Presentation>(pptxFile, loadOptions);
     
-    SharedPtr<IChart> chart = DynamicCast<IChart>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    SharedPtr<IChart> chart = ExplicitCast<IChart>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
     SharedPtr<IChartDataWorkbook> wb = chart->get_ChartData()->get_ChartDataWorkbook();
 
     pres->Save(outPptxFile, SaveFormat::Pptx);

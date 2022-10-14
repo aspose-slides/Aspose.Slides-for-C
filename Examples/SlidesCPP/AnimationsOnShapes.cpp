@@ -42,7 +42,7 @@ void AnimationsOnShapes()
 	SharedPtr<IEffect> fxUserPath = seqInter->AddEffect(ashp, EffectType::PathUser, EffectSubtype::None, EffectTriggerType::OnClick);
 
 	// Created path is empty so we should add commands for moving.
-	 SharedPtr<MotionEffect> motionBhv = DynamicCast<MotionEffect>(fxUserPath->get_Behaviors()->idx_get(0));
+	 SharedPtr<MotionEffect> motionBhv = ExplicitCast<MotionEffect>(fxUserPath->get_Behaviors()->idx_get(0));
 
 	// SharedPtr<PointF> point = MakeObject<PointF >(0.076, 0.59);
 	 const PointF point = PointF(0.076f, 0.59f);

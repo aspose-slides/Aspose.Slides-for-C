@@ -18,7 +18,7 @@ void AddMathematicalShape()
     SharedPtr<IAutoShape> mathShape = pres->get_Slides()->idx_get(0)->get_Shapes()->AddMathShape(10.0f, 10.0f, 100.0f, 25.0f);
 
     // Cteate mathematical paragraph that is a container for mathematical blocks.
-    SharedPtr<IMathParagraph> mathParagraph = (System::DynamicCast<MathPortion>(mathShape->get_TextFrame()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0)))->get_MathParagraph();
+    SharedPtr<IMathParagraph> mathParagraph = (System::ExplicitCast<MathPortion>(mathShape->get_TextFrame()->get_Paragraphs()->idx_get(0)->get_Portions()->idx_get(0)))->get_MathParagraph();
 
     // Create mathematical expression as an instance of mathematical text that contained within a MathParagraph.
     SharedPtr<IMathBlock> mathBlock = System::MakeObject<MathematicalText>(u"c")

@@ -22,12 +22,12 @@ void RemoveNodeSpecificPosition()
 
 		if (ObjectExt::Is<Aspose::Slides::SmartArt::SmartArt>(shape))
 		{
-			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::DynamicCast_noexcept<Aspose::Slides::SmartArt::SmartArt>(shape);
+			SharedPtr<Aspose::Slides::SmartArt::SmartArt> smart = System::AsCast<Aspose::Slides::SmartArt::SmartArt>(shape);
 
 			if (smart->get_AllNodes()->get_Count() > 0)
 			{
 				// Accessing SmartArt node at index 0
-				SharedPtr<SmartArtNode> node0 = System::DynamicCast_noexcept<SmartArtNode>(smart->get_AllNodes()->idx_get(0));
+				SharedPtr<SmartArtNode> node0 = System::AsCast<SmartArtNode>(smart->get_AllNodes()->idx_get(0));
 				if (node0->get_ChildNodes()->get_Count() >= 2)
 				{
 					// Removing the child node at position 1

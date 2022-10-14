@@ -24,7 +24,7 @@ void ExportingHTMLText()
 	// Accessing the added shape
 	SharedPtr<IShape> shape = slide->get_Shapes()->idx_get(0);
 
-	SharedPtr<AutoShape> ashape = DynamicCast<AutoShape>(shape);
+	SharedPtr<AutoShape> ashape = ExplicitCast<AutoShape>(shape);
 
 	// Extracting first paragraph as HTML
 	SharedPtr<IO::StreamWriter> sw = MakeObject<IO::StreamWriter>(outPath, false, Encoding::get_UTF8());

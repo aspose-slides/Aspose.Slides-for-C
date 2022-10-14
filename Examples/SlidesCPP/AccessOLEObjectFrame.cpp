@@ -18,7 +18,7 @@ void AccessOLEObjectFrame()
     SharedPtr<ISlide> sld = pres->get_Slides()->idx_get(0);
 
     // Cast the shape to OleObjectFrame
-    SharedPtr<OleObjectFrame> oleObjectFrame = System::DynamicCast_noexcept<OleObjectFrame>(sld->get_Shapes()->idx_get(0));
+    SharedPtr<OleObjectFrame> oleObjectFrame = System::AsCast<OleObjectFrame>(sld->get_Shapes()->idx_get(0));
 
     // Read the OLE Object and write it to disk
     if (oleObjectFrame != nullptr)

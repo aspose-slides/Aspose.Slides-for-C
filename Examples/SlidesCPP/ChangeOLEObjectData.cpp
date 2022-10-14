@@ -41,7 +41,7 @@ void ChangeOLEObjectData()
     {
         if (System::ObjectExt::Is<OleObjectFrame>(shape))
         {
-            ole = System::DynamicCast<OleObjectFrame>(shape);
+            ole = System::ExplicitCast<OleObjectFrame>(shape);
         }
     }
     

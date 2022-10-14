@@ -22,7 +22,7 @@ void ChangeChartCategoryAxis()
 	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
 
 	// Add chart with default data
-	SharedPtr<Chart> chart = DynamicCast<Aspose::Slides::Charts::Chart>(slide->get_Shapes()->idx_get(0));
+	SharedPtr<Chart> chart = ExplicitCast<Aspose::Slides::Charts::Chart>(slide->get_Shapes()->idx_get(0));
 
 	chart->get_Axes()->get_HorizontalAxis()->set_CategoryAxisType(CategoryAxisType::Date);
 	chart->get_Axes()->get_HorizontalAxis()->set_IsAutomaticMajorUnit( false);

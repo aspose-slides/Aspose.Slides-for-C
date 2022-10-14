@@ -21,7 +21,7 @@ void ExtractVideo()
 		{
 			if (ObjectExt::Is<VideoFrame>(shape))
 			{
-				SharedPtr<VideoFrame> vf = System::DynamicCast_noexcept<VideoFrame>(shape);
+				SharedPtr<VideoFrame> vf = System::AsCast<VideoFrame>(shape);
 				String type = vf->get_EmbeddedVideo()->get_ContentType();
 				type = type.Remove(0, type.LastIndexOf(L'/') + 1);
 				ArrayPtr<uint8_t> buffer = vf->get_EmbeddedVideo()->get_BinaryData();

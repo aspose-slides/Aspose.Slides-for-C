@@ -9,7 +9,7 @@ void HighlightText()
 	//ExStart:HighlightText
 	SharedPtr<Presentation> presentation = System::MakeObject<Presentation>(u"../templates/HighlightText.pptx");
 	// highlighting all words 'important'
-	(System::DynamicCast<AutoShape> (presentation->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)))->get_TextFrame()->HighlightText(u"important", System::Drawing::Color::get_LightBlue());
+	(System::ExplicitCast<AutoShape> (presentation->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)))->get_TextFrame()->HighlightText(u"important", System::Drawing::Color::get_LightBlue());
 	auto options = System::MakeObject<TextHighlightingOptions>();
 	options->set_WholeWordsOnly(true);
 	// highlighting all separate 'the' occurrences

@@ -29,7 +29,7 @@ void AddCustomPromptText()
                 text = u"Click to add subtitle";
             }
 
-            DynamicCast<IAutoShape>(shape)->get_TextFrame()->set_Text(text);
+            ExplicitCast<IAutoShape>(shape)->get_TextFrame()->set_Text(text);
 
             Console::WriteLine(u"Placeholder with text: {0}", text);
         }

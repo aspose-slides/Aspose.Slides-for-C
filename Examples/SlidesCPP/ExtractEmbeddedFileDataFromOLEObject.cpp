@@ -20,7 +20,7 @@ void ExtractEmbeddedFileDataFromOLEObject()
             if (ObjectExt::Is<OleObjectFrame>(shape))
             {
                 objectnum++;
-                SharedPtr<OleObjectFrame> oleFrame = System::DynamicCast_noexcept<OleObjectFrame>(shape);
+                SharedPtr<OleObjectFrame> oleFrame = System::AsCast<OleObjectFrame>(shape);
                 ArrayPtr<uint8_t> data = oleFrame->get_EmbeddedData()->get_EmbeddedFileData();
                 String fileExtention = oleFrame->get_EmbeddedData()->get_EmbeddedFileExtension();
 
