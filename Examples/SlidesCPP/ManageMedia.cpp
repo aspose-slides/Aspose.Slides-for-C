@@ -51,11 +51,11 @@ void::ManageMedia::ExtractVideo()
 		{
 			SharedPtr<IShape> shape = slide->get_Shapes()->idx_get(j);
 	
-			//auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+			//auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
 			if (shape->GetType()==Aspose::Slides::VideoFrame)
 			{
-				auto vf = DynamicCast<Aspose::Slides::IVideoFrame>(shape);
+				auto vf = ExplicitCast<Aspose::Slides::IVideoFrame>(shape);
 				String type = vf->get_EmbeddedVideo()->get_ContentType();
 				int ss = type->get_LastIndexOf('/');
 				type = type.Remove(0, type.LastIndexOf('/') + 1);

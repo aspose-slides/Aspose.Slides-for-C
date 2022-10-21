@@ -1,4 +1,21 @@
 #include "stdafx.h"
+#include <DOM/Presentation.h>
+#include <DOM/ISlideCollection.h>
+#include <DOM/ISlide.h>
+#include <DOM/IShapeCollection.h>
+#include <DOM/IChart.h>
+#include <DOM/Chart/ChartData.h>
+#include <DOM/Chart/IChartData.h>
+#include <DOM/Chart/IChartSeriesCollection.h>
+#include <DOM/Chart/IChartDataPointCollection.h>
+#include <DOM/Chart/IDoubleChartValue.h>
+#include <DOM/Chart/IChartDataCell.h>
+#include <DOM/Chart/ChartType.h>
+#include <DOM/Chart/IChartDataWorkbook.h>
+#include <DOM/Chart/IChartCategoryCollection.h>
+
+#include <Export/SaveFormat.h>
+
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
@@ -15,6 +32,7 @@ void SetExternalWorkbookWithUpdateChartData()
 	auto chart = pres->get_Slides()->idx_get(0)->get_Shapes()->AddChart(Charts::ChartType::Pie, 50.0f, 50.0f, 400.0f, 600.0f, true);
 	auto chartData = chart->get_ChartData();
 	(System::AsCast<Charts::ChartData>(chartData))->SetExternalWorkbook(u"http://path/doesnt/exists", false);
+
 
 	pres->Save(outPath, Export::SaveFormat::Pptx);
 
