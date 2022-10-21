@@ -62,7 +62,7 @@ void SmartAart::SampleCreation()
         throw System::ApplicationException(L"Creating error");
     }
 
-    smart = System::DynamicCast<Aspose::Slides::SmartArt::SmartArt>(slide->get_Shapes()->idx_get(0));
+    smart = System::ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(slide->get_Shapes()->idx_get(0));
 
     if (smart == nullptr ||
         smart->get_Layout() != SmartArtLayoutType::BasicCycle ||
@@ -79,7 +79,7 @@ void SmartAart::SampleCloning()
     //loading presentation
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     //cloning
     SharedPtr<Presentation> clonePres = MakeObject<Presentation>();
@@ -87,7 +87,7 @@ void SmartAart::SampleCloning()
     clonePres->get_Slides()->AddClone(pres->get_Slides()->idx_get(0));
 
     // verifying
-    auto cloneSmart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(clonePres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto cloneSmart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(clonePres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     if (cloneSmart == nullptr ||
         cloneSmart->get_AllNodes()->get_Count() != NodesCount ||
@@ -104,7 +104,7 @@ void SmartAart::SampleNodesTextEditing()
     //loading presentation
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     // modifying nodes
     for (int i = 0; i < smart->get_AllNodes()->get_Count(); i++)
@@ -126,7 +126,7 @@ void SmartAart::SampleNodesTextEditing()
         throw System::ApplicationException(L"TextEditing error");
     }
 
-    smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
     if (smart == nullptr ||
         smart->get_Layout() != SmartArtLayoutType::BasicCycle ||
         smart->get_AllNodes()->get_Count() != NodesCount)
@@ -149,7 +149,7 @@ void SmartAart::SampleNodeAdd()
     //loading presentation
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     //add child not to existing node
     SharedPtr<ISmartArtNode> exNode = smart->get_AllNodes()->idx_get(0);
@@ -177,7 +177,7 @@ void SmartAart::SampleNodeAdd()
         throw System::ApplicationException(L"NodeAdd error");
     }
 
-    smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     if (smart == nullptr ||
         smart->get_Layout() != SmartArtLayoutType::BasicCycle ||
@@ -229,7 +229,7 @@ void SmartAart::SampleColorStyleEditing()
     //loading presentation
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     //reassign style
     SmartArtColorType newStyle = SmartArtColorType::GradientLoopAccent1;
@@ -247,7 +247,7 @@ void SmartAart::SampleColorStyleEditing()
         throw System::ApplicationException(L"ColorStyleEditing error");
     }
 
-    smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     if (smart == nullptr ||
         smart->get_Layout() != SmartArtLayoutType::BasicCycle ||
@@ -262,7 +262,7 @@ void SmartAart::SampleQuickStyleEditing()
     //loading presentation
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     //reassign style
     SmartArtQuickStyleType newStyle = SmartArtQuickStyleType::FlatScene;
@@ -280,7 +280,7 @@ void SmartAart::SampleQuickStyleEditing()
         throw System::ApplicationException(L"QuickStyleEditing error");
     }
 
-    smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     if (smart == nullptr ||
         smart->get_Layout() != SmartArtLayoutType::BasicCycle ||
@@ -294,7 +294,7 @@ void SmartAart::SampleNodeRemove()
 {
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
     smart->get_AllNodes()->RemoveNode(0);
 
     pres->Save(filename6, Export::SaveFormat::Pptx);
@@ -308,7 +308,7 @@ void SmartAart::SampleNodeRemove()
         throw System::ApplicationException(L"NodeRemove error");
     }
 
-    smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     if (smart == nullptr ||
         smart->get_AllNodes()->get_Count() != NodesCount - 1)
@@ -321,7 +321,7 @@ void SmartAart::SampleRemoveSmartArt()
 {
     SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
 
-    auto smart = DynamicCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
+    auto smart = ExplicitCast<Aspose::Slides::SmartArt::SmartArt>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
 
     pres->get_Slides()->idx_get(0)->get_Shapes()->Remove(smart);
     pres->Save(filename7, Export::SaveFormat::Pptx);

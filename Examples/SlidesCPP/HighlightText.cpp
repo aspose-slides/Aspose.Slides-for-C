@@ -13,7 +13,7 @@ void HighlightText()
 	auto options = System::MakeObject<TextHighlightingOptions>();
 	options->set_WholeWordsOnly(true);
 	// highlighting all separate 'the' occurrences
-	(System::DynamicCast <AutoShape>(presentation->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)))->get_TextFrame()->HighlightText(u"the", System::Drawing::Color::get_Violet(), options);
+	(System::ExplicitCast <AutoShape>(presentation->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0)))->get_TextFrame()->HighlightText(u"the", System::Drawing::Color::get_Violet(), options);
 	presentation->Save(u"../out/HighlightText-out.pptx", Export::SaveFormat::Pptx);
 	//ExEnd:HighlightText
 }
