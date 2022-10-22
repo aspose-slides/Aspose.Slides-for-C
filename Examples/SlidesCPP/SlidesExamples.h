@@ -63,6 +63,7 @@ void ImportFromPdf();
 void ConvertToXaml();
 void ConvertToGif();
 void ConvertToHtml5();
+void SvgConvertionOptions();
 
 #pragma endregion
 
@@ -328,6 +329,7 @@ void MapChart();
 void CalculateFormulas();
 void WorksheetsExample();
 void TimeUnitTypeEnum();
+void LeaderLineColor();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -500,6 +502,7 @@ void BulletFillFormatEffective();
 void WordArt();
 void KeepTextFlat();
 void IsTextShape();
+void EmbeddedFontCompression();
 #pragma endregion		
 
 #pragma region Views

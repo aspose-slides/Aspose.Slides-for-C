@@ -82,6 +82,7 @@ int main(int argc, const char argv[])
         ConvertToXaml();
         ConvertToGif();
         ConvertToHtml5();
+        SvgConvertionOptions();
 
 #pragma endregion
 
@@ -371,6 +372,7 @@ int main(int argc, const char argv[])
         CalculateFormulas();
         WorksheetsExample();
         TimeUnitTypeEnum();
+        LeaderLineColor();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -549,6 +551,7 @@ int main(int argc, const char argv[])
         BulletFillFormatEffective();
         WordArt();
         KeepTextFlat();
+        EmbeddedFontCompression();
 
 #pragma endregion		
 

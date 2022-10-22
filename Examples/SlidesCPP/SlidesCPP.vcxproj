@@ -306,6 +306,7 @@
     <ClCompile Include="DoughnutChartHole.cpp" />
     <ClCompile Include="DuotoneEffectsPVI.cpp" />
     <ClCompile Include="EditChartDatainExternalWorkbook.cpp" />
+    <ClCompile Include="EmbeddedFontCompression.cpp" />
     <ClCompile Include="EmbeddedVideoFrame.cpp" />
     <ClCompile Include="EmbedFontsInHtml.cpp" />
     <ClCompile Include="EndParaGraphProperties.cpp" />
@@ -369,6 +370,7 @@
     <ClCompile Include="InterlopShapeID.cpp" />
     <ClCompile Include="IsTextShape.cpp" />
     <ClCompile Include="KeepTextFlat.cpp" />
+    <ClCompile Include="LeaderLineColor.cpp" />
     <ClCompile Include="LinkController.cpp" />
     <ClCompile Include="LoadFormatEnumeration.cpp" />
     <ClCompile Include="LockAspectRatio.cpp" />
@@ -524,6 +526,7 @@
     <ClCompile Include="SupportOfBubbleSizeRepresentation.cpp" />
     <ClCompile Include="SupportOfDigitalSignature.cpp" />
     <ClCompile Include="SupportOfMorphTransition.cpp" />
+    <ClCompile Include="SvgConvertionOptions.cpp" />
     <ClCompile Include="SvgFormattingController.cpp" />
     <ClCompile Include="SwitchChartRowColumns.cpp" />
     <ClCompile Include="TableFromScratch.cpp" />

@@ -1245,6 +1245,15 @@
     <ClCompile Include="AnimationRepeatOnSlide.cpp">
       <Filter>Source Files\Slides\Transitions</Filter>
     </ClCompile>
+    <ClCompile Include="EmbeddedFontCompression.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="LeaderLineColor.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="SvgConvertionOptions.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
