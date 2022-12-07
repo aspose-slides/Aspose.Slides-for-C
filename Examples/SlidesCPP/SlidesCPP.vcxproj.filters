@@ -1254,6 +1254,21 @@
     <ClCompile Include="SvgConvertionOptions.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToAnimation.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="GetBasePlaceholderExample.cpp">
+      <Filter>Source Files\Slides\Layout</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToPdfCompliance.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ExtractAudioFromHyperLink.cpp">
+      <Filter>Source Files\Slides\ManagingMedia</Filter>
+    </ClCompile>
+    <ClCompile Include="StopPreviousSoundExample.cpp">
+      <Filter>Source Files\Slides\ManagingMedia</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
