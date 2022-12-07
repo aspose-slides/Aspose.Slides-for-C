@@ -398,3 +398,6 @@
 #include <Export/Xaml/XamlOptions.h>
 #include <Export/GifOptions.h>
 #include <Export/Html5Options.h>
+#include <Export/FramesStream/PresentationPlayer.h>
+#include <Export/FramesStream/PresentationAnimationsGenerator.h>
+#include <Export/FramesStream/FrameTickEventArgs.h>

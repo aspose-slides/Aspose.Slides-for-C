@@ -38,6 +38,7 @@ void ConvertPresentationToPasswordProtectedPDF();
 void ConvertPresentationToResponsiveHTML();
 void ConvertIndividualSlideToHTML();
 void ConvertToPDF();
+void ConvertToPdfCompliance();
 void ConvertToPDFWithHiddenSlides();
 void ConvertToSWF();
 void ConvertWholePresentationToHTML();
@@ -64,6 +65,7 @@ void ConvertToXaml();
 void ConvertToGif();
 void ConvertToHtml5();
 void SvgConvertionOptions();
+void ConvertToAnimation();
 
 #pragma endregion
 
@@ -200,12 +202,15 @@ void ModernComments();
 #pragma region Managing slide layouts
 void SetPDFPageSize();
 void RemoveUnusedLayoutMaster();
+void GetBasePlaceholderExample();
 #pragma endregion
 
 #pragma region Extract Data from Presentation
 void ExtractVideo();
 void ExtractAudio();
 void ExtractAudioFromTimeline();
+void ExtractAudioFromHyperLink();
+void StopPreviousSoundExample();
 #pragma endregion
 
 #pragma region Managing slide Notes

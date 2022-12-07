@@ -57,6 +57,7 @@ int main(int argc, const char argv[])
         ConvertPresentationToPasswordProtectedPDF();
         ConvertPresentationToResponsiveHTML();
         ConvertToPDF();
+        ConvertToPdfCompliance();
         ConvertToPDFWithHiddenSlides();
         ConvertToSWF();
         ConvertWholePresentationToHTML();
@@ -83,6 +84,7 @@ int main(int argc, const char argv[])
         ConvertToGif();
         ConvertToHtml5();
         SvgConvertionOptions();
+        ConvertToAnimation();
 
 #pragma endregion
 
@@ -221,6 +223,7 @@ int main(int argc, const char argv[])
 
         SetPDFPageSize();
         RemoveUnusedLayoutMaster();
+        GetBasePlaceholderExample();
 #pragma endregion
 
 #pragma region Extract Data from Presentation
@@ -229,10 +232,12 @@ int main(int argc, const char argv[])
         ExtractVideo();
         ExtractAudio();
         ExtractAudioFromTimeline();
+        ExtractAudioFromHyperLink();
+        StopPreviousSoundExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
-        System::Console::WriteLine(u"Manaing Slide Notes");
+        System::Console::WriteLine(u"Managing Slide Notes");
 
         RemoveNotesAtSpecificSlide();
         RemoveNotesFromAllSlides();
