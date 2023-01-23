@@ -70,3 +70,5 @@ PresentationExplorer/build
 CMakeLists.txt.user
 build-PresentationExplorer*
 aspose-slides-cpp*
+Pptx2VideoConverter/build
+Pptx2VideoConverter/images
