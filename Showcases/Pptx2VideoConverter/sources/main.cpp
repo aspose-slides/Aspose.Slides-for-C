@@ -7,7 +7,6 @@
 
 #include "pptx2video_converter.h"
 #include "command_line_options.h"
-#include "ffmpeg_failed_exception.h"
 
 using namespace System::IO;
 
@@ -26,11 +25,11 @@ int main(int argc, char* argv[])
     {
         if (args[i] == "-i" || args[i] == "--input")
         {
-            options.presentationPath = args[++i];
+            options.presentationPath = System::String(args[++i]);
         }
         else if (args[i] == "-o" || args[i] == "--output")
         {
-            options.outVideoPath = args[++i];
+            options.outVideoPath = System::String(args[++i]);
         }
         else if (args[i] == "-f" || args[i] == "--fps")
         {
@@ -45,22 +44,22 @@ int main(int argc, char* argv[])
 
     try
     {
-        const System::String outVideoPath(options.outVideoPath);
-        const System::String tempFolderPath = Path::Combine(Path::GetDirectoryName(outVideoPath), u"images");
+        const System::String tempFolderPath = Path::Combine(Path::GetDirectoryName(options.outVideoPath), u"images");
 
-        auto presentation = System::MakeObject<Presentation>(System::String(options.presentationPath));
+        auto presentation = System::MakeObject<Presentation>(options.presentationPath);
         auto converter = System::MakeObject<Pptx2VideoConverter>(
-            presentation, outVideoPath, tempFolderPath, options.fps);
+            presentation, options.outVideoPath, tempFolderPath, options.fps);
 
         std::cout << "Generating frames..." << std::endl;
         converter->GenerateFrames();
         std::cout << "Launching FFmpeg to join frames into video..." << std::endl;
         converter->RunFFmpeg();
+        std::cout << "Done." << std::endl;
         return 0;
     }
     catch (const System::Exception& ex)
     {
-        std::cerr << "Exception occurred: " << std::endl << ex.ToString() << std::endl;
+        std::cerr << "Exception occurred:" << std::endl << ex.ToString() << std::endl;
         return 1;
     }
 }
