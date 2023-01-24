@@ -70,5 +70,5 @@ void Pptx2VideoConverter::RunFFmpeg()
     ffmpegProcess->WaitForExit();
     int exitCode = ffmpegProcess->get_ExitCode();
     if (exitCode != 0)
-        throw System::Exception(System::String::Format(u"FFmpeg finished with exit code {0}", exitCode));
+        throw System::Exception(System::String::Format(u"FFmpeg failed with exit code {0}", exitCode));
 }
