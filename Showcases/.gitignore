@@ -71,5 +71,5 @@ CMakeLists.txt.user
 build-PresentationExplorer*
 aspose-slides-cpp*
 Pptx2VideoConverter/build
-Pptx2VideoConverter/images
-Pptx2VideoConverter/**/*.mp4
+Pptx2VideoConverter/generated_frames
+Pptx2VideoConverter/*.mp4
