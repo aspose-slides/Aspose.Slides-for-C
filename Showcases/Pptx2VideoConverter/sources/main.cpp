@@ -44,11 +44,10 @@ int main(int argc, char* argv[])
 
     try
     {
-        const System::String tempFolderPath = Path::Combine(Path::GetDirectoryName(options.outVideoPath), u"images");
+        const System::String tempFolderPath = Path::Combine(Path::GetDirectoryName(options.outVideoPath), u"generated_frames");
 
         auto presentation = System::MakeObject<Presentation>(options.presentationPath);
-        auto converter = System::MakeObject<Pptx2VideoConverter>(
-            presentation, options.outVideoPath, tempFolderPath, options.fps);
+        auto converter = System::MakeObject<Pptx2VideoConverter>(presentation, options.outVideoPath, tempFolderPath, options.fps);
 
         std::cout << "Generating frames..." << std::endl;
         converter->GenerateFrames();
