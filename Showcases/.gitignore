@@ -72,3 +72,4 @@ build-PresentationExplorer*
 aspose-slides-cpp*
 Pptx2VideoConverter/build
 Pptx2VideoConverter/images
+Pptx2VideoConverter/**/*.mp4
