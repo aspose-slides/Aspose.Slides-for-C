@@ -58,7 +58,7 @@ void Pptx2VideoConverter::RunFFmpeg()
     const System::String fileMask = Path::Combine(m_tempFolderPath, u"frame_%d.png");
 
     auto ffmpegProcessStartInfo = System::MakeObject<ProcessStartInfo>();
-    ffmpegProcessStartInfo->set_FileName(u"ffmpeg1");
+    ffmpegProcessStartInfo->set_FileName(u"ffmpeg");
     ffmpegProcessStartInfo->set_Arguments(System::String::Format(
         u"-loglevel {0} -framerate {1} -i {2} -y -c:v {3} -pix_fmt {4} {5}",
         u"warning", m_fps, fileMask, u"libx264", u"yuv420p", m_outVideoPath
