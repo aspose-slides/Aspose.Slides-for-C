@@ -38,9 +38,9 @@ set_target_properties(${target} PROPERTIES
 
 target_include_directories(${target} PRIVATE "sources")
 
-target_link_libraries(${PROJECT_NAME} PRIVATE Aspose.Slides.Cpp)
+target_link_libraries(${target} PRIVATE Aspose.Slides.Cpp)
 
-add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:Aspose::CodePorting.Translator.Cs2Cpp.Framework> $<TARGET_FILE_DIR:${PROJECT_NAME}>
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:Aspose.Slides.Cpp> $<TARGET_FILE_DIR:${PROJECT_NAME}>
+add_custom_command(TARGET ${target} POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:Aspose::CodePorting.Translator.Cs2Cpp.Framework> $<TARGET_FILE_DIR:${target}>
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different $<TARGET_FILE:Aspose.Slides.Cpp> $<TARGET_FILE_DIR:${target}>
 )
