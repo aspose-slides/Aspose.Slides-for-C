@@ -4,8 +4,8 @@ project(Pptx2VideoConverter LANGUAGES CXX)
 
 set(target "${PROJECT_NAME}")
 
-find_package(CodePorting.Translator.Cs2Cpp.Framework REQUIRED CONFIG PATHS $ENV{ASPOSE_SLIDES_CPP_PATH}/CodePorting.Translator.Cs2Cpp.Framework NO_DEFAULT_PATH)
-find_package(Aspose.Slides.Cpp REQUIRED CONFIG PATHS $ENV{ASPOSE_SLIDES_CPP_PATH}/Aspose.Slides.Cpp NO_DEFAULT_PATH)
+find_package(CodePorting.Translator.Cs2Cpp.Framework REQUIRED CONFIG PATHS $ENV{ASPOSE_SLIDES_CPP_PATH}/CodePorting.Translator.Cs2Cpp.Framework)
+find_package(Aspose.Slides.Cpp REQUIRED CONFIG PATHS $ENV{ASPOSE_SLIDES_CPP_PATH}/Aspose.Slides.Cpp)
 
 file(TO_NATIVE_PATH "${CodePorting.Translator.Cs2Cpp.Framework_DIR}/lib" CodePorting.Translator.Cs2Cpp.Framework_DLL_PATH)
 file(TO_NATIVE_PATH "${Aspose.Slides.Cpp_DIR}/lib" Aspose.Slides.Cpp_DLL_PATH)
