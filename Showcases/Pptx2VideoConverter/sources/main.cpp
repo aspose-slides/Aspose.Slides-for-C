@@ -12,12 +12,6 @@ using namespace System::IO;
 
 int main(int argc, char* argv[])
 {
-    if (argc > 7)
-    {
-        std::cerr << "Too much arguments!" << std::endl;
-        return 1;
-    }
-
     const std::vector<std::string> args(argv + 1, argv + argc);
     CommandLineOptions options;
 
