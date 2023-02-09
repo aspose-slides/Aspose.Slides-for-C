@@ -38,14 +38,12 @@ int main(int argc, char* argv[])
 
     try
     {
-        const System::String tempFolderPath = Path::Combine(Path::GetDirectoryName(options.outVideoPath), u"generated_frames");
-
         auto presentation = System::MakeObject<Presentation>(options.presentationPath);
-        auto converter = System::MakeObject<Pptx2VideoConverter>(presentation, options.outVideoPath, tempFolderPath, options.fps);
+        auto converter = System::MakeObject<Pptx2VideoConverter>(presentation, options.outVideoPath, u"generated_frames", options.fps);
 
         std::cout << "Generating frames..." << std::endl;
         converter->GenerateFrames();
-        std::cout << "Launching FFmpeg to join frames into video..." << std::endl;
+        std::cout << "Running FFmpeg to convert images frames into video..." << std::endl;
         converter->RunFFmpeg();
         std::cout << "Done." << std::endl;
         return 0;

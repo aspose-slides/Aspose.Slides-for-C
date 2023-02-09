@@ -34,6 +34,7 @@ Pptx2VideoConverter::Pptx2VideoConverter(
         Directory::Delete(m_tempFolderPath, true);
 
     Directory::CreateDirectory_(m_tempFolderPath);
+    Directory::CreateDirectory_(Path::GetDirectoryName(m_outVideoPath));
 }
 
 void Pptx2VideoConverter::GenerateFrames()
