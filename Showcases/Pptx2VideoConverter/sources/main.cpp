@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 
         std::cout << "Generating frames..." << std::endl;
         converter->GenerateFrames();
-        std::cout << "Running FFmpeg to convert images frames into video..." << std::endl;
+        std::cout << "Running FFmpeg to convert image sequence to video..." << std::endl;
         converter->RunFFmpeg();
         std::cout << "Done." << std::endl;
         return 0;
