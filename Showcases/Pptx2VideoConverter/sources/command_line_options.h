@@ -9,7 +9,7 @@ struct CommandLineOptions
 {
     CommandLineOptions()
         : presentationPath(u"templates/presentation.pptx")
-        , outVideoPath(u"./video.mp4")
+        , outVideoPath(u"out/video.mp4")
         , fps(30)
     {}
 

@@ -1,1 +1,1 @@
-build\Release\Pptx2VideoConverter.exe -i templates\presentation.pptx -o video.mp4 -f 30
+build\Release\Pptx2VideoConverter.exe

@@ -1,18 +1,19 @@
 # Pptx2VideoConverter Demo
 
-Pptx2VideoConverter allows to open presentations in PPT, PPTX, ODP formats using **Aspose.Slides for C++**, generate frames of animations with specified FPS (frames per second) and join frames into MP4 video.
+Pptx2VideoConverter allows to open presentations in PPT, PPTX, ODP formats using [**Aspose.Slides for C++**](https://docs.aspose.com/slides/cpp/), generate frames of animations with specified FPS (frames per second) and join frames into MP4 video.
 
 ![Pptx2VideoConverter Screenshot](screenshots/screenshot-program-01.png)
 
-## Prerequisites
+## Requirements
 
-Make sure that you have installed FFmpeg 2.8+ and path to `ffmpeg` or `ffmpeg.exe` specified in `PATH` environment variable. If not, please add it:
-   Windows:
+Make sure that you have installed [FFmpeg](https://ffmpeg.org/download.html) 2.8+ and path to `ffmpeg` or `ffmpeg.exe` specified in `PATH` environment variable. If not, please add it:
+
+   - Windows:
    ```bat
    set PATH=<path\to\ffmpeg\exe>;%PATH%
    ```
 
-   Linux/MacOS:
+   - Linux/MacOS:
    ```sh
    export PATH="<path/to/ffmpeg>:$PATH"
    ```
@@ -21,7 +22,7 @@ Make sure that you have installed FFmpeg 2.8+ and path to `ffmpeg` or `ffmpeg.ex
 
 To build Pptx2VideoConverter on your computer you will need these packages:
 - CMake 3.5+ (https://cmake.org/)
-- Aspose.Slides for C++ (https://downloads.aspose.com/slides/cpp)
+- Aspose.Slides for C++ (https://releases.aspose.com/slides/cpp)
 
 ### Build using scripts
 
@@ -86,7 +87,7 @@ To build Pptx2VideoConverter on your computer you will need these packages:
    cmake --open build
    ```
 
-## How to run Pptx2VideoConverter on sample
+## How to run Pptx2VideoConverter
 
 ### Run using scripts
 
