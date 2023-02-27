@@ -557,6 +557,7 @@ int main(int argc, const char argv[])
         WordArt();
         KeepTextFlat();
         EmbeddedFontCompression();
+        FindAndReplaceText();
 
 #pragma endregion		
 

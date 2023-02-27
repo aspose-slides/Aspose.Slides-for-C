@@ -1269,6 +1269,9 @@
     <ClCompile Include="StopPreviousSoundExample.cpp">
       <Filter>Source Files\Slides\ManagingMedia</Filter>
     </ClCompile>
+    <ClCompile Include="FindAndReplaceText.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

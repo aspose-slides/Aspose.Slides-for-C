@@ -508,7 +508,8 @@ void WordArt();
 void KeepTextFlat();
 void IsTextShape();
 void EmbeddedFontCompression();
-#pragma endregion		
+void FindAndReplaceText();
+#pragma endregion
 
 #pragma region Views
 void ManagePresenetationNormalViewState();
