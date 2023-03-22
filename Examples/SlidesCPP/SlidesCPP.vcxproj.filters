@@ -1272,6 +1272,15 @@
     <ClCompile Include="FindAndReplaceText.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="AnimationRewind.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="SetVideoTrimFromEnd.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ChartDataPointIndex.cpp">
+      <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

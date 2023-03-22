@@ -238,6 +238,7 @@ void SimpleSlideTransitions();
 void SupportOfMorphTransition();
 void SetTransitionMorphType();
 void AnimationRepeatOnSlide();
+void AnimationRewind();
 #pragma endregion
 
 #pragma region Working with Shapes
@@ -335,6 +336,7 @@ void CalculateFormulas();
 void WorksheetsExample();
 void TimeUnitTypeEnum();
 void LeaderLineColor();
+void ChartPointDataIndex();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -401,6 +403,7 @@ void SetAlternativeText();
 void InterlopShapeID();
 void InsertSvgIntoPresentation();
 void DuotoneEffectsPVI();
+void SetVideoTrimFromEnd();
 
 #pragma endregion
 

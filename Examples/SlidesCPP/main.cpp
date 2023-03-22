@@ -267,6 +267,7 @@ int main(int argc, const char argv[])
         SupportOfMorphTransition();
         SetTransitionMorphType();
         AnimationRepeatOnSlide();
+        AnimationRewind();
         CheckSlidesComparison();
         ManageHeaderFooter();
         ManageHandoutHeaderFooter();
@@ -378,6 +379,7 @@ int main(int argc, const char argv[])
         WorksheetsExample();
         TimeUnitTypeEnum();
         LeaderLineColor();
+        ChartPointDataIndex();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -449,6 +451,7 @@ int main(int argc, const char argv[])
         AnimationTargetShapes();
         DuotoneEffectsPVI();
         IsTextShape();
+        SetVideoTrimFromEnd();
 
 #pragma endregion
 
