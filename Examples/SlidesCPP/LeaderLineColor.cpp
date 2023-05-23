@@ -22,7 +22,8 @@ void LeaderLineColor()
     System::SharedPtr<Charts::IDataLabelCollection> labels = series->idx_get(0)->get_Labels();
 
     // Change color of all leader lines in the collection
-    labels->set_LeaderLinesColor(System::Drawing::Color::FromArgb(255, 255, 0, 0));
+    System::SharedPtr<ILineFillFormat> lineFillFormat = labels->get_LeaderLinesFormat()->get_Line()->get_FillFormat();
+    lineFillFormat->get_SolidFillColor()->set_Color(System::Drawing::Color::FromArgb(255, 255, 0, 0));
 
     // Save result
     pres->Save(outPath, Export::SaveFormat::Pptx);

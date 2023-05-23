@@ -94,6 +94,9 @@
     <Filter Include="Source Files\Slides\Views">
       <UniqueIdentifier>{986a2ee0-a4f7-490e-a3e2-b8f4c9b9f5de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Presentations\LowCode">
+      <UniqueIdentifier>{60b999ed-3e57-4074-9039-60fa2d308fcd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1280,6 +1283,12 @@
     </ClCompile>
     <ClCompile Include="ChartDataPointIndex.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
+    </ClCompile>
+    <ClCompile Include="ForEachPortion.cpp">
+      <Filter>Source Files\Presentations\LowCode</Filter>
+    </ClCompile>
+    <ClCompile Include="AfterAnimationTypeExample.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

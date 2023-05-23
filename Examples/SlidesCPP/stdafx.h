@@ -100,6 +100,7 @@
 #include <DOM/IMasterHandoutSlideHeaderFooterManager.h>
 #include <DOM/IMasterSlideHeaderFooterManager.h>
 #include <DOM/INotesSlide.h>
+#include <DOM/NotesSlide.h>
 #include <DOM/INotesSlideManager.h>
 #include <DOM/IMasterNotesSlideHeaderFooterManager.h>
 #include <DOM/INotesSlideHeaderFooterManager.h>
@@ -182,6 +183,7 @@
 #include <DOM/Animation/MotionCommandPathType.h>
 #include <DOM/Animation/MotionPathPointsType.h>
 #include <DOM/Animation/IMotionPath.h>
+#include <DOM/Animation/AfterAnimationType.h>
 #include <DOM/Chart/CategoryAxisType.h>
 #include <DOM/Chart/TimeUnitType.h>
 #include <DOM/Chart/TickLabelPositionType.h>
@@ -401,3 +403,5 @@
 #include <Export/FramesStream/PresentationPlayer.h>
 #include <Export/FramesStream/PresentationAnimationsGenerator.h>
 #include <Export/FramesStream/FrameTickEventArgs.h>
+
+#include <LowCode/ForEach.h>

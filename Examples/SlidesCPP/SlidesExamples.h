@@ -88,6 +88,11 @@ void AddBlobToPresentation();
 void LoadFormatEnumeration();
 void GetFileFormat();
 #pragma endregion
+
+#pragma region LowCode
+void ForEachPortion();
+#pragma endregion
+
 #pragma region Working with Presentation Document properties
 
 void AccessBuiltinProperties();
@@ -239,6 +244,7 @@ void SupportOfMorphTransition();
 void SetTransitionMorphType();
 void AnimationRepeatOnSlide();
 void AnimationRewind();
+void AfterAnimationTypeExample();
 #pragma endregion
 
 #pragma region Working with Shapes

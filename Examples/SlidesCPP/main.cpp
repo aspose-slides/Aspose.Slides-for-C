@@ -107,6 +107,12 @@ int main(int argc, const char argv[])
 
 #pragma endregion
 
+#pragma region LowCode
+
+        ForEachPortion();
+
+#pragma endregion
+
 #pragma region Working with Presentation Document properties
 
         AccessBuiltinProperties();
@@ -268,6 +274,7 @@ int main(int argc, const char argv[])
         SetTransitionMorphType();
         AnimationRepeatOnSlide();
         AnimationRewind();
+        AfterAnimationTypeExample();
         CheckSlidesComparison();
         ManageHeaderFooter();
         ManageHandoutHeaderFooter();
