@@ -102,6 +102,7 @@ int main(int argc, const char argv[])
 #pragma region Loading Options
 
         SpecifyFontsUsedWithPresentation();
+        SpecifyDefaultTextLanguage();
         AddingEMZImagesToImageCollection();
         AddBlobToPresentation();
 

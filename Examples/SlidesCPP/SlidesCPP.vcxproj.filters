@@ -1290,6 +1290,9 @@
     <ClCompile Include="AfterAnimationTypeExample.cpp">
       <Filter>Source Files\Slides\Transitions</Filter>
     </ClCompile>
+    <ClCompile Include="SpecifyDefaultTextLanguage.cpp">
+      <Filter>Source Files\Presentations\LoadOptions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

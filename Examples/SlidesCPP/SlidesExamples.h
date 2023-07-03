@@ -83,6 +83,7 @@ void SetAccessPermissionsToPDF();
 #pragma region Loading Options
 void MeteredLicencing();
 void SpecifyFontsUsedWithPresentation();
+void SpecifyDefaultTextLanguage();
 void AddingEMZImagesToImageCollection();
 void AddBlobToPresentation();
 void LoadFormatEnumeration();
