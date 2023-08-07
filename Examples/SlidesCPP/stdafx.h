@@ -403,5 +403,7 @@
 #include <Export/FramesStream/PresentationPlayer.h>
 #include <Export/FramesStream/PresentationAnimationsGenerator.h>
 #include <Export/FramesStream/FrameTickEventArgs.h>
+#include <Export/Markdown/SaveOptions/MarkdownExportType.h>
+#include <Export/Markdown/SaveOptions/MarkdownSaveOptions.h>
 
 #include <LowCode/ForEach.h>

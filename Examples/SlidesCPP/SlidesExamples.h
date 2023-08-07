@@ -66,6 +66,8 @@ void ConvertToGif();
 void ConvertToHtml5();
 void SvgConvertionOptions();
 void ConvertToAnimation();
+void ConvertToMarkdown();
+void ConvertHTMLEmbeddingImages();
 
 #pragma endregion
 

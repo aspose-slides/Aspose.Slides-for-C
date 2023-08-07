@@ -85,6 +85,8 @@ int main(int argc, const char argv[])
         ConvertToHtml5();
         SvgConvertionOptions();
         ConvertToAnimation();
+        ConvertToMarkdown();
+        ConvertHTMLEmbeddingImages();
 
 #pragma endregion
 
