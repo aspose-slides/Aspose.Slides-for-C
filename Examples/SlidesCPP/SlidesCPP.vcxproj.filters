@@ -1299,6 +1299,9 @@
     <ClCompile Include="ConvertToMarkdown.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="SlideShowMediaControls.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

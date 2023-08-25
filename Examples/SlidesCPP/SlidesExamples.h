@@ -111,6 +111,7 @@ void CheckPresentationProtection();
 void CheckPasswordExample();
 void RootDirectoryClsId();
 void PresentationSlideShowSetup();
+void SlideShowMediaControls();
 
 #pragma endregion
 

@@ -130,6 +130,7 @@ int main(int argc, const char argv[])
         CheckPasswordExample();
         RootDirectoryClsId();
         PresentationSlideShowSetup();
+        SlideShowMediaControls();
 
 #pragma endregion
 

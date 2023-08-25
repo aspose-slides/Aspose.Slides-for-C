@@ -5,8 +5,6 @@ using namespace System;
 using namespace IO;
 using namespace Aspose::Slides;
 using namespace Export;
-using namespace DOM::Export;
-using namespace Markdown::SaveOptions;
 
 void ConvertToMarkdown()
 {
