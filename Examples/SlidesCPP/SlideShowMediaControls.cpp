@@ -10,7 +10,7 @@ void SlideShowMediaControls()
 {
     //ExStart:SlideShowMediaControls
 
-    // Path to output
+    // Path to output document
     const String outFileName = u"../out/SlideShowMediaControl.pptx";
 
     SharedPtr<Presentation> pres = MakeObject<Presentation>();

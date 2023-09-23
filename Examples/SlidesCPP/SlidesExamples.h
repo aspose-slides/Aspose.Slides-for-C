@@ -522,6 +522,7 @@ void KeepTextFlat();
 void IsTextShape();
 void EmbeddedFontCompression();
 void FindAndReplaceText();
+void AnimateTextTypeExample();
 #pragma endregion
 
 #pragma region Views

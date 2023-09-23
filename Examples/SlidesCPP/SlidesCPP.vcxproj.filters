@@ -1302,6 +1302,9 @@
     <ClCompile Include="SlideShowMediaControls.cpp">
       <Filter>Source Files\Presentations\Properties</Filter>
     </ClCompile>
+    <ClCompile Include="AnimateTextTypeExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

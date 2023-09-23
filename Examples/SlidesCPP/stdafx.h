@@ -184,6 +184,7 @@
 #include <DOM/Animation/MotionPathPointsType.h>
 #include <DOM/Animation/IMotionPath.h>
 #include <DOM/Animation/AfterAnimationType.h>
+#include <DOM/Animation/AnimateTextType.h>
 #include <DOM/Chart/CategoryAxisType.h>
 #include <DOM/Chart/TimeUnitType.h>
 #include <DOM/Chart/TickLabelPositionType.h>

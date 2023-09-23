@@ -572,6 +572,7 @@ int main(int argc, const char argv[])
         KeepTextFlat();
         EmbeddedFontCompression();
         FindAndReplaceText();
+        AnimateTextTypeExample();
 
 #pragma endregion		
 

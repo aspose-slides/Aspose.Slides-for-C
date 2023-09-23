@@ -200,6 +200,7 @@
     <ClCompile Include="AddVideoFrameFromWebSource.cpp" />
     <ClCompile Include="AddWaterfallChart.cpp" />
     <ClCompile Include="AfterAnimationTypeExample.cpp" />
+    <ClCompile Include="AnimateTextTypeExample.cpp" />
     <ClCompile Include="AnimatingCategoriesElements.cpp" />
     <ClCompile Include="AnimatingSeries.cpp" />
     <ClCompile Include="AnimatingSeriesElements.cpp" />
@@ -577,9 +578,9 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.23.8.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.23.8.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Cells.Cpp.23.8.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.8.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.23.8.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.23.8.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.8.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.8.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.23.9.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.23.9.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Cells.Cpp.23.9.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.9.0\build\native\Aspose.Cells.Cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.23.9.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.23.9.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.9.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.9.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
   </ImportGroup>
 </Project>
