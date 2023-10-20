@@ -68,6 +68,7 @@ void SvgConvertionOptions();
 void ConvertToAnimation();
 void ConvertToMarkdown();
 void ConvertHTMLEmbeddingImages();
+void ConvertToBlackWhiteTiff();
 
 #pragma endregion
 
@@ -414,6 +415,7 @@ void InterlopShapeID();
 void InsertSvgIntoPresentation();
 void DuotoneEffectsPVI();
 void SetVideoTrimFromEnd();
+void InkManagementExample();
 
 #pragma endregion
 
@@ -523,6 +525,7 @@ void IsTextShape();
 void EmbeddedFontCompression();
 void FindAndReplaceText();
 void AnimateTextTypeExample();
+void NumberLinesInParagraph();
 #pragma endregion
 
 #pragma region Views

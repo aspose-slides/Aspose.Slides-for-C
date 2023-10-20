@@ -97,6 +97,9 @@
     <Filter Include="Source Files\Presentations\LowCode">
       <UniqueIdentifier>{60b999ed-3e57-4074-9039-60fa2d308fcd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Slides\Shapes\Ink">
+      <UniqueIdentifier>{32831677-ec03-4318-9f44-72db74bcfd51}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1305,6 +1308,15 @@
     <ClCompile Include="AnimateTextTypeExample.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="NumberLinesInParagraph.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="InkManagementExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Ink</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToBlackWhiteTiff.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1325,5 +1337,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

@@ -360,6 +360,9 @@
 #include <DOM/MathText/IMathFraction.h>
 #include <DOM/MathText/MathBlock.h>
 #include <DOM/MathText/MathBar.h>
+#include <DOM/Ink/Ink.h>
+#include <DOM/Ink/InkBrush.h>
+#include <DOM/Ink/InkTrace.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
@@ -401,6 +404,9 @@
 #include <Export/Xaml/XamlOptions.h>
 #include <Export/GifOptions.h>
 #include <Export/Html5Options.h>
+#include <Export/TiffOptions.h>
+#include <Export/TiffCompressionTypes.h>
+#include <Export/BlackWhiteConversionMode.h>
 #include <Export/FramesStream/PresentationPlayer.h>
 #include <Export/FramesStream/PresentationAnimationsGenerator.h>
 #include <Export/FramesStream/FrameTickEventArgs.h>

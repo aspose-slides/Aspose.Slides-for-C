@@ -267,6 +267,7 @@
     <ClCompile Include="ConvertPresentationToResponsiveHTML.cpp" />
     <ClCompile Include="ConvertSvgImageObjectIntoGroupOfShapes.cpp" />
     <ClCompile Include="ConvertToAnimation.cpp" />
+    <ClCompile Include="ConvertToBlackWhiteTiff.cpp" />
     <ClCompile Include="ConvertToFodp.cpp" />
     <ClCompile Include="ConvertToGif.cpp" />
     <ClCompile Include="ConvertToHtml5.cpp" />
@@ -377,6 +378,7 @@
     <ClCompile Include="HighlightText.cpp" />
     <ClCompile Include="HighlightTextUsingRegx.cpp" />
     <ClCompile Include="ImportingHTMLText.cpp" />
+    <ClCompile Include="InkManagementExample.cpp" />
     <ClCompile Include="InsertSvgIntoPresentation.cpp" />
     <ClCompile Include="InterlopShapeID.cpp" />
     <ClCompile Include="IsTextShape.cpp" />
@@ -413,6 +415,7 @@
     <ClCompile Include="MutilevelBullets.cpp" />
     <ClCompile Include="NormalCharts.cpp" />
     <ClCompile Include="NumberFormat.cpp" />
+    <ClCompile Include="NumberLinesInParagraph.cpp" />
     <ClCompile Include="OpenPasswordPresentation.cpp" />
     <ClCompile Include="OpenPresentation.cpp" />
     <ClCompile Include="OpenVeryLargePresentation.cpp" />
@@ -578,9 +581,9 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.23.9.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.23.9.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Cells.Cpp.23.9.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.9.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.23.9.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.23.9.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.9.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.9.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.23.10.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.23.10.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Cells.Cpp.23.10.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.10.0\build\native\Aspose.Cells.Cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.23.10.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.23.10.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.10.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.10.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
   </ImportGroup>
 </Project>

@@ -87,6 +87,7 @@ int main(int argc, const char argv[])
         ConvertToAnimation();
         ConvertToMarkdown();
         ConvertHTMLEmbeddingImages();
+        ConvertToBlackWhiteTiff();
 
 #pragma endregion
 
@@ -463,6 +464,7 @@ int main(int argc, const char argv[])
         DuotoneEffectsPVI();
         IsTextShape();
         SetVideoTrimFromEnd();
+        InkManagementExample();
 
 #pragma endregion
 
@@ -573,6 +575,7 @@ int main(int argc, const char argv[])
         EmbeddedFontCompression();
         FindAndReplaceText();
         AnimateTextTypeExample();
+        NumberLinesInParagraph();
 
 #pragma endregion		
 
