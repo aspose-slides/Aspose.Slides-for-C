@@ -581,9 +581,9 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.23.10.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.23.10.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Cells.Cpp.23.10.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.10.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.23.10.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.23.10.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.10.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.10.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.23.11.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.23.11.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.23.11.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.23.11.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.11.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.23.11.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
   </ImportGroup>
 </Project>
