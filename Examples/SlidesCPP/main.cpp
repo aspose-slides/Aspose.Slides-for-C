@@ -68,8 +68,8 @@ int main(int argc, const char argv[])
         PresentationToTIFFWithCustomImagePixelFormat();
         PresentationToTIFFWithDefaultSize();
         ConvertIndividualSlideToHTML();
-        //EmbedFontsInHtml();
-        //ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
+        // EmbedFontsInHtml();
+        // ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
         BestImagesCompressionRatioforPDF();
         ExportToHTMLWithResponsiveLayout();
         CovertToPDFWithProgressUpdate();
@@ -82,12 +82,14 @@ int main(int argc, const char argv[])
         ExportToHtmlWithImageLinks();
         ConvertToXaml();
         ConvertToGif();
-        ConvertToHtml5();
+        // ConvertToHtml5();
         SvgConvertionOptions();
         ConvertToAnimation();
         ConvertToMarkdown();
         ConvertHTMLEmbeddingImages();
         ConvertToBlackWhiteTiff();
+        ConvertToHandout();
+        ExportInkExample();
 
 #pragma endregion
 
@@ -465,6 +467,8 @@ int main(int argc, const char argv[])
         IsTextShape();
         SetVideoTrimFromEnd();
         InkManagementExample();
+        DeletePictureCroppedAreasExample();
+        ShapeIsDecorativeExample();
 
 #pragma endregion
 

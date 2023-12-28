@@ -1,27 +1,24 @@
 #include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
-using namespace Slides;
+using namespace Aspose::Slides;
 using namespace Export;
-
-using namespace System;
 
 void ConvertNotesSlideViewToPDF()
 {
     //ExStart:ConvertNotesSlideViewToPDF
 
     // The path to the documents directory.
-    const String outPath = u"../out/ConvertNotesSlideViewToPDF_out.pdf";
-    const String templatePath = u"../templates/AccessSlides.pptx";
+    const System::String outPath = u"../out/ConvertNotesSlideViewToPDF_out.pdf";
+    const System::String templatePath = u"../templates/AccessSlides.pptx";
 
     //Instantiate Presentation class that represents PPTX file
-    SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-    SharedPtr<PdfOptions> opts = System::MakeObject<PdfOptions>();
-
-    SharedPtr<INotesCommentsLayoutingOptions> options = opts->get_NotesCommentsLayouting();
+    System::SharedPtr<PdfOptions> opts = System::MakeObject<PdfOptions>();
+    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
     options->set_NotesPosition(NotesPositions::BottomFull);
+    opts->set_SlidesLayoutOptions(options);
 
     pres->Save(outPath, SaveFormat::Pdf, opts);
 

@@ -1,27 +1,25 @@
 #include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
-using namespace Slides;
+using namespace Aspose::Slides;
 using namespace Export;
-
-using namespace System;
 
 void ConversionToTIFFNotes()
 {
-	//ExStart:ConversionToTIFFNotes
-	// The path to the documents directory.
-	const String outPath = u"../out/ConversionToTIFFNotes_out.tiff";
-	const String templatePath = u"../templates/AccessSlides.pptx";
+    //ExStart:ConversionToTIFFNotes
+    // The path to the documents directory.
+    const System::String outPath = u"../out/ConversionToTIFFNotes_out.tiff";
+    const System::String templatePath = u"../templates/AccessSlides.pptx";
 
-	//Instantiate Presentation class that represents PPTX file
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    //Instantiate Presentation class that represents PPTX file
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-	SharedPtr<TiffOptions> opts = System::MakeObject<TiffOptions>();
+    System::SharedPtr<TiffOptions> opts = System::MakeObject<TiffOptions>();
 
-	SharedPtr<INotesCommentsLayoutingOptions> options = opts->get_NotesCommentsLayouting();
-	options->set_NotesPosition(NotesPositions::BottomFull);
-	// Saving to TiffNotes
-	pres->Save(outPath, SaveFormat::Tiff, opts);
-	//ExEnd:ConversionToTIFFNotes
+    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    options->set_NotesPosition(NotesPositions::BottomFull);
+    opts->set_SlidesLayoutOptions(options);
+    // Saving to TiffNotes
+    pres->Save(outPath, SaveFormat::Tiff, opts);
+    //ExEnd:ConversionToTIFFNotes
 }

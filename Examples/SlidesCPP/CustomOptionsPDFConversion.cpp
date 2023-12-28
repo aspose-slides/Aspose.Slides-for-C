@@ -1,31 +1,31 @@
 #include "stdafx.h"
 #include "SlidesExamples.h"
 
-using namespace Aspose;
 using namespace Aspose::Slides;
-using namespace Aspose::Slides::Export;
-
-using namespace System;
+using namespace Export;
 
 void CustomOptionsPDFConversion()
 {
-	//ExStart:CustomOptionsPDFConversion
+    //ExStart:CustomOptionsPDFConversion
 
-	// The path to the documents directory.
-	const String outPath = u"../out/CustomOptionsPDFConversion_out.pdf";
-	const String templatePath = u"../templates/AccessSlides.pptx";
+    // The path to the documents directory.
+    const System::String outPath = u"../out/CustomOptionsPDFConversion_out.pdf";
+    const System::String templatePath = u"../templates/AccessSlides.pptx";
 
-	//Instantiate Presentation class that represents PPTX file
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    //Instantiate Presentation class that represents PPTX file
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-	SharedPtr<PdfOptions> pdfOptions = MakeObject<PdfOptions>();
-	pdfOptions->set_ShowHiddenSlides(true);
-	pdfOptions->set_JpegQuality(90);
-	pdfOptions->set_SaveMetafilesAsPng(true);
-	pdfOptions->set_TextCompression(PdfTextCompression::Flate);
-	pdfOptions->set_Compliance(PdfCompliance::Pdf15);
+    System::SharedPtr<PdfOptions> pdfOptions = System::MakeObject<PdfOptions>();
+    pdfOptions->set_ShowHiddenSlides(true);
+    pdfOptions->set_JpegQuality(90);
+    pdfOptions->set_SaveMetafilesAsPng(true);
+    pdfOptions->set_TextCompression(PdfTextCompression::Flate);
+    pdfOptions->set_Compliance(PdfCompliance::Pdf15);
 
-	pres->Save(outPath, SaveFormat::Pdf, pdfOptions);
+    System::SharedPtr<INotesCommentsLayoutingOptions> opts = System::MakeObject<NotesCommentsLayoutingOptions>();
+    opts->set_NotesPosition(NotesPositions::BottomFull);
 
-	//ExEnd:CustomOptionsPDFConversion
+    pres->Save(outPath, SaveFormat::Pdf, pdfOptions);
+
+    //ExEnd:CustomOptionsPDFConversion
 }

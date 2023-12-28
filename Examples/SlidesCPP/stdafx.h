@@ -388,7 +388,7 @@
 #include <Export/HtmlFormatter.h>
 #include <Export/Swfoptions.h>
 #include <Export/Xpsoptions.h>
-#include <export/NotesCommentsLayoutingOptions.h>
+#include <Export/NotesCommentsLayoutingOptions.h>
 #include <Export/CommentsPositions.h>
 #include <Export/NotesPositions.h>
 #include <Export/EmbedFontCharacters.h>
@@ -412,5 +412,9 @@
 #include <Export/FramesStream/FrameTickEventArgs.h>
 #include <Export/Markdown/SaveOptions/MarkdownExportType.h>
 #include <Export/Markdown/SaveOptions/MarkdownSaveOptions.h>
+#include <Export/HandoutType.h>
+#include <Export/HandoutLayoutingOptions.h>
+#include <Export/IInkOptions.h>
+#include <Export/InkOptions.h>
 
 #include <LowCode/ForEach.h>

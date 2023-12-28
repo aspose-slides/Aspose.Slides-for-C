@@ -3,31 +3,31 @@
 
 using namespace Aspose::Slides;
 using namespace Export;
-using namespace System;
 using namespace System::IO;
 
 void ConvertingPresentationToHTMLWithPreservingOriginalFonts()
 {
-	//ExStart:ConvertingPresentationToHTMLWithPreservingOriginalFonts
+    //ExStart:ConvertingPresentationToHTMLWithPreservingOriginalFonts
 
-	const String outPath = u"../out/oHTMLWithPreservingOriginalFonts_out.html";
-    const String templatePath = Path::Combine(GetDataPath(), u"input.pptx");
+    const System::String outPath = u"../out/oHTMLWithPreservingOriginalFonts_out.html";
+    const System::String templatePath = Path::Combine(GetDataPath(), u"input.pptx");
 
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-	// exclude default presentation fonts
-	ArrayPtr<String> fontNameExcludeList = MakeArray<String>( { u"Calibri", u"Arial" });
+    // exclude default presentation fonts
+    System::ArrayPtr<System::String> fontNameExcludeList = System::MakeArray<System::String>({ u"Calibri", u"Arial" });
 
-	SharedPtr<EmbedAllFontsHtmlController> embedFontsController = MakeObject<EmbedAllFontsHtmlController>(fontNameExcludeList);
+    System::SharedPtr<EmbedAllFontsHtmlController> embedFontsController = System::MakeObject<EmbedAllFontsHtmlController>(fontNameExcludeList);
 
-	SharedPtr<HtmlOptions> htmlOptionsEmbed = MakeObject<HtmlOptions>();
-	htmlOptionsEmbed->set_HtmlFormatter(HtmlFormatter::CreateCustomFormatter(embedFontsController));
+    System::SharedPtr<HtmlOptions> htmlOptionsEmbed = System::MakeObject<HtmlOptions>();
+    htmlOptionsEmbed->set_HtmlFormatter(HtmlFormatter::CreateCustomFormatter(embedFontsController));
 
-	SharedPtr<INotesCommentsLayoutingOptions> options = htmlOptionsEmbed->get_NotesCommentsLayouting();
-	options->set_NotesPosition(NotesPositions::BottomFull);
+    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    options->set_NotesPosition(NotesPositions::BottomFull);
+    htmlOptionsEmbed->set_SlidesLayoutOptions(options);
 
-	pres->Save(outPath, SaveFormat::Html, htmlOptionsEmbed);
+    pres->Save(outPath, SaveFormat::Html, htmlOptionsEmbed);
 
-	//ExEnd:ConvertingPresentationToHTMLWithPreservingOriginalFonts
+    //ExEnd:ConvertingPresentationToHTMLWithPreservingOriginalFonts
 
 }

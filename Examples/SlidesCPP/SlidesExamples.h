@@ -69,6 +69,8 @@ void ConvertToAnimation();
 void ConvertToMarkdown();
 void ConvertHTMLEmbeddingImages();
 void ConvertToBlackWhiteTiff();
+void ConvertToHandout();
+void ExportInkExample();
 
 #pragma endregion
 
@@ -416,6 +418,8 @@ void InsertSvgIntoPresentation();
 void DuotoneEffectsPVI();
 void SetVideoTrimFromEnd();
 void InkManagementExample();
+void DeletePictureCroppedAreasExample();
+void ShapeIsDecorativeExample();
 
 #pragma endregion
 

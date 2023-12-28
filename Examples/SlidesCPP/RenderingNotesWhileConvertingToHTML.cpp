@@ -3,24 +3,22 @@
 
 using namespace Aspose::Slides;
 using namespace Export;
-using namespace System;
 
 void RenderingNotesWhileConvertingToHTML() {
 
-	//ExStart:RenderingNotesWhileConvertingToHTML
+    //ExStart:RenderingNotesWhileConvertingToHTML
 
-	const String outPath = u"../out/HTML_Notes_out.hmtl";
-	const String templatePath = u"../templates/AccessSlides.pptx";
+    const System::String outPath = u"../out/HTML_Notes_out.hmtl";
+    const System::String templatePath = u"../templates/AccessSlides.pptx";
 
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-    SharedPtr<HtmlOptions> htmlOptions = MakeObject<HtmlOptions>();
+    System::SharedPtr<HtmlOptions> htmlOptions = System::MakeObject<HtmlOptions>();
+    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    options->set_NotesPosition(NotesPositions::BottomFull);
+    htmlOptions->set_SlidesLayoutOptions(options);
 
-	SharedPtr<INotesCommentsLayoutingOptions> options = htmlOptions->get_NotesCommentsLayouting();
-	options->set_NotesPosition(NotesPositions::BottomFull);
+    pres->Save(outPath, SaveFormat::Html, htmlOptions);
 
-	pres->Save(outPath, SaveFormat::Html, htmlOptions);
-
-	//ExEnd:RenderingNotesWhileConvertingToHTML
-
+    //ExEnd:RenderingNotesWhileConvertingToHTML
 }
