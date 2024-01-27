@@ -68,7 +68,7 @@ int main(int argc, const char argv[])
         PresentationToTIFFWithCustomImagePixelFormat();
         PresentationToTIFFWithDefaultSize();
         ConvertIndividualSlideToHTML();
-        // EmbedFontsInHtml();
+        EmbedFontsInHtml();
         // ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
         BestImagesCompressionRatioforPDF();
         ExportToHTMLWithResponsiveLayout();
@@ -90,6 +90,7 @@ int main(int argc, const char argv[])
         ConvertToBlackWhiteTiff();
         ConvertToHandout();
         ExportInkExample();
+        PdfImportTableExample();
 
 #pragma endregion
 

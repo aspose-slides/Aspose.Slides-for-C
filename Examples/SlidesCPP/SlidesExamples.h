@@ -71,6 +71,7 @@ void ConvertHTMLEmbeddingImages();
 void ConvertToBlackWhiteTiff();
 void ConvertToHandout();
 void ExportInkExample();
+void PdfImportTableExample();
 
 #pragma endregion
 

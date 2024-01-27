@@ -366,6 +366,7 @@
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
+#include <Import/PdfImportOptions.h>
 
 #include <Util/SlideUtil.h>
 
