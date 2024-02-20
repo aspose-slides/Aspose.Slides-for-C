@@ -1317,6 +1317,24 @@
     <ClCompile Include="ConvertToBlackWhiteTiff.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToHandout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeletePictureCroppedAreasExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportInkExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PdfImportTableExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeIsDecorativeExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToHtml5NotesComments.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

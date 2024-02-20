@@ -72,6 +72,8 @@ void ConvertToBlackWhiteTiff();
 void ConvertToHandout();
 void ExportInkExample();
 void PdfImportTableExample();
+void ExportMathParagraphToLatex();
+void ConvertToHtml5NotesComments();
 
 #pragma endregion
 

@@ -82,15 +82,17 @@ int main(int argc, const char argv[])
         ExportToHtmlWithImageLinks();
         ConvertToXaml();
         ConvertToGif();
-        // ConvertToHtml5();
+        ConvertToHtml5();
         SvgConvertionOptions();
         ConvertToAnimation();
         ConvertToMarkdown();
-        ConvertHTMLEmbeddingImages();
+        // ConvertHTMLEmbeddingImages();
         ConvertToBlackWhiteTiff();
         ConvertToHandout();
         ExportInkExample();
         PdfImportTableExample();
+        ExportMathParagraphToLatex();
+        ConvertToHtml5NotesComments();
 
 #pragma endregion
 
