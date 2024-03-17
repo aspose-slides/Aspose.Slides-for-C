@@ -232,6 +232,7 @@ int main(int argc, const char argv[])
         MutableHyperlink();
         AddHyperlink();
         MacroHyperlink();
+        ExternalUrlOriginal();
 #pragma endregion
 
 #pragma region Managing slide layouts

@@ -1317,23 +1317,29 @@
     <ClCompile Include="ConvertToBlackWhiteTiff.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
-    <ClCompile Include="ConvertToHandout.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DeletePictureCroppedAreasExample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ExportInkExample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PdfImportTableExample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ShapeIsDecorativeExample.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ConvertToHtml5NotesComments.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ExternalUrlOriginal.cpp">
+      <Filter>Source Files\Slides\Hyperlinks</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToHandout.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="DeletePictureCroppedAreasExample.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportInkExample.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportMathParagraphToLatex.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="PdfImportTableExample.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ShapeIsDecorativeExample.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

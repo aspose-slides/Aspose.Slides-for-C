@@ -196,6 +196,7 @@ void SetHyperlinkColor();
 void MutableHyperlink();
 void AddHyperlink();
 void MacroHyperlink();
+void ExternalUrlOriginal();
 #pragma endregion
 
 #pragma region Slide Background
