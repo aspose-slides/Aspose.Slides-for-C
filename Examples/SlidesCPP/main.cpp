@@ -93,6 +93,8 @@ int main(int argc, const char argv[])
         PdfImportTableExample();
         ExportMathParagraphToLatex();
         ConvertToHtml5NotesComments();
+        ConvertToPdfUnsupportedFontStyles();
+        ConvertToXml();
 
 #pragma endregion
 
@@ -156,14 +158,13 @@ int main(int argc, const char argv[])
         ApplyingExternalThemeToDependingSlides();
         SettingInterruptionToken();
         AddBlobImageToPresentation();
+        SaveInZip64Mode();
         AddImageFromSVGObjectFromExternalResource();
         ConvertSvgImageObjectIntoGroupOfShapes();
         AddImageFromSVGObject();
 #pragma endregion
 
 #pragma region Presentation Rendering-Printing
-        //DefaultPrinterPrinting();
-        //SpecificPrinterPrinting();
         SetSlideNumber();
         SetZoom();
         SupportOfDigitalSignature();

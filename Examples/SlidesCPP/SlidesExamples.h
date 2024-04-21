@@ -74,6 +74,8 @@ void ExportInkExample();
 void PdfImportTableExample();
 void ExportMathParagraphToLatex();
 void ConvertToHtml5NotesComments();
+void ConvertToPdfUnsupportedFontStyles();
+void ConvertToXml();
 
 #pragma endregion
 
@@ -134,6 +136,7 @@ void ExportBlobFromPresentation();
 void ApplyingExternalThemeToDependingSlides();
 void SettingInterruptionToken();
 void AddBlobImageToPresentation();
+void SaveInZip64Mode();
 
 void SavingHTMLAndCSSFileWhenExportingIntoHTML();
 void AddImageFromSVGObjectFromExternalResource();

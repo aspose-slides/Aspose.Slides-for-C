@@ -401,6 +401,7 @@
 #include <Export/RenderingOptions.h>
 #include <Export/SlideImageFormat.h>
 #include <Export/PptOptions.h>
+#include <Export/PptxOptions.h>
 #include <Export/Xaml/IXamlOutputSaver.h>
 #include <Export/Xaml/XamlOptions.h>
 #include <Export/GifOptions.h>
@@ -408,6 +409,7 @@
 #include <Export/TiffOptions.h>
 #include <Export/TiffCompressionTypes.h>
 #include <Export/BlackWhiteConversionMode.h>
+#include <Export/Zip64Mode.h>
 #include <Export/FramesStream/PresentationPlayer.h>
 #include <Export/FramesStream/PresentationAnimationsGenerator.h>
 #include <Export/FramesStream/FrameTickEventArgs.h>

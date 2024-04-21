@@ -1341,6 +1341,15 @@
     <ClCompile Include="ShapeIsDecorativeExample.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToPdfUnsupportedFontStyles.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToXml.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveInZip64Mode.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
