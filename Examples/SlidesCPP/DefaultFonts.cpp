@@ -2,32 +2,35 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-using namespace System;
-using namespace System::Drawing;
+using namespace Export;
+using namespace System::IO;
 
 void DefaultFonts()
 {
-	// ExStart:DefaultFonts
-	// The path to the documents directory.
-	const String outPath = u"../out/DefaultFonts_out.pptx";
-	const String templatePath = u"../templates/DefaultFonts.pptx";
+    // ExStart:DefaultFonts
+    // The path to the documents directory.
+    const System::String templatePath = Path::Combine(GetDataPath(), u"DefaultFonts.pptx");
+    const System::String outPathPng = Path::Combine(GetOutPath(), u"DefaultFonts_out.png");
+    const System::String outPathPdf = Path::Combine(GetOutPath(), u"DefaultFonts_out.pdf");
+    const System::String outPathXps = Path::Combine(GetOutPath(), u"DefaultFonts_out.xps");
 
-	// Use load options to define the default regualr and asian fonts
-	SharedPtr<LoadOptions> loadOptions = MakeObject< LoadOptions>(LoadFormat::Auto);
-	loadOptions->set_DefaultRegularFont(u"Wingdings");
-	loadOptions->set_DefaultAsianFont(u"Wingdings");
+    // Use load options to define the default regular and asian fonts
+    System::SharedPtr<LoadOptions> loadOptions = System::MakeObject<LoadOptions>(LoadFormat::Auto);
+    loadOptions->set_DefaultRegularFont(u"Wingdings");
+    loadOptions->set_DefaultAsianFont(u"Wingdings");
 
-	// Load the desired the presentation
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath, loadOptions);
+    // Load the desired the presentation
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath, loadOptions);
 
-	// Generate slide thumbnail
-	pres->get_Slides()->idx_get(0)->GetThumbnail(1, 1)->Save(u"../out/DefaultFonts_out.png", Imaging::ImageFormat::get_Png());
+    // Generate slide thumbnail
+    System::SharedPtr<IImage> image = pres->get_Slide(0)->GetImage(1, 1);
+    image->Save(outPathPng, ImageFormat::Png);
 
-	// Generate PDF
-	pres->Save(u"../out/DefaultFonts_out.pdf", Export::SaveFormat::Pdf);
+    // Generate PDF
+    pres->Save(outPathPdf, SaveFormat::Pdf);
 
-	// Generate XPS
-	pres->Save(u"../out/DefaultFonts_out.xps", Export::SaveFormat::Xps);
+    // Generate XPS
+    pres->Save(outPathXps, SaveFormat::Xps);
 
-	// ExEnd:DefaultFonts
+    // ExEnd:DefaultFonts
 }

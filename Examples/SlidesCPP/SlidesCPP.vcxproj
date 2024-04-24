@@ -456,7 +456,6 @@
     <ClCompile Include="RemoveVBAMacros.cpp" />
     <ClCompile Include="RemoveWriteProtection.cpp" />
     <ClCompile Include="RemovingRowColumn.cpp" />
-    <ClCompile Include="RenderComments.cpp" />
     <ClCompile Include="Rendering3D.cpp" />
     <ClCompile Include="RenderingNotesWhileConvertingToHTML.cpp" />
     <ClCompile Include="RenderingWithFallBackFont.cpp" />

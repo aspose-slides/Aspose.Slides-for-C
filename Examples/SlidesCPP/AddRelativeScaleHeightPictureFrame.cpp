@@ -2,38 +2,38 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-using namespace System;
-using namespace System::Drawing;
+using namespace Export;
+using namespace System::IO;
 
 void AddRelativeScaleHeightPictureFrame()
 {
     // ExStart:AddRelativeScaleHeightPictureFrame
     // The path to the documents directory.
-    const String outPath = u"../out/AddRelativeScaleHeightPictureFrame_out.pptx";
-    const String filePath = u"../templates/Tulips.jpg";
+    const System::String outPath = Path::Combine(GetOutPath(), u"AddRelativeScaleHeightPictureFrame_out.pptx");
+    const System::String filePath = Path::Combine(GetDataPath(), u"Tulips.jpg");
 
     // Load the desired the presentation
-    SharedPtr<Presentation> pres = MakeObject<Presentation>();
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>();
 
     // Access first slide
-    SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
+    System::SharedPtr<ISlide> slide = pres->get_Slide(0);
 
     // Load Image to be added in presentaiton image collection
     // Get the picture
-    auto bitmap = MakeObject<Bitmap>(filePath);
+    auto image = Images::FromFile(filePath);
 
     // Add image to presentation's images collection
-    SharedPtr<IPPImage> imgx = pres->get_Images()->AddImage(bitmap);
+    System::SharedPtr<IPPImage> imgx = pres->get_Images()->AddImage(image);
 
     // Add picture frame to slide
-    SharedPtr<IPictureFrame> pf = slide->get_Shapes()->AddPictureFrame(ShapeType::Rectangle, 50, 50, 100, 100, imgx);
+    System::SharedPtr<IPictureFrame> pf = slide->get_Shapes()->AddPictureFrame(ShapeType::Rectangle, 50, 50, 100, 100, imgx);
 
     // Setting relative scale width and height
     pf->set_RelativeScaleHeight(0.8f);
     pf->set_RelativeScaleWidth(1.35f);
 
     //Write the PPTX file to disk
-    pres->Save(outPath, Export::SaveFormat::Pptx);
+    pres->Save(outPath, SaveFormat::Pptx);
 
     //ExEnd:AddRelativeScaleHeightPictureFrame
 }

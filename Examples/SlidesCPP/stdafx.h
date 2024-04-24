@@ -14,6 +14,7 @@
 #include <system/special_casts.h>
 #include <system/convert.h>
 #include <system/collections/dictionary.h>
+
 #include <drawing/graphics.h>
 #include <drawing/bitmap.h>
 
@@ -23,6 +24,10 @@
 #include <LoadingStreamBehavior.h>
 #include <ViewType.h>
 #include <ISpreadsheetOptions.h>
+
+#include <Util/Images.h>
+#include <IImage.h>
+#include <ImageFormat.h>
 
 #include <DOM/IMasterSlide.h>
 #include <DOM/Table/IColumn.h>
