@@ -693,16 +693,10 @@
     <ClCompile Include="SaveWithPassword.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
-    <ClCompile Include="DefaultPrinterPrinting.cpp">
-      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
-    </ClCompile>
     <ClCompile Include="SetSlideNumber.cpp">
       <Filter>Source Files\Presentations\Rendering-Printing</Filter>
     </ClCompile>
     <ClCompile Include="SetZoom.cpp">
-      <Filter>Source Files\Presentations\Rendering-Printing</Filter>
-    </ClCompile>
-    <ClCompile Include="SpecificPrinterPrinting.cpp">
       <Filter>Source Files\Presentations\Rendering-Printing</Filter>
     </ClCompile>
     <ClCompile Include="AccessOpenDoc.cpp">
@@ -758,9 +752,6 @@
     </ClCompile>
     <ClCompile Include="EndParaGraphProperties.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
-    </ClCompile>
-    <ClCompile Include="RenderComments.cpp">
-      <Filter>Source Files\Slides\Rendering</Filter>
     </ClCompile>
     <ClCompile Include="ConvertIndividualSlideToHTML.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>

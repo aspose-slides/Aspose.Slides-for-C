@@ -2,36 +2,33 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
-using namespace System;
-using namespace System::Drawing::Imaging;
+using namespace System::IO;
 
 void ThumbnailWithUserDefinedDimensions()
 {
-	//ExStart:ThumbnailWithUserDefinedDimensions
+    //ExStart:ThumbnailWithUserDefinedDimensions
 
-	// The path to the documents directory.
-	const String templatePath = u"../templates/TestDeck_050.pptx";
-	const String outPath = u"../out/Aspose_UserDefinedDimension_Slide_out.png";
+    // The path to the documents directory.
+    const System::String templatePath = Path::Combine(GetDataPath(), u"TestDeck_050.pptx");
+    const System::String outPath = Path::Combine(GetOutPath(), u"Aspose_UserDefinedDimension_Slide_out.png");
 
-	// Instantiate Presentation class
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    // Instantiate Presentation class
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-	// Access the first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
+    // Access the first slide
+    System::SharedPtr<ISlide> slide = pres->get_Slide(0);
 
-	// User defined dimension
-	int desiredX = 1200;
-	int desiredY = 800;
+    // User defined dimension
+    int desiredX = 1200;
+    int desiredY = 800;
 
-	// Getting scaled value  of X and Y
-	float ScaleX = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Width()) * desiredX;
-	float ScaleY = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Height()) * desiredY;
+    // Getting scaled value  of X and Y
+    float scaleX = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Width()) * desiredX;
+    float scaleY = (float)(1.0 / pres->get_SlideSize()->get_Size().get_Height()) * desiredY;
 
-	// Create a custom scale image
-	auto bitmap = slide->GetThumbnail(ScaleX, ScaleY);
+    // Create a custom scale image
+    auto image = slide->GetImage(scaleX, scaleY);
+    image->Save(outPath, ImageFormat::Png);
 
-	bitmap->Save(outPath, ImageFormat::get_Png());
-
-	//ExEnd:ThumbnailWithUserDefinedDimensions
+    //ExEnd:ThumbnailWithUserDefinedDimensions
 }

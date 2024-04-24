@@ -2,27 +2,24 @@
 #include "SlidesExamples.h"
 
 using namespace Aspose::Slides;
-
-using namespace System;
-using namespace System::Drawing::Imaging;
+using namespace System::IO;
 
 void ThumbnailFromSlide()
 {
-	//ExStart:ThumbnailFromSlide
+    //ExStart:ThumbnailFromSlide
 
-	// The path to the documents directory.
-	const String templatePath = u"../templates/TestDeck_050.pptx";
-	const String outPath = u"../out/Aspose_out.png";
+    // The path to the documents directory.
+    const System::String templatePath = Path::Combine(GetDataPath(), u"TestDeck_050.pptx");
+    const System::String outPath = Path::Combine(GetOutPath(), u"Aspose_out.png");
 
-	// Instantiate Presentation class
-	SharedPtr<Presentation> pres = MakeObject<Presentation>(templatePath);
+    // Instantiate Presentation class
+    System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
-	// Access the first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
+    // Access the first slide
+    System::SharedPtr<ISlide> slide = pres->get_Slide(0);
 
-	auto bitmap = slide->GetThumbnail(1, 1);
+    System::SharedPtr<IImage> image = slide->GetImage(1, 1);
+    image->Save(outPath, ImageFormat::Png);
 
-	bitmap->Save(outPath, ImageFormat::get_Png());
-
-	//ExEnd:ThumbnailFromSlide
+    //ExEnd:ThumbnailFromSlide
 }

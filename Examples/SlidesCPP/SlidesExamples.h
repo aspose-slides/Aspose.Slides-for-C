@@ -242,7 +242,6 @@ void CreateSlidesSVGImage();
 void ThumbnailFromSlide();
 void ThumbnailFromSlideInNotes();
 void ThumbnailWithUserDefinedDimensions();
-void RenderComments();
 void GeneratingSVGWithCustomShapeIDS();
 void RenderOptions();
 void Rendering3D();

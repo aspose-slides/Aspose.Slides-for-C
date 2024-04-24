@@ -269,7 +269,6 @@ int main(int argc, const char argv[])
         ThumbnailFromSlideInNotes();
         ThumbnailWithUserDefinedDimensions();
         GeneratingSVGWithCustomShapeIDS();
-        RenderComments();
         RenderOptions();
         Rendering3D();
 
