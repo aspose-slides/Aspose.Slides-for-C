@@ -2,7 +2,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11
+CONFIG += c++14
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -16,14 +16,14 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/lib/ -lAspose.Slides_vc14x64
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/lib/ -lAspose.Slides_vc14x64d
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/Aspose.Slides.Cpp/lib/ -lAspose.Slides_vc14x64
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/Aspose.Slides.Cpp/lib/ -lAspose.Slides_vc14x64d
 
-INCLUDEPATH += $$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/include/aspose.slides.cpp
-DEPENDPATH += $$PWD/aspose-slides-cpp-21.6/Aspose.Slides.Cpp/include/aspose.slides.cpp
+INCLUDEPATH += $$PWD/aspose-slides-cpp-24.4/Aspose.Slides.Cpp/include/aspose.slides.cpp
+DEPENDPATH += $$PWD/aspose-slides-cpp-24.4/Aspose.Slides.Cpp/include/aspose.slides.cpp
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/lib/ -laspose_cpp_vc14x64
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/lib/ -laspose_cpp_vc14x64d
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/lib/ -laspose_cpp_vc14x64
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/lib/ -laspose_cpp_vc14x64d
 
-INCLUDEPATH += $$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/include
-DEPENDPATH += $$PWD/aspose-slides-cpp-21.6/CodePorting.Native.Cs2Cpp/include
+INCLUDEPATH += $$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/include
+DEPENDPATH += $$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/include
