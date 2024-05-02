@@ -1,14 +1,15 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QtWidgets>
 
+#include <IImage.h>
+#include <ImageFormat.h>
+
 #include <Export/SaveFormat.h>
 #include <DOM/Presentation.h>
 #include <DOM/ISlideCollection.h>
 #include <DOM/ISlide.h>
 
-#include <drawing/imaging/image_format.h>
 #include <system/string.h>
-#include <drawing/bitmap.h>
 #include <system/io/directory.h>
 
 #include "../../Source/QtHelpers/qtcorehelpers.h"
@@ -16,7 +17,6 @@
 using namespace Aspose::Slides;
 
 using Aspose::QtHelpers::Convert;
-using System::Drawing::Imaging::ImageFormat;
 using System::IO::Path;
 
 void ConvertPresentation(const QString& fileName, const QString& outputFileName, const QString& outputType)
@@ -47,7 +47,7 @@ void ConvertPresentation(const QString& fileName, const QString& outputFileName,
         {
             System::String outputSlideName = Path::GetFileNameWithoutExtension(output) + u"_" + System::ObjectExt::ToString(i) + Path::GetExtension(output);
             System::String outputSlidePath = Path::Combine(Path::GetDirectoryName(output), outputSlideName);
-            pres->get_Slides()->idx_get(i)->GetThumbnail(2.0f, 2.0f)->Save(outputSlidePath, ImageFormat::get_Png());
+            pres->get_Slide(i)->GetImage(2.0f, 2.0f)->Save(outputSlidePath, ImageFormat::Png);
         }
     }
 }

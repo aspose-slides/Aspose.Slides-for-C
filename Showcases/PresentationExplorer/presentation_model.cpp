@@ -7,13 +7,13 @@
 #include <DOM/IGroupShape.h>
 #include <DOM/IConnector.h>
 #include <DOM/IGraphicalObject.h>
-#include <DOM/IInk.h>
+#include <DOM/Ink/IInk.h>
 #include <DOM/ILegacyDiagram.h>
 #include <DOM/IOleObjectFrame.h>
 #include <DOM/SmartArt/ISmartArt.h>
 #include <DOM/SmartArt/SmartArtShape.h>
 #include <DOM/Table/ITable.h>
-#include <DOM/IZoomFrame.h>
+#include <DOM/Zoom/IZoomFrame.h>
 #include <DOM/ITextFrame.h>
 #include <DOM/SmartArt/ISmartArtNodeCollection.h>
 
