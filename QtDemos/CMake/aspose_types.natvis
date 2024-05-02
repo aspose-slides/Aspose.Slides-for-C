@@ -16,11 +16,11 @@
     </Type>
   
     <Type Name="System::String">
-        <DisplayString Condition="m_is_null">nullptr</DisplayString>
+        <DisplayString Condition="m_state==1">nullptr</DisplayString>
         <DisplayString>{*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))}</DisplayString>
-        <StringView Condition="!m_is_null">*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))</StringView>
+        <StringView Condition="m_state!=1">*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))</StringView>
         <Expand>
-            <Item Name="IsNull">m_is_null</Item>
+            <Item Name="IsNull">m_state==1</Item>
             <ExpandedItem>*(IcuDebugHelper*)((char*)&amp;m_str.m_data + sizeof(void*))</ExpandedItem>
         </Expand>
     </Type>
@@ -44,6 +44,7 @@
             <ExpandedItem>*m_data.m_pointee</ExpandedItem>
             <Item Name="[ptr]">m_data.m_pointee</Item>
             <Item Name="[type]">&quot;$T1&quot;,sb</Item>
+            <Item Name="[mode]">m_data.m_mode</Item>
         </Expand>
     </Type>
 
@@ -298,15 +299,6 @@
         <DisplayString>{m_data}</DisplayString>
         <Expand>
             <Item Name="Data (UTF-8)" Condition="sizeof($T1) == 1">data_ptr(),[data_size()]s8</Item>
-            <ExpandedItem>m_data</ExpandedItem>
-        </Expand>
-    </Type>
-
-    <!-- System::Collections::Generic::ArrayList -->
-
-    <Type Name="System::Collections::Generic::ArrayList&lt;*&gt;">
-        <DisplayString>{m_data}</DisplayString>
-        <Expand>
             <ExpandedItem>m_data</ExpandedItem>
         </Expand>
     </Type>

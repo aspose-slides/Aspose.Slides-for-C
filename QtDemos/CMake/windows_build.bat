@@ -6,6 +6,6 @@ SET Qt5_DIR=d:/Qt/5.14.2/msvc2017_64/lib/cmake/Qt5
 
 :: set ASPOSE_SLIDES_PATH environment variables to 
 :: directory where content of aspose-slides-cpp-YY.MM.zip is extracted
-SET ASPOSE_SLIDES_PATH=c:/aspose-slides-cpp-21.6
+SET ASPOSE_SLIDES_PATH=d:/shared/aspose-slides-cpp-windows-24.4
 
 cmake .. -A x64 -G "Visual Studio 15 2017"

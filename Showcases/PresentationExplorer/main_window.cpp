@@ -35,11 +35,12 @@
 #include <DOM/IConnector.h>
 #include <DOM/ShapeType.h>
 #include <DOM/IOleObjectFrame.h>
+#include <DOM/IOleEmbeddedDataInfo.h>
 #include <DOM/Table/ITable.h>
 #include <DOM/Table/IRowCollection.h>
 #include <DOM/Table/IColumnCollection.h>
-#include <DOM/IZoomFrame.h>
-#include <DOM/ZoomImageType.h>
+#include <DOM/Zoom/IZoomFrame.h>
+#include <DOM/Zoom/ZoomImageType.h>
 #include <DOM/IControlCollection.h>
 #include <DOM/IGroupShape.h>
 #include <DOM/SmartArt/ISmartArt.h>
@@ -843,7 +844,7 @@ QString MainWindow::getDescription(Aspose::Slides::IOleObjectFrame *oleObjectFra
                     << Qt::endl;
         description << "Embedded file label: " << Convert(oleObjectFrame->get_EmbeddedFileLabel())
                         << Qt::endl;
-        description << "Embedded data size: " << oleObjectFrame->get_EmbeddedFileData()->get_Count()
+        description << "Embedded data size: " << oleObjectFrame->get_EmbeddedData()->get_EmbeddedFileData()->get_Count()
                         << " bytes" << Qt::endl;
     }
 

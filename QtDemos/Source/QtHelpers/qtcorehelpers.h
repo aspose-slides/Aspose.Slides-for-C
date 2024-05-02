@@ -209,7 +209,7 @@ public:
             ThrowLastError();
     }
 
-    int Read(System::ArrayPtr<uint8_t> buffer, int offset, int count) override
+    int32_t Read(const System::ArrayPtr<uint8_t>& buffer, int32_t offset, int32_t count) override
     {
         if (buffer == nullptr)
             throw System::ArgumentNullException(u"buffer");
@@ -233,7 +233,7 @@ public:
         return static_cast<int>(readed);
     }
 
-    void Write(System::ArrayPtr<uint8_t> buffer, int offset, int count) override
+    void Write(const System::ArrayPtr<uint8_t>& buffer, int32_t offset, int32_t count) override
     {
         if (buffer == nullptr)
             throw System::ArgumentNullException(u"buffer");
