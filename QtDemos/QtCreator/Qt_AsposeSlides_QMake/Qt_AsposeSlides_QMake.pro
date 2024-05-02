@@ -1,6 +1,6 @@
 QT -= gui
 
-CONFIG += c++11 console
+CONFIG += c++14 console
 CONFIG -= app_bundle
 
 # You can make your code fail to compile if it uses deprecated APIs.
@@ -21,8 +21,8 @@ else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/
 INCLUDEPATH += $$PWD/aspose-slides-cpp-24.4/Aspose.Slides.Cpp/include/aspose.slides.cpp
 DEPENDPATH += $$PWD/aspose-slides-cpp-24.4/Aspose.Slides.Cpp/include/aspose.slides.cpp
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/lib/ -laspose_cpp_vc14x64
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/lib/ -laspose_cpp_vc14x64d
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/lib/ -lcodeporting.translator.cs2cpp.framework_vc14x64
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/lib/ -lcodeporting.translator.cs2cpp.framework_vc14x64d
 
 INCLUDEPATH += $$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/include
 DEPENDPATH += $$PWD/aspose-slides-cpp-24.4/CodePorting.Translator.Cs2Cpp.Framework/include
