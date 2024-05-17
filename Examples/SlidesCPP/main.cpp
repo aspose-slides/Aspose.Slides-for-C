@@ -521,6 +521,7 @@ int main(int argc, const char argv[])
         VerticallyAlignText();
         LockAspectRatio();
         GetEffectiveValuesOfTable();
+        TableTransparency();
 #pragma endregion
 
 #pragma region Formatting Text	

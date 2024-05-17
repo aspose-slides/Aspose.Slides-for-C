@@ -474,6 +474,7 @@ void UpdateExistingTable();
 void VerticallyAlignText();
 void LockAspectRatio();
 void GetEffectiveValuesOfTable();
+void TableTransparency();
 #pragma endregion
 
 #pragma region Text	

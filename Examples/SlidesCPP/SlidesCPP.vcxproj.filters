@@ -1341,6 +1341,9 @@
     <ClCompile Include="SaveInZip64Mode.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
+    <ClCompile Include="TableTransparency.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1361,8 +1364,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>
