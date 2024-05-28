@@ -5,7 +5,7 @@
   "scripts": {
     "build": "run-script-os",
     "build:win32": "cmake-js compile -G \"Visual Studio 15 2017 Win64\"  --CDASPOSE_SLIDES_PATH=d:/aspose-slides-cpp-windows-24.5",
-    "build:nix": "cmake-js compile -G \"Unix Makefiles\"  --CDASPOSE_SLIDES_PATH=/aspose-slides-cpp-linux-21.6"
+    "build:nix": "cmake-js compile -G \"Unix Makefiles\"  --CDASPOSE_SLIDES_PATH=/aspose-slides-cpp-linux-24.5"
   },
   "dependencies": {
     "cmake-js": "^6.1.0",
