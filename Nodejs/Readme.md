@@ -12,9 +12,9 @@ This example demonstrates a C++ Node.js addon that allows to use Aspose.Slides f
    
    * The Path to the Aspose.Slides for C++ distribution folder:
    
-      For example, Aspose.Slides for C++ version 21.5 comes in a zip archive named aspose-slides-cpp-21.5, this archive should be extracted somewhere and the path that folder should be assigned to that variables.
+      For example, Aspose.Slides for C++ version 24.5 comes in a zip archive named aspose-slides-cpp-windows-24.5, this archive should be extracted somewhere and the path that folder should be assigned to that variables.
 
-      Change **ASPOSE_SLIDES_PATH** variable in the section corresponding to your OS(now available build:win32 and build:nix). You can find more details on run-script-os package [here](https://www.npmjs.com/package/run-script-os).
+      Change **ASPOSE_SLIDES_PATH** variable in the section corresponding to your OS (now available build:win32 and build:nix). You can find more details on run-script-os package [here](https://www.npmjs.com/package/run-script-os).
 
    * Set a CMake build system generator:
 
