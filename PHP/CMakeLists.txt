@@ -23,14 +23,14 @@ if (MSVC)
     CheckVariable(PHP_DLL_PATH)
 endif()
 
-find_package(CodePorting.Native.Cs2Cpp REQUIRED CONFIG PATHS ${ASPOSE_SLIDES_PATH} NO_DEFAULT_PATH)
+find_package(CodePorting.Translator.Cs2Cpp.Framework REQUIRED CONFIG PATHS ${ASPOSE_SLIDES_PATH} NO_DEFAULT_PATH)
 find_package(Aspose.Slides.Cpp REQUIRED CONFIG PATHS ${ASPOSE_SLIDES_PATH} NO_DEFAULT_PATH)
 
 file(TO_NATIVE_PATH "${Aspose.Slides.Cpp_DIR}/lib" Aspose.Slides.Cpp_DLL_PATH)
-file(TO_NATIVE_PATH "${CodePorting.Native.Cs2Cpp_DIR}/lib" CodePorting.Native.Cs2Cpp_DLL_PATH)
+file(TO_NATIVE_PATH "${CodePorting.Translator.Cs2Cpp.Framework_DIR}/lib" CodePorting.Translator.Cs2Cpp.Framework_DLL_PATH)
 
 if (MSVC AND ${CMAKE_VERSION} VERSION_LESS "3.13.5")
-    message (WARNING "You must menually set the Debugging Environment to PATH=${Aspose.Slides.Cpp_DLL_PATH};${CodePorting.Native.Cs2Cpp_DLL_PATH};%PATH% to run the examples")
+    message (WARNING "You must menually set the Debugging Environment to PATH=${Aspose.Slides.Cpp_DLL_PATH};${CodePorting.Translator.Cs2Cpp.Framework_DLL_PATH};%PATH% to run the examples")
 endif()
 
 # package configuration for pre-build php
@@ -43,8 +43,8 @@ set_target_properties(php PROPERTIES
 
 set_property(TARGET php APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(php PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "${PHP_LIB_PATH}/php7.lib"
-  IMPORTED_LOCATION_DEBUG "${PHP_DLL_PATH}/php7.dll"
+  IMPORTED_IMPLIB_DEBUG "${PHP_LIB_PATH}/php8.lib"
+  IMPORTED_LOCATION_DEBUG "${PHP_DLL_PATH}/php8.dll"
   )
 target_compile_definitions(php INTERFACE PHP_WIN32 ZEND_WIN32 ZEND_DEBUG=0 ZEND_WIN32_KEEP_INLINE PHP_ATOM_INC)
 
@@ -65,12 +65,12 @@ AsposeSlidesCppExtension.cpp
 )
 
 target_link_libraries(${target} PRIVATE php)
-target_link_libraries(${target} PRIVATE CodePorting.Native.Cs2Cpp PRIVATE Aspose.Slides.Cpp)
+target_link_libraries(${target} PRIVATE CodePorting.Translator.Cs2Cpp.Framework PRIVATE Aspose.Slides.Cpp)
 
 set_target_properties(${target} PROPERTIES CXX_STANDARD 14 CXX_STANDARD_REQUIRED YES)
 
 if (MSVC)
-    FILE(GLOB files "${ASPOSE_SLIDES_PATH}/Aspose.Slides.Cpp/lib/*dll" "${ASPOSE_SLIDES_PATH}/CodePorting.Native.Cs2Cpp/lib/*dll")
+    FILE(GLOB files "${ASPOSE_SLIDES_PATH}/Aspose.Slides.Cpp/lib/*dll" "${ASPOSE_SLIDES_PATH}/CodePorting.Translator.Cs2Cpp.Framework/lib/*dll")
     FOREACH(file ${files})
         ADD_CUSTOM_COMMAND(TARGET ${target} POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy_if_different

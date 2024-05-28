@@ -15,7 +15,7 @@ This sample code can be used as a skeleton for developing other specific applica
    1. Main package (PHP itself).
    2. Development package (precompiled libraries and headers files).
 
-   For example, these two packages may be: php-7.4.18-nts-Win32-vc15-x64.zip (main package 'nts') and php-devel-pack-7.4.18-nts-Win32-vc15-x64.zip (development package 'nts').
+   For example, these two packages may be: php-8.3.7-nts-Win32-vs16-x64.zip (main package 'nts') and php-devel-pack-8.3.7-nts-Win32-vs16-x64.zip (development package 'nts').
 
 3. Setup variable list in the ```setup_php_environment.bat``` script.
    
@@ -23,21 +23,21 @@ This sample code can be used as a skeleton for developing other specific applica
    
    The path to the Aspose.Slides for C++ distribution folder.
  
-   For example, Aspose.Slides for C++ version 21.5 comes in zip archive named aspose-slides-cpp-21.5, this archive should be extracted somewhere and the path that folder should be assigned to that variables.
+   For example, Aspose.Slides for C++ version 24.5 comes in zip archive named aspose-slides-cpp-windows-24.5, this archive should be extracted somewhere and the path that folder should be assigned to that variables.
 
    **PHP_PATH**:
    
    The path to the PHP main package folder.
 
-   Suppose, that main package archive 'php-7.4.18-nts-Win32-vc15-x64.zip' is extracted at 'c:/tools/php'. Then, variable's values should be:
-   PHP_PATH=C:/tools/php/php-7.4.18-nts-Win32-vc15-x64
+   Suppose, that main package archive 'php-8.3.7-nts-Win32-vs16-x64.zip' is extracted at 'c:/tools/php'. Then, variable's values should be:
+   PHP_PATH=C:/tools/php/php-8.3.7-nts-Win32-vs16-x64
 
    **PHP_DEV_PACK_PATH**:
 
    The path to the PHP development package folder.
    
-   Development package archive 'php-devel-pack-7.4.18-nts-Win32-vc15-x64.zip' is probably extracted at 'c:/tools/php'. Then, variable's values should be:
-   PHP_DEV_PACK_PATH=C:/tools/php/php-devel-pack-7.4.18-nts-Win32-vc15-x64/php-7.4.18-devel-vc15-x64
+   Development package archive 'php-devel-pack-8.3.7-nts-Win32-vs16-x64.zip' is probably extracted at 'c:/tools/php'. Then, variable's values should be:
+   PHP_DEV_PACK_PATH=c:\tools\php\php-devel-pack-8.3.7-nts-Win32-vs16-x64\php-8.3.7-devel-vs16-x64\
      
 4. Build the PHP extension using the ```build_windows_x64.bat``` script. The resulting shared extension library along with Aspose.Slides for the C ++ binaries will be written to the tests folder.
 
@@ -53,7 +53,7 @@ This sample code can be used as a skeleton for developing other specific applica
     
     The path to the Aspose.Slides for C++ distribution folder.
  
-    For example, Aspose.Slides for C++ version 21.5 comes in zip archive named aspose-slides-cpp-linux-21.5, this archive should be extracted somewhere and the path that folder should be assigned to that variables.
+    For example, Aspose.Slides for C++ version 24.5 comes in zip archive named aspose-slides-cpp-linux-24.5, this archive should be extracted somewhere and the path that folder should be assigned to that variables.
   
     **PHP_INCLUDE_PATH**:
     
