@@ -585,12 +585,15 @@ int main(int argc, const char argv[])
         FindAndReplaceText();
         AnimateTextTypeExample();
         NumberLinesInParagraph();
+        FindAndReplaceTextResult();
 
-#pragma endregion		
+#pragma endregion
 
 #pragma region Views
         Console::WriteLine(u"Views");
         ManagePresenetationNormalViewState();
+        GradientStyleRendering();
+
 #pragma endregion
 
 #pragma endregion

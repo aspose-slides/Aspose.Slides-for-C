@@ -537,10 +537,12 @@ void EmbeddedFontCompression();
 void FindAndReplaceText();
 void AnimateTextTypeExample();
 void NumberLinesInParagraph();
+void FindAndReplaceTextResult();
 #pragma endregion
 
 #pragma region Views
 void ManagePresenetationNormalViewState();
+void GradientStyleRendering();
 #pragma endregion
 
 #pragma endregion

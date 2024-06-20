@@ -14,6 +14,7 @@
 #include <system/special_casts.h>
 #include <system/convert.h>
 #include <system/collections/dictionary.h>
+#include <system/collections/list.h>
 
 #include <drawing/graphics.h>
 #include <drawing/bitmap.h>
@@ -28,6 +29,8 @@
 #include <Util/Images.h>
 #include <IImage.h>
 #include <ImageFormat.h>
+
+#include <IFindResultCallback.h>
 
 #include <DOM/IMasterSlide.h>
 #include <DOM/Table/IColumn.h>
@@ -321,6 +324,7 @@
 #include <DOM/SlideShowTransition/TransitionMorphType.h>
 #include <DOM/SlideShowTransition/IMorphTransition.h>
 #include <DOM/SlideShowSettings.h>
+#include <DOM/Slide.h>
 #include <DOM/Vba/VbaProject.h>
 #include <DOM/Vba/IVbaModule.h>
 #include <DOM/Vba/IVbaModuleCollection.h>
@@ -368,6 +372,8 @@
 #include <DOM/Ink/Ink.h>
 #include <DOM/Ink/InkBrush.h>
 #include <DOM/Ink/InkTrace.h>
+#include <DOM/GradientStyle.h>
+#include <DOM/TextFind/TextSearchOptions.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
