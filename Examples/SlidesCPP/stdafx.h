@@ -89,6 +89,7 @@
 #include <DOM/Animation/ITiming.h>
 #include <DOM/IGlobalLayoutSlideCollection.h>
 #include <DOM/ILayoutSlide.h>
+#include <DOM/ILayoutPlaceholderManager.h>
 #include <DOM/SlideLayoutType.h>
 #include <DOM/IMasterLayoutSlideCollection.h>
 #include <DOM/IMasterNotesSlide.h>

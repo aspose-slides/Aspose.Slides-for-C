@@ -76,6 +76,7 @@ void ExportMathParagraphToLatex();
 void ConvertToHtml5NotesComments();
 void ConvertToPdfUnsupportedFontStyles();
 void ConvertToXml();
+void ExportOleExample();
 
 #pragma endregion
 
@@ -87,6 +88,7 @@ void VerifyingPresentationWithoutloading();
 void OpenVeryLargePresentation();
 void CloneSlideIntoSpecifiedSection();
 void SetAccessPermissionsToPDF();
+void DeleteEmbeddedBinaryObjects();
 
 #pragma endregion
 
@@ -222,6 +224,7 @@ void ModernComments();
 void SetPDFPageSize();
 void RemoveUnusedLayoutMaster();
 void GetBasePlaceholderExample();
+void LayoutPlaceholderManagerExample();
 #pragma endregion
 
 #pragma region Extract Data from Presentation

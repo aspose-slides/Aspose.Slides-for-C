@@ -95,6 +95,7 @@ int main(int argc, const char argv[])
         ConvertToHtml5NotesComments();
         ConvertToPdfUnsupportedFontStyles();
         ConvertToXml();
+        ExportOleExample();
 
 #pragma endregion
 
@@ -106,6 +107,7 @@ int main(int argc, const char argv[])
         OpenVeryLargePresentation();
         CloneSlideIntoSpecifiedSection();
         SetAccessPermissionsToPDF();
+        DeleteEmbeddedBinaryObjects();
 
 #pragma endregion
 
@@ -242,6 +244,7 @@ int main(int argc, const char argv[])
         SetPDFPageSize();
         RemoveUnusedLayoutMaster();
         GetBasePlaceholderExample();
+        LayoutPlaceholderManagerExample();
 #pragma endregion
 
 #pragma region Extract Data from Presentation

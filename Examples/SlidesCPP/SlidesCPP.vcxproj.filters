@@ -1344,6 +1344,21 @@
     <ClCompile Include="TableTransparency.cpp">
       <Filter>Source Files\Slides\Shapes\Tables</Filter>
     </ClCompile>
+    <ClCompile Include="FindAndReplaceTextResult.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientStyleRendering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExportOleExample.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="DeleteEmbeddedBinaryObjects.cpp">
+      <Filter>Source Files\Presentations\Opening</Filter>
+    </ClCompile>
+    <ClCompile Include="LayoutPlaceholderManagerExample.cpp">
+      <Filter>Source Files\Slides\Layout</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1364,5 +1379,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>
