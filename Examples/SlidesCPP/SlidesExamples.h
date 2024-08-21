@@ -282,6 +282,7 @@ void CreateSummaryZoom();
 void CreateZoomFrame();
 void CreateSectionZoom();
 void AnimationTargetShapes();
+void TilePictureFillFormatExample();
 
 #pragma region Working with Charts
 void AddCustomError();
@@ -541,6 +542,8 @@ void FindAndReplaceText();
 void AnimateTextTypeExample();
 void NumberLinesInParagraph();
 void FindAndReplaceTextResult();
+void FontBinaryDataExample();
+void FontEmbeddingLevelExample();
 #pragma endregion
 
 #pragma region Views

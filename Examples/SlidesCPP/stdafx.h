@@ -219,6 +219,7 @@
 #include <DOM/Chart/ILegendEntryCollection.h>
 #include <DOM/Chart/ILegendEntryProperties.h>
 #include <DOM/Chart/BubbleSizeRepresentationType.h>
+#include <DOM/EmbeddingLevel.h>
 #include <DOM/TileFlip.h>
 #include <DOM/ISlide.h>
 #include <DOM/GroupShape.h>

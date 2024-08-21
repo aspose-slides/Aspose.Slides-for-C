@@ -68,7 +68,7 @@ int main(int argc, const char argv[])
         PresentationToTIFFWithCustomImagePixelFormat();
         PresentationToTIFFWithDefaultSize();
         ConvertIndividualSlideToHTML();
-        EmbedFontsInHtml();
+        // EmbedFontsInHtml();
         // ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
         BestImagesCompressionRatioforPDF();
         ExportToHTMLWithResponsiveLayout();
@@ -476,6 +476,7 @@ int main(int argc, const char argv[])
         InkManagementExample();
         DeletePictureCroppedAreasExample();
         ShapeIsDecorativeExample();
+        TilePictureFillFormatExample();
 
 #pragma endregion
 
@@ -589,6 +590,8 @@ int main(int argc, const char argv[])
         AnimateTextTypeExample();
         NumberLinesInParagraph();
         FindAndReplaceTextResult();
+        FontBinaryDataExample();
+        FontEmbeddingLevelExample();
 
 #pragma endregion
 

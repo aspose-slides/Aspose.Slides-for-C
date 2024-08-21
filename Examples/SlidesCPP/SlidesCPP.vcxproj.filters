@@ -1359,6 +1359,15 @@
     <ClCompile Include="LayoutPlaceholderManagerExample.cpp">
       <Filter>Source Files\Slides\Layout</Filter>
     </ClCompile>
+    <ClCompile Include="TilePictureFillFormatExample.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="FontBinaryDataExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="FontEmbeddingLevelExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
