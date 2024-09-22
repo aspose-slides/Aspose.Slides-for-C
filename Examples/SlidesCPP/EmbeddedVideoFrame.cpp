@@ -16,13 +16,13 @@ void EmbeddedVideoFrame()
 	SharedPtr<Presentation> pres = MakeObject<Presentation>();
 
 	// Access first slide
-	SharedPtr<ISlide> slide = pres->get_Slides()->idx_get(0);
+	SharedPtr<ISlide> slide = pres->get_Slide(0);
 
 	// Load the video file to stream
 	SharedPtr<IO::Stream> stream = System::MakeObject<IO::FileStream>(filePath, IO::FileMode::Open, IO::FileAccess::Read);
 	
 	// Embedd vide inside presentation
-	SharedPtr<IVideo> vid = pres->get_Videos()->AddVideo(stream);
+	SharedPtr<IVideo> vid = pres->get_Videos()->AddVideo(stream, LoadingStreamBehavior::ReadStreamAndRelease);
 
 	// Add Video Frame
 	SharedPtr<IVideoFrame> vf = slide->get_Shapes()->AddVideoFrame(50, 150, 300, 150, vid);

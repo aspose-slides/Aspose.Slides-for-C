@@ -283,6 +283,9 @@ void CreateZoomFrame();
 void CreateSectionZoom();
 void AnimationTargetShapes();
 void TilePictureFillFormatExample();
+void AnimationFloatUpDown();
+void CompressImageExample();
+#pragma endregion
 
 #pragma region Working with Charts
 void AddCustomError();

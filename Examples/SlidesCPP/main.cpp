@@ -477,6 +477,8 @@ int main(int argc, const char argv[])
         DeletePictureCroppedAreasExample();
         ShapeIsDecorativeExample();
         TilePictureFillFormatExample();
+        AnimationFloatUpDown();
+        CompressImageExample();
 
 #pragma endregion
 

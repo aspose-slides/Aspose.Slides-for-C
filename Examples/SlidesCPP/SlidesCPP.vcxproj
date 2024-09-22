@@ -205,6 +205,7 @@
     <ClCompile Include="AnimatingSeries.cpp" />
     <ClCompile Include="AnimatingSeriesElements.cpp" />
     <ClCompile Include="AnimationEffectInParagraph.cpp" />
+    <ClCompile Include="AnimationFloatUpDown.cpp" />
     <ClCompile Include="AnimationRepeatOnSlide.cpp" />
     <ClCompile Include="AnimationsOnOLEObject.cpp" />
     <ClCompile Include="AnimationsOnShapes.cpp" />
@@ -251,6 +252,7 @@
     <ClCompile Include="CloneWithInSamePresentation.cpp" />
     <ClCompile Include="CloneWithinSamePresentationToEnd.cpp" />
     <ClCompile Include="CloningInTable.cpp" />
+    <ClCompile Include="CompressImageExample.cpp" />
     <ClCompile Include="ConnectorLineAngle.cpp" />
     <ClCompile Include="ConnectShapesUsingConnectors.cpp" />
     <ClCompile Include="ConnectShapeUsingConnectionSite.cpp" />
@@ -599,8 +601,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.24.8.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.24.8.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.24.8.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.24.8.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.24.8.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.24.8.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.24.9.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.24.9.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.24.9.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.24.9.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.24.9.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.24.9.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
   </ImportGroup>
 </Project>
