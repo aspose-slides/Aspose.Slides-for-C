@@ -289,6 +289,7 @@ int main(int argc, const char argv[])
         AnimationRepeatOnSlide();
         AnimationRewind();
         AfterAnimationTypeExample();
+        AnimationFadedZoomSubtype();
         CheckSlidesComparison();
         ManageHeaderFooter();
         ManageHandoutHeaderFooter();

@@ -1344,12 +1344,6 @@
     <ClCompile Include="TableTransparency.cpp">
       <Filter>Source Files\Slides\Shapes\Tables</Filter>
     </ClCompile>
-    <ClCompile Include="FindAndReplaceTextResult.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GradientStyleRendering.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ExportOleExample.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
@@ -1373,6 +1367,15 @@
     </ClCompile>
     <ClCompile Include="CompressImageExample.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationFadedZoomSubtype.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="FindAndReplaceTextResult.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GradientStyleRendering.cpp">
+      <Filter>Source Files\Slides\Views</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

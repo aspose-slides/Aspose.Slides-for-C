@@ -261,6 +261,7 @@ void SetTransitionMorphType();
 void AnimationRepeatOnSlide();
 void AnimationRewind();
 void AfterAnimationTypeExample();
+void AnimationFadedZoomSubtype();
 #pragma endregion
 
 #pragma region Working with Shapes
