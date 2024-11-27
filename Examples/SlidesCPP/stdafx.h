@@ -376,6 +376,9 @@
 #include <DOM/Ink/InkTrace.h>
 #include <DOM/GradientStyle.h>
 #include <DOM/TextFind/TextSearchOptions.h>
+#include <DOM/IDrawingGuide.h>
+#include <DOM/IDrawingGuidesCollection.h>
+#include <DOM/Orientation.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>

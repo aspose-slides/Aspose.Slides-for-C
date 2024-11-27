@@ -1377,6 +1377,12 @@
     <ClCompile Include="GradientStyleRendering.cpp">
       <Filter>Source Files\Slides\Views</Filter>
     </ClCompile>
+    <ClCompile Include="GridProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
+    <ClCompile Include="GuidesProperties.cpp">
+      <Filter>Source Files\Presentations\Properties</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

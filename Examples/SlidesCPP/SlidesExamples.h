@@ -122,6 +122,8 @@ void CheckPasswordExample();
 void RootDirectoryClsId();
 void PresentationSlideShowSetup();
 void SlideShowMediaControls();
+void GridProperties();
+void GuidesProperties();
 
 #pragma endregion
 

@@ -141,6 +141,8 @@ int main(int argc, const char argv[])
         RootDirectoryClsId();
         PresentationSlideShowSetup();
         SlideShowMediaControls();
+        GridProperties();
+        GuidesProperties();
 
 #pragma endregion
 
