@@ -2,11 +2,11 @@
 #include <system/string.h>
 #include <system/io/path.h>
 #include <system/io/directory.h>
-#include <drawing/bitmap.h>
 #include <system/diagnostics/process.h>
 #include <system/diagnostics/process_start_info.h>
 #include <system/diagnostics/process_window_style.h>
 
+#include <IImage.h>
 #include <DOM/Presentation.h>
 #include <DOM/ISlideCollection.h>
 #include <Export/FramesStream/PresentationAnimationsGenerator.h>
