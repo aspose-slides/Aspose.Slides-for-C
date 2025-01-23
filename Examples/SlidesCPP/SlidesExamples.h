@@ -77,6 +77,8 @@ void ConvertToHtml5NotesComments();
 void ConvertToPdfUnsupportedFontStyles();
 void ConvertToXml();
 void ExportOleExample();
+void ConvertToEmf();
+void ConvertSvgToEmf();
 
 #pragma endregion
 
@@ -124,6 +126,7 @@ void PresentationSlideShowSetup();
 void SlideShowMediaControls();
 void GridProperties();
 void GuidesProperties();
+void ExtendedPresentationProperties();
 
 #pragma endregion
 
@@ -141,6 +144,7 @@ void ApplyingExternalThemeToDependingSlides();
 void SettingInterruptionToken();
 void AddBlobImageToPresentation();
 void SaveInZip64Mode();
+void RefreshThumbnailPresentation();
 
 void SavingHTMLAndCSSFileWhenExportingIntoHTML();
 void AddImageFromSVGObjectFromExternalResource();

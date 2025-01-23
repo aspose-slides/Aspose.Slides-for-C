@@ -1383,6 +1383,9 @@
     <ClCompile Include="GuidesProperties.cpp">
       <Filter>Source Files\Presentations\Properties</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertSvgToEmf.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1403,5 +1406,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

@@ -96,6 +96,8 @@ int main(int argc, const char argv[])
         ConvertToPdfUnsupportedFontStyles();
         ConvertToXml();
         ExportOleExample();
+        ConvertToEmf();
+        ConvertSvgToEmf();
 
 #pragma endregion
 
@@ -143,6 +145,7 @@ int main(int argc, const char argv[])
         SlideShowMediaControls();
         GridProperties();
         GuidesProperties();
+        ExtendedPresentationProperties();
 
 #pragma endregion
 
@@ -163,6 +166,8 @@ int main(int argc, const char argv[])
         SettingInterruptionToken();
         AddBlobImageToPresentation();
         SaveInZip64Mode();
+        RefreshThumbnailPresentation();
+
         AddImageFromSVGObjectFromExternalResource();
         ConvertSvgImageObjectIntoGroupOfShapes();
         AddImageFromSVGObject();

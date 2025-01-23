@@ -118,6 +118,8 @@
 #include <DOM/IParagraphCollection.h>
 #include <DOM/IPortion.h>
 #include <DOM/Portion.h>
+#include <DOM/IHeadingPair.h>
+#include <DOM/HeadingPair.h>
 #include <DOM/IPortionCollection.h>
 #include <DOM/IPortionFormat.h>
 #include <DOM/PortionFormat.h>
