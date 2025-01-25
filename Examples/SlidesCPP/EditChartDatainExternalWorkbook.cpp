@@ -3,20 +3,24 @@
 
 using namespace Aspose::Slides;
 using namespace System;
+using namespace IO;
 
 void EditChartDatainExternalWorkbook()
 {
-	//ExStart:EditChartDatainExternalWorkbook
+    //ExStart:EditChartDatainExternalWorkbook
 
-	const String templatePath = u"../templates/presentation.pptx";
-	const String outPath = u"../out/presentation-out.pptx";
-	
-	SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
-	SharedPtr<Charts::IChart> chart = System::AsCast<Charts::IChart>(pres->get_Slides()->idx_get(0)->get_Shapes()->idx_get(0));
-	SharedPtr<Charts::ChartData> chartData = System::ExplicitCast<Charts::ChartData>(chart->get_ChartData());
+    const String templatePath = Path::Combine(GetDataPath(), u"presentation.pptx");
+    const String outPath = Path::Combine(GetOutPath(), u"presentation-out.pptx");
 
-	chartData->get_Series()->idx_get(0)->get_DataPoints()->idx_get(0)->get_Value()->get_AsCell()->set_Value(ObjectExt::Box<int32_t>(100));
-	pres->Save(outPath, Export::SaveFormat::Pptx);
+    File::Copy(templatePath, outPath, true);
+    File::Copy(Path::Combine(GetDataPath(), u"externalWorkbook.xlsx"), Path::Combine(GetOutPath(), u"externalWorkbook.xlsx"), true);
 
-	//ExEnd:EditChartDatainExternalWorkbook
+    SharedPtr<Presentation> pres = System::MakeObject<Presentation>(outPath);
+    SharedPtr<Charts::IChart> chart = System::AsCast<Charts::IChart>(pres->get_Slide(0)->get_Shape(0));
+    SharedPtr<Charts::ChartData> chartData = System::ExplicitCast<Charts::ChartData>(chart->get_ChartData());
+
+    chartData->get_ChartSeries(0)->get_DataPoint(0)->get_Value()->get_AsCell()->set_Value(ObjectExt::Box<int32_t>(100));
+    pres->Save(outPath, Export::SaveFormat::Pptx);
+
+    //ExEnd:EditChartDatainExternalWorkbook
 }
