@@ -68,7 +68,7 @@ int main(int argc, const char argv[])
         PresentationToTIFFWithCustomImagePixelFormat();
         PresentationToTIFFWithDefaultSize();
         ConvertIndividualSlideToHTML();
-        // EmbedFontsInHtml();
+        EmbedFontsInHtml();
         // ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController();
         BestImagesCompressionRatioforPDF();
         ExportToHTMLWithResponsiveLayout();
