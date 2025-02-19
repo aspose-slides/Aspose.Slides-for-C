@@ -262,6 +262,9 @@ int main(int argc, const char argv[])
         ExtractAudioFromTimeline();
         ExtractAudioFromHyperLink();
         StopPreviousSoundExample();
+        FadeInOutDurationAudioExample();
+        VolumeAudioExample();
+        TrimmingTimeAudioExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -602,7 +605,8 @@ int main(int argc, const char argv[])
         FindAndReplaceTextResult();
         FontBinaryDataExample();
         FontEmbeddingLevelExample();
-
+        GetPresentationRowTextExample();
+        DisableFontLigaturesExample();
 #pragma endregion
 
 #pragma region Views

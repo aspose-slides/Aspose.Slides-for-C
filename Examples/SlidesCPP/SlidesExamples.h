@@ -239,6 +239,9 @@ void ExtractAudio();
 void ExtractAudioFromTimeline();
 void ExtractAudioFromHyperLink();
 void StopPreviousSoundExample();
+void FadeInOutDurationAudioExample();
+void VolumeAudioExample();
+void TrimmingTimeAudioExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -554,6 +557,8 @@ void NumberLinesInParagraph();
 void FindAndReplaceTextResult();
 void FontBinaryDataExample();
 void FontEmbeddingLevelExample();
+void GetPresentationRowTextExample();
+void DisableFontLigaturesExample();
 #pragma endregion
 
 #pragma region Views

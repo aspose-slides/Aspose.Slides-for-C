@@ -54,6 +54,7 @@
 #include <DOM/ISectionCollection.h>
 #include <DOM/BlobManagementOptions.h>
 #include <DOM/PictureFillMode.h>
+#include <DOM/IAudioCollection.h>
 #include <DOM/IImageCollection.h>
 #include <DOM/IVideoCollection.h>
 #include <DOM/IMasterSlideCollection.h>
@@ -113,6 +114,8 @@
 #include <DOM/INotesSlideManager.h>
 #include <DOM/IMasterNotesSlideHeaderFooterManager.h>
 #include <DOM/INotesSlideHeaderFooterManager.h>
+#include <DOM/IPresentationText.h>
+#include <DOM/ISlideText.h>
 #include <DOM/Hyperlink.h>
 #include <DOM/ITextFrame.h>
 #include <DOM/IParagraphCollection.h>
@@ -381,6 +384,7 @@
 #include <DOM/IDrawingGuide.h>
 #include <DOM/IDrawingGuidesCollection.h>
 #include <DOM/Orientation.h>
+#include <DOM/TextExtractionArrangingMode.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
