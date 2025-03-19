@@ -385,6 +385,8 @@
 #include <DOM/IDrawingGuidesCollection.h>
 #include <DOM/Orientation.h>
 #include <DOM/TextExtractionArrangingMode.h>
+#include <DOM/Captions.h>
+#include <DOM/CaptionsCollection.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>

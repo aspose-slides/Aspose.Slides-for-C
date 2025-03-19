@@ -167,6 +167,8 @@ int main(int argc, const char argv[])
         AddBlobImageToPresentation();
         SaveInZip64Mode();
         RefreshThumbnailPresentation();
+        JavaScriptLinkExample();
+        ImageQualityExample();
 
         AddImageFromSVGObjectFromExternalResource();
         ConvertSvgImageObjectIntoGroupOfShapes();
@@ -265,6 +267,7 @@ int main(int argc, const char argv[])
         FadeInOutDurationAudioExample();
         VolumeAudioExample();
         TrimmingTimeAudioExample();
+        VideoCaptionsExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -607,6 +610,7 @@ int main(int argc, const char argv[])
         FontEmbeddingLevelExample();
         GetPresentationRowTextExample();
         DisableFontLigaturesExample();
+        SplitTextByColumnsExample();
 #pragma endregion
 
 #pragma region Views

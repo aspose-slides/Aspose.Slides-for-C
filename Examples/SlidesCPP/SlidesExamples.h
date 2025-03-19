@@ -145,6 +145,8 @@ void SettingInterruptionToken();
 void AddBlobImageToPresentation();
 void SaveInZip64Mode();
 void RefreshThumbnailPresentation();
+void JavaScriptLinkExample();
+void ImageQualityExample();
 
 void SavingHTMLAndCSSFileWhenExportingIntoHTML();
 void AddImageFromSVGObjectFromExternalResource();
@@ -242,6 +244,7 @@ void StopPreviousSoundExample();
 void FadeInOutDurationAudioExample();
 void VolumeAudioExample();
 void TrimmingTimeAudioExample();
+void VideoCaptionsExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -559,6 +562,7 @@ void FontBinaryDataExample();
 void FontEmbeddingLevelExample();
 void GetPresentationRowTextExample();
 void DisableFontLigaturesExample();
+void SplitTextByColumnsExample();
 #pragma endregion
 
 #pragma region Views
