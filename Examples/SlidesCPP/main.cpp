@@ -493,6 +493,7 @@ int main(int argc, const char argv[])
         TilePictureFillFormatExample();
         AnimationFloatUpDown();
         CompressImageExample();
+        AdjustValueTypeExample();
 
 #pragma endregion
 

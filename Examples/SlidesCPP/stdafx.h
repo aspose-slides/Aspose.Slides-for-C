@@ -387,6 +387,9 @@
 #include <DOM/TextExtractionArrangingMode.h>
 #include <DOM/Captions.h>
 #include <DOM/CaptionsCollection.h>
+#include <DOM/IAdjustValueCollection.h>
+#include <DOM/IAdjustValue.h>
+#include <DOM/ShapeAdjustmentType.h>
 
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>

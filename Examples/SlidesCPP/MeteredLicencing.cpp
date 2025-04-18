@@ -38,5 +38,8 @@ void MeteredLicencing()
 	// Display information
 	//System::Console::WriteLine(u"Amount Consumed After: {0}", amountafter.ToString());
 
+	// Print status of a Metered license.
+	//System::Console::WriteLine(u"Is metered license accepted: {0}", Aspose::Slides::Metered::IsMeteredLicensed());
+
 	//ExEnd:MeteredLicencing
 }

@@ -298,6 +298,7 @@ void AnimationTargetShapes();
 void TilePictureFillFormatExample();
 void AnimationFloatUpDown();
 void CompressImageExample();
+void AdjustValueTypeExample();
 #pragma endregion
 
 #pragma region Working with Charts

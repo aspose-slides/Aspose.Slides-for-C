@@ -1422,6 +1422,9 @@
     <ClCompile Include="SplitTextByColumnsExample.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="AdjustValueTypeExample.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
