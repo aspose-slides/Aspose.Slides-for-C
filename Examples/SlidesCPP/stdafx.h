@@ -442,6 +442,8 @@
 #include <Export/FramesStream/FrameTickEventArgs.h>
 #include <Export/Markdown/SaveOptions/MarkdownExportType.h>
 #include <Export/Markdown/SaveOptions/MarkdownSaveOptions.h>
+#include <Export/Markdown/SaveOptions/HandleRepeatedSpaces.h>
+#include <Export/Markdown/SaveOptions/Flavor.h>
 #include <Export/HandoutType.h>
 #include <Export/HandoutLayoutingOptions.h>
 #include <Export/IInkOptions.h>

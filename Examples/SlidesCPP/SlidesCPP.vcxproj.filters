@@ -1425,6 +1425,18 @@
     <ClCompile Include="AdjustValueTypeExample.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToHtml5Handout.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertToMarkdownOptions.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportHtmlSlideExample.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureFrameIsCameoExample.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

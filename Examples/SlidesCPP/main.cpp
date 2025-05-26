@@ -98,6 +98,9 @@ int main(int argc, const char argv[])
         ExportOleExample();
         ConvertToEmf();
         ConvertSvgToEmf();
+        ConvertToHtml5Handout();
+        ConvertToMarkdownOptions();
+        ImportHtmlSlideExample();
 
 #pragma endregion
 
@@ -494,6 +497,7 @@ int main(int argc, const char argv[])
         AnimationFloatUpDown();
         CompressImageExample();
         AdjustValueTypeExample();
+        PictureFrameIsCameoExample();
 
 #pragma endregion
 

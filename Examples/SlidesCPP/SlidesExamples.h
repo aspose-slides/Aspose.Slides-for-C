@@ -79,6 +79,9 @@ void ConvertToXml();
 void ExportOleExample();
 void ConvertToEmf();
 void ConvertSvgToEmf();
+void ConvertToHtml5Handout();
+void ConvertToMarkdownOptions();
+void ImportHtmlSlideExample();
 
 #pragma endregion
 
@@ -299,6 +302,7 @@ void TilePictureFillFormatExample();
 void AnimationFloatUpDown();
 void CompressImageExample();
 void AdjustValueTypeExample();
+void PictureFrameIsCameoExample();
 #pragma endregion
 
 #pragma region Working with Charts
