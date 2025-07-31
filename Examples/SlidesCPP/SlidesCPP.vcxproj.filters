@@ -1437,6 +1437,9 @@
     <ClCompile Include="PictureFrameIsCameoExample.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
+    <ClCompile Include="InkEffectsExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Ink</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1457,8 +1460,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

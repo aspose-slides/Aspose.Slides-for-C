@@ -379,6 +379,7 @@
 #include <DOM/Ink/Ink.h>
 #include <DOM/Ink/InkBrush.h>
 #include <DOM/Ink/InkTrace.h>
+#include <DOM/Ink/InkEffectType.h>
 #include <DOM/GradientStyle.h>
 #include <DOM/TextFind/TextSearchOptions.h>
 #include <DOM/IDrawingGuide.h>

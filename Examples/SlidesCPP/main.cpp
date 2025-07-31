@@ -498,6 +498,7 @@ int main(int argc, const char argv[])
         CompressImageExample();
         AdjustValueTypeExample();
         PictureFrameIsCameoExample();
+        InkEffectsExample();
 
 #pragma endregion
 

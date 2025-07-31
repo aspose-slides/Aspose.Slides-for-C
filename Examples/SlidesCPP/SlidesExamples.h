@@ -303,6 +303,7 @@ void AnimationFloatUpDown();
 void CompressImageExample();
 void AdjustValueTypeExample();
 void PictureFrameIsCameoExample();
+void InkEffectsExample();
 #pragma endregion
 
 #pragma region Working with Charts
