@@ -304,6 +304,7 @@ void CompressImageExample();
 void AdjustValueTypeExample();
 void PictureFrameIsCameoExample();
 void InkEffectsExample();
+void BrightnessContrastEffectExample();
 #pragma endregion
 
 #pragma region Working with Charts
@@ -382,6 +383,8 @@ void WorksheetsExample();
 void TimeUnitTypeEnum();
 void LeaderLineColor();
 void ChartPointDataIndex();
+void ExtractExcelDataExample();
+void ImportingChartsFromExcelExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -569,6 +572,8 @@ void FontEmbeddingLevelExample();
 void GetPresentationRowTextExample();
 void DisableFontLigaturesExample();
 void SplitTextByColumnsExample();
+void ManageScriptFontsExample();
+void GetPlaceholderTextExample();
 #pragma endregion
 
 #pragma region Views

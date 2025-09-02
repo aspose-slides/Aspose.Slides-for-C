@@ -33,11 +33,14 @@
 #include <IFindResultCallback.h>
 
 #include <DOM/IMasterSlide.h>
+#include <DOM/Theme/IMasterTheme.h>
+#include <DOM/Theme/IFontScheme.h>
 #include <DOM/Table/IColumn.h>
 #include <DOM/IGradientStopEffectiveData.h>
 #include <DOM/PathFillModeType.h>
 #include <Util/ShapeUtil.h>
 #include <DOM/GeometryPath.h>
+#include <DOM/IFonts.h>
 #include <DOM/IPPImage.h>
 #include <DOM/IComment.h>
 #include <DOM/Presentation.h>
@@ -133,13 +136,19 @@
 #include <DOM/VideoFrame.h>
 #include <DOM/IChart.h>
 #include <DOM/ISection.h>
-#include "DOM/ColorTransformOperation.h"
-#include "DOM/TextShapeType.h"
-#include "DOM/RectangleAlignment.h"
-#include "DOM/MaterialPresetType.h"
-#include "DOM/IColorOperationCollection.h"
-#include "DOM/Effects/IReflection.h"
-#include "DOM/Effects/IGlow.h"
+#include <DOM/ColorTransformOperation.h>
+#include <DOM/TextShapeType.h>
+#include <DOM/RectangleAlignment.h>
+#include <DOM/MaterialPresetType.h>
+#include <DOM/IColorOperationCollection.h>
+#include <DOM/Effects/IReflection.h>
+#include <DOM/Effects/IGlow.h>
+#include <DOM/Effects/IImageTransformOperationCollection.h>
+#include <DOM/Effects/ImageTransformOperationCollection.h>
+#include <DOM/Effects/IDuotone.h>
+#include <DOM/Effects/IDuotoneEffectiveData.h>
+#include <DOM/Effects/IBrightnessContrast.h>
+#include <DOM/Effects/IBrightnessContrastEffectiveData.h>
 #include <DOM/Chart/IChartCategory.h>
 #include <DOM/Chart/ChartType.h>
 #include <DOM/Chart/ChartTitle.h>
@@ -369,9 +378,6 @@
 #include <DOM/IGradientStopCollectionEffectiveData.h>
 #include <DOM/IPatternFormatEffectiveData.h>
 #include <DOM/Zoom/IZoomFrame.h>
-#include <DOM/Effects/IDuotone.h>
-#include <DOM/Effects/IDuotoneEffectiveData.h>
-#include <DOM/Effects/IImageTransformOperationCollection.h>
 #include <DOM/MathText/IMathElement.h>
 #include <DOM/MathText/IMathFraction.h>
 #include <DOM/MathText/MathBlock.h>
@@ -392,9 +398,15 @@
 #include <DOM/IAdjustValue.h>
 #include <DOM/ShapeAdjustmentType.h>
 
+#include <Excel/IExcelDataCell.h>
+#include <Excel/IExcelDataWorkbook.h>
+#include <Excel/ExcelDataCell.h>
+#include <Excel/ExcelDataWorkbook.h>
+
 #include <Import/ExternalResourceResolver.h>
 #include <Import/IExternalResourceResolver.h>
 #include <Import/PdfImportOptions.h>
+#include <Import/ExcelWorkbookImporter.h>
 
 #include <Util/SlideUtil.h>
 

@@ -418,6 +418,8 @@ int main(int argc, const char argv[])
         TimeUnitTypeEnum();
         LeaderLineColor();
         ChartPointDataIndex();
+        ExtractExcelDataExample();
+        ImportingChartsFromExcelExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
@@ -499,6 +501,7 @@ int main(int argc, const char argv[])
         AdjustValueTypeExample();
         PictureFrameIsCameoExample();
         InkEffectsExample();
+        BrightnessContrastEffectExample();
 
 #pragma endregion
 
@@ -617,6 +620,8 @@ int main(int argc, const char argv[])
         GetPresentationRowTextExample();
         DisableFontLigaturesExample();
         SplitTextByColumnsExample();
+        ManageScriptFontsExample();
+        GetPlaceholderTextExample();
 #pragma endregion
 
 #pragma region Views
