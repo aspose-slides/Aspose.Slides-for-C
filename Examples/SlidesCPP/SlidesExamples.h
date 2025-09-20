@@ -248,6 +248,7 @@ void FadeInOutDurationAudioExample();
 void VolumeAudioExample();
 void TrimmingTimeAudioExample();
 void VideoCaptionsExample();
+void AudioCaptionsExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -385,6 +386,7 @@ void LeaderLineColor();
 void ChartPointDataIndex();
 void ExtractExcelDataExample();
 void ImportingChartsFromExcelExample();
+void TitleLegendChartExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

@@ -271,6 +271,7 @@ int main(int argc, const char argv[])
         VolumeAudioExample();
         TrimmingTimeAudioExample();
         VideoCaptionsExample();
+        AudioCaptionsExample();
 #pragma endregion
 
 #pragma region Managing slide Notes
@@ -420,6 +421,7 @@ int main(int argc, const char argv[])
         ChartPointDataIndex();
         ExtractExcelDataExample();
         ImportingChartsFromExcelExample();
+        TitleLegendChartExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

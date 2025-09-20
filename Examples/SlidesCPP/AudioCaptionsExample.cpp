@@ -11,7 +11,7 @@ void AudioCaptionsExample()
     //ExStart:AudioCaptionsExample
 
     const String mediaFile = Path::Combine(GetDataPath(), u"audio.mp3");
-    const String trackFile = Path::Combine(GetDataPath(), u"track.vtt");
+    const String trackFile = Path::Combine(GetDataPath(), u"bunny.vtt");
     const String outCaptionFile = Path::Combine(GetOutPath(), u"AudioCaption_out.vtt");
     const String outAddPath = Path::Combine(GetOutPath(), u"AudioCaptionAdd_out.pptx");
     const String outRemovePath = Path::Combine(GetOutPath(), u"AudioCaptionRemove_out.pptx");
