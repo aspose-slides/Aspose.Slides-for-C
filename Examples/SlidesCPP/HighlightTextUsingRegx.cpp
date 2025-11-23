@@ -13,11 +13,9 @@ void HighlightTextUsingRegx()
 
     SharedPtr<Presentation> presentation = System::MakeObject<Presentation>(dataPath);
 
-    SharedPtr<TextHighlightingOptions> options = System::MakeObject<TextHighlightingOptions>();
-    // highlighting all words with 10 symbols or longer
     SharedPtr<ITextFrame> textFrame = System::ExplicitCast<AutoShape>(presentation->get_Slide(0)->get_Shape(0))->get_TextFrame();
-    textFrame->HighlightRegex(u"\\b[^\\s]{10,}\\b", System::Drawing::Color::get_LightGoldenrodYellow(), options);
+    textFrame->HighlightRegex(u"\\b[^\\s]{5,}\\b", System::Drawing::Color::get_LightGoldenrodYellow(), nullptr);
 
-    presentation->Save(u"../out/HighlightTextRegx-out.pptx", Export::SaveFormat::Pptx);
+    presentation->Save(outPath, Export::SaveFormat::Pptx);
     //ExEnd:HighlightTextUsingRegx
 }

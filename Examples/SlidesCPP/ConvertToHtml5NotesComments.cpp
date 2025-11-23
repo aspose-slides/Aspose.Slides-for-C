@@ -20,7 +20,7 @@ void ConvertToHtml5NotesComments()
 
     auto html5Options = System::MakeObject<Html5Options>();
     html5Options->set_OutputPath(u"");
-    html5Options->set_NotesCommentsLayouting(notesCommentsLayouting);
+    html5Options->set_SlidesLayoutOptions(notesCommentsLayouting);
 
     // Save a result
     pres->Save(outHtmlPath, SaveFormat::Html5, html5Options);

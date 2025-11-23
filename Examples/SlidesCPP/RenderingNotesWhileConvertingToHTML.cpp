@@ -14,7 +14,7 @@ void RenderingNotesWhileConvertingToHTML() {
     System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
     System::SharedPtr<HtmlOptions> htmlOptions = System::MakeObject<HtmlOptions>();
-    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
     options->set_NotesPosition(NotesPositions::BottomFull);
     htmlOptions->set_SlidesLayoutOptions(options);
 

@@ -20,7 +20,7 @@ void ConvertWholePresentationToHTML()
     System::SharedPtr<HtmlOptions> htmlOptions = System::MakeObject<HtmlOptions>();
     htmlOptions->set_HtmlFormatter((HtmlFormatter::CreateSlideShowFormatter(u"", false)));
 
-    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
     options->set_NotesPosition(NotesPositions::BottomFull);
     htmlOptions->set_SlidesLayoutOptions(options);
     

@@ -17,7 +17,6 @@
 #include <system/collections/list.h>
 
 #include <drawing/graphics.h>
-#include <drawing/bitmap.h>
 
 #include <IFontSources.h>
 #include <LoadFormat.h>
@@ -397,6 +396,7 @@
 #include <DOM/IAdjustValueCollection.h>
 #include <DOM/IAdjustValue.h>
 #include <DOM/ShapeAdjustmentType.h>
+#include <DOM/FontStyleType.h>
 
 #include <Excel/IExcelDataCell.h>
 #include <Excel/IExcelDataWorkbook.h>
@@ -416,7 +416,6 @@
 #include <Export/EmbedAllFontsHtmlController.h>
 #include <Export/PdfTextCompression.h>
 #include <Export/PdfCompliance.h>
-#include <Export/INotesCommentsLayoutingOptions.h>
 #include <Export/SaveFormat.h>
 #include <Export/NotesPositions.h>
 #include <Export/PdfOptions.h>
@@ -461,5 +460,6 @@
 #include <Export/HandoutLayoutingOptions.h>
 #include <Export/IInkOptions.h>
 #include <Export/InkOptions.h>
+#include <Export/ISlidesLayoutOptions.h>
 
 #include <LowCode/ForEach.h>

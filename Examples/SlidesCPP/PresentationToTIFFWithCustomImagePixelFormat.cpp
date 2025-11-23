@@ -17,7 +17,7 @@ void PresentationToTIFFWithCustomImagePixelFormat()
     System::SharedPtr<TiffOptions> tiffOptions = System::MakeObject<TiffOptions>();
     tiffOptions->set_PixelFormat(ImagePixelFormat::Format8bppIndexed);
 
-    System::SharedPtr<INotesCommentsLayoutingOptions> opts = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> opts = System::MakeObject<NotesCommentsLayoutingOptions>();
     opts->set_NotesPosition(NotesPositions::BottomFull);
     tiffOptions->set_SlidesLayoutOptions(opts);
 

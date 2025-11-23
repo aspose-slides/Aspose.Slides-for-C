@@ -19,7 +19,7 @@ void FontEmbeddingLevelExample()
     System::ArrayPtr<System::SharedPtr<IFontData>> fonts = fontsManager->GetFonts();
 
     // Get the byte array representing the regular style of the first font in the presentation
-    System::ArrayPtr<uint8_t> bytes = fontsManager->GetFontBytes(fonts[0], System::Drawing::FontStyle::Regular);
+    System::ArrayPtr<uint8_t> bytes = fontsManager->GetFontBytes(fonts[0], FontStyleType::Regular);
 
     // Determine the embedding level of the font
     EmbeddingLevel embeddingLevel = fontsManager->GetFontEmbeddingLevel(bytes, fonts[0]->get_FontName());

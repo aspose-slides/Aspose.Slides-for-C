@@ -16,7 +16,7 @@ void ConvertNotesSlideViewToPDF()
     System::SharedPtr<Presentation> pres = System::MakeObject<Presentation>(templatePath);
 
     System::SharedPtr<PdfOptions> opts = System::MakeObject<PdfOptions>();
-    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
     options->set_NotesPosition(NotesPositions::BottomFull);
     opts->set_SlidesLayoutOptions(options);
 

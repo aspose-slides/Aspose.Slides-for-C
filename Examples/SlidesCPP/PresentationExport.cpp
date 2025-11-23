@@ -61,7 +61,7 @@ void SampleTIFF()
         pres->Save(u"../out/SampleAddText_Tiff.tiff", SaveFormat::Tiff);
 
         System::SharedPtr<TiffOptions> tiffOptions = System::MakeObject<TiffOptions>();
-        System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+        System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
         options->set_NotesPosition(NotesPositions::BottomFull);
         tiffOptions->set_SlidesLayoutOptions(options);
 
@@ -83,8 +83,9 @@ void SampleSWF()
         pres->Save(u"../out/SampleAddText_Swf.swf", SaveFormat::Swf);
 
         System::SharedPtr<SwfOptions> swfOptions = System::MakeObject<SwfOptions>();
-        System::SharedPtr<INotesCommentsLayoutingOptions> options = swfOptions->get_NotesCommentsLayouting();
+        System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
         options->set_NotesPosition(NotesPositions::BottomFull);
+        swfOptions->set_SlidesLayoutOptions(options);
 
         pres->Save(u"../out/SampleAddText_SwfNote.swf", SaveFormat::Swf, swfOptions);
     }

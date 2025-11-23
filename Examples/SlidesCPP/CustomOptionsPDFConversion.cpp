@@ -22,7 +22,7 @@ void CustomOptionsPDFConversion()
     pdfOptions->set_TextCompression(PdfTextCompression::Flate);
     pdfOptions->set_Compliance(PdfCompliance::Pdf15);
 
-    System::SharedPtr<INotesCommentsLayoutingOptions> opts = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> opts = System::MakeObject<NotesCommentsLayoutingOptions>();
     opts->set_NotesPosition(NotesPositions::BottomFull);
 
     pres->Save(outPath, SaveFormat::Pdf, pdfOptions);

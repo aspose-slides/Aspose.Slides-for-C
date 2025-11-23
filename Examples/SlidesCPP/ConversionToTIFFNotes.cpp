@@ -16,7 +16,7 @@ void ConversionToTIFFNotes()
 
     System::SharedPtr<TiffOptions> opts = System::MakeObject<TiffOptions>();
 
-    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
     options->set_NotesPosition(NotesPositions::BottomFull);
     opts->set_SlidesLayoutOptions(options);
     // Saving to TiffNotes

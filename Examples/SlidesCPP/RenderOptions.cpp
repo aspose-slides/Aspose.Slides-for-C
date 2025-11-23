@@ -16,7 +16,7 @@ void RenderOptions()
     System::SharedPtr<ISlide> slide = pres->get_Slide(0);
         
     System::SharedPtr<IRenderingOptions> renderingOpts = System::MakeObject<RenderingOptions>();
-    System::SharedPtr<INotesCommentsLayoutingOptions> notesCommentsOpts = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> notesCommentsOpts = System::MakeObject<NotesCommentsLayoutingOptions>();
     notesCommentsOpts->set_NotesPosition(NotesPositions::BottomTruncated);
     renderingOpts->set_SlidesLayoutOptions(notesCommentsOpts);
 

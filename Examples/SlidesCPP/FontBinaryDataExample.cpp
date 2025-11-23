@@ -19,7 +19,7 @@ void FontBinaryDataExample()
     System::ArrayPtr<System::SharedPtr<IFontData>> fonts = fontsManager->GetFonts();
 
     // Get the byte array representing the regular style of the first font in the presentation
-    System::ArrayPtr<uint8_t> bytes = fontsManager->GetFontBytes(fonts[0], System::Drawing::FontStyle::Regular);
+    System::ArrayPtr<uint8_t> bytes = fontsManager->GetFontBytes(fonts[0], FontStyleType::Regular);
 
     // The path to output file
     const System::String outFilePath = Path::Combine(GetOutPath(), System::String::Concat(fonts[0]->get_FontName(), u".ttf"));

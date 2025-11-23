@@ -22,7 +22,7 @@ void ConvertingPresentationToHTMLWithPreservingOriginalFonts()
     System::SharedPtr<HtmlOptions> htmlOptionsEmbed = System::MakeObject<HtmlOptions>();
     htmlOptionsEmbed->set_HtmlFormatter(HtmlFormatter::CreateCustomFormatter(embedFontsController));
 
-    System::SharedPtr<INotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
+    System::SharedPtr<NotesCommentsLayoutingOptions> options = System::MakeObject<NotesCommentsLayoutingOptions>();
     options->set_NotesPosition(NotesPositions::BottomFull);
     htmlOptionsEmbed->set_SlidesLayoutOptions(options);
 
