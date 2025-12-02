@@ -40,7 +40,6 @@ void ConvertIndividualSlideToHTML();
 void ConvertToPDF();
 void ConvertToPdfCompliance();
 void ConvertToPDFWithHiddenSlides();
-void ConvertToSWF();
 void ConvertWholePresentationToHTML();
 void ConvertWithoutXpsOptions();
 void ConvertWithXpsOptions();
@@ -82,6 +81,7 @@ void ConvertSvgToEmf();
 void ConvertToHtml5Handout();
 void ConvertToMarkdownOptions();
 void ImportHtmlSlideExample();
+void ConvertImagesToMarkdown();
 
 #pragma endregion
 
@@ -278,6 +278,7 @@ void AnimationRepeatOnSlide();
 void AnimationRewind();
 void AfterAnimationTypeExample();
 void AnimationFadedZoomSubtype();
+void AnimationDurationSlide();
 #pragma endregion
 
 #pragma region Working with Shapes
@@ -288,13 +289,13 @@ void GetShapeBevelEffectiveData();
 void SubstitutePictureTitleOfOLEObjectFrame();
 void AddMathematicalShape();
 void MathShape_GetChildren();
+void MathPhantomExample();
 void ShapesAlignment();
 void SketchedShapes();
 void GeometryShapeAddSegment();
 void GeometryShapeCompositeObjects();
 void GeometryShapeCreatesCustomGeometry();
 void GeometryShapeRemoveSegment();
-void GeometryShapeUsingShapeUtil();
 void CreateSummaryZoom();
 void CreateZoomFrame();
 void CreateSectionZoom();
@@ -576,6 +577,8 @@ void DisableFontLigaturesExample();
 void SplitTextByColumnsExample();
 void ManageScriptFontsExample();
 void GetPlaceholderTextExample();
+void FindTextOptions();
+void GetFontsSlideSubstitution();
 #pragma endregion
 
 #pragma region Views

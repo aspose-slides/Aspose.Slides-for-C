@@ -365,9 +365,17 @@
 #include <DOM/ILineFillFormat.h>
 #include <DOM/MathText/MathPortion.h>
 #include <DOM/MathText/MathematicalText.h>
+#include <DOM/MathText/MathPhantom.h>
+#include <DOM/MathText/MathDelimiter.h>
+#include <DOM/MathText/MathFraction.h>
+#include <DOM/MathText/MathArray.h>
 #include <DOM/MathText/IMathSuperscriptElement.h>
 #include <DOM/MathText/IMathParagraph.h>
 #include <DOM/MathText/IMathBlock.h>
+#include <DOM/MathText/IMathPhantom.h>
+#include <DOM/MathText/IMathDelimiter.h>
+#include <DOM/MathText/IMathFraction.h>
+#include <DOM/MathText/IMathArray.h>
 #include <DOM/ShapesAlignmentType.h>
 #include <DOM/DigitalSignature.h>
 #include <DOM/IDigitalSignatureCollection.h>

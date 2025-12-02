@@ -621,9 +621,6 @@
     <ClCompile Include="ConvertToPDFWithHiddenSlides.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
-    <ClCompile Include="ConvertToSWF.cpp">
-      <Filter>Source Files\Presentations\Conversions</Filter>
-    </ClCompile>
     <ClCompile Include="ConvertWholePresentationToHTML.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
@@ -1161,9 +1158,6 @@
     <ClCompile Include="GeometryShapeRemoveSegment.cpp">
       <Filter>Source Files\Slides\Shapes</Filter>
     </ClCompile>
-    <ClCompile Include="GeometryShapeUsingShapeUtil.cpp">
-      <Filter>Source Files\Slides\Shapes</Filter>
-    </ClCompile>
     <ClCompile Include="ExportToHtmlWithImageLinks.cpp">
       <Filter>Source Files\Presentations\Conversions</Filter>
     </ClCompile>
@@ -1461,6 +1455,21 @@
     <ClCompile Include="TitleLegendChartExample.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertImagesToMarkdown.cpp">
+      <Filter>Source Files\Presentations\Conversions</Filter>
+    </ClCompile>
+    <ClCompile Include="MathPhantomExample.cpp">
+      <Filter>Source Files\Slides\Shapes</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationDurationSlide.cpp">
+      <Filter>Source Files\Slides\Transitions</Filter>
+    </ClCompile>
+    <ClCompile Include="FindTextOptions.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GetFontsSlideSubstitution.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1481,8 +1490,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

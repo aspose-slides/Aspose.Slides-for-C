@@ -205,6 +205,7 @@
     <ClCompile Include="AnimatingCategoriesElements.cpp" />
     <ClCompile Include="AnimatingSeries.cpp" />
     <ClCompile Include="AnimatingSeriesElements.cpp" />
+    <ClCompile Include="AnimationDurationSlide.cpp" />
     <ClCompile Include="AnimationEffectInParagraph.cpp" />
     <ClCompile Include="AnimationFadedZoomSubtype.cpp" />
     <ClCompile Include="AnimationFloatUpDown.cpp" />
@@ -262,6 +263,7 @@
     <ClCompile Include="ConnectShapeUsingConnectionSite.cpp" />
     <ClCompile Include="ConversionToTIFFNotes.cpp" />
     <ClCompile Include="ConvertHTMLEmbeddingImages.cpp" />
+    <ClCompile Include="ConvertImagesToMarkdown.cpp" />
     <ClCompile Include="ConvertIndividualSlideToHTML.cpp" />
     <ClCompile Include="ConvertingPresentationToHtmlWithEmbedAllFontsHtmlController.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
@@ -289,7 +291,6 @@
     <ClCompile Include="ConvertToPdfUnsupportedFontStyles.cpp" />
     <ClCompile Include="ConvertToPDFWithHiddenSlides.cpp" />
     <ClCompile Include="ConvertToPdfCompliance.cpp" />
-    <ClCompile Include="ConvertToSWF.cpp" />
     <ClCompile Include="ConvertToXaml.cpp" />
     <ClCompile Include="ConvertToXml.cpp" />
     <ClCompile Include="ConvertWholePresentationToHTML.cpp" />
@@ -366,6 +367,7 @@
     <ClCompile Include="FindAndReplaceText.cpp" />
     <ClCompile Include="FindAndReplaceTextResult.cpp" />
     <ClCompile Include="FindShapeInSlide.cpp" />
+    <ClCompile Include="FindTextOptions.cpp" />
     <ClCompile Include="FontBinaryDataExample.cpp" />
     <ClCompile Include="FontEmbeddingLevelExample.cpp" />
     <ClCompile Include="FontFamilySetting.cpp" />
@@ -381,7 +383,6 @@
     <ClCompile Include="GeometryShapeCompositeObjects.cpp" />
     <ClCompile Include="GeometryShapeCreatesCustomGeometry.cpp" />
     <ClCompile Include="GeometryShapeRemoveSegment.cpp" />
-    <ClCompile Include="GeometryShapeUsingShapeUtil.cpp" />
     <ClCompile Include="GetBackgroundEffectiveValues.cpp" />
     <ClCompile Include="GetBasePlaceholderExample.cpp" />
     <ClCompile Include="GetCameraEffectiveData.cpp" />
@@ -391,6 +392,7 @@
     <ClCompile Include="GetEffectsByTextParagraph.cpp" />
     <ClCompile Include="GetFileFormat.cpp" />
     <ClCompile Include="GetFontsFolders.cpp" />
+    <ClCompile Include="GetFontsSlideSubstitution.cpp" />
     <ClCompile Include="GetFontsSubstitution.cpp" />
     <ClCompile Include="GetLightRigEffectiveData.cpp" />
     <ClCompile Include="GetPlaceholderTextExample.cpp" />
@@ -442,6 +444,7 @@
     <ClCompile Include="ManagingBetterSlideTransitions.cpp" />
     <ClCompile Include="MapChart.cpp" />
     <ClCompile Include="MasterNotesSlideHeaderFooterManager.cpp" />
+    <ClCompile Include="MathPhantomExample.cpp" />
     <ClCompile Include="MathShape_GetChildren.cpp" />
     <ClCompile Include="MergeCell.cpp" />
     <ClCompile Include="MergeCells.cpp" />
@@ -630,8 +633,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.25.10.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.25.10.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.25.10.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.25.10.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.25.10.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.25.10.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.25.11.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.25.11.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.25.11.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.25.11.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.25.11.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.25.11.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
   </ImportGroup>
 </Project>

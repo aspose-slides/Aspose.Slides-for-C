@@ -59,7 +59,6 @@ int main(int argc, const char argv[])
         ConvertToPDF();
         ConvertToPdfCompliance();
         ConvertToPDFWithHiddenSlides();
-        ConvertToSWF();
         ConvertWholePresentationToHTML();
         ConvertWithoutXpsOptions();
         ConvertWithXpsOptions();
@@ -101,6 +100,7 @@ int main(int argc, const char argv[])
         ConvertToHtml5Handout();
         ConvertToMarkdownOptions();
         ImportHtmlSlideExample();
+        ConvertImagesToMarkdown();
 
 #pragma endregion
 
@@ -307,6 +307,7 @@ int main(int argc, const char argv[])
         AnimationRewind();
         AfterAnimationTypeExample();
         AnimationFadedZoomSubtype();
+        AnimationDurationSlide();
         CheckSlidesComparison();
         ManageHeaderFooter();
         ManageHandoutHeaderFooter();
@@ -324,13 +325,13 @@ int main(int argc, const char argv[])
         SubstitutePictureTitleOfOLEObjectFrame();
         AddMathematicalShape();
         MathShape_GetChildren();
+        MathPhantomExample();
         ShapesAlignment();
         SketchedShapes();
         GeometryShapeAddSegment();
         GeometryShapeCompositeObjects();
         GeometryShapeCreatesCustomGeometry();
         GeometryShapeRemoveSegment();
-        GeometryShapeUsingShapeUtil();
         CreateSummaryZoom();
         CreateZoomFrame();
         CreateSectionZoom();
@@ -624,6 +625,8 @@ int main(int argc, const char argv[])
         SplitTextByColumnsExample();
         ManageScriptFontsExample();
         GetPlaceholderTextExample();
+        FindTextOptions();
+        GetFontsSlideSubstitution();
 #pragma endregion
 
 #pragma region Views
