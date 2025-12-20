@@ -109,6 +109,8 @@ void GetFileFormat();
 
 #pragma region LowCode
 void ForEachPortion();
+void ConvertToImage();
+void MergerExample();
 #pragma endregion
 
 #pragma region Working with Presentation Document properties
@@ -579,6 +581,7 @@ void ManageScriptFontsExample();
 void GetPlaceholderTextExample();
 void FindTextOptions();
 void GetFontsSlideSubstitution();
+void SpellCheckExample();
 #pragma endregion
 
 #pragma region Views

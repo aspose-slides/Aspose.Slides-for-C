@@ -1470,6 +1470,15 @@
     <ClCompile Include="GetFontsSlideSubstitution.cpp">
       <Filter>Source Files\Slides\Shapes\Text</Filter>
     </ClCompile>
+    <ClCompile Include="ConvertToImage.cpp">
+      <Filter>Source Files\Presentations\LowCode</Filter>
+    </ClCompile>
+    <ClCompile Include="MergerExample.cpp">
+      <Filter>Source Files\Presentations\LowCode</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellCheckExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

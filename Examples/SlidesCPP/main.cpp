@@ -128,6 +128,8 @@ int main(int argc, const char argv[])
 #pragma region LowCode
 
         ForEachPortion();
+        ConvertToImage();
+        MergerExample();
 
 #pragma endregion
 
@@ -627,6 +629,7 @@ int main(int argc, const char argv[])
         GetPlaceholderTextExample();
         FindTextOptions();
         GetFontsSlideSubstitution();
+        SpellCheckExample();
 #pragma endregion
 
 #pragma region Views

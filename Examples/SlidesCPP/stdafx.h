@@ -471,3 +471,5 @@
 #include <Export/ISlidesLayoutOptions.h>
 
 #include <LowCode/ForEach.h>
+#include <LowCode/Convert.h>
+#include <LowCode/Merger.h>
