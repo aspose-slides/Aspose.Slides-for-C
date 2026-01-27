@@ -405,6 +405,11 @@
 #include <DOM/IAdjustValue.h>
 #include <DOM/ShapeAdjustmentType.h>
 #include <DOM/FontStyleType.h>
+#include <DOM/SensitivityLabel.h>
+#include <DOM/SensitivityLabelCollection.h>
+#include <DOM/SensitivityLabelAssignmentType.h>
+#include <DOM/SensitivityLabelContentType.h>
+#include <DOM/ShapeElement.h>
 
 #include <Excel/IExcelDataCell.h>
 #include <Excel/IExcelDataWorkbook.h>

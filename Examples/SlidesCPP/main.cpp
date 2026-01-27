@@ -151,6 +151,7 @@ int main(int argc, const char argv[])
         GridProperties();
         GuidesProperties();
         ExtendedPresentationProperties();
+        SensitivityLabelsExample();
 
 #pragma endregion
 
@@ -507,6 +508,7 @@ int main(int argc, const char argv[])
         PictureFrameIsCameoExample();
         InkEffectsExample();
         BrightnessContrastEffectExample();
+        ShapePathPointsExample();
 
 #pragma endregion
 

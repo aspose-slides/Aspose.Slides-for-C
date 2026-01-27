@@ -132,6 +132,7 @@ void SlideShowMediaControls();
 void GridProperties();
 void GuidesProperties();
 void ExtendedPresentationProperties();
+void SensitivityLabelsExample();
 
 #pragma endregion
 
@@ -309,6 +310,7 @@ void AdjustValueTypeExample();
 void PictureFrameIsCameoExample();
 void InkEffectsExample();
 void BrightnessContrastEffectExample();
+void ShapePathPointsExample();
 #pragma endregion
 
 #pragma region Working with Charts
