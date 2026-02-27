@@ -179,6 +179,8 @@ int main(int argc, const char argv[])
         AddImageFromSVGObjectFromExternalResource();
         ConvertSvgImageObjectIntoGroupOfShapes();
         AddImageFromSVGObject();
+
+        ToSaveFormatExample();
 #pragma endregion
 
 #pragma region Presentation Rendering-Printing

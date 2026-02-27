@@ -162,6 +162,8 @@ void AddImageFromSVGObject();
 void RenderingNotesWhileConvertingToHTML();
 void ConvertingPresentationToHTMLWithPreservingOriginalFonts();
 
+void ToSaveFormatExample();
+
 #pragma endregion
 
 #pragma region Presentation Rendering-Printing
