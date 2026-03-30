@@ -313,6 +313,8 @@ void PictureFrameIsCameoExample();
 void InkEffectsExample();
 void BrightnessContrastEffectExample();
 void ShapePathPointsExample();
+void ShapeVisualBoundsExample();
+void SolidFillSchemeColorExample();
 #pragma endregion
 
 #pragma region Working with Charts

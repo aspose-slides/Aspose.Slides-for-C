@@ -511,6 +511,8 @@ int main(int argc, const char argv[])
         InkEffectsExample();
         BrightnessContrastEffectExample();
         ShapePathPointsExample();
+        ShapeVisualBoundsExample();
+        SolidFillSchemeColorExample();
 
 #pragma endregion
 
