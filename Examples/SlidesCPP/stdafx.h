@@ -190,6 +190,9 @@
 #include <DOM/Chart/ParentLabelLayoutType.h>
 #include <DOM/Chart/Chart.h>
 #include <DOM/Chart/LegendPositionType.h>
+#include <DOM/Chart/WorkbookType.h>
+#include <DOM/Chart/ChartDataSourceType.h>
+#include <DOM/CHart/IStringChartValue.h>
 #include <DOM/Animation/ISequence.h>
 #include <DOM/Animation/EffectType.h>
 #include <DOM/Animation/EffectSubtype.h>

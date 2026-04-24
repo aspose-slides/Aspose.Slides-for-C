@@ -396,6 +396,7 @@ void ChartPointDataIndex();
 void ExtractExcelDataExample();
 void ImportingChartsFromExcelExample();
 void TitleLegendChartExample();
+void EmbeddedWorkbookTypeExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	

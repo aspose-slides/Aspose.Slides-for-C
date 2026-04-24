@@ -428,6 +428,7 @@ int main(int argc, const char argv[])
         ExtractExcelDataExample();
         ImportingChartsFromExcelExample();
         TitleLegendChartExample();
+        EmbeddedWorkbookTypeExample();
 #pragma endregion
 
 #pragma region ManageAutoShapes	
