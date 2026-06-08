@@ -1497,6 +1497,9 @@
     <ClCompile Include="EmbeddedWorkbookTypeExample.cpp">
       <Filter>Source Files\Slides\Shapes\Charts</Filter>
     </ClCompile>
+    <ClCompile Include="AddTableFromWorkbookExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Tables</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

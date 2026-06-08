@@ -563,6 +563,7 @@ int main(int argc, const char argv[])
         LockAspectRatio();
         GetEffectiveValuesOfTable();
         TableTransparency();
+        AddTableFromWorkbookExample();
 #pragma endregion
 
 #pragma region Formatting Text	

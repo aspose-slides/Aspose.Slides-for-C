@@ -516,6 +516,7 @@ void VerticallyAlignText();
 void LockAspectRatio();
 void GetEffectiveValuesOfTable();
 void TableTransparency();
+void AddTableFromWorkbookExample();
 #pragma endregion
 
 #pragma region Text	
