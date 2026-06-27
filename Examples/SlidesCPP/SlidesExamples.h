@@ -163,6 +163,7 @@ void RenderingNotesWhileConvertingToHTML();
 void ConvertingPresentationToHTMLWithPreservingOriginalFonts();
 
 void ToSaveFormatExample();
+void CompressionLevelExample();
 
 #pragma endregion
 

@@ -477,6 +477,7 @@
 #include <Export/IInkOptions.h>
 #include <Export/InkOptions.h>
 #include <Export/ISlidesLayoutOptions.h>
+#include <Export/CompressionLevel.h>
 
 #include <LowCode/ForEach.h>
 #include <LowCode/Convert.h>

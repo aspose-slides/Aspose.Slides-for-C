@@ -1500,6 +1500,9 @@
     <ClCompile Include="AddTableFromWorkbookExample.cpp">
       <Filter>Source Files\Slides\Shapes\Tables</Filter>
     </ClCompile>
+    <ClCompile Include="CompressionLevelExample.cpp">
+      <Filter>Source Files\Presentations\Saving</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">

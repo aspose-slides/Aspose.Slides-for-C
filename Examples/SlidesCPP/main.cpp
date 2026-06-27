@@ -181,6 +181,7 @@ int main(int argc, const char argv[])
         AddImageFromSVGObject();
 
         ToSaveFormatExample();
+        CompressionLevelExample();
 #pragma endregion
 
 #pragma region Presentation Rendering-Printing
