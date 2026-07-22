@@ -82,6 +82,7 @@ void ConvertToHtml5Handout();
 void ConvertToMarkdownOptions();
 void ImportHtmlSlideExample();
 void ConvertImagesToMarkdown();
+void Html5PicturesCompressionExample();
 
 #pragma endregion
 

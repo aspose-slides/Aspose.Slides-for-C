@@ -101,6 +101,7 @@ int main(int argc, const char argv[])
         ConvertToMarkdownOptions();
         ImportHtmlSlideExample();
         ConvertImagesToMarkdown();
+        Html5PicturesCompressionExample();
 
 #pragma endregion
 
