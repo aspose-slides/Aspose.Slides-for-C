@@ -592,6 +592,7 @@ void GetPlaceholderTextExample();
 void FindTextOptions();
 void GetFontsSlideSubstitution();
 void SpellCheckExample();
+void RenderParagraphExample();
 #pragma endregion
 
 #pragma region Views

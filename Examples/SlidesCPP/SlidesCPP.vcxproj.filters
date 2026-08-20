@@ -1503,6 +1503,12 @@
     <ClCompile Include="CompressionLevelExample.cpp">
       <Filter>Source Files\Presentations\Saving</Filter>
     </ClCompile>
+    <ClCompile Include="Html5PicturesCompressionExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderParagraphExample.cpp">
+      <Filter>Source Files\Slides\Shapes\Text</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SlidesExamples.h">
@@ -1523,8 +1529,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Natvis Include="$(MSBuildThisFileDirectory)tools\aspose_types.natvis" />
   </ItemGroup>
 </Project>

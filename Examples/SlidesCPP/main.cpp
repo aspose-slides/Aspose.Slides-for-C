@@ -640,6 +640,7 @@ int main(int argc, const char argv[])
         FindTextOptions();
         GetFontsSlideSubstitution();
         SpellCheckExample();
+        RenderParagraphExample();
 #pragma endregion
 
 #pragma region Views

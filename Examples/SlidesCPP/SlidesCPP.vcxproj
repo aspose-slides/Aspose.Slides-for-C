@@ -502,6 +502,7 @@
     <ClCompile Include="RenderingNotesWhileConvertingToHTML.cpp" />
     <ClCompile Include="RenderingWithFallBackFont.cpp" />
     <ClCompile Include="RenderOptions.cpp" />
+    <ClCompile Include="RenderParagraphExample.cpp" />
     <ClCompile Include="ReplaceFontsExplicitly.cpp" />
     <ClCompile Include="ReplacingText.cpp" />
     <ClCompile Include="RootDirectoryClsId.cpp" />
@@ -645,8 +646,8 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('..\packages\Aspose.Cells.Cpp.23.11.0\build\native\Aspose.Cells.Cpp.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.x86.26.7.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.26.7.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
-    <Import Project="..\packages\Aspose.Slides.Cpp.26.7.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.26.7.0\build\native\Aspose.Slides.Cpp.targets')" />
-    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.26.7.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.26.7.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.x86.26.8.0\build\native\Aspose.Slides.Cpp.x86.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.x86.26.8.0\build\native\Aspose.Slides.Cpp.x86.targets')" />
+    <Import Project="..\packages\Aspose.Slides.Cpp.26.8.0\build\native\Aspose.Slides.Cpp.targets" Condition="Exists('..\packages\Aspose.Slides.Cpp.26.8.0\build\native\Aspose.Slides.Cpp.targets')" />
+    <Import Project="..\packages\CodePorting.Translator.Cs2Cpp.Framework.26.8.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets" Condition="Exists('..\packages\CodePorting.Translator.Cs2Cpp.Framework.26.8.0\build\native\CodePorting.Translator.Cs2Cpp.Framework.targets')" />
   </ImportGroup>
 </Project>
